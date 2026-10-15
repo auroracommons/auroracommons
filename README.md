@@ -1,14 +1,22 @@
 # Aurora Commons
 
-Five working open source projects. Each one runs today, each is free to use and fork, and each publishes the run behind its headline number, failures included.
+Aurora Commons addresses the hierarchy of human needs through open source.
 
-The five projects:
+The map is [The Ascent](NEEDS.md), published openly in this repository: the body, the mind at peace, learning, belonging, shared truth, autonomy, and trust and meaning. Each layer of the map is a place where working software, free for anyone to use and fork, can meet a real human need.
 
-- **Atlas**, a learning atlas whose AI tutor is graded in public: groundedness 0.806, citation rate 1.0, correct source rate 0.833, weak answers published beside the strong ones.
-- **Cohort**, a community platform whose MCP server joins as a real client: a live agent session transcript is committed in the repo as the receipt, and the tests pass 7 of 7.
-- **Machine**, a neural network library built from scratch in NumPy: its transformer passes 7 of 7 gradient checks, and a published benchmark puts PyTorch at 4.13x per step at identical size.
-- **Graph**, knowledge graph extraction from plain text, measured on a hand labeled eval: entities F1 0.937, relations F1 0.605, failure cases published.
-- **Lumen**, a guarded question answering study over the Baltimore Catechism, a first exhibit from one tradition: refusal eval 12 of 12 blocked, 8 of 8 allowed.
+The method is to build on what already works. Proven open source codebases carry the load wherever they exist, and new code gets written only where nothing proven fits. Never reinvent the wheel.
+
+**Stand on the shoulders of giants.** That is the motto of this Commons, and it is also the working rule.
+
+## Early exhibits
+
+Five projects are the early exhibits of the mission at work, each serving one layer of the Ascent, and each publishing the run behind its headline number, failures included. They are exhibits of the mission, not the headline.
+
+- **Atlas**, serving learning (Layer 2): a learning atlas whose AI tutor is graded in public: groundedness 0.806, citation rate 1.0. [Live demo](https://auroracommons.github.io/atlas/) · [Repository](https://github.com/auroracommons/atlas)
+- **Cohort**, serving belonging (Layer 3): a community platform whose MCP server joins as a real client, with a live agent session transcript committed in the repo as the receipt. [Live demo](https://auroracommons.github.io/cohort/) · [Repository](https://github.com/auroracommons/cohort)
+- **Machine**, serving autonomy (Layer 5): machine learning built from scratch in NumPy: its transformer passes 7 of 7 gradient checks, and a published benchmark puts PyTorch at 4.13x per step at identical size. [Live demo](https://auroracommons.github.io/machine/) · [Repository](https://github.com/auroracommons/machine)
+- **Graph**, serving shared truth (Layer 4): knowledge graph extraction from plain text, measured on a hand labeled eval: entities F1 0.937, relations F1 0.605, failure cases published. [Live demo](https://auroracommons.github.io/graph/) · [Repository](https://github.com/auroracommons/graph)
+- **Lumen**, serving trust and meaning (Layer 6): a guarded question answering study over the Baltimore Catechism, a first exhibit from one tradition: refusal eval 12 of 12 blocked, 8 of 8 allowed. [Live demo](https://auroracommons.github.io/lumen/) · [Repository](https://github.com/auroracommons/lumen)
 
 Also here today:
 

@@ -2,6 +2,14 @@
 
 This is the public record of the work: what was done, what the proof shows, what broke, and what comes next. It is updated every work session, newest first, in plain language on purpose. If a claim anywhere in these projects cannot be traced to a logged run, the claim is wrong and the log is where it gets corrected.
 
+## October 15, 2026: the mission is the headline
+
+**What shipped.** The front door was reframed today, at the founder's correction. His point, plainly: the point is not the five projects. Aurora Commons exists to address the hierarchy of human needs through open source, drawn openly as The Ascent, and the profile and the front page now lead with that mission. The five projects are presented as what they are, early exhibits of the mission at work, each with its receipt, under a short Early exhibits heading. The method is stated beside the mission: build on proven open source codebases, never reinvent the wheel.
+
+**The proof.** Words and order only. The motto was adopted into the record in the founder's own words: Stand on the shoulders of giants. It now stands on the profile and in the front page hero. No number changed anywhere, and the dated entries below stand exactly as written.
+
+**What is next.** Unchanged: the twice daily evolution pass, the November 16, 2026 checkpoint, and the first Ledger entries from outside contributors.
+
 ## October 15, 2026: the specificity pass
 
 **What shipped.** The front doors now say what exists instead of what it means. This profile opens with the five projects as deliverables, one line each with the number that proves it, plus the other tangible things that exist today: the live demos, the Ledger, the Eval Challenge, and the published documents. The visual front page hero says the same in one breath. The Atlas, Cohort, and Lumen READMEs now open with their deliverable and its receipt; Machine and Graph already opened that way and were left alone.
