@@ -8,7 +8,7 @@ Hate and harm grow where needs have no legitimate path. So the work starts at th
 
 The ascent is layered because needs are layered. A person who is hungry and unsafe cannot study. A person who is fed but utterly alone is not well. A person surrounded by people but drowning in falsehood cannot choose freely. Read the layers from the ground up. Each one rests on the ones beneath it, and each project in the ecosystem serves the layer it stands on.
 
-And beneath the layers, the grain: every need on this map is lived by one person, on one ordinary day, in one kitchen, one classroom, one night shift. Sand is the truth of scale. Millions of single grains, each one a person. Work that forgets the grain becomes abstraction. Work that forgets the Ascent becomes noise. This ecosystem holds both.
+And beneath the layers, the grain: every need on this map is lived by one person, on one ordinary day, in one kitchen, one classroom, one night shift. Sand is the truth of scale. Millions of single grains, each one a person. Work that forgets the single person turns vague. Work that forgets the Ascent loses its direction. This ecosystem holds both.
 
 ## The layers
 
@@ -63,7 +63,7 @@ Proof standard: the refusal suite is reusable and public, so the boundary can be
 
 ## Above the Ascent: wants
 
-Needs are the floor. Wants are the life built on it: recognition for real work, achievement, play, beauty, wealth honestly earned, the standing that comes from contribution. The ecosystem serves wants through the same primitives, never by manufacturing desire or steering behavior in the dark. The contribution ledger exists for recognition. The open table exists for achievement. The rule is simple: wants are served in the open, on top of met needs, and never by exploiting the unmet needs underneath.
+Needs are the floor. Wants are the life built on it: recognition for real work, achievement, play, beauty, wealth honestly earned, the standing that comes from contribution. The ecosystem serves wants through the same basic tools, never by manufacturing desire or steering behavior in the dark. The contribution ledger exists for recognition. The open table exists for achievement. The rule is simple: wants are served in the open, on top of met needs, and never by exploiting the unmet needs underneath.
 
 ## The whole story in one breath
 

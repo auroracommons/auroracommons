@@ -46,7 +46,7 @@ A four year old and an eighty year old vote in all three classes. What changes w
 
 ## Deliberation everyone can enter
 
-Voting without understanding is a coin flip, so every structural and irreversible question ships with an information packet in the same several forms as the ballot: pictures, spoken explanation, plain language, full text, and the strongest argument on each side stated fairly by the side that holds it. For large decisions the Commons can also seat an assembly chosen by lot, with seats held across the whole age range of the membership, so the people reasoning together look like the people who will live with the result. The long term research thread of this ecosystem, an interface that stands between a person and the machines and works for the person's benefit, has its deepest use here: a ballot and an information packet shaped to the mind receiving them, whether that mind is four or ninety four.
+Voting without understanding is a coin flip, so every structural and irreversible question ships with an information packet in the same several forms as the ballot: pictures, spoken explanation, plain language, full text, and the strongest argument on each side stated fairly by the side that holds it. For large decisions the Commons can also seat an assembly chosen by lot, with seats held across the whole age range of the membership, so the people reasoning together look like the people who will live with the result. One long term research thread matters most here: a screen that stands between a person and the machines and works for that person's benefit. It would shape each ballot and information packet to the person reading it, whether that person is four or ninety four.
 
 ## One person, one record, no paperwork wall
 
@@ -58,7 +58,7 @@ The right to contribute is already the law of the open table, and this foundatio
 
 ## What this governs now, and what it does not
 
-Today this is the constitution of a voluntary commons, not a claim about any state's election law, and it says so plainly. It governs the Commons' own decisions: roadmap priorities, which good first issues get featured, story and design choices, adoption of new primitives, and the phase gate reviews. Phase 0 runs it as a pilot on real but reversible decisions and publishes the participation record by age band, including how the youngest voters used the ballots and what the anomaly reviews found. A working proof that a five year old can vote meaningfully and safely is worth more to the wider world than an argument that she should. The ecosystem's road has always been adoption earned by evidence, and its democracy travels the same road.
+Today this is the constitution of a voluntary commons, not a claim about any state's election law, and it says so plainly. It governs the Commons' own decisions: roadmap priorities, which good first issues get featured, story and design choices, adoption of new basic tools, and the phase gate reviews. Phase 0 runs it as a pilot on real but reversible decisions and publishes the participation record by age band, including how the youngest voters used the ballots and what the anomaly reviews found. A working proof that a five year old can vote meaningfully and safely is worth more to the wider world than an argument that she should. The ecosystem's road has always been adoption earned by evidence, and its democracy travels the same road.
 
 ## The tests
 

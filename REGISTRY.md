@@ -29,7 +29,7 @@ An individual's place holds the same shape at human scale: a chosen name, the la
 
 ## Standing is earned; existence is not
 
-The Registry separates two things that most systems confuse. A place is unconditional. Standing, how prominently an entity is featured, recommended, and trusted with shared resources, grows only with verified contribution recorded in the ledger, in proportion to the proof. Standing cannot be bought, and placement in the Registry is never for sale; ordering follows contribution and need, by methods published in the open. The largest actors on earth, the corporations, family offices, governments, and oligarchs the founder calls the fish, hold places on exactly these terms: welcome at the table, honored in proportion to what they verifiably give, and never able to purchase the map itself. That is the open table given an address.
+The Registry separates two things that most systems confuse. A place is unconditional. Standing grows only with verified contribution recorded in the ledger, in proportion to the proof. Standing is how prominently an entity is featured, recommended, and trusted with shared resources. Standing cannot be bought, and placement in the Registry is never for sale; ordering follows contribution and need, by methods published in the open. The largest actors on earth, the corporations, family offices, governments, and oligarchs the founder calls the fish, hold places on exactly these terms: welcome at the table, honored in proportion to what they verifiably give, and never able to buy the map itself. That is the open table given an address.
 
 ## Entities are born here, and none are erased
 
@@ -44,7 +44,7 @@ The Registry opens with its doors wide and its invitations stated honestly: invi
 - The digital public infrastructure builders: the Digital Public Goods Alliance, GovStack, and the public interest technology networks that help governments adopt open substrates, the road DHIS2 already traveled into more than seventy national health systems.
 - The great membership networks: education networks reaching more than 160 million learners, faith and service movements counting volunteers in the tens of millions, mutual aid federations, and the labor, cooperative, and professional associations whose members are the billions this Commons exists to serve.
 
-Each ring is invited to take a place, adopt a primitive, or simply be counted as a neighbor on the map. No relationship is claimed with any of them. The map is honest about which doors have been knocked on, which have opened, and which have not yet been reached.
+Each ring is invited to take a place, adopt a basic tool, or simply be counted as a neighbor on the map. No relationship is claimed with any of them. The map is honest about which doors have been knocked on, which have opened, and which have not yet been reached.
 
 ## Why a registry changes anything
 

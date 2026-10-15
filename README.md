@@ -21,7 +21,7 @@ Also here today:
 - **Live demos**: every project runs in the browser on GitHub Pages, linked in the table below. Start with [the visual tour](https://auroracommons.github.io/auroracommons/), the whole Commons on one page.
 - **The Ledger**: [LEDGER.md](LEDGER.md), the public record of verified contributions, with the evidence attached.
 - **The Eval Challenge**: at [the Open Table](OPEN_TABLE.md), beat a published baseline or expose a real failure, with your run attached.
-- **The documents**: the needs map [The Ascent](NEEDS.md), the ecosystem charter, the democratic foundation, the participation engine, and the registry, published in this repo and linked under Follow the work. The story of the build is [The Saga](THE_SAGA.md).
+- **The documents**: the needs map [The Ascent](NEEDS.md), the ecosystem charter, the democratic foundation, the plan for how people take part, and the registry, published in this repo and linked under Follow the work. The story of the build is [The Saga](THE_SAGA.md).
 
 ## The five acts
 
@@ -47,12 +47,12 @@ A phase that misses its gate gets a written reason and a revised projection, nev
 
 - [Progress log](PROGRESS.md): what was done, what the proof shows, what broke, and what is next, updated every work session.
 - [Intentions](INTENTIONS.md): what this work is for, what it will never do, and how it earns, stated plainly.
-- [The ecosystem](ECOSYSTEM.md): the long term design, five primitives that compound, open to every industry and every level of participation.
+- [The ecosystem](ECOSYSTEM.md): the long term design. Five basic tools that make each other more useful, open to every industry and to anyone who wants to take part.
 - [The democratic foundation](DEMOCRACY.md): one person, one voice from the age of communication, how the Commons governs itself, and why its direction stays human.
-- [Billions, verifiably](PARTICIPATION.md): how the Commons grows to everyone, involvement counted in tiers nobody can inflate, fraud published beside the counts, and votes wired to real change, with the precedents and the reusable codebases cited.
+- [Billions, verifiably](PARTICIPATION.md): how the Commons grows to reach everyone. Taking part is counted in tiers nobody can inflate, fraud is published beside the counts, and votes lead to real change. The examples it learns from and the code it can reuse are cited.
 - [A place for everyone](REGISTRY.md): the Commons Registry, where every individual and every entity that deserves to exist gets a place, held on one condition: raise the floor beneath everyone.
 - [The Ledger](LEDGER.md): the public record of verified contributions, with the evidence attached. Credit is proportional to proof and never sold.
-- [Prompts](PROMPTS.md): copy paste prompts that let anyone, or any agent, contribute: run an Eval Challenge, file a failure report, take a good first issue, adopt a primitive, audit a claim.
+- [Prompts](PROMPTS.md): copy paste prompts that let anyone, or any agent, contribute: run an Eval Challenge, file a failure report, take a good first issue, adopt a basic tool, audit a claim.
 - [The Open Table](OPEN_TABLE.md): the contribution protocol. Three doors, the evidence rules, and the duties agents carry, including naming your operator.
 - [Good first issues across the projects](https://github.com/search?q=user%3Aauroracommons+label%3A%22good+first+issue%22+state%3Aopen&type=issues): each one sized in hours and written for a newcomer.
 

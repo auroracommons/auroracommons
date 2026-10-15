@@ -1,6 +1,6 @@
 # Billions, Verifiably
 
-## The participation engine of the Aurora Commons
+## How people take part in the Aurora Commons
 
 Every load bearing claim in this document is sourced from published research and production systems, cited in line, because a plan to involve billions that begins by inflating its own numbers has already failed.
 
@@ -22,13 +22,13 @@ The precedents justify the discipline. OpenStreetMap reports about 10.6 million 
 
 ## The road: institutions already hold the billions
 
-No application reaches billions by being downloaded. Billions are reached through the institutions that already touch billions: schools, health systems, faith networks, employers, and public services. The Commons' road is the charter's road, adoption of primitives by those institutions, plus tables anyone can open locally under the same constitution, with every local ledger public and the global count a sum that anyone can recompute.
+No application reaches billions by being downloaded. Billions are reached through the institutions that already touch billions: schools, health systems, faith networks, employers, and public services. The Commons' road is the charter's road, adoption of basic tools by those institutions, plus tables anyone can open locally under the same constitution, with every local ledger public and the global count a sum that anyone can recompute.
 
-The scale precedents are real. DHIS2, an open source health information platform under a BSD license, runs inside national health systems across more than 70 countries, not because patients chose an app but because ministries adopted a substrate. The humanitarian mapping surge after the 2015 Nepal earthquake put more than 6,000 volunteers onto OpenStreetMap, mapping 80 percent of the affected zones and over a million buildings in about a month (reported in Scientific Reports). The reach of the great membership networks dwarfs any platform's marketing: the Red Cross and Red Crescent movement counts more than 17 million volunteers, Rotary about 1.24 million members, Lions about 1.4 million. The Commons does not compete with these. It invites them, through the registry described in the companion document, and offers them primitives worth adopting.
+The scale precedents are real. DHIS2, an open source health information platform under a BSD license, runs inside national health systems across more than 70 countries, not because patients chose an app but because ministries adopted a substrate. The humanitarian mapping surge after the 2015 Nepal earthquake put more than 6,000 volunteers onto OpenStreetMap, mapping 80 percent of the affected zones and over a million buildings in about a month (reported in Scientific Reports). The reach of the great membership networks dwarfs any platform's marketing: the Red Cross and Red Crescent movement counts more than 17 million volunteers, Rotary about 1.24 million members, Lions about 1.4 million. The Commons does not compete with these. It invites them, through the registry described in the companion document, and offers them basic tools worth adopting.
 
 ## The loop that brings people back
 
-Every primitive carries the same participation loop, each step small enough to take today:
+Every basic tool carries the same participation loop, each step small enough to take today:
 
 1. Use something genuinely useful, free, in your own language, on the cheapest phone, offline where the network demands it.
 2. Take a first step sized in minutes: answer, classify, report, vote.
@@ -44,11 +44,11 @@ The single clearest warning in the research is France. Its Citizens Convention f
 
 So the Commons binds itself in advance. Every vote states, before it opens, exactly what it controls and when the result takes effect: roadmap priorities, featured work, phase gate reviews, and from the first revenue, a participatory budget. Results are published with a simple line that cannot be fudged: what changed because of this vote. A vote that changes nothing is never held.
 
-## Participatory budgeting: the proven engine of real change
+## Participatory budgeting: how votes become real change
 
 When the question is whether mass participation moves real resources to real needs, one mechanism carries the strongest evidence on earth. Participatory budgeting began in Porto Alegre, Brazil, drawing more than 40,000 participants a year at its peak, and the measured results were physical: household sewer and water connections rose from about 75 percent in 1988 to about 98 percent in 1997, and studies across Brazilian municipalities found budget shares for health and sanitation rising measurably where budgeting opened to citizens (reported in World Development). Paris committed 500 million euros through its participatory budget between 2014 and 2020, with 127,880 voters in 2018. New York City's process put 38 million dollars to 67,000 voters in one cycle. Barcelona's Decidim based process counted 48,796 voters choosing 76 projects in 2025. Ireland shows the deliberative end of the same road: an assembly of 99 citizens chosen by lot led to the 2018 referendum that repealed the Eighth Amendment with 66.4 percent of the national vote, and Belgium's Ostbelgien made its lot drawn council permanent in 2019, with parliament required to respond.
 
-The Commons adopts participatory budgeting as its primary engine for turning votes into change, starting with its own first dollars and publishing every allocation. When people can watch a vote become a sewer, a tutor, or a meal, involvement stops being a metric and becomes a memory. Memories recruit.
+The Commons uses participatory budgeting as its main way of turning votes into change, starting with its own first dollars and publishing every allocation. When people can watch a vote become a sewer, a tutor, or a meal, involvement stops being a metric and becomes a memory. Memories recruit.
 
 ## Verification: how a stranger recounts us
 

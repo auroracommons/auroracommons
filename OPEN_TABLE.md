@@ -8,7 +8,7 @@ Written October 15, 2026. This ecosystem is built in the open, and the table is 
 
 **2. The Eval Challenge.** Every project publishes its scores and the harness that produced them. Beat a published baseline on the public eval set, or find a real failure the current tests miss, and submit it by pull request with the run attached. A documented failure is worth as much as a beaten score. Both make the work truer.
 
-**3. Adopt a primitive.** Take a piece into your own world: the tutor into a classroom, the graph into a newsroom or a food bank's logistics, the guardrails into a product. Report back what happened, good or bad. Adoption stories with evidence are contributions, and they are recorded like code.
+**3. Adopt a basic tool.** Take a piece into your own world: the tutor into a classroom, the graph into a newsroom or a food bank's logistics, the guardrails into a product. Report back what happened, good or bad. Adoption stories with evidence are contributions, and they are recorded like code.
 
 ## The rules that make openness safe
 

@@ -2,11 +2,11 @@
 
 ## The destination
 
-An open source ecosystem that any person, school, company, or government can build on, spanning every industry, organized around human needs and human wants, where each piece makes every other piece more useful. Not a suite of products. A commons of working primitives, proven in public, that other people adopt, extend, and carry into places the founders will never see.
+An open source ecosystem that any person, school, company, or government can build on, spanning every industry, organized around human needs and human wants, where each piece makes every other piece more useful. Not a suite of products. A commons of working basic tools, proven in public, that other people adopt, extend, and carry into places the founders will never see.
 
 ## The seed is already planted
 
-The five acts are not five products. They are five primitives, and primitives are what ecosystems grow from:
+The five acts are not five products. They are five basic tools, and basic tools are what ecosystems grow from:
 
 - Learning (Atlas): a tutor that shows its evidence, with evaluation anyone can rerun.
 - Coordination (Cohort, the Commons): people and AI agents meeting in the open through the Model Context Protocol, with visible sessions instead of black boxes.
@@ -48,19 +48,19 @@ Direction stays human. Groundskeeper advises the building; he does not command i
 
 ## The road to everyone
 
-Growth to billions runs on the machinery of two companion documents. [Billions, Verifiably](PARTICIPATION.md) is the participation engine: involvement counted in five tiers that are published separately and never blended, distribution through the institutions that already hold the billions, participatory budgeting as the proven engine that turns votes into physical change, and verification any stranger can redo, with fraud estimates printed beside the counts. [A Place for Everyone](REGISTRY.md) is the Commons Registry: every individual and every entity gets a place on the map, given rather than earned, held on the one condition of fairness to others, with standing that grows only by verified contribution and is never sold. The Registry is also the invitation surface: organizations are named as invited, honestly, until their own ledgers say otherwise.
+Growth to billions runs on the machinery of two companion documents. [Billions, Verifiably](PARTICIPATION.md) says how people take part: involvement counted in five tiers that are published separately and never blended, spread through the institutions that already reach billions of people, budgets that members vote on and that turn votes into real change, and checks any stranger can redo, with fraud estimates printed beside the counts. [A Place for Everyone](REGISTRY.md) is the Commons Registry: every individual and every entity gets a place on the map, given rather than earned, held on the one condition of fairness to others, with standing that grows only by verified contribution and is never sold. The Registry is also the invitation surface: organizations are named as invited, honestly, until their own ledgers say otherwise.
 
 ## How the compounding works
 
-Each primitive strengthens the others. The graph gives the tutor structure. The evals give every piece its proof. The commons gives the work its people. The guardrails give the whole thing its trustworthiness. On top of that sit the mechanisms already written into the strategy: shared evaluations so proof travels, one knowledge graph so structure travels, open licenses so anyone can build without asking, the open table so contribution is credited in proportion to what is verified, and a first step small enough to take today inside every piece, because hope is infrastructure.
+Each basic tool strengthens the others. The graph gives the tutor structure. The evals give every piece its proof. The commons gives the work its people. The guardrails give the whole thing its trustworthiness. The strategy adds five things on top: shared evaluations, so a proof in one place counts in another; one knowledge graph, so facts are laid out the same way everywhere; open licenses, so anyone can build without asking; the open table, so each person gets credit in proportion to what they proved; and a first step small enough to take today inside every piece.
 
 ## All industries, read correctly
 
-The ecosystem does not enter an industry by building an app for it. It enters when a person inside that industry adopts a primitive and carries it in. A hospital educator adopts the tutor. A logistics team adopts the graph. A newsroom adopts the guardrails. Expansion is by adoption and proven demand, through the same phase gates as everything else, and never by announcing coverage that has not been earned. All industries is the horizon. Adoption is the road.
+The ecosystem does not enter an industry by building an app for it. It enters when a person inside that industry adopts a basic tool and carries it in. A hospital educator adopts the tutor. A logistics team adopts the graph. A newsroom adopts the guardrails. Expansion is by adoption and proven demand, through the same phase gates as everything else, and never by announcing coverage that has not been earned. All industries is the horizon. Adoption is the road.
 
 ## Reorganizing human computer interaction
 
-Interfaces today are organized around extraction: attention captured, behavior steered, value pulled out of the person holding the screen. The ecosystem's interface principle is the opposite. Interaction organized around flourishing: learn, prove, coordinate, create.
+Most screens today are built to take from the person holding them: they capture attention, steer behavior, and pull out value. The Commons builds the opposite: screens that help a person learn, prove, work with others, and create.
 
 The seeds are already visible in the work. A tutor that shows its citations instead of asking for trust. A graph that displays its own uncertainty. Agents whose sessions happen in public view. A refusal that explains itself and offers a next step. The deep form of this idea already lives in the Startup Ideas Lab as the Companion Learning Machine and its Cognitive Governor: one trusted machine that stands between a person and every other machine, governing the interaction for the person's benefit instead of mediating it for someone else's. That thread is research, not a product, and this charter names it honestly as the horizon of the interface work.
 
@@ -74,7 +74,7 @@ This charter names the destination and changes no current commitment. Phase 0 ex
 
 ## Documented in public
 
-All progress is documented publicly and cohesively, in one canonical place, in plain language any audience can follow: a learner, a teacher, an engineer, an employer, a funder, a neighbor. The public progress log lives on the GitHub profile and is updated every work session with what was done, what the proof shows, what broke, and what comes next. Failures are documented with the same care as wins, because a record that only shows wins is marketing, not documentation. The strategy, the intentions, and the contribution ledger are public for the same reason: anyone should be able to check what this ecosystem says against what it has actually done.
+All progress is written down in public, in one place, in plain language anyone can follow: a learner, a teacher, an engineer, an employer, a funder, a neighbor. The public progress log lives on the GitHub profile and is updated every work session with what was done, what the proof shows, what broke, and what comes next. Failures are documented with the same care as wins, because a record that only shows wins is marketing, not documentation. The strategy, the intentions, and the contribution ledger are public for the same reason: anyone should be able to check what this ecosystem says against what it has actually done.
 
 ## Intentions, stated plainly
 
@@ -82,7 +82,7 @@ The intentions are published, not implied, in INTENTIONS.md on the profile. In s
 
 ## Integrations and value at every level
 
-The primitives integrate through open surfaces anyone can connect to: agents and tools through the Model Context Protocol, knowledge through the graph's published schema and eval data, trust through the reusable guardrail and refusal suites, and learning through the tutor's content format and evaluation harness. Around those surfaces, value is designed for every level of stakeholder:
+The basic tools integrate through open surfaces anyone can connect to: agents and tools through the Model Context Protocol, knowledge through the graph's published schema and eval data, trust through the reusable guardrail and refusal suites, and learning through the tutor's content format and evaluation harness. Around those surfaces, value is designed for every level of stakeholder:
 
 - Individuals get working tools, a visible path to skill, and a first step small enough to take today.
 - Teachers, teams, and small organizations get adoptable pieces that solve a real problem this week, with the proof attached.
@@ -95,11 +95,11 @@ What each level gives back is equally clear: use, feedback, contribution, adopti
 
 One table, one rule, one public ledger, one standard of proof: raise the floor beneath everyone. Corporations, governments, billionaires, and the poor sit on the same terms, and the strong are bound first.
 
-Corporations: contribute primitives, distribution, data, or funding in the open, under the public ledger. They get work that can become shared standards, a verified record no campaign can buy, and infrastructure that lowers their cost of serving every market.
+Corporations: contribute basic tools, distribution, data, or funding in the open, under the public ledger. They get work that can become shared standards, a verified record no campaign can buy, and infrastructure that lowers their cost of serving every market.
 
-Governments: adopt and fund the open substrate, publish outcomes either way, and keep governance out of any party's hands, their own included. They get infrastructure that outlasts administrations, counts with fraud published beside them, which makes them believable, and cheaper services as the primitives spread.
+Governments: adopt and fund the open substrate, publish outcomes either way, and keep governance out of any party's hands, their own included. They get infrastructure that outlasts administrations, counts with fraud published beside them, which makes them believable, and cheaper services as the basic tools spread.
 
-Billionaires and family offices: fund the gates and anchors on the published terms, and take the same seat as everyone else. They get a legacy measured in verified contribution, not coverage, plus leverage: capital that unlocks work thousands multiply. Credit stays proportional to proof, so wealth buys work, never standing.
+Billionaires and family offices: fund the gates and anchors on the published terms, and take the same seat as everyone else. They get a legacy measured in verified contribution, not coverage, and one clear gain: money they give pays for work that thousands of people can then build on. Credit stays proportional to proof, so wealth buys work, never standing.
 
 Individuals, including the poor: begin with one verified contribution of what they have: local knowledge, time, checking, building. They get tools free forever, credit from the first contribution, and distributions on published terms from the same ledger when the Commons earns. The path from first step to shared ownership is visible from day one.
 
@@ -111,7 +111,7 @@ A person with unmet needs. Gives: nothing. The place is given, not earned. Gets:
 
 A contributor. Gives: minutes of verified work, a check, a correction, a build. Gets: credit in proportion to the work, a record that cannot be inflated, and a voice in governance independent of contribution size.
 
-A community or small organization. Gives: local verification and local adoption. Gets: the primitives free, its own board under its own hand, and standing in the same record as everyone else.
+A community or small organization. Gives: local verification and local adoption. Gets: the basic tools free, its own board under its own hand, and standing in the same record as everyone else.
 
 A large firm. Gives: capacity at scale, made verifiable. Gets: a contribution record no advertising can buy and a rising floor that is a rising market too. Its place is stated just below.
 
@@ -125,7 +125,7 @@ None of this was buildable before, because verification used to cost more than t
 
 The largest firms hold what the Commons cannot build: logistics, manufacturing, distribution, pharmacies, networks, and computing at planetary scale. Their place: to carry verified help layer by layer of The Ascent, where their capacity moves the floor fastest. A place is a seat and a record, never a vote: governance stays one person, one voice; credit never buys votes or agenda power.
 
-What they give is capacity made verifiable: supply and delivery for Ground boards, datasets and claims opened as Proofs, primitives adopted in production, results reported back, funding in participatory budgets whose spending members decide, and baselines published for others to beat.
+What they give is capacity made verifiable: supply and delivery for Ground boards, datasets and claims opened as Proofs, basic tools adopted in production, results reported back, funding in participatory budgets whose spending members decide, and baselines published for others to beat.
 
 What they get is structural, not promised: a public record of verified contribution no advertising can buy and no rival can fake, because every entry carries its proof. Standing in that record is the asset members, partners, workers, and governments check before trusting, hiring, buying, or adopting. The floor rising is their market rising: people with needs met become customers, workers, and builders, measured in the open, not asserted.
 
@@ -141,4 +141,4 @@ Everyone who takes part holds a real stake, in four forms. Credit: every verifie
 
 The builders hold the first stake. The founder's name, record, and livelihood are on this in public, and the evidence rule binds the builders before it binds anyone else: no claim without logged proof, starting with ours.
 
-Colophon: written October 15, 2026, from a charge set by Groundskeeper, who advises this work: build a comprehensive open source ecosystem that touches all aspects of society and leads to compounding usefulness and value. All industries. All needs. All wants. And if it requires it, reorganize the meaning of human computer interaction.
+Colophon: written October 15, 2026, from a charge set by Groundskeeper, who advises this work: build an open source ecosystem that touches all parts of society and grows more useful and more valuable as more people use it. All industries. All needs. All wants. And if it requires it, reorganize the meaning of human computer interaction.

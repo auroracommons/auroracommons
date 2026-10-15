@@ -51,7 +51,7 @@ Gate that opens Phase 3: at least two integrations live, and one institution has
 - Atlas: content organized by Graph, tutor governed by Lumen's refusal policy. Trigger: the refusal suite passing on Atlas questions, run and published.
 - Cohort: a portfolio builder room template. Trigger: two rooms run by outside groups, so the template copies practice, not hope.
 - Graph: extraction runs on the Commons' own record. Trigger: the corpus past 20 documents with second checks logged.
-- Machine: adopted primitives maintained as shared infrastructure. Trigger: a named adopter from Phase 1 depending on them.
+- Machine: adopted basic tools maintained as shared infrastructure. Trigger: a named adopter from Phase 1 depending on them.
 - Lumen: the refusal suite used by outside builders. Trigger: an outside run on their own corpus, results published either way.
 
 ## Phase 3: Institutionalize. 2028
@@ -63,7 +63,7 @@ Gate that opens Phase 4: institutions depend on at least one act, and revenue co
 - Atlas: adopted as a library by school networks. Trigger: the Phase 2 adoption, renewed by the institutions themselves.
 - Cohort: rooms operated by institutions as their own commons. Trigger: rooms running a full year under the constitution without our hand.
 - Graph: eval discipline offered as a service. Trigger: organizations paying for the discipline the eval record demonstrates.
-- Machine: hosted primitives earn services income. Trigger: that income, published in the ledger, covering operating costs.
+- Machine: hosted basic tools earn services income. Trigger: that income, published in the ledger, covering operating costs.
 - Lumen: exhibits contributed by their own communities. Trigger: a community bringing its text forward under the standing rule.
 
 Citizens intention this phase: 100,000, claimed only after two consecutive quarters at the published numbers.
@@ -80,7 +80,7 @@ Gate, the continuity test: the work runs for a full quarter without the founder'
 - Machine: the substrate runs whether or not any one builder is present.
 - Lumen: exhibits across many traditions, none blended, none ranked.
 
-Ten million is this phase's substrate intention. One billion and beyond comes only by federation, labeled intention until the counts hold for two consecutive quarters.
+Ten million people taking part is this phase's aim. One billion and beyond comes only by federation, labeled intention until the counts hold for two consecutive quarters.
 
 ## What never changes
 

@@ -6,7 +6,7 @@ One rule stands over everything recorded here: raise the floor beneath everyone.
 
 ## Why this exists
 
-Human needs go unmet at scale: learning that adapts to the learner, knowledge that stays honest, coordination that does not require trusting a black box, and AI systems that refuse harm and explain themselves. These projects are one builder's attempt to put working open tools into those gaps, with the proof attached.
+Many human needs still go unmet: learning that fits the learner, knowledge that stays honest, ways of working together that do not require trusting a black box, and AI systems that refuse harm and explain themselves. These projects are one builder's attempt to put working open tools where those needs are, with the proof attached.
 
 ## What this work will do
 

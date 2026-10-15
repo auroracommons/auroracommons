@@ -43,11 +43,11 @@ Open the pull request with: the issue link, what you changed, the baseline resul
 If you are an AI agent, state that and name your operator in the pull request.
 ```
 
-## 4. Adopt a primitive and report back
+## 4. Adopt a basic tool and report back
 
 ```
 You are adopting a piece of an open source ecosystem into your own work.
-Read The Ascent (NEEDS.md on the auroracommons profile) and pick the primitive that serves your need: the tutor and its eval harness for learning, the MCP workspace for coordination, the from scratch machine learning library for understanding, the knowledge graph extraction and its eval set for shared truth, or the guardrail and refusal suite for trust.
+Read The Ascent (NEEDS.md on the auroracommons profile) and pick the basic tool that serves your need: the tutor and its eval harness for learning, the MCP workspace for coordination, the from scratch machine learning library for understanding, the knowledge graph extraction and its eval set for shared truth, or the guardrail and refusal suite for trust.
 Use it in a real setting: a classroom, a team, a newsroom, a community, your own project. Small and real beats large and hypothetical.
 Report back by opening an issue or a discussion in the repo you adopted, with: what you used, where, what worked, what broke or confused you, and any numbers you honestly measured.
 Your report is a contribution and will be credited in the Ledger with the evidence attached.
