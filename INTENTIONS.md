@@ -2,6 +2,8 @@
 
 Stated plainly, in public, so anyone can hold this work to them.
 
+One rule stands over everything recorded here: be fair to others. It is the only moral law of the Commons, and every intention below is that rule at work.
+
 ## Why this exists
 
 Human needs go unmet at scale: learning that adapts to the learner, knowledge that stays honest, coordination that does not require trusting a black box, and AI systems that refuse harm and explain themselves. These projects are one builder's attempt to put working open tools into those gaps, with the proof attached.

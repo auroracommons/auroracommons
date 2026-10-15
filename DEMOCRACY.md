@@ -4,6 +4,14 @@
 
 Written October 15, 2026, from Joshua Thomas's direction: make the foundation more democratic, and figure out how to actually give every human the rights to vote and to contribute.
 
+## The one rule
+
+Over everything in this document stands a single moral law, the only one the Commons has: be fair to others.
+
+Every mechanism described below, ballots, tiers, ledgers, enrollment, exists to serve that rule, and any of them that cannot justify itself by it does not bind. Interpretations of the rule are kept in a public casebook of decided questions with their reasons, so that fair comes to mean something checkable rather than whatever the loudest voice in the room prefers. Hard cases are decided by the members through the deliberation and voting machinery in this document, with the reasoning published. The rule binds members toward everyone, member or stranger, and it binds the strong first of all: a founder, a sponsor, and an anchor are held to it before a newcomer is.
+
+A place in the Commons is lost for one reason only: unfairness to others, proven in the open. And fairness governs that judgment too. Consequence stays in proportion to the verified harm, repair is offered before removal, and a road back stands open to anyone who makes the harm good. Nobody is reduced to their worst act. That is the whole law. It is short enough for the youngest citizen of the Commons to learn by heart, because she will hear it in her own words: be fair to others.
+
 ## The rule
 
 Every human who can communicate a preference holds one vote in the Commons and an equal right to contribute. That capacity usually arrives around age three. It is the only franchise test there is. No vote is earned by money, credentials, output, or age beyond the ability to say, in any form, this one, not that one. A vote cannot be bought, sold, lent, inherited, or weighted. Contribution is open wider still, to every human and to agents working under a named human operator, because building and governing are different rights and this document keeps them separate on purpose.
