@@ -5,6 +5,21 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Aurora Commons</title>
 <meta name="description" content="Aurora Commons addresses the hierarchy of human needs through open source. Seven layers of need, seven working acts, every number on this page inside a sentence that says what was counted and where to check it.">
+<meta name="theme-color" content="#fbfaf7">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Aurora Commons">
+<meta property="og:title" content="Aurora Commons">
+<meta property="og:description" content="Aurora Commons addresses the hierarchy of human needs through open source.">
+<meta property="og:url" content="https://auroracommons.github.io/auroracommons/">
+<meta property="og:image" content="https://auroracommons.github.io/auroracommons/assets/aurora-logo.png">
+<meta property="og:image:width" content="1600">
+<meta property="og:image:height" content="1600">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Aurora Commons">
+<meta name="twitter:description" content="Aurora Commons addresses the hierarchy of human needs through open source.">
+<meta name="twitter:image" content="https://auroracommons.github.io/auroracommons/assets/aurora-logo.png">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -167,6 +182,9 @@
      Check it source links. Nothing else on the page carries it. */
   .rub{color:var(--rub)}
   .row .links a.check{color:var(--rub)}
+  .row .links .share{font:inherit;font-weight:700;font-size:15px;min-width:44px;min-height:44px;
+    background:none;border:0;padding:0;color:var(--ink);cursor:pointer;text-align:left}
+  .row .links .share:hover{text-decoration:underline}
   .legend{font-size:13.5px;color:#4c4234;margin:12px 2px 18px}
 
   /* THE DOORS */
@@ -252,6 +270,7 @@
     <div class="links">
       <a class="see" href="https://auroracommons.github.io/ground/">See it</a>
       <a href="https://github.com/auroracommons/ground" class="check">Check it</a>
+      <button type="button" class="share" data-share data-title="Aurora Commons" data-text="Ground, the body: food, shelter, health, safety. One layer of Aurora Commons." data-url="https://auroracommons.github.io/auroracommons/#layer-0">Share</button>
     </div>
   </article>
 
@@ -265,6 +284,7 @@
     <div class="links">
       <a class="see" href="https://auroracommons.github.io/still/">See it</a>
       <a href="https://github.com/auroracommons/still" class="check">Check it</a>
+      <button type="button" class="share" data-share data-title="Aurora Commons" data-text="Still, the mind at peace. One layer of Aurora Commons." data-url="https://auroracommons.github.io/auroracommons/#layer-1">Share</button>
     </div>
   </article>
 
@@ -278,6 +298,7 @@
     <div class="links">
       <a class="see" href="https://auroracommons.github.io/atlas/">See it</a>
       <a href="https://github.com/auroracommons/atlas" class="check">Check it</a>
+      <button type="button" class="share" data-share data-title="Aurora Commons" data-text="Atlas, learning. One layer of Aurora Commons." data-url="https://auroracommons.github.io/auroracommons/#layer-2">Share</button>
     </div>
   </article>
 
@@ -291,6 +312,7 @@
     <div class="links">
       <a class="see" href="https://auroracommons.github.io/cohort/">See it</a>
       <a href="https://github.com/auroracommons/cohort" class="check">Check it</a>
+      <button type="button" class="share" data-share data-title="Aurora Commons" data-text="Cohort, belonging. One layer of Aurora Commons." data-url="https://auroracommons.github.io/auroracommons/#layer-3">Share</button>
     </div>
   </article>
 
@@ -304,6 +326,7 @@
     <div class="links">
       <a class="see" href="https://auroracommons.github.io/graph/">See it</a>
       <a href="https://github.com/auroracommons/graph" class="check">Check it</a>
+      <button type="button" class="share" data-share data-title="Aurora Commons" data-text="Graph, shared truth. One layer of Aurora Commons." data-url="https://auroracommons.github.io/auroracommons/#layer-4">Share</button>
     </div>
   </article>
 
@@ -317,6 +340,7 @@
     <div class="links">
       <a class="see" href="https://auroracommons.github.io/machine/">See it</a>
       <a href="https://github.com/auroracommons/machine" class="check">Check it</a>
+      <button type="button" class="share" data-share data-title="Aurora Commons" data-text="Machine, autonomy. One layer of Aurora Commons." data-url="https://auroracommons.github.io/auroracommons/#layer-5">Share</button>
     </div>
   </article>
 
@@ -330,6 +354,7 @@
     <div class="links">
       <a class="see" href="https://auroracommons.github.io/lumen/">See it</a>
       <a href="https://github.com/auroracommons/lumen" class="check">Check it</a>
+      <button type="button" class="share" data-share data-title="Aurora Commons" data-text="Lumen, trust and meaning. One layer of Aurora Commons." data-url="https://auroracommons.github.io/auroracommons/#layer-6">Share</button>
     </div>
   </article>
 </section>
@@ -373,5 +398,16 @@
 
 <p class="wrap ending">That is everything. The page ends here.</p>
 
+<script>
+document.addEventListener("click", function(e){
+  var b = e.target && e.target.closest ? e.target.closest("[data-share]") : null;
+  if (!b) return;
+  var d = { title: b.getAttribute("data-title"), text: b.getAttribute("data-text"), url: b.getAttribute("data-url") };
+  if (navigator.share) { navigator.share(d).catch(function(){}); return; }
+  var old = b.textContent;
+  function done(){ b.textContent = "Link copied"; setTimeout(function(){ b.textContent = old; }, 2000); }
+  if (navigator.clipboard && navigator.clipboard.writeText) { navigator.clipboard.writeText(d.text + " " + d.url).then(done, done); }
+});
+</script>
 </body>
 </html>
