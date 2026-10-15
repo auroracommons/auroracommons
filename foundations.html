@@ -8,8 +8,7 @@
 <style>
   :root{
     --bg:#fbfaf7; --ink:#1b1e23; --soft:#5a6068; --line:#e4e0d6;
-    --card:#ffffff; --accent:#2e5d43; --accent-ink:#ffffff;
-    --chip:#eef3f0; --dawn:#e8a33d; --open:#9a7b2d;
+    --accent:#2e5d43; --rub:#9e2b25;
   }
   *{box-sizing:border-box}
   body{margin:0;background:var(--bg);color:var(--ink);
@@ -19,37 +18,66 @@
   header{padding:64px 0 4px;text-align:center}
   h1{font-size:52px;letter-spacing:-1.5px;margin:14px 0 8px;font-weight:800}
   .tag{font-size:19px;color:var(--soft);max-width:600px;margin:0 auto}
-  section{padding:46px 0 4px}
-  h2{font-size:25px;letter-spacing:-.5px;margin:0 0 22px;text-align:center}
-  .acts{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:16px}
-  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px}
-  .card .need{color:var(--accent);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.7px}
-  .stat{font-size:30px;font-weight:800;letter-spacing:-.5px;margin-top:10px;line-height:1.2}
-  .card p.finding{margin:12px 0 0;font-size:15.5px;color:#33373d}
-  .card p.why{margin:10px 0 0;font-size:15px;color:var(--ink)}
-  .card p.cite{margin:14px 0 0;font-size:13px;color:var(--soft)}
-  .btns{margin-top:12px;display:flex;gap:8px}
-  .btn{display:inline-block;text-decoration:none;font-size:14px;font-weight:600;
-    padding:7px 14px;border-radius:8px;border:1px solid var(--accent);color:var(--accent)}
-  .btn.solid{background:var(--accent);color:var(--accent-ink)}
+  .runline{font-size:17px;margin:18px auto 0;max-width:600px}
   footer{padding:54px 0 62px;margin-top:46px;border-top:1px solid var(--line);
     color:var(--soft);font-size:14px;text-align:center}
   footer a{color:var(--accent);text-decoration:none;font-weight:600}
+  .endline{text-align:center;font-size:15px;color:var(--ink);margin:0;padding:0 0 54px}
 
   .commons-bar{max-width:980px;margin:0 auto;padding:30px 20px 6px;font-size:14.5px;line-height:2}
   .commons-bar .brand{font-weight:800;color:var(--ink);text-decoration:none;font-size:16px}
   .commons-bar a{color:var(--accent);text-decoration:none;font-weight:600}
   .commons-bar a:hover{text-decoration:underline}
   .commons-bar .current{font-weight:700;color:var(--soft)}
-  #domain-strip{position:sticky;top:0;z-index:5;background:var(--bg);
-    display:flex;flex-wrap:wrap;gap:8px 4px;padding:16px 0 18px;border-bottom:1px solid var(--line)}
-  #domain-strip a{font-size:13px;font-weight:600;color:var(--accent);text-decoration:none;
-    margin-right:20px}
-  #domain-strip a:hover{text-decoration:underline}
-  #domain-strip a.on{color:var(--ink);font-weight:800;text-decoration:underline}
-  #paper-count{text-align:center;color:var(--soft);font-size:15px;margin:20px 0 0}
-  .card .start{font-size:11.5px;font-weight:700;text-transform:uppercase;
-    letter-spacing:.9px;color:var(--open);margin-bottom:10px}
+
+  /* The demonstrations: plain instruments, run by the visitor. */
+  .demo{border-top:1px solid var(--line);padding:38px 0 10px;margin-top:38px}
+  .demo h3{font-size:22px;letter-spacing:-.4px;margin:0 0 4px;font-weight:800}
+  .demo .do{font-size:16px;margin:0 0 6px}
+  .demo .unit{font-size:14px;color:var(--soft);margin:0 0 18px;max-width:620px}
+  .readout{font-size:16px;margin:14px 0 0}
+  .num{font-weight:700;font-variant-numeric:tabular-nums}
+  button.run{font:inherit;font-size:15px;font-weight:600;background:none;color:var(--ink);
+    border:1px solid var(--ink);border-radius:0;padding:7px 18px;cursor:pointer;margin-top:16px}
+  button.run:disabled{color:var(--soft);border-color:var(--soft);cursor:default}
+  button.run:focus-visible,a:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
+  .result{font-size:16.5px;margin:18px 0 0;max-width:640px}
+  .seal{font-size:13px;color:var(--soft);margin:12px 0 0}
+  .seal a{color:var(--accent);text-decoration:none;font-weight:600}
+  .seal a:hover{text-decoration:underline}
+  .checklink{font-size:14.5px;margin:6px 0 0}
+  .checklink a{color:var(--accent);text-decoration:none;font-weight:600}
+  .checklink a:hover{text-decoration:underline}
+  /* Rubrication: one manuscript red, reserved for proof marks alone:
+     the numerals inside result lines and the years inside seals. */
+  .rub{color:var(--rub)}
+  /* Isotype marks: one mark per unit counted. */
+  .marks{line-height:0;max-width:640px}
+  .marks span{display:inline-block;width:10px;height:10px;border:1.5px solid var(--ink);
+    background:transparent;margin:0 4px 4px 0}
+  .marks span.on{background:var(--ink)}
+  /* Tracks and bars. */
+  .tracklabel{font-size:15px;margin:14px 0 4px}
+  .track{height:14px;border:1px solid var(--line);max-width:640px}
+  .track .fill{height:100%;background:var(--ink);width:0}
+  /* The ties field: 100 people, lines drawn between them. */
+  .field{position:relative;max-width:360px}
+  .field svg{position:absolute;inset:0;width:100%;height:100%}
+  .field svg line{stroke:var(--ink);stroke-width:.4;opacity:.45}
+  .people{display:grid;grid-template-columns:repeat(10,1fr)}
+  .people .cell{aspect-ratio:1;display:flex;align-items:center;justify-content:center}
+  .people .cell span{display:block;width:46%;aspect-ratio:1;border:1.5px solid var(--ink);background:transparent}
+  .people .cell span.on{background:var(--ink)}
+
+  /* The index: one ruled line per paper. */
+  .index-head{padding:64px 0 4px}
+  .index-head h2{font-size:25px;letter-spacing:-.5px;margin:0 0 8px;font-weight:800}
+  .index-head .count{color:var(--soft);font-size:15px;margin:0}
+  .domain{padding:34px 0 0}
+  .domain h2{font-size:19px;letter-spacing:-.3px;margin:0 0 6px;font-weight:800}
+  .paper{border-top:1px solid var(--line);padding:11px 0}
+  .paper p{margin:0;font-size:15.5px;max-width:760px}
+  .paper .seal{font-size:13px}
   @media (max-width:560px){h1{font-size:38px}}
 </style>
 </head>
@@ -74,292 +102,201 @@
   </svg>
   <h1>Foundations</h1>
   <p class="tag">The measured research under the Commons. Every claim shows its source. Check any of them.</p>
+  <p class="runline">Five findings you can run. Each takes under a minute and ends.</p>
 </header>
 
-<nav id="domain-strip" aria-label="Foundations domains">
-  <a href="foundations.html" data-filter="">All</a>
-  <a href="#poverty-and-material-security" data-filter="poverty-and-material-security">Poverty and material security</a>
-  <a href="#economics-and-incentives" data-filter="economics-and-incentives">Economics and incentives</a>
-  <a href="#governance-and-democracy" data-filter="governance-and-democracy">Governance and democracy</a>
-  <a href="#health-and-the-body" data-filter="health-and-the-body">Health and the body</a>
-  <a href="#mind-and-mental-health" data-filter="mind-and-mental-health">Mind and mental health</a>
-  <a href="#meaning-values-and-flourishing" data-filter="meaning-values-and-flourishing">Meaning, values, and human flourishing</a>
-  <a href="#learning-and-education" data-filter="learning-and-education">Learning and education</a>
-  <a href="#language-and-communication" data-filter="language-and-communication">Language and communication</a>
-  <a href="#artificial-intelligence-and-human-computer-interaction" data-filter="artificial-intelligence-and-human-computer-interaction">Artificial intelligence and human computer interaction</a>
-  <a href="#belonging-and-social-connection" data-filter="belonging-and-social-connection">Belonging and social connection</a>
-  <a href="#cooperation-and-collective-action" data-filter="cooperation-and-collective-action">Cooperation and collective action</a>
-  <a href="#truth-and-shared-knowledge" data-filter="truth-and-shared-knowledge">Truth and shared knowledge</a>
-</nav>
-<p id="paper-count">24 papers in 12 domains</p>
+<section class="demo" id="demo-cash">
+  <h3>Cash transfers, Kenya</h3>
+  <p class="do">Tap run.</p>
+  <p class="unit">This instrument counts in the study's own units: PPP dollars per household per month. Each mark is one dollar of the rise.</p>
+  <div class="marks" id="cash-marks" aria-hidden="true"></div>
+  <p class="readout">Average monthly household consumption: <span class="num" id="cash-num">158</span> PPP dollars</p>
+  <button class="run" id="cash-btn" type="button">Run</button>
+  <p class="result" id="cash-result" aria-live="polite" hidden>Done. Unconditional cash transfers in Kenya raised average monthly household consumption from <span class="rub">158</span> to <span class="rub">193</span> PPP dollars per household per month, counted nine months after the transfers began.</p>
+  <p class="seal">Johannes Haushofer and Jeremy Shapiro, <span class="rub">2016</span>, Quarterly Journal of Economics. <a href="https://doi.org/10.1093/qje/qjw025">Source</a></p>
+  <p class="checklink"><a href="https://github.com/auroracommons/auroracommons/issues/new?template=check-a-claim.md&amp;title=Check%20a%20claim%3A%20cash%20transfers%2C%20Kenya">Check this claim</a></p>
+</section>
 
-<section id="poverty-and-material-security" data-domain="Poverty and material security">
+<section class="demo" id="demo-race">
+  <h3>False news travels faster</h3>
+  <p class="do">Tap run.</p>
+  <p class="unit">Counts here are people reached in this demonstration. Both stories start at the same moment, and each runs at the speed the study measured.</p>
+  <p class="tracklabel">False <span class="num" id="race-false-num">0</span> people</p>
+  <div class="track"><div class="fill" id="race-false-fill"></div></div>
+  <p class="tracklabel">True <span class="num" id="race-true-num">0</span> people</p>
+  <div class="track"><div class="fill" id="race-true-fill"></div></div>
+  <button class="run" id="race-btn" type="button">Run</button>
+  <p class="result" id="race-result" aria-live="polite" hidden>Done. Tracking about <span class="rub">126,000</span> story cascades shared by some <span class="rub">3 million</span> people, false stories were <span class="rub">70 percent</span> more likely to be retweeted than true ones, and false stories reached <span class="rub">1,500</span> people about <span class="rub">six</span> times faster.</p>
+  <p class="seal">Soroush Vosoughi, Deb Roy, and Sinan Aral, <span class="rub">2018</span>, Science. <a href="https://news.mit.edu/2018/study-twitter-false-news-travels-faster-true-stories-0308">Source</a></p>
+  <p class="checklink"><a href="https://github.com/auroracommons/auroracommons/issues/new?template=check-a-claim.md&amp;title=Check%20a%20claim%3A%20false%20news%20travels%20faster">Check this claim</a></p>
+</section>
+
+<section class="demo" id="demo-ties">
+  <h3>Connection and survival</h3>
+  <p class="do">Tap add ties. Each tap adds ten ties between the people below.</p>
+  <p class="unit">Counts here are people and ties in this demonstration: 100 people, up to 100 ties. The survival readout is counted from 100 for people with weaker ties, in this demonstration.</p>
+  <div class="field">
+    <svg id="ties-svg" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"></svg>
+    <div class="people" id="ties-people"></div>
+  </div>
+  <p class="readout">Ties: <span class="num" id="ties-num">0</span> of 100. People connected: <span class="num" id="ties-conn">0</span> of 100. Likelihood of survival: <span class="num" id="ties-index">100</span></p>
+  <button class="run" id="ties-btn" type="button">Add ties</button>
+  <p class="result" id="ties-result" aria-live="polite" hidden>Done. Across <span class="rub">148</span> studies covering <span class="rub">308,849</span> people, people with stronger social relationships had a <span class="rub">50 percent</span> greater likelihood of survival.</p>
+  <p class="seal">Julianne Holt-Lunstad, Timothy B. Smith, and J. Bradley Layton, <span class="rub">2010</span>, PLOS Medicine. <a href="https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.1000316">Source</a></p>
+  <p class="checklink"><a href="https://github.com/auroracommons/auroracommons/issues/new?template=check-a-claim.md&amp;title=Check%20a%20claim%3A%20connection%20and%20survival">Check this claim</a></p>
+</section>
+
+<section class="demo" id="demo-cards">
+  <h3>Citizen report cards, Uganda</h3>
+  <p class="do">Tap run.</p>
+  <p class="unit">Counts here are an index in this demonstration: deaths before monitoring are counted as 100, so the fall the study measured reads as 67.</p>
+  <p class="tracklabel">Before community monitoring <span class="num">100</span></p>
+  <div class="track"><div class="fill" style="width:100%"></div></div>
+  <p class="tracklabel">After one year of community monitoring <span class="num" id="cards-num">100</span></p>
+  <div class="track"><div class="fill" id="cards-fill" style="width:100%"></div></div>
+  <button class="run" id="cards-btn" type="button">Run</button>
+  <p class="result" id="cards-result" aria-live="polite" hidden>Done. One year after communities in Uganda began monitoring local health clinics with citizen report cards, deaths among children under five were <span class="rub">33 percent</span> lower in the communities that monitored than in the comparison communities.</p>
+  <p class="seal">Martina Björkman and Jakob Svensson, <span class="rub">2009</span>, Quarterly Journal of Economics. <a href="https://reliefweb.int/report/uganda/power-people-evidence-randomized-field-experiment-community-based-monitoring-project">Source</a></p>
+  <p class="checklink"><a href="https://github.com/auroracommons/auroracommons/issues/new?template=check-a-claim.md&amp;title=Check%20a%20claim%3A%20citizen%20report%20cards%2C%20Uganda">Check this claim</a></p>
+</section>
+
+<section class="demo" id="demo-ai">
+  <h3>AI help and novices</h3>
+  <p class="do">Tap run.</p>
+  <p class="unit">Counts here are issues resolved per hour in this demonstration. Each row starts at 100, its own count without the assistant, and rises by the share the study measured.</p>
+  <p class="tracklabel">Average worker <span class="num" id="ai-avg-num">100</span> issues per hour</p>
+  <div class="track"><div class="fill" id="ai-avg-fill" style="width:74.6%"></div></div>
+  <p class="tracklabel">Novice worker <span class="num" id="ai-nov-num">100</span> issues per hour</p>
+  <div class="track"><div class="fill" id="ai-nov-fill" style="width:74.6%"></div></div>
+  <button class="run" id="ai-btn" type="button">Run</button>
+  <p class="result" id="ai-result" aria-live="polite" hidden>Done. Among <span class="rub">5,179</span> customer support agents, an AI assistant raised issues resolved per hour by <span class="rub">14 percent</span> on average and by <span class="rub">34 percent</span> for novice and low skilled workers. The novice gained more, so the gap between the bottom and the middle shrank.</p>
+  <p class="seal">Erik Brynjolfsson, Danielle Li, and Lindsey R. Raymond, <span class="rub">2025</span>, Quarterly Journal of Economics. <a href="https://doi.org/10.3386/w31161">Source</a></p>
+  <p class="checklink"><a href="https://github.com/auroracommons/auroracommons/issues/new?template=check-a-claim.md&amp;title=Check%20a%20claim%3A%20AI%20help%20and%20novices">Check this claim</a></p>
+</section>
+
+<section class="index-head">
+  <h2>The full record, one line each</h2>
+  <p class="count">47 papers in 24 domains. Each in one line, with its source as a seal.</p>
+</section>
+
+<section class="domain" id="poverty-and-material-security">
   <h2>Poverty and material security</h2>
-  <div class="acts">
-    <div class="card">
-      <div class="start">Start here</div>
-      <div class="start">Start here</div>
-      <div class="start">Start here</div>
-      <div class="start">Start here</div>
-      <div class="start">Start here</div>
-      <div class="need">Poverty and material security</div>
-      <div class="stat">158 to 193 PPP dollars</div>
-      <p class="finding">Unconditional cash transfers raised average monthly household consumption from 158 to 193 PPP dollars nine months after the transfers began.</p>
-      <p class="why">Giving poor households money directly, with no conditions, quickly lifts the most basic measure of material welfare.</p>
-      <p class="cite">Johannes Haushofer and Jeremy Shapiro, 2016, Quarterly Journal of Economics</p>
-      <div class="btns"><a class="btn solid" href="https://doi.org/10.1093/qje/qjw025">Read the paper</a></div>
-    </div>
-    <div class="card">
-      <div class="need">Poverty and material security</div>
-      <div class="stat">One quarter less absence</div>
-      <p class="finding">School based deworming in Kenya cut school absenteeism by one quarter, and the health gains spilled over to untreated children in nearby schools.</p>
-      <p class="why">Some floor level goods, like basic child health, are so cheap and so full of spillovers that they should be funded for everyone.</p>
-      <p class="cite">Edward Miguel and Michael Kremer, 2004, Econometrica</p>
-      <div class="btns"><a class="btn solid" href="https://doi.org/10.1111/j.1468-0262.2004.00481.x">Read the paper</a></div>
-    </div>
-  </div>
+  <div class="paper"><p>Unconditional cash transfers raised average monthly household consumption from 158 to 193 PPP dollars nine months after the transfers began. <span class="seal">Johannes Haushofer and Jeremy Shapiro, <span class="rub">2016</span>, Quarterly Journal of Economics. <a href="https://doi.org/10.1093/qje/qjw025">Source</a></span></p></div>
+  <div class="paper"><p>School based deworming in Kenya cut school absenteeism by one quarter, and the health gains spilled over to untreated children in nearby schools. <span class="seal">Edward Miguel and Michael Kremer, <span class="rub">2004</span>, Econometrica. <a href="https://doi.org/10.1111/j.1468-0262.2004.00481.x">Source</a></span></p></div>
 </section>
-
-<section id="economics-and-incentives" data-domain="Economics and incentives">
+<section class="domain" id="economics-and-incentives">
   <h2>Economics and incentives</h2>
-  <div class="acts">
-    <div class="card">
-      <div class="need">Economics and incentives</div>
-      <div class="stat">44 percent</div>
-      <p class="finding">When the Safelite Glass Corporation moved workers to piece rates, output per worker rose by 44 percent.</p>
-      <p class="why">How you pay people changes what they produce, so any shared system must design its rewards with care.</p>
-      <p class="cite">Edward P. Lazear, 2000, American Economic Review</p>
-      <div class="btns"><a class="btn solid" href="https://www.aeaweb.org/articles?id=10.1257/aer.90.5.1346">Read the paper</a></div>
-    </div>
-    <div class="card">
-      <div class="need">Economics and incentives</div>
-      <div class="stat">0.27 standard deviations</div>
-      <p class="finding">After two years, students in schools where teachers earned bonuses averaging 3 percent of pay scored 0.27 standard deviations higher in math and 0.17 higher in language than students in control schools.</p>
-      <p class="why">Small, well aimed incentives can raise public service quality for the poor at very low cost.</p>
-      <p class="cite">Karthik Muralidharan and Venkatesh Sundararaman, 2011, Journal of Political Economy</p>
-      <div class="btns"><a class="btn solid" href="https://openknowledge.worldbank.org/entities/publication/61d961b0-f366-528a-9fb3-a7746e5309a1">Read the paper</a></div>
-    </div>
-  </div>
+  <div class="paper"><p>When the Safelite Glass Corporation moved workers to piece rates, output per worker rose by 44 percent. <span class="seal">Edward P. Lazear, <span class="rub">2000</span>, American Economic Review. <a href="https://www.aeaweb.org/articles?id=10.1257/aer.90.5.1346">Source</a></span></p></div>
+  <div class="paper"><p>After two years, students in schools where teachers earned bonuses averaging 3 percent of pay scored 0.27 standard deviations higher in math and 0.17 higher in language than students in control schools. <span class="seal">Karthik Muralidharan and Venkatesh Sundararaman, <span class="rub">2011</span>, Journal of Political Economy. <a href="https://openknowledge.worldbank.org/entities/publication/61d961b0-f366-528a-9fb3-a7746e5309a1">Source</a></span></p></div>
 </section>
-
-<section id="governance-and-democracy" data-domain="Governance and democracy">
+<section class="domain" id="governance-and-democracy">
   <h2>Governance and democracy</h2>
-  <div class="acts">
-    <div class="card">
-      <div class="need">Governance and democracy</div>
-      <div class="stat">33 percent fewer deaths</div>
-      <p class="finding">One year after communities began monitoring local health clinics with citizen report cards, deaths among children under five were 33 percent lower in treatment communities.</p>
-      <p class="why">Organized citizen oversight, with no new funding, can make public services answer to the people they serve.</p>
-      <p class="cite">Martina Björkman and Jakob Svensson, 2009, Quarterly Journal of Economics</p>
-      <div class="btns"><a class="btn solid" href="https://reliefweb.int/report/uganda/power-people-evidence-randomized-field-experiment-community-based-monitoring-project">Read the paper</a></div>
-    </div>
-    <div class="card">
-      <div class="need">Governance and democracy</div>
-      <div class="stat">8 percentage points</div>
-      <p class="finding">Raising the chance of a government audit on village road projects from 4 percent to 100 percent cut missing expenditures by about 8 percentage points.</p>
-      <p class="why">Credible, announced verification changes behavior before any punishment, which is the working core of a trust based commons.</p>
-      <p class="cite">Benjamin A. Olken, 2007, Journal of Political Economy</p>
-      <div class="btns"><a class="btn solid" href="https://econpapers.repec.org/paper/nbrnberwo/11753.htm">Read the paper</a></div>
-    </div>
-  </div>
+  <div class="paper"><p>One year after communities began monitoring local health clinics with citizen report cards, deaths among children under five were 33 percent lower in treatment communities. <span class="seal">Martina Björkman and Jakob Svensson, <span class="rub">2009</span>, Quarterly Journal of Economics. <a href="https://reliefweb.int/report/uganda/power-people-evidence-randomized-field-experiment-community-based-monitoring-project">Source</a></span></p></div>
+  <div class="paper"><p>Raising the chance of a government audit on village road projects from 4 percent to 100 percent cut missing expenditures by about 8 percentage points. <span class="seal">Benjamin A. Olken, <span class="rub">2007</span>, Journal of Political Economy. <a href="https://econpapers.repec.org/paper/nbrnberwo/11753.htm">Source</a></span></p></div>
 </section>
-
-<section id="health-and-the-body" data-domain="Health and the body">
+<section class="domain" id="health-and-the-body">
   <h2>Health and the body</h2>
-  <div class="acts">
-    <div class="card">
-      <div class="need">Health and the body</div>
-      <div class="stat">14.6 years</div>
-      <p class="finding">The gap in life expectancy between the richest 1 percent and the poorest 1 percent was 14.6 years for men and 10.1 years for women.</p>
-      <p class="why">It prices the floor in years of life, the only currency that counts at the base.</p>
-      <p class="cite">Raj Chetty and co-authors, 2016, JAMA</p>
-      <div class="btns"><a class="btn solid" href="https://pubmed.ncbi.nlm.nih.gov/27063997/">Read the paper</a></div>
-    </div>
-    <div class="card">
-      <div class="need">Health and the body</div>
-      <div class="stat">20 percent lower risk</div>
-      <p class="finding">In 661,137 adults, even activity below the recommended weekly minimum came with a 20 percent lower risk of death, and 1 to 2 times the minimum came with a 31 percent lower risk.</p>
-      <p class="why">Movement is free and needs no clinic, so it is a health lever within everyone&#x27;s reach at once.</p>
-      <p class="cite">Hannah Arem and co-authors, 2015, JAMA Internal Medicine</p>
-      <div class="btns"><a class="btn solid" href="https://pubmed.ncbi.nlm.nih.gov/25844730/">Read the paper</a></div>
-    </div>
-  </div>
+  <div class="paper"><p>The gap in life expectancy between the richest 1 percent and the poorest 1 percent was 14.6 years for men and 10.1 years for women. <span class="seal">Raj Chetty and co-authors, <span class="rub">2016</span>, JAMA. <a href="https://pubmed.ncbi.nlm.nih.gov/27063997/">Source</a></span></p></div>
+  <div class="paper"><p>In 661,137 adults, even activity below the recommended weekly minimum came with a 20 percent lower risk of death, and 1 to 2 times the minimum came with a 31 percent lower risk. <span class="seal">Hannah Arem and co-authors, <span class="rub">2015</span>, JAMA Internal Medicine. <a href="https://pubmed.ncbi.nlm.nih.gov/25844730/">Source</a></span></p></div>
 </section>
-
-<section id="mind-and-mental-health" data-domain="Mind and mental health">
+<section class="domain" id="mind-and-mental-health">
   <h2>Mind and mental health</h2>
-  <div class="acts">
-    <div class="card">
-      <div class="need">Mind and mental health</div>
-      <div class="stat">46.9 percent</div>
-      <p class="finding">In about 250,000 sampled moments from 2,250 adults, minds were wandering 46.9 percent of the time, and people were less happy while wandering than while present, whatever they were doing.</p>
-      <p class="why">Nearly half of waking life is spent mentally elsewhere and poorer for it, so tools that gently return attention to the present serve almost everyone.</p>
-      <p class="cite">Matthew A. Killingsworth and Daniel T. Gilbert, 2010, Science</p>
-      <div class="btns"><a class="btn solid" href="https://pubmed.ncbi.nlm.nih.gov/21071660/">Read the paper</a></div>
-    </div>
-    <div class="card">
-      <div class="need">Mind and mental health</div>
-      <div class="stat">$75,000 a year</div>
-      <p class="finding">In more than 450,000 survey responses, emotional well-being rose with income up to about 75,000 dollars a year and then stopped rising, even though life evaluation kept rising with income.</p>
-      <p class="why">It marks the point where money stops buying daily peace of mind, which is why raising incomes below it does such deep work.</p>
-      <p class="cite">Daniel Kahneman and Angus Deaton, 2010, Proceedings of the National Academy of Sciences</p>
-      <div class="btns"><a class="btn solid" href="https://pubmed.ncbi.nlm.nih.gov/20823223/">Read the paper</a></div>
-    </div>
-  </div>
+  <div class="paper"><p>In about 250,000 sampled moments from 2,250 adults, minds were wandering 46.9 percent of the time, and people were less happy while wandering than while present, whatever they were doing. <span class="seal">Matthew A. Killingsworth and Daniel T. Gilbert, <span class="rub">2010</span>, Science. <a href="https://pubmed.ncbi.nlm.nih.gov/21071660/">Source</a></span></p></div>
+  <div class="paper"><p>In more than 450,000 survey responses, emotional well-being rose with income up to about 75,000 dollars a year and then stopped rising, even though life evaluation kept rising with income. <span class="seal">Daniel Kahneman and Angus Deaton, <span class="rub">2010</span>, Proceedings of the National Academy of Sciences. <a href="https://pubmed.ncbi.nlm.nih.gov/20823223/">Source</a></span></p></div>
 </section>
-
-<section id="meaning-values-and-flourishing" data-domain="Meaning, values, and human flourishing">
+<section class="domain" id="meaning-values-and-flourishing">
   <h2>Meaning, values, and human flourishing</h2>
-  <div class="acts">
-    <div class="card">
-      <div class="need">Meaning, values, and human flourishing</div>
-      <div class="stat">15 percent lower risk</div>
-      <p class="finding">Each standard deviation rise in reported purpose in life came with a 15 percent lower risk of death over the 14 years that followed, at every adult age.</p>
-      <p class="why">A reason to get up is measurable protection, not a luxury.</p>
-      <p class="cite">Patrick L. Hill and Nicholas A. Turiano, 2014, Psychological Science</p>
-      <div class="btns"><a class="btn solid" href="https://midus.wisc.edu/wp-content/uploads/2024/04/1370.pdf">Read the paper</a></div>
-    </div>
-    <div class="card">
-      <div class="need">Meaning, values, and human flourishing</div>
-      <div class="stat">17.2 percent flourishing</div>
-      <p class="finding">Only 17.2 percent of United States adults aged 25 to 74 met the criteria for flourishing, while 12.1 percent were languishing, and languishing adults faced nearly six times the risk of a major depressive episode that flourishing adults faced.</p>
-      <p class="why">The goal is not merely fewer people ill, but more people flourishing, and that gap can be counted.</p>
-      <p class="cite">Corey L. M. Keyes, 2002, Journal of Health and Social Behavior</p>
-      <div class="btns"><a class="btn solid" href="https://pubmed.ncbi.nlm.nih.gov/12096700/">Read the paper</a></div>
-    </div>
-  </div>
+  <div class="paper"><p>Each standard deviation rise in reported purpose in life came with a 15 percent lower risk of death over the 14 years that followed, at every adult age. <span class="seal">Patrick L. Hill and Nicholas A. Turiano, <span class="rub">2014</span>, Psychological Science. <a href="https://midus.wisc.edu/wp-content/uploads/2024/04/1370.pdf">Source</a></span></p></div>
+  <div class="paper"><p>Only 17.2 percent of United States adults aged 25 to 74 met the criteria for flourishing, while 12.1 percent were languishing, and languishing adults faced nearly six times the risk of a major depressive episode that flourishing adults faced. <span class="seal">Corey L. M. Keyes, <span class="rub">2002</span>, Journal of Health and Social Behavior. <a href="https://pubmed.ncbi.nlm.nih.gov/12096700/">Source</a></span></p></div>
 </section>
-
-<section id="learning-and-education" data-domain="Learning and education">
+<section class="domain" id="learning-and-education">
   <h2>Learning and education</h2>
-  <div class="acts">
-    <div class="card">
-      <div class="need">Learning and education</div>
-      <div class="stat">1.5 times more likely to fail</div>
-      <p class="finding">Across 225 studies, average examination scores rose by about 6 percent under active learning, and students in traditional lecture classes were 1.5 times more likely to fail.</p>
-      <p class="why">Teaching that asks learners to act, not just listen, lifts the bottom of the class most.</p>
-      <p class="cite">Scott Freeman and co-authors, 2014, Proceedings of the National Academy of Sciences</p>
-      <div class="btns"><a class="btn solid" href="https://www.pnas.org/doi/10.1073/pnas.1319030111">Read the paper</a></div>
-    </div>
-    <div class="card">
-      <div class="need">Learning and education</div>
-      <div class="stat">61 percent vs 40 percent</div>
-      <p class="finding">One week after learning a passage, students who studied it once and took three recall tests remembered 61 percent of it, while students who studied it four times remembered 40 percent.</p>
-      <p class="why">Free recall practice costs nothing and beats rereading, a learning primitive anyone can use anywhere.</p>
-      <p class="cite">Henry L. Roediger III and Jeffrey D. Karpicke, 2006, Psychological Science</p>
-      <div class="btns"><a class="btn solid" href="https://journals.sagepub.com/doi/10.1111/j.1467-9280.2006.01693.x">Read the paper</a></div>
-    </div>
-  </div>
+  <div class="paper"><p>Across 225 studies, average examination scores rose by about 6 percent under active learning, and students in traditional lecture classes were 1.5 times more likely to fail. <span class="seal">Scott Freeman and co-authors, <span class="rub">2014</span>, Proceedings of the National Academy of Sciences. <a href="https://www.pnas.org/doi/10.1073/pnas.1319030111">Source</a></span></p></div>
+  <div class="paper"><p>One week after learning a passage, students who studied it once and took three recall tests remembered 61 percent of it, while students who studied it four times remembered 40 percent. <span class="seal">Henry L. Roediger III and Jeffrey D. Karpicke, <span class="rub">2006</span>, Psychological Science. <a href="https://journals.sagepub.com/doi/10.1111/j.1467-9280.2006.01693.x">Source</a></span></p></div>
 </section>
-
-<section id="language-and-communication" data-domain="Language and communication">
+<section class="domain" id="language-and-communication">
   <h2>Language and communication</h2>
-  <div class="acts">
-    <div class="card">
-      <div class="need">Language and communication</div>
-      <div class="stat">4.80 vs 4.26 of 7</div>
-      <p class="finding">Readers rated the author of a text rewritten with shorter, simpler words as more intelligent (4.80 versus 4.26 on a 7 point scale) than the author of the same text written with needlessly long words.</p>
-      <p class="why">Plain words do not cost the writer standing, they earn it.</p>
-      <p class="cite">Daniel M. Oppenheimer, 2006, Applied Cognitive Psychology</p>
-      <div class="btns"><a class="btn solid" href="https://doi.org/10.1002/acp.1178">Read the paper</a></div>
-    </div>
-    <div class="card">
-      <div class="need">Language and communication</div>
-      <div class="stat">3.4 times less likely</div>
-      <p class="finding">Patients reading at or below the sixth grade level were 3.4 times less likely to interpret prescription warning labels correctly, and short single step instructions were understood better by readers at every level.</p>
-      <p class="why">When a label fails, the failure sits in the wording, not the reader.</p>
-      <p class="cite">Terry C. Davis and co-authors, 2006, Journal of General Internal Medicine</p>
-      <div class="btns"><a class="btn solid" href="https://pubmed.ncbi.nlm.nih.gov/16881945/">Read the paper</a></div>
-    </div>
-  </div>
+  <div class="paper"><p>Readers rated the author of a text rewritten with shorter, simpler words as more intelligent (4.80 versus 4.26 on a 7 point scale) than the author of the same text written with needlessly long words. <span class="seal">Daniel M. Oppenheimer, <span class="rub">2006</span>, Applied Cognitive Psychology. <a href="https://doi.org/10.1002/acp.1178">Source</a></span></p></div>
+  <div class="paper"><p>Patients reading at or below the sixth grade level were 3.4 times less likely to interpret prescription warning labels correctly, and short single step instructions were understood better by readers at every level. <span class="seal">Terry C. Davis and co-authors, <span class="rub">2006</span>, Journal of General Internal Medicine. <a href="https://pubmed.ncbi.nlm.nih.gov/16881945/">Source</a></span></p></div>
 </section>
-
-<section id="artificial-intelligence-and-human-computer-interaction" data-domain="Artificial intelligence and human computer interaction">
+<section class="domain" id="artificial-intelligence-and-human-computer-interaction">
   <h2>Artificial intelligence and human computer interaction</h2>
-  <div class="acts">
-    <div class="card">
-      <div class="need">Artificial intelligence and human computer interaction</div>
-      <div class="stat">40 percent faster</div>
-      <p class="finding">In a preregistered experiment with 453 professionals, access to ChatGPT cut average time on writing tasks by 40 percent and raised output quality by 18 percent, and the gap between stronger and weaker workers shrank.</p>
-      <p class="why">A shared AI tool narrowed the distance between the best and the rest.</p>
-      <p class="cite">Shakked Noy and Whitney Zhang, 2023, Science</p>
-      <div class="btns"><a class="btn solid" href="https://www.science.org/doi/10.1126/science.adh2586">Read the paper</a></div>
-    </div>
-    <div class="card">
-      <div class="need">Artificial intelligence and human computer interaction</div>
-      <div class="stat">34 percent for novices</div>
-      <p class="finding">Among 5,179 customer support agents, an AI assistant raised issues resolved per hour by 14 percent on average and by 34 percent for novice and low skilled workers, with minimal change for the most experienced.</p>
-      <p class="why">The largest gains went to the people at the bottom of the skill ladder, because the tool carried the know how of top workers to everyone.</p>
-      <p class="cite">Erik Brynjolfsson, Danielle Li, and Lindsey R. Raymond, 2025, Quarterly Journal of Economics</p>
-      <div class="btns"><a class="btn solid" href="https://doi.org/10.3386/w31161">Read the paper</a></div>
-    </div>
-  </div>
+  <div class="paper"><p>In a preregistered experiment with 453 professionals, access to ChatGPT cut average time on writing tasks by 40 percent and raised output quality by 18 percent, and the gap between stronger and weaker workers shrank. <span class="seal">Shakked Noy and Whitney Zhang, <span class="rub">2023</span>, Science. <a href="https://www.science.org/doi/10.1126/science.adh2586">Source</a></span></p></div>
+  <div class="paper"><p>Among 5,179 customer support agents, an AI assistant raised issues resolved per hour by 14 percent on average and by 34 percent for novice and low skilled workers, with minimal change for the most experienced. <span class="seal">Erik Brynjolfsson, Danielle Li, and Lindsey R. Raymond, <span class="rub">2025</span>, Quarterly Journal of Economics. <a href="https://doi.org/10.3386/w31161">Source</a></span></p></div>
 </section>
-
-<section id="belonging-and-social-connection" data-domain="Belonging and social connection">
+<section class="domain" id="belonging-and-social-connection">
   <h2>Belonging and social connection</h2>
-  <div class="acts">
-    <div class="card">
-      <div class="need">Belonging and social connection</div>
-      <div class="stat">50 percent greater likelihood of survival</div>
-      <p class="finding">Across 148 studies covering 308,849 people, those with stronger social relationships had a 50 percent greater likelihood of survival, an effect the authors rank alongside quitting smoking.</p>
-      <p class="why">Connection is not decoration on top of the floor of a life, it is part of the floor itself.</p>
-      <p class="cite">Julianne Holt-Lunstad, Timothy B. Smith, and J. Bradley Layton, 2010, PLOS Medicine</p>
-      <div class="btns"><a class="btn solid" href="https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.1000316">Read the paper</a></div>
-    </div>
-    <div class="card">
-      <div class="need">Belonging and social connection</div>
-      <div class="stat">4.2 times the risk</div>
-      <p class="finding">In a controlled virus exposure experiment with 276 volunteers, people with only 1 to 3 types of social ties had an adjusted relative risk of 4.2 for catching a cold compared with people with 6 or more types of ties.</p>
-      <p class="why">A controlled experiment shows that widening a person&#x27;s circle of ties changes their body, not just their mood.</p>
-      <p class="cite">Sheldon Cohen and co-authors, 1997, JAMA</p>
-      <div class="btns"><a class="btn solid" href="https://www.ovid.com/journals/jama/abstract/00005407-199706250-00040~social-ties-and-susceptibility-to-the-common-cold?redirectionsource=fulltextview">Read the paper</a></div>
-    </div>
-  </div>
+  <div class="paper"><p>Across 148 studies covering 308,849 people, those with stronger social relationships had a 50 percent greater likelihood of survival, an effect the authors rank alongside quitting smoking. <span class="seal">Julianne Holt-Lunstad, Timothy B. Smith, and J. Bradley Layton, <span class="rub">2010</span>, PLOS Medicine. <a href="https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.1000316">Source</a></span></p></div>
+  <div class="paper"><p>In a controlled virus exposure experiment with 276 volunteers, people with only 1 to 3 types of social ties had an adjusted relative risk of 4.2 for catching a cold compared with people with 6 or more types of ties. <span class="seal">Sheldon Cohen and co-authors, <span class="rub">1997</span>, JAMA. <a href="https://www.ovid.com/journals/jama/abstract/00005407-199706250-00040~social-ties-and-susceptibility-to-the-common-cold?redirectionsource=fulltextview">Source</a></span></p></div>
 </section>
-
-<section id="cooperation-and-collective-action" data-domain="Cooperation and collective action">
+<section class="domain" id="cooperation-and-collective-action">
   <h2>Cooperation and collective action</h2>
-  <div class="acts">
-    <div class="card">
-      <div class="need">Cooperation and collective action</div>
-      <div class="stat">84.3 percent</div>
-      <p class="finding">Among 240 players in a public goods game, 84.3 percent paid their own money to punish free riders at least once, and cooperation rose steadily when punishment was allowed.</p>
-      <p class="why">A group can police its own fairness without a boss, because ordinary members will bear a small cost to keep the shared deal honest.</p>
-      <p class="cite">Ernst Fehr and Simon Gächter, 2002, Nature</p>
-      <div class="btns"><a class="btn solid" href="http://www.matchism.org/refs/Fehr_2002_AtruisticPunishment.pdf">Read the paper</a></div>
-    </div>
-    <div class="card">
-      <div class="need">Cooperation and collective action</div>
-      <div class="stat">14 more hours a month</div>
-      <p class="finding">Across 49 self governing forest user groups in Ethiopia, a group where 60 percent of members were conditional cooperators spent about 14 more hours a month patrolling than a group with none, and such groups kept more potential crop trees per hectare.</p>
-      <p class="why">Communities left to govern their own commons protect it when enough members cooperate on condition that others do too.</p>
-      <p class="cite">Devesh Rustagi, Stefanie Engel, and Michael Kosfeld, 2010, Science</p>
-      <div class="btns"><a class="btn solid" href="https://www.science.org/doi/pdf/10.1126/science.1193649">Read the paper</a></div>
-    </div>
-  </div>
+  <div class="paper"><p>Among 240 players in a public goods game, 84.3 percent paid their own money to punish free riders at least once, and cooperation rose steadily when punishment was allowed. <span class="seal">Ernst Fehr and Simon Gächter, <span class="rub">2002</span>, Nature. <a href="http://www.matchism.org/refs/Fehr_2002_AtruisticPunishment.pdf">Source</a></span></p></div>
+  <div class="paper"><p>Across 49 self governing forest user groups in Ethiopia, a group where 60 percent of members were conditional cooperators spent about 14 more hours a month patrolling than a group with none, and such groups kept more potential crop trees per hectare. <span class="seal">Devesh Rustagi, Stefanie Engel, and Michael Kosfeld, <span class="rub">2010</span>, Science. <a href="https://www.science.org/doi/pdf/10.1126/science.1193649">Source</a></span></p></div>
 </section>
-
-<section id="truth-and-shared-knowledge" data-domain="Truth and shared knowledge">
+<section class="domain" id="truth-and-shared-knowledge">
   <h2>Truth and shared knowledge</h2>
-  <div class="acts">
-    <div class="card">
-      <div class="need">Truth and shared knowledge</div>
-      <div class="stat">70 percent more likely</div>
-      <p class="finding">Tracking about 126,000 story cascades shared by some 3 million people on Twitter, the team found false stories were 70 percent more likely to be retweeted than true ones and reached 1,500 people about six times faster.</p>
-      <p class="why">Truth does not win by default, so shared knowledge needs deliberate design and verification.</p>
-      <p class="cite">Soroush Vosoughi, Deb Roy, and Sinan Aral, 2018, Science</p>
-      <div class="btns"><a class="btn solid" href="https://news.mit.edu/2018/study-twitter-false-news-travels-faster-true-stories-0308">Read the paper</a></div>
-    </div>
-    <div class="card">
-      <div class="need">Truth and shared knowledge</div>
-      <div class="stat">Zero backfire</div>
-      <p class="finding">In five experiments with more than 10,100 subjects across 52 contested issues, the researchers found zero factual corrections that made people believe a falsehood more strongly.</p>
-      <p class="why">Plainly stated facts, offered to everyone, move people toward accuracy even on the questions they care about most.</p>
-      <p class="cite">Thomas Wood and Ethan Porter, 2019, Political Behavior</p>
-      <div class="btns"><a class="btn solid" href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2819073">Read the paper</a></div>
-    </div>
-  </div>
+  <div class="paper"><p>Tracking about 126,000 story cascades shared by some 3 million people on Twitter, the team found false stories were 70 percent more likely to be retweeted than true ones and reached 1,500 people about six times faster. <span class="seal">Soroush Vosoughi, Deb Roy, and Sinan Aral, <span class="rub">2018</span>, Science. <a href="https://news.mit.edu/2018/study-twitter-false-news-travels-faster-true-stories-0308">Source</a></span></p></div>
+  <div class="paper"><p>In five experiments with more than 10,100 subjects across 52 contested issues, the researchers found zero factual corrections that made people believe a falsehood more strongly. <span class="seal">Thomas Wood and Ethan Porter, <span class="rub">2019</span>, Political Behavior. <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2819073">Source</a></span></p></div>
+</section>
+<section class="domain" id="food-systems-and-agriculture">
+  <h2>Food systems and agriculture</h2>
+  <div class="paper"><p>Global crop demand is forecast to rise by 100 to 110 percent between 2005 and 2050. <span class="seal">David Tilman, Christian Balzer, Jason Hill, Belinda L. Befort, <span class="rub">2011</span>, Proceedings of the National Academy of Sciences. <a href="http://www.pnas.org/content/108/50/20260.abstract">Source</a></span></p></div>
+  <div class="paper"><p>Growing crops only for direct human consumption could raise available food calories by up to 70 percent and feed an additional 4 billion people. <span class="seal">Emily S. Cassidy, Paul C. West, James S. Gerber, Jonathan A. Foley, <span class="rub">2013</span>, Environmental Research Letters. <a href="https://iopscience.iop.org/article/10.1088/1748-9326/8/3/034015/pdf">Source</a></span></p></div>
+</section>
+<section class="domain" id="water-and-sanitation">
+  <h2>Water and sanitation</h2>
+  <div class="paper"><p>Across 46 studies, water, sanitation, and hygiene interventions cut diarrhoea risk, with relative risk estimates between 0.63 and 0.75. <span class="seal">Lorna Fewtrell, Rachel B. Kaufmann, David Kay, Wayne Enanoria, Laurence Haller, John M. Colford Jr., <span class="rub">2005</span>, The Lancet Infectious Diseases. <a href="https://www.thelancet.com/journals/laninf/article/PIIS1473-3099(04)01253-8/abstract">Source</a></span></p></div>
+  <div class="paper"><p>In developing regions, each 1 US dollar invested in water and sanitation returned between 5 and 46 US dollars, depending on the intervention. <span class="seal">Guy Hutton, Laurence Haller, Jamie Bartram, <span class="rub">2007</span>, Journal of Water and Health. <a href="https://doi.org/10.2166/wh.2007.009">Source</a></span></p></div>
+</section>
+<section class="domain" id="housing-and-homelessness">
+  <h2>Housing and homelessness</h2>
+  <div class="paper"><p>Over two years, Housing First participants were in stable housing 71 percent of the time, compared with 29 percent for people receiving treatment as usual. <span class="seal">Tim Aubry, Paula Goering, Scott Veldhuizen, Carol E. Adair, Jimmy Bourque, Jino Distasio, and coauthors, <span class="rub">2016</span>, Psychiatric Services. <a href="https://doi.org/10.1176/appi.ps.201400587">Source</a></span></p></div>
+  <div class="paper"><p>People in insulated homes in low income New Zealand communities had half the odds of reporting fair or poor health, an adjusted odds ratio of 0.50. <span class="seal">Philippa Howden-Chapman, Anna Matheson, Julian Crane, Helen Viggers, Malcolm Cunningham, and coauthors, <span class="rub">2007</span>, BMJ. <a href="https://pubmed.ncbi.nlm.nih.gov/17324975/">Source</a></span></p></div>
+</section>
+<section class="domain" id="energy-access">
+  <h2>Energy access</h2>
+  <div class="paper"><p>In rural South Africa, household electrification raised female employment by 9 to 9.5 percentage points within five years. <span class="seal">Taryn Dinkelman, <span class="rub">2011</span>, American Economic Review. <a href="https://www.aeaweb.org/articles?id=10.1257/aer.101.7.3078">Source</a></span></p></div>
+  <div class="paper"><p>In rural India, solar microgrids raised household electrification by 29 to 36 percentage points within a year but added only 0.99 to 1.42 hours of power a day and gave no clear gain in work or study. <span class="seal">Michaël Aklin, Patrick Bayer, S. P. Harish, Johannes Urpelainen, <span class="rub">2017</span>, Science Advances. <a href="https://www.science.org/doi/full/10.1126/sciadv.1602153">Source</a></span></p></div>
+</section>
+<section class="domain" id="early-childhood">
+  <h2>Early childhood</h2>
+  <div class="paper"><p>Two years of weekly home visits for growth stunted toddlers in Jamaica raised their earnings by 25 percent when they were checked 20 years later. <span class="seal">Paul Gertler, James Heckman, Rodrigo Pinto, Arianna Zanolini, Christel Vermeersch, Susan Walker, Susan M. Chang, Sally Grantham-McGregor, <span class="rub">2014</span>, Science. <a href="https://www.science.org/doi/10.1126/science.1251178">Source</a></span></p></div>
+  <div class="paper"><p>By age 28, children from low income Chicago families in the Child-Parent Center program had health insurance coverage of 75.9 percent, compared with 63.9 percent in the comparison group. <span class="seal">Arthur J. Reynolds, Judy A. Temple, Suh-Ruu Ou, Irma A. Arteaga, Barry A. B. White, <span class="rub">2011</span>, Science. <a href="https://www.science.org/doi/10.1126/science.1203618">Source</a></span></p></div>
+</section>
+<section class="domain" id="aging">
+  <h2>Aging</h2>
+  <div class="paper"><p>Across the studies reviewed, loneliness raised the likelihood of death by 26 percent, social isolation by 29 percent, and living alone by 32 percent. <span class="seal">Julianne Holt-Lunstad, Timothy B. Smith, Mark Baker, Tyler Harris, David Stephenson, <span class="rub">2015</span>, Perspectives on Psychological Science. <a href="https://journals.sagepub.com/doi/10.1177/1745691614568352">Source</a></span></p></div>
+  <div class="paper"><p>Twelve changeable risk factors account for around 40 percent of dementia cases worldwide, so those cases could in theory be prevented or delayed. <span class="seal">Gill Livingston, Jonathan Huntley, Andrew Sommerlad, David Ames, Clive Ballard, and coauthors, <span class="rub">2020</span>, The Lancet. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7392084/">Source</a></span></p></div>
+</section>
+<section class="domain" id="disability-and-inclusion">
+  <h2>Disability and inclusion</h2>
+  <div class="paper"><p>More than 1 billion people lived with a disability, and in OECD countries only 44 percent of people with disabilities were employed, against 75 percent of people without disabilities. <span class="seal">World Health Organization and World Bank, <span class="rub">2011</span>, World Health Organization and World Bank report. <a href="https://www.who.int/news/item/29-10-2013-new-world-report-shows-more-than-1-billion-people-with-disabilities-face-substantial-barriers-in-their-daily-lives">Source</a></span></p></div>
+  <div class="paper"><p>Pooling 98 studies, the authors found that 31.7 percent of children with disabilities had experienced violence. <span class="seal">Zuyi Fang, Ilan Cerna-Turoff, Cheng Zhang, Mengyao Lu, Jamie M. Lachman, Jane Barlow, <span class="rub">2022</span>, The Lancet Child &amp; Adolescent Health. <a href="https://www.thelancet.com/journals/lanchi/article/PIIS2352-4642(22)00033-5/abstract">Source</a></span></p></div>
+</section>
+<section class="domain" id="digital-access">
+  <h2>Digital access</h2>
+  <div class="paper"><p>After mobile phones spread among Kerala fishers, their profits rose by 8 percent and the prices paid by consumers fell by 4 percent. <span class="seal">Robert Jensen, <span class="rub">2007</span>, The Quarterly Journal of Economics. <a href="https://doi.org/10.1162/qjec.122.3.879">Source</a></span></p></div>
+  <div class="paper"><p>Access to mobile money in Kenya lifted 194,000 households, 2 percent of all households, out of poverty. <span class="seal">Tavneet Suri, William Jack, <span class="rub">2016</span>, Science. <a href="https://www.science.org/doi/10.1126/science.aah5309">Source</a></span></p></div>
+</section>
+<section class="domain" id="law-and-justice">
+  <h2>Law and justice</h2>
+  <div class="paper"><p>Being held for just 3 days before trial raised the probability of a guilty finding by 14 percentage points. <span class="seal">Will Dobbie, Jacob Goldin, Crystal S. Yang, <span class="rub">2018</span>, American Economic Review. <a href="https://www.aeaweb.org/articles?id=10.1257/aer.20161503">Source</a></span></p></div>
+  <div class="paper"><p>White test applicants without a criminal record received callbacks for 34 percent of jobs, compared with 17 percent for white applicants with a record. <span class="seal">Devah Pager, <span class="rub">2003</span>, American Journal of Sociology. <a href="https://doi.org/10.1086/374403">Source</a></span></p></div>
+</section>
+<section class="domain" id="environment-and-climate-adaptation">
+  <h2>Environment and climate adaptation</h2>
+  <div class="paper"><p>Climate trends from 1980 to 2008 cut global maize production by 3.8 percent and wheat production by 5.5 percent compared with a world without those trends. <span class="seal">David B. Lobell, Wolfram Schlenker, Justin Costa-Roberts, <span class="rub">2011</span>, Science. <a href="https://www.science.org/doi/10.1126/science.1204531">Source</a></span></p></div>
+  <div class="paper"><p>Across 384 locations, 7.71 percent of deaths were linked to temperatures outside the safest range, with cold linked to 7.29 percent and heat to 0.42 percent. <span class="seal">Antonio Gasparrini, Yuming Guo, Masahiro Hashizume, and coauthors, <span class="rub">2015</span>, The Lancet. <a href="https://pubmed.ncbi.nlm.nih.gov/26003380/">Source</a></span></p></div>
+</section>
+<section class="domain" id="work-and-livelihoods">
+  <h2>Work and livelihoods</h2>
+  <div class="paper"><p>In trials with 10,495 people in six countries, 8 of 10 outcome measures still showed significant gains one year after the program ended. <span class="seal">Abhijit Banerjee, Esther Duflo, Nathanael Goldberg, Dean Karlan, Robert Osei, William Parienté, Jeremy Shapiro, Bram Thuysbaert, Christopher Udry, <span class="rub">2015</span>, Science. <a href="https://www.science.org/doi/10.1126/science.1260799">Source</a></span></p></div>
+</section>
+<section class="domain" id="migration-and-refuge">
+  <h2>Migration and refuge</h2>
+  <div class="paper"><p>The average price equivalent of migration barriers to the United States for low skill men was more than 13,700 dollars per worker per year. <span class="seal">Michael A. Clemens, Claudio E. Montenegro, Lant Pritchett, <span class="rub">2019</span>, The Review of Economics and Statistics. <a href="https://doi.org/10.1162/rest_a_00776">Source</a></span></p></div>
+  <div class="paper"><p>One extra year of waiting for an asylum decision cut the later employment rate by 4 to 5 percentage points, a drop of 16 to 23 percent from the average rate. <span class="seal">Jens Hainmueller, Dominik Hangartner, Duncan Lawrence, <span class="rub">2016</span>, Science Advances. <a href="https://pubmed.ncbi.nlm.nih.gov/27493995/">Source</a></span></p></div>
 </section>
 
 <footer>
@@ -367,45 +304,191 @@
   <p>Advised by Groundskeeper.</p>
   <p><a href="https://www.linkedin.com/company/aurora-commons-io/">Aurora Commons on LinkedIn</a></p>
 </footer>
+<p class="endline">That is everything. The page ends here.</p>
 
 </div>
 <script>
 (function(){
-  var strip = document.getElementById('domain-strip');
-  var count = document.getElementById('paper-count');
-  var sections = Array.prototype.slice.call(document.querySelectorAll('section[data-domain]'));
-  function mark(id){
-    var links = strip.querySelectorAll('a[data-filter]');
-    for (var i = 0; i < links.length; i++){
-      var f = links[i].getAttribute('data-filter');
-      if ((f || null) === (id || null)) { links[i].classList.add('on'); }
-      else { links[i].classList.remove('on'); }
+  var reduced = !!(window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches);
+  function animate(dur, step, done){
+    if (reduced || dur <= 0) { step(1); if (done) { done(); } return; }
+    var t0 = null;
+    function frame(ts){
+      if (!t0) { t0 = ts; }
+      var p = Math.min(1, (ts - t0) / dur);
+      step(p);
+      if (p < 1) { requestAnimationFrame(frame); }
+      else if (done) { done(); }
     }
+    requestAnimationFrame(frame);
   }
-  function show(id){
-    var shown = 0, name = null;
-    sections.forEach(function(sec){
-      var on = !id || sec.id === id;
-      sec.style.display = on ? '' : 'none';
-      if (on) { shown += sec.querySelectorAll('.card').length; name = sec.getAttribute('data-domain'); }
+  function finish(btn, result){
+    result.hidden = false;
+    btn.disabled = false;
+    btn.textContent = 'Run again';
+  }
+
+  /* Cash transfers, Kenya: 35 marks, one per dollar of the rise. */
+  (function(){
+    var marks = document.getElementById('cash-marks');
+    var num = document.getElementById('cash-num');
+    var btn = document.getElementById('cash-btn');
+    var result = document.getElementById('cash-result');
+    var cells = [];
+    for (var i = 0; i < 35; i++) {
+      var s = document.createElement('span');
+      marks.appendChild(s);
+      cells.push(s);
+    }
+    btn.addEventListener('click', function(){
+      btn.disabled = true;
+      result.hidden = true;
+      animate(1500, function(p){
+        var lit = Math.round(35 * p);
+        num.textContent = String(158 + Math.round(35 * p));
+        for (var j = 0; j < 35; j++) { cells[j].className = j < lit ? 'on' : ''; }
+      }, function(){ finish(btn, result); });
     });
-    count.textContent = (id && name) ? (shown + ' papers in ' + name) : '24 papers in 12 domains';
-    mark(id);
-  }
-  strip.addEventListener('click', function(e){
-    var a = e.target;
-    while (a && !(a.tagName === 'A' && a.hasAttribute('data-filter'))) { a = a.parentNode; }
-    if (!a) { return; }
-    e.preventDefault();
-    var id = a.getAttribute('data-filter') || null;
-    show(id);
-    if (id) { history.replaceState(null, '', '#' + id); }
-    else { history.replaceState(null, '', location.pathname + location.search); }
-  });
-  var h = location.hash.replace('#', '');
-  var target = null;
-  sections.forEach(function(sec){ if (sec.id === h) { target = sec.id; } });
-  show(target);
+  })();
+
+  /* False news travels faster: false reaches 1,500 about six times sooner. */
+  (function(){
+    var fNum = document.getElementById('race-false-num');
+    var tNum = document.getElementById('race-true-num');
+    var fFill = document.getElementById('race-false-fill');
+    var tFill = document.getElementById('race-true-fill');
+    var btn = document.getElementById('race-btn');
+    var result = document.getElementById('race-result');
+    btn.addEventListener('click', function(){
+      btn.disabled = true;
+      result.hidden = true;
+      var doneCount = 0;
+      function oneDone(){ if (++doneCount === 2) { finish(btn, result); } }
+      animate(1000, function(p){
+        var v = Math.round(1500 * p);
+        fNum.textContent = v.toLocaleString('en-US');
+        fFill.style.width = (100 * p) + '%';
+      }, oneDone);
+      animate(6000, function(p){
+        var v = Math.round(1500 * p);
+        tNum.textContent = v.toLocaleString('en-US');
+        tFill.style.width = (100 * p) + '%';
+      }, oneDone);
+    });
+  })();
+
+  /* Connection and survival: each tap adds ten ties among 100 people. */
+  (function(){
+    var people = document.getElementById('ties-people');
+    var svg = document.getElementById('ties-svg');
+    var num = document.getElementById('ties-num');
+    var conn = document.getElementById('ties-conn');
+    var index = document.getElementById('ties-index');
+    var btn = document.getElementById('ties-btn');
+    var result = document.getElementById('ties-result');
+    var seed = 7;
+    function rand(){
+      seed |= 0; seed = seed + 0x6D2B79F5 | 0;
+      var t = Math.imul(seed ^ seed >>> 15, 1 | seed);
+      t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t;
+      return ((t ^ t >>> 14) >>> 0) / 4294967296;
+    }
+    function center(i){ return [ (i % 10) * 10 + 5, Math.floor(i / 10) * 10 + 5 ]; }
+    var cells = [];
+    for (var i = 0; i < 100; i++) {
+      var cell = document.createElement('div');
+      cell.className = 'cell';
+      var dot = document.createElement('span');
+      cell.appendChild(dot);
+      people.appendChild(cell);
+      cells.push(dot);
+    }
+    /* A fixed order in which people become connected, and fixed tie pairs. */
+    var perm = [];
+    for (var a = 0; a < 100; a++) { perm.push(a); }
+    for (var b = 99; b > 0; b--) {
+      var k = Math.floor(rand() * (b + 1));
+      var tmp = perm[b]; perm[b] = perm[k]; perm[k] = tmp;
+    }
+    var pairs = [];
+    for (var q = 0; q < 100; q++) {
+      var x = Math.floor(rand() * 100);
+      var y = Math.floor(rand() * 100);
+      if (y === x) { y = (y + 1) % 100; }
+      pairs.push([x, y]);
+    }
+    var lines = [];
+    var NS = 'http://www.w3.org/2000/svg';
+    for (var m = 0; m < 100; m++) {
+      var ln = document.createElementNS(NS, 'line');
+      var c1 = center(pairs[m][0]);
+      var c2 = center(pairs[m][1]);
+      ln.setAttribute('x1', c1[0]); ln.setAttribute('y1', c1[1]);
+      ln.setAttribute('x2', c2[0]); ln.setAttribute('y2', c2[1]);
+      ln.style.display = 'none';
+      svg.appendChild(ln);
+      lines.push(ln);
+    }
+    var ties = 0;
+    function render(){
+      num.textContent = String(ties);
+      conn.textContent = String(Math.min(100, ties));
+      index.textContent = String(100 + Math.round(50 * ties / 100));
+      for (var j = 0; j < 100; j++) {
+        lines[j].style.display = j < ties ? '' : 'none';
+        cells[perm[j]].className = j < ties ? 'on' : '';
+      }
+    }
+    btn.addEventListener('click', function(){
+      if (ties >= 100) { return; }
+      ties = Math.min(100, ties + 10);
+      render();
+      if (ties >= 100) {
+        result.hidden = false;
+        btn.disabled = true;
+        btn.textContent = 'Done';
+      }
+    });
+  })();
+
+  /* Citizen report cards, Uganda: the after count falls by one third. */
+  (function(){
+    var num = document.getElementById('cards-num');
+    var fill = document.getElementById('cards-fill');
+    var btn = document.getElementById('cards-btn');
+    var result = document.getElementById('cards-result');
+    btn.addEventListener('click', function(){
+      btn.disabled = true;
+      result.hidden = true;
+      animate(1200, function(p){
+        var v = Math.round(100 - 33 * p);
+        num.textContent = String(v);
+        fill.style.width = v + '%';
+      }, function(){ finish(btn, result); });
+    });
+  })();
+
+  /* AI help and novices: both rise, the novice by more. */
+  (function(){
+    var aNum = document.getElementById('ai-avg-num');
+    var nNum = document.getElementById('ai-nov-num');
+    var aFill = document.getElementById('ai-avg-fill');
+    var nFill = document.getElementById('ai-nov-fill');
+    var btn = document.getElementById('ai-btn');
+    var result = document.getElementById('ai-result');
+    btn.addEventListener('click', function(){
+      btn.disabled = true;
+      result.hidden = true;
+      animate(1600, function(p){
+        var a = Math.round(100 + 14 * p);
+        var n = Math.round(100 + 34 * p);
+        aNum.textContent = String(a);
+        nNum.textContent = String(n);
+        aFill.style.width = (a / 134 * 100) + '%';
+        nFill.style.width = (n / 134 * 100) + '%';
+      }, function(){ finish(btn, result); });
+    });
+  })();
 })();
 </script>
 </body>
