@@ -61,6 +61,7 @@ DOCS = [
 # The whole written record on one page, in this order: the markdown
 # file, the plain name shown to readers, and the section anchor.
 RECORD_ORDER = [
+    ("TIMELINE.md", "The long arc", "record-timeline"),
     ("ECOSYSTEM.md", "The charter", "record-ecosystem"),
     ("NEEDS.md", "The needs map", "record-needs"),
     ("DEMOCRACY.md", "Democracy", "record-democracy"),

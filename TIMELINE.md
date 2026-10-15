@@ -2,6 +2,40 @@
 
 These are intentions with gates, not promises. A phase begins only when the previous gate's published numbers hold.
 
+## The long arc
+
+From 2026, a person can only remotely picture the first farmers. Twelve thousand years is longer than any story handed down whole, longer than any language now spoken. Yet the floor this document works to raise was first raised by their hands. Raising the floor did not begin with us, and it did not begin in one place. It began again and again, wherever people first kept a plant or an animal alive on purpose. This Commons is a late chapter of that work, and the timeline that follows is written inside it.
+
+Farming begins, region by region:
+
+| Region | Years before today | First gifts to the floor |
+| --- | --- | --- |
+| The Fertile Crescent, Southwest Asia | 10,000 to 12,000 | Wheat, barley, lentils, and peas; sheep, goats, cattle, and pigs |
+| The Yangtze valley, China | 9,000 to 11,000 | Rice |
+| The Yellow River valley, China | 8,000 to 10,000 | Foxtail and broomcorn millet |
+| Mesoamerica | 9,000 to 10,000 | Maize and squash, beans after |
+| The Andes | 7,000 to 9,000 | Potato and quinoa; llama and alpaca herds |
+| Amazonia | 8,000 to 10,000 | Manioc and squash, tended in garden plots |
+| The New Guinea highlands | 7,000 to 10,000 | Banana, taro, and yam, planted on drained land |
+| West Africa and the Sahel | 4,000 to 5,000 | Pearl millet; sorghum to the east; African rice and yams after |
+| Eastern North America | 4,000 to 5,000 | Squash, sunflower, goosefoot, and marsh elder |
+| The Ethiopian highlands | 3,000 to 6,000 | Teff and enset |
+
+Every span here is a range because the scholarship gives ranges. These were slow processes, spread over centuries of trying, not single years with a date on them, and the beginnings are still argued over. Ethiopia's row is the least settled of the ten.
+
+What the harvest then made possible, layer by layer, in the order each first stood up at scale:
+
+- Stored food, and villages that stay in one place: the body, and belonging. In the Levant, settled villages stand before the crops are fully tamed.
+- A record a stranger can check: shared truth. In Mesopotamia, clay tokens count goods for thousands of years, and the first writing, about 5,400 years ago, is accounts of grain and animals.
+- Cities, and the sickness crowding brings, and the first answers: the body, at city scale. In the Indus valley about 4,600 years ago, Mohenjo-daro runs covered drains beneath its streets, past houses with wells of their own.
+- Money and measures a stranger can trust: trust and meaning. The Indus cities share one set of weights; in Lydia, about 2,600 years ago, the first coins are stamped.
+- Learning that travels without the teacher: learning. In China in the year 868, the Diamond Sutra is printed to be given away free to anyone; in 1969, two computers in California exchange a first message, and the network begins.
+- Tools that begin to act on their own: autonomy. That is the present moment, and it is where this document's own phases begin.
+
+The phases that follow are the next entries in this same table, written smaller because they are ours and nearer. The iteration rule that governs them, stated next, is how the arc keeps moving now: each cycle leaves the floor higher than it found it, or the record says plainly that it did not.
+
+The sources behind every span and milestone here, with the argued points named, are kept in the research notes for this document: `long-arc-20261015/sources.md`.
+
 ## The iteration rule
 
 Iterations are significant or they do not ship. Features are never stacked for their own sake. A phase adds depth where the evidence points, not breadth everywhere. Every expansion below names its trigger: the verified progress or the research finding that earns it. An expansion with no trigger does not appear.
