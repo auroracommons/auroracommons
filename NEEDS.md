@@ -60,7 +60,7 @@ Needs are the floor. Wants are the life built on it: recognition for real work, 
 
 ## The whole story in one breath
 
-A person stands on material security, steadied in mind, able to learn, belonging to people, standing on shared facts, free from machines they cannot question, inside technology that respects their values, with a path in front of them small enough to start today. That is the complete human picture this ecosystem serves. Five acts cover five layers with working proof today. Two layers, the body and the mind at peace, are named as open ground with roads in and gates on the roads. Nothing on this map is claimed before it is proven, and the map itself will change only when the evidence changes it.
+A person stands on material security, steadied in mind, able to learn, belonging to people, standing on shared facts, free from machines they cannot question, inside technology that respects their values, with a path in front of them small enough to start today. That is the complete human picture this ecosystem serves. Five acts cover five layers with working proof today. Two layers, the body and the mind at peace, get the Commons' first minimal builds: Ground for the body, Still for the mind at peace, with roads in and gates on the roads. Nothing on this map is claimed before it is proven, and the map itself will change only when the evidence changes it.
 
 ## How this map governs the projects
 

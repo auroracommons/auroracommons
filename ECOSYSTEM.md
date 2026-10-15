@@ -28,6 +28,14 @@ The ecosystem stands on a map of human needs: [The Ascent](https://github.com/au
 
 Every project names its layer at its own front door and links back to the map. A need counts as covered only when working proof serves it. The two uncovered layers stay named as open ground, with adoption roads and gates, until evidence earns them a project.
 
+## The complete system
+
+The seven layers are served as one system, not seven separate efforts. Layers 0 and 1 are not left open. They get the Commons' first minimal builds: Ground for the body, Still for the mind at peace. Like everything here, they are built on proven open source. The safety line holds: no medical claims, and every real world listing is a Proof, with a check date and an expiry.
+
+Research here improves continuously. Claims live as Proofs (see THE_PROOF.md). Every claim carries its check. Checks are re-run. Corrections append and never erase, so what was wrong stays public beside what replaced it.
+
+The information standard is total. The system studies all fields of thought. It considers all cultures, all values, all desires, all flaws, all strengths, and all patterns, weighing them symmetrically, before it claims to understand a need.
+
 ## The democratic foundation
 
 The Commons governs itself by a rule stated in full in [One Person, One Voice](DEMOCRACY.md): every human who can communicate a preference holds one vote and an equal right to contribute, a capacity that usually arrives around age three. No vote is bought, sold, lent, inherited, weighted, or cast by proxy. Decisions are tiered by how hard they are to undo, never people by worth: everyday decisions by simple majority, structural decisions after a published deliberation period by supermajority, irreversible decisions by supermajority twice with a cooling off period between the votes. Contribution runs wider than the franchise, open to every human and to agents under a named human operator, and it is honored in the public ledger in proportion to verified work. It never converts into extra votes.
