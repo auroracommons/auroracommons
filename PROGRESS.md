@@ -2,15 +2,23 @@
 
 This is the public record of the work: what was done, what the proof shows, what broke, and what comes next. It is updated every work session, newest first, in plain language on purpose. If a claim anywhere in these projects cannot be traced to a logged run, the claim is wrong and the log is where it gets corrected.
 
+## October 15, 2026: a final name, a storyline, and a face
+
+**What shipped.** The account took its final name today, bedrockcommons, after two renamings in one morning; the stage was renamed for the map, and the links across all six repositories were swept to match. Every project README was brought to one clean structure (the need, what it is, the proof, the live demo, how to contribute), with two copy paste prompts added to each so a person or an agent can start contributing in minutes. The profile itself was rebuilt the same way, and two new documents were published on it: THE_SAGA.md, the theatrical and true story of how this work got built, chapter by chapter with its claims linked to receipts, and PROMPTS.md, the canonical prompt library (run an Eval Challenge, file a failure report, take a good first issue, adopt a primitive, audit a claim). Credits for the avatar and the saga were entered in the Ledger: concept, direction, and two renamings by Joshua Thomas; performance by super zuckerberg; tooling by Muse AI (Meta).
+
+**The proof.** The presentation pass changed words and order, not numbers: each repo's tests and evals were run before and after, and the published numbers in every README were enumerated before the edit and matched exactly after it. The tutor eval still reads groundedness 0.806, the refusal eval still reads 12 of 12 blocked and 8 of 8 allowed, and every other baseline stands as committed.
+
+**What is next.** The twice daily evolution pass keeps building under the new name, the first public checkpoint lands November 16, 2026, and the table stays open: the next Ledger entries that matter are the ones from outside contributors.
+
 ## October 14 to 15, 2026: Launch
 
 **What shipped.** Five open source projects and this profile, published on GitHub with live demos:
 
-- Supergravity, an AI learning atlas with a published tutor evaluation: https://github.com/jthomas48896f/supergravity and demo at https://jthomas48896f.github.io/supergravity/
-- Cohort, a community platform with an MCP server for AI agents: https://github.com/jthomas48896f/cohort
-- Neural Net Lab, machine learning built from scratch, including a transformer: https://github.com/jthomas48896f/neural-net-lab
-- Knowledge Graph Explorer, knowledge extraction that publishes its own errors: https://github.com/jthomas48896f/knowledge-graph-explorer
-- LUMEN, a guarded question answering study with a public refusal evaluation: https://github.com/jthomas48896f/lumen-faith-platform
+- Supergravity, an AI learning atlas with a published tutor evaluation: https://github.com/bedrockcommons/supergravity and demo at https://bedrockcommons.github.io/supergravity/
+- Cohort, a community platform with an MCP server for AI agents: https://github.com/bedrockcommons/cohort
+- Neural Net Lab, machine learning built from scratch, including a transformer: https://github.com/bedrockcommons/neural-net-lab
+- Knowledge Graph Explorer, knowledge extraction that publishes its own errors: https://github.com/bedrockcommons/knowledge-graph-explorer
+- LUMEN, a guarded question answering study with a public refusal evaluation: https://github.com/bedrockcommons/lumen-faith-platform
 
 **The proof, as logged.** The tutor evaluation scored groundedness 0.806 with a citation rate of 1.0, and its weak subjects are named in the report rather than hidden. The from scratch transformer passes 7 of 7 gradient checks and trained a small language model from a validation loss of 5.297 down to 2.413; the same model in PyTorch ran 4.13 times faster per step, and that comparison is published too. Knowledge extraction scored entity F1 of 0.937 and relation F1 of 0.605 on hand labeled documents, with the precision tradeoff stated in the open. The refusal evaluation blocked 12 of 12 harmful requests and allowed 8 of 8 legitimate ones.
 

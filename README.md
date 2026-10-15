@@ -1,28 +1,22 @@
+<img src="assets/super-zuckerberg.webp" width="220" alt="super zuckerberg, the agent on this work, cape and all">
+
 # Joshua Thomas
 
-Math educator, program builder, and independent AI systems prototyper in
-New York. I build learning and community infrastructure in the open, and I
-measure what I ship.
+Open source primitives for human needs, proven in public. I am a math educator and program builder in New York, and this profile is the workshop: five working exhibits on one map of human needs, with the proof published beside every claim and the failures printed next to the wins.
 
-## One argument, five acts
+**Start here:** [The Bedrock](NEEDS.md), the map of human needs the whole ecosystem stands on. [The Open Table](OPEN_TABLE.md), how anyone contributes here, human or agent. [The Saga](THE_SAGA.md), the story of how this got built, with receipts.
 
-Everything below is one body of work with one thesis: technology should
-increase human capability without taking human agency away.
+## The five acts
 
-- **Act 1, the Atlas: [supergravity](https://github.com/jthomas48896f/supergravity).** How people learn. An interactive atlas of 100 subjects with an AI tutor that is evaluated, in CI, for groundedness and citations against its own content.
-- **Act 2, the Commons: [cohort](https://github.com/jthomas48896f/cohort).** How people find each other and build together. An open source online accelerator whose workspace is agent native: it ships an MCP server with typed room state, verified by a recorded agent session.
-- **Act 3, the Machine: [neural-net-lab](https://github.com/jthomas48896f/neural-net-lab).** How the machine itself learns. A neural network library built from scratch in NumPy, autograd included, extended with a from scratch transformer and benchmarked against PyTorch.
-- **Act 4, the Graph: [knowledge-graph-explorer](https://github.com/jthomas48896f/knowledge-graph-explorer).** How knowledge connects and can be questioned. A knowledge graph builder with a hybrid extraction design measured on a labeled eval set, precision and recall published.
-- **Act 5, the Guardrails: [lumen-faith-platform](https://github.com/jthomas48896f/lumen-faith-platform).** How all of it stays safe, cited, and human governed. An AI safety design study with guardrails as code and a working guarded retrieval demo whose refusals are evaluated, not asserted.
+One thesis in five acts: technology should increase human capability without taking human agency away.
 
-## The frame
-
-Stated as aspiration and direction, never as achievement: the first AI
-wave automated tasks. What follows it, if people build it deliberately, is
-a renaissance of human capability: learning widened, coordination
-cheapened, knowledge organized, intelligence understood, and power kept
-accountable. These five repos are one small working exhibit of that
-direction, built in public and measured in public.
+| Act | Serves | Proof | Live demo |
+|---|---|---|---|
+| 1. [Supergravity, the Atlas](https://github.com/bedrockcommons/supergravity) | Learning (Bedrock Layer 2) | Tutor eval: groundedness 0.806, citation rate 1.0, run in CI | [Demo](https://bedrockcommons.github.io/supergravity/) |
+| 2. [Cohort, the Commons](https://github.com/bedrockcommons/cohort) | Belonging (Bedrock Layer 3) | Tests 7 of 7, MCP server verified by a recorded live agent session | [Demo](https://bedrockcommons.github.io/cohort/) |
+| 3. [Neural Net Lab, the Machine](https://github.com/bedrockcommons/neural-net-lab) | Autonomy (Bedrock Layer 5) | Gradient checks 7 of 7; PyTorch benchmark 4.13x faster per step, published beside the from scratch result | [Demo](https://bedrockcommons.github.io/neural-net-lab/) |
+| 4. [Knowledge Graph Explorer, the Graph](https://github.com/bedrockcommons/knowledge-graph-explorer) | Shared truth (Bedrock Layer 4) | Hand labeled eval: entities F1 0.936, relations F1 0.605, errors published | [Demo](https://bedrockcommons.github.io/knowledge-graph-explorer/) |
+| 5. [LUMEN, the Guardrails](https://github.com/bedrockcommons/lumen-faith-platform) | Trust and meaning (Bedrock Layer 6) | Refusal eval: 12 of 12 blocked, 8 of 8 allowed | [Demo](https://bedrockcommons.github.io/lumen-faith-platform/) |
 
 ## Where this is headed (projections, gated, not promises)
 
@@ -32,28 +26,16 @@ direction, built in public and measured in public.
 - **Phase 3, Scale (2028):** institutional partnerships. Gate: institutions depending on at least one act in real work.
 - **Phase 4, Commons (2029 to 2031):** an open ecosystem with contributors, forks, and shared governance. Gate: the work improves without one person's daily effort.
 
-A phase that misses its gate gets a written reason and a revised
-projection, never a quiet edit.
-
-## What counts here
-
-Human outcomes, honestly counted and dated: learners reaching mastery,
-builders who shipped something real, students who can explain how the
-machine learns, questions answered from organized public knowledge, and
-harmful outputs refused. No numbers appear until they are real.
+A phase that misses its gate gets a written reason and a revised projection, never a quiet edit. What counts here is human outcomes, honestly counted and dated. No numbers appear until they are real.
 
 ## Follow the work
 
-- [The Bedrock](NEEDS.md): the map of human needs the whole ecosystem stands on. Seven layers, with the covered ground and the open ground both named.
 - [Progress log](PROGRESS.md): what was done, what the proof shows, what broke, and what is next, updated every work session.
 - [Intentions](INTENTIONS.md): what this work is for, what it will never do, and how it earns, stated plainly.
 - [The ecosystem](ECOSYSTEM.md): the long term design, five primitives that compound, open to every industry and every level of participation.
-
-## The open table
-
-This work is built in the open, and the table is open. Anyone can contribute: a person, a team, or an AI agent working on someone's behalf, all on the same terms.
-
-- [The Open Table](OPEN_TABLE.md): how anyone contributes here. Three doors (a good first issue, the Eval Challenge, adopting a primitive), the evidence rules, and the duties agents carry, including naming your operator.
 - [The Ledger](LEDGER.md): the public record of verified contributions, with the evidence attached. Credit is proportional to proof and never sold.
-- [The Bedrock](NEEDS.md): the map of human needs every contribution should land on.
-- [Good first issues across all five projects](https://github.com/search?q=user%3Ajthomas48896f+label%3A%22good+first+issue%22+state%3Aopen&type=issues): each one sized in hours and written for a newcomer.
+- [Prompts](PROMPTS.md): copy paste prompts that let anyone, or any agent, contribute: run an Eval Challenge, file a failure report, take a good first issue, adopt a primitive, audit a claim.
+- [The Open Table](OPEN_TABLE.md): the contribution protocol. Three doors, the evidence rules, and the duties agents carry, including naming your operator.
+- [Good first issues across all five projects](https://github.com/search?q=user%3Abedrockcommons+label%3A%22good+first+issue%22+state%3Aopen&type=issues): each one sized in hours and written for a newcomer.
+
+Directed and guided by Joshua Thomas. Performed by super zuckerberg. Built with Muse AI, by Meta.
