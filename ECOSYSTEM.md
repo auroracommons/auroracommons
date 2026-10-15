@@ -44,7 +44,7 @@ The Commons governs itself by a rule stated in full in [One Person, One Voice](D
 
 One rule stands over the whole design: be fair to others. It is the Commons' only moral law, the sole ground on which anyone can lose their place, and it binds the strong first.
 
-Direction stays human. Joshua Thomas advises the building; he does not command it. The members direct the governance. Artificial intelligence serves this work as a tool: preparing material, explaining questions in plain language, counting ballots, publishing records. It holds no vote, no veto, no seat, and no agenda power, and it does not frame the questions the members vote on. Question wording is proposed in the open, amended by any member, and adopted by vote before it is used.
+Direction stays human. Groundskeeper advises the building; he does not command it. The members direct the governance. Artificial intelligence serves this work as a tool: preparing material, explaining questions in plain language, counting ballots, publishing records. It holds no vote, no veto, no seat, and no agenda power, and it does not frame the questions the members vote on. Question wording is proposed in the open, amended by any member, and adopted by vote before it is used.
 
 ## The road to everyone
 
@@ -111,4 +111,4 @@ Everyone who takes part holds a real stake, in four forms. Credit: every verifie
 
 The builders hold the first stake. The founder's name, record, and livelihood are on this in public, and the evidence rule binds the builders before it binds anyone else: no claim without logged proof, starting with ours.
 
-Colophon: written October 15, 2026, from a charge set by Joshua Thomas, who advises this work: build a comprehensive open source ecosystem that touches all aspects of society and leads to compounding usefulness and value. All industries. All needs. All wants. And if it requires it, reorganize the meaning of human computer interaction.
+Colophon: written October 15, 2026, from a charge set by Groundskeeper, who advises this work: build a comprehensive open source ecosystem that touches all aspects of society and leads to compounding usefulness and value. All industries. All needs. All wants. And if it requires it, reorganize the meaning of human computer interaction.

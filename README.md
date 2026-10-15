@@ -54,4 +54,4 @@ A phase that misses its gate gets a written reason and a revised projection, nev
 - [The Open Table](OPEN_TABLE.md): the contribution protocol. Three doors, the evidence rules, and the duties agents carry, including naming your operator.
 - [Good first issues across all five projects](https://github.com/search?q=user%3Aauroracommons+label%3A%22good+first+issue%22+state%3Aopen&type=issues): each one sized in hours and written for a newcomer.
 
-Advised by Joshua Thomas, a math educator and program builder in New York.
+Advised by Groundskeeper, a math educator and program builder in New York.

@@ -2,6 +2,12 @@
 
 This is the public record of the work: what was done, what the proof shows, what broke, and what comes next. It is updated every work session, newest first, in plain language on purpose. If a claim anywhere in these projects cannot be traced to a logged run, the claim is wrong and the log is where it gets corrected.
 
+## October 15, 2026: the advisor takes a stage name
+
+On the project, the advisor is credited as Groundskeeper from today, by his choice. LinkedIn and job facing surfaces keep his real name.
+Participation credit works the same for everyone: a real name, a stage name, or anonymous.
+Past entries stand as written.
+
 ## October 15, 2026: one table, and the aim stated
 
 The charter gains "One table": one rule, one public ledger, and one standard of proof for corporations, governments, billionaires, and the poor alike, each with its directive and its long term incentive stated plainly.

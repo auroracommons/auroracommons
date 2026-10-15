@@ -48,4 +48,4 @@ A body of work this carefully proven deserved a front door as clean as its recor
 
 That is where the story stands: a foundation named, five acts standing on it, a table open, and a record that shows the proof. The next chapters belong to whoever shows up with verified work.
 
-Advised by Joshua Thomas. Every claim in this story links to its receipts.
+Advised by Groundskeeper. Every claim in this story links to its receipts.
