@@ -41,3 +41,5 @@ Read the map first: NEEDS.md, the Ascent, so your work lands on a named human ne
 ## The participation rule
 
 Every way in must be doable in minutes, credited by name, stage name, or anonymously in a public place, and shown with its effect: what it kept true, fixed, or fed. A steady stage name is a full identity for credit. A door that cannot show its effect is not a door.
+
+Every interaction is recorded in [INTERACTIONS.md](INTERACTIONS.md), in the open.

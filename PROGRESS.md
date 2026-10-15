@@ -2,6 +2,10 @@
 
 This is the public record of the work: what was done, what the proof shows, what broke, and what comes next. It is updated every work session, newest first, in plain language on purpose. If a claim anywhere in these projects cannot be traced to a logged run, the claim is wrong and the log is where it gets corrected.
 
+## October 15, 2026: the doors take interaction
+
+The doors are wired. Each of the three doors on the home page now opens a prefilled form that a person on a phone can finish in about a minute: verify one listing in Ground, check one claim in Atlas, report one thing that is wrong. The same routes sit inside Ground's listing panels, on the Atlas proof screen, and in Still's footer. Every submission is a public issue, answered in place, and when a check holds up it is incorporated with the contributor's credit, by real name, stage name, or anonymous. The running record of interactions lives in INTERACTIONS.md. The twice daily evolution pass now processes interactions first, before its other work, so what people send in shapes what gets improved next.
+
 ## October 15, 2026: the place of the largest firms
 
 The charter now gives the largest firms a direct purpose and place. They are carriers of scale: the logistics, manufacturing, distribution, networks, and computing the Commons cannot build, put to carrying verified help layer by layer of The Ascent. Their incentive is standing in a public record of verified contribution that no advertising can buy, and a rising floor that is also a rising market. Competition is redirected rather than removed: standings are published per layer and records can be beaten by anyone. Governance is untouched: a place is a seat and a record, never a vote, and no person's standing depends on any firm's.
