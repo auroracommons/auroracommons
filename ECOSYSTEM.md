@@ -105,6 +105,22 @@ Individuals, including the poor: begin with one verified contribution of what th
 
 Everyone wins: nothing here is won at another's expense. Standing comes only from contribution, open to all.
 
+## Incentives, stated plainly
+
+A person with unmet needs. Gives: nothing. The place is given, not earned. Gets: free tools that meet the need, each carrying its proof, and a first step small enough to take today.
+
+A contributor. Gives: minutes of verified work, a check, a correction, a build. Gets: credit in proportion to the work, a record that cannot be inflated, and a voice in governance independent of contribution size.
+
+A community or small organization. Gives: local verification and local adoption. Gets: the primitives free, its own board under its own hand, and standing in the same record as everyone else.
+
+A large firm. Gives: capacity at scale, made verifiable. Gets: a contribution record no advertising can buy and a rising floor that is a rising market too. Its place is stated just below.
+
+A government. Gives: public data opened as Proofs and services pointed at the layers. Gets: measured outcomes per layer it can publish and defend, from work it did not fund alone.
+
+The builders and maintainers. Gives: the work itself, done in the open. Gets: the same credit and standing rules as everyone, no more. Their names ride on the record, which is the stake.
+
+None of this was buildable before, because verification used to cost more than trust. Machines checking claims at scale, distribution that costs nothing, and a public record anyone can copy make proof and proportional credit affordable for everyone. An incentive not stated here in tangible form does not exist in the Commons, so no one has to take anyone's word for anything.
+
 ## The place of the largest firms
 
 The largest firms hold what the Commons cannot build: logistics, manufacturing, distribution, pharmacies, networks, and computing at planetary scale. Their place: to carry verified help layer by layer of The Ascent, where their capacity moves the floor fastest. A place is a seat and a record, never a vote: governance stays one person, one voice; credit never buys votes or agenda power.
