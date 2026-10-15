@@ -119,7 +119,7 @@
     max-width:1060px;margin:0 auto;width:100%;padding:26px 20px 0}
   .strata-drawing{display:flex;flex-direction:column-reverse}
   .band{display:flex;align-items:center;gap:10px;padding:9px 12px;font-size:clamp(12.5px,2.2vw,15.5px);
-    border-top:1px solid rgba(33,24,18,.35)}
+    border-top:1px solid rgba(33,24,18,.35);min-height:44px;color:var(--ink);text-decoration:none}
   .band:first-child{border-top:none}
   .band .bnum{font-weight:800;font-variant-numeric:tabular-nums;min-width:1em}
   .band .bact{font-weight:700;margin-left:auto;text-align:right}
@@ -127,6 +127,8 @@
   .band.b2{background:var(--l2)} .band.b3{background:var(--l3)}
   .band.b4{background:var(--l4)} .band.b5{background:var(--l5)}
   .band.b6{background:var(--l6)}
+  .band:hover .bact,.band:focus-visible .bact{text-decoration:underline}
+  .band:focus-visible{outline:3px solid var(--ink);outline-offset:-3px}
   /* The floor: a measured double rule, drawn like an instrument line,
      with the human sentence of the one rule standing under it. */
   .floorline{border-top:1px solid var(--ink);margin:4px 0 0;
@@ -152,7 +154,8 @@
   .row .act{font-size:15px;color:#4c4234;margin:1px 0 0}
   .row .proof{margin:0;font-size:16px;max-width:38em}
   .row .links{display:flex;flex-direction:column;gap:6px;align-items:flex-start}
-  .row .links a{font-weight:700;font-size:15px}
+  .row .links a{display:inline-flex;align-items:center;font-weight:700;font-size:15px;min-width:44px;min-height:44px}
+  .row:target{outline:2px solid var(--ink);outline-offset:-2px}
   /* Isotype marks: one mark per unit the check counted, solid for what
      passed or stands, hollow for what fell or was let through. */
   .marks{margin:12px 0 0;line-height:0}
@@ -181,6 +184,7 @@
   footer{margin-top:58px;border-top:1px solid var(--line);padding:30px 0 46px;
     font-size:15px;color:#4c4234}
   footer p{margin:0 0 4px}
+  .ending{margin-top:0;margin-bottom:0;padding-top:18px;padding-bottom:30px}
 
   @media (max-width:720px){
     .row{grid-template-columns:1fr;gap:6px}
@@ -191,7 +195,7 @@
     .wrap{padding:0 10px}
     .stage .who{padding:22px 10px 6px}
     .drawing{padding:12px 10px 0}
-    .band{gap:6px;padding:6px 8px}
+    .band{gap:6px;padding:6px 8px;min-height:40px}
     .band .bact{margin-left:0}
     .row,.door{padding:14px 12px}
     section{padding:38px 0 4px}
@@ -215,20 +219,20 @@
   <div class="who">
     <h1>Aurora Commons</h1>
     <p class="mission">Aurora Commons addresses the hierarchy of human needs through open source.</p>
-    <p class="firststep">Start with one: <a href="#strata-h">read the first proof in the strata below</a>, then open the See it link beside it.</p>
+    <p class="firststep">Start with one: <a href="#layer-0">read the first proof in the strata below</a>, then open the See it link beside it.</p>
   </div>
-  <div class="drawing" role="img" aria-label="The Ascent drawn as seven layers of ground rising from a floor. From the floor up: layer 0, the body, served by Ground; layer 1, the mind at peace, served by Still; layer 2, learning, served by Atlas; layer 3, belonging, served by Cohort; layer 4, shared truth, served by Graph; layer 5, autonomy, served by Machine; layer 6, trust and meaning, served by Lumen.">
-    <div class="strata-drawing" aria-hidden="true">
-      <div class="band b0"><span class="bnum">0</span><span>the body: food, shelter, health, safety</span><span class="bact">Ground</span></div>
-      <div class="band b1"><span class="bnum">1</span><span>the mind at peace</span><span class="bact">Still</span></div>
-      <div class="band b2"><span class="bnum">2</span><span>learning</span><span class="bact">Atlas</span></div>
-      <div class="band b3"><span class="bnum">3</span><span>belonging</span><span class="bact">Cohort</span></div>
-      <div class="band b4"><span class="bnum">4</span><span>shared truth</span><span class="bact">Graph</span></div>
-      <div class="band b5"><span class="bnum">5</span><span>autonomy</span><span class="bact">Machine</span></div>
-      <div class="band b6"><span class="bnum">6</span><span>trust and meaning</span><span class="bact">Lumen</span></div>
+  <nav class="drawing" aria-label="The seven layers and their proofs">
+    <div class="strata-drawing">
+      <a class="band b0" href="#layer-0"><span class="bnum">0</span><span>the body: food, shelter, health, safety</span><span class="bact">Ground</span></a>
+      <a class="band b1" href="#layer-1"><span class="bnum">1</span><span>the mind at peace</span><span class="bact">Still</span></a>
+      <a class="band b2" href="#layer-2"><span class="bnum">2</span><span>learning</span><span class="bact">Atlas</span></a>
+      <a class="band b3" href="#layer-3"><span class="bnum">3</span><span>belonging</span><span class="bact">Cohort</span></a>
+      <a class="band b4" href="#layer-4"><span class="bnum">4</span><span>shared truth</span><span class="bact">Graph</span></a>
+      <a class="band b5" href="#layer-5"><span class="bnum">5</span><span>autonomy</span><span class="bact">Machine</span></a>
+      <a class="band b6" href="#layer-6"><span class="bnum">6</span><span>trust and meaning</span><span class="bact">Lumen</span></a>
     </div>
     <p class="legend">Each layer is one need. Layers are drawn in order, not to scale of importance.</p>
-  </div>
+  </nav>
   <p class="floorline"><span>The one rule: raise the floor beneath everyone.</span></p>
 </header>
 
@@ -236,8 +240,9 @@
 
 <section aria-labelledby="strata-h">
   <h2 id="strata-h">The strata</h2>
+  <p class="legend">Marks count one set named in the proof beside them. Dark marks show what passed, stood, or was blocked. Open marks show what was dropped, missed, or allowed.</p>
 
-  <article class="row r0">
+  <article class="row r0" id="layer-0">
     <div>
       <p class="layer">Layer 0</p>
       <h3 class="need">the body: food, shelter, health, safety</h3>
@@ -250,7 +255,7 @@
     </div>
   </article>
 
-  <article class="row r1">
+  <article class="row r1" id="layer-1">
     <div>
       <p class="layer">Layer 1</p>
       <h3 class="need">the mind at peace</h3>
@@ -263,7 +268,7 @@
     </div>
   </article>
 
-  <article class="row r2">
+  <article class="row r2" id="layer-2">
     <div>
       <p class="layer">Layer 2</p>
       <h3 class="need">learning</h3>
@@ -276,7 +281,7 @@
     </div>
   </article>
 
-  <article class="row r3">
+  <article class="row r3" id="layer-3">
     <div>
       <p class="layer">Layer 3</p>
       <h3 class="need">belonging</h3>
@@ -289,7 +294,7 @@
     </div>
   </article>
 
-  <article class="row r4">
+  <article class="row r4" id="layer-4">
     <div>
       <p class="layer">Layer 4</p>
       <h3 class="need">shared truth</h3>
@@ -302,7 +307,7 @@
     </div>
   </article>
 
-  <article class="row r5">
+  <article class="row r5" id="layer-5">
     <div>
       <p class="layer">Layer 5</p>
       <h3 class="need">autonomy</h3>
@@ -315,7 +320,7 @@
     </div>
   </article>
 
-  <article class="row r6">
+  <article class="row r6" id="layer-6">
     <div>
       <p class="layer">Layer 6</p>
       <h3 class="need">trust and meaning</h3>
@@ -365,7 +370,7 @@
   </div>
 </footer>
 
-<p>That is everything. The page ends here.</p>
+<p class="wrap ending">That is everything. The page ends here.</p>
 
 </body>
 </html>
