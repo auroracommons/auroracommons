@@ -38,6 +38,10 @@ One rule stands over the whole design: be fair to others. It is the Commons' onl
 
 Direction stays human. Joshua Thomas directs the building. The members direct the governance. Artificial intelligence serves this work as a tool: preparing material, explaining questions in plain language, counting ballots, publishing records. It holds no vote, no veto, no seat, and no agenda power, and it does not frame the questions the members vote on. Question wording is proposed in the open, amended by any member, and adopted by vote before it is used.
 
+## The road to everyone
+
+Growth to billions runs on the machinery of two companion documents. [Billions, Verifiably](PARTICIPATION.md) is the participation engine: involvement counted in five tiers that are published separately and never blended, distribution through the institutions that already hold the billions, participatory budgeting as the proven engine that turns votes into physical change, and verification any stranger can redo, with fraud estimates printed beside the counts. [A Place for Everyone](REGISTRY.md) is the Commons Registry: every individual and every entity gets a place on the map, given rather than earned, held on the one condition of fairness to others, with standing that grows only by verified contribution and is never sold. The Registry is also the invitation surface: organizations are named as invited, honestly, until their own ledgers say otherwise.
+
 ## How the compounding works
 
 Each primitive strengthens the others. The graph gives the tutor structure. The evals give every piece its proof. The commons gives the work its people. The guardrails give the whole thing its trustworthiness. On top of that sit the mechanisms already written into the strategy: shared evaluations so proof travels, one knowledge graph so structure travels, open licenses so anyone can build without asking, the open table so contribution is credited in proportion to what is verified, and a first step small enough to take today inside every piece, because hope is infrastructure.

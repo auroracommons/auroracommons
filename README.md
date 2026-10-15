@@ -32,6 +32,8 @@ A phase that misses its gate gets a written reason and a revised projection, nev
 - [Intentions](INTENTIONS.md): what this work is for, what it will never do, and how it earns, stated plainly.
 - [The ecosystem](ECOSYSTEM.md): the long term design, five primitives that compound, open to every industry and every level of participation.
 - [The democratic foundation](DEMOCRACY.md): one person, one voice from the age of communication, how the Commons governs itself, and why its direction stays human.
+- [Billions, verifiably](PARTICIPATION.md): how the Commons grows to everyone, involvement counted in tiers nobody can inflate, fraud published beside the counts, and votes wired to real change, with the precedents and the reusable codebases cited.
+- [A place for everyone](REGISTRY.md): the Commons Registry, where every individual and every entity that deserves to exist gets a place, held on one condition: be fair to others.
 - [The Ledger](LEDGER.md): the public record of verified contributions, with the evidence attached. Credit is proportional to proof and never sold.
 - [Prompts](PROMPTS.md): copy paste prompts that let anyone, or any agent, contribute: run an Eval Challenge, file a failure report, take a good first issue, adopt a primitive, audit a claim.
 - [The Open Table](OPEN_TABLE.md): the contribution protocol. Three doors, the evidence rules, and the duties agents carry, including naming your operator.
