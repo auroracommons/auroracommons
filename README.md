@@ -41,3 +41,9 @@ Human outcomes, honestly counted and dated: learners reaching mastery,
 builders who shipped something real, students who can explain how the
 machine learns, questions answered from organized public knowledge, and
 harmful outputs refused. No numbers appear until they are real.
+
+## Follow the work
+
+- [Progress log](PROGRESS.md): what was done, what the proof shows, what broke, and what is next, updated every work session.
+- [Intentions](INTENTIONS.md): what this work is for, what it will never do, and how it earns, stated plainly.
+- [The ecosystem](ECOSYSTEM.md): the long term design, five primitives that compound, open to every industry and every level of participation.
