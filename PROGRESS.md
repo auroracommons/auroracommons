@@ -7,6 +7,7 @@ This is the public record of the work: what was done, what the proof shows, what
 Every Commons site now opens with the same slim bar: the Aurora Commons wordmark, then Foundations and the seven acts in layer order, each one tap away. All the sites read as one site.
 The home page footer also gained a link to the Aurora Commons company page on LinkedIn, after the record.
 The home page was also held to Joshua's anti template rule the same day: the bar is a plain line of text links rather than a filled band, the strata rows are ruled ledger lines rather than boxed cards, the See it and Check it links are plain text rather than buttons, and the spaced capital labels are gone. What remains is type, rules, and the drawn strata.
+And to his art doctrine, drawn from art history rather than web fashion: the strata tints now step by one even rule from earth to dawn; the floor is a measured double rule with the human sentence of the one rule standing under it in plain ink; each strata row carries an Isotype picture of its own count, one mark per unit the check counted, solid for what stands and hollow for what fell; the record is ruled like a ledger; and the spacing was opened up so the page breathes. Nothing on the page is there to impress without informing.
 
 ## October 15, 2026: the home page, rebuilt as a Proof
 

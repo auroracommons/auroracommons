@@ -83,8 +83,8 @@
     --accent:#7a4a12;
     --floor:#211812;
     --floor-ink:#f9e7bd;
-    --l0:#b57e46; --l1:#c39055; --l2:#d0a468;
-    --l3:#ddb57c; --l4:#e8c78f; --l5:#f2d9a4; --l6:#f9e7bd;
+    --l0:#b57e46; --l1:#c0905a; --l2:#cca16e;
+    --l3:#d7b382; --l4:#e2c495; --l5:#eed6a9; --l6:#f9e7bd;
   }
   *{box-sizing:border-box}
   html{margin:0;padding:0}
@@ -107,9 +107,9 @@
   h1{font-size:clamp(34px,7vw,58px);letter-spacing:-1.5px;margin:0 0 6px;font-weight:800;line-height:1.05}
   .mission{font-size:clamp(16px,2.6vw,21px);margin:0;max-width:34em}
   .drawing{flex:1;display:flex;flex-direction:column;justify-content:flex-end;
-    max-width:1060px;margin:0 auto;width:100%;padding:18px 20px 0}
-  .strata-drawing{display:flex;flex-direction:column-reverse;border:1px solid var(--ink);border-bottom:none}
-  .band{display:flex;align-items:center;gap:10px;padding:7px 12px;font-size:clamp(12.5px,2.2vw,15.5px);
+    max-width:1060px;margin:0 auto;width:100%;padding:26px 20px 0}
+  .strata-drawing{display:flex;flex-direction:column-reverse}
+  .band{display:flex;align-items:center;gap:10px;padding:9px 12px;font-size:clamp(12.5px,2.2vw,15.5px);
     border-top:1px solid rgba(33,24,18,.35)}
   .band:first-child{border-top:none}
   .band .bnum{font-weight:800;font-variant-numeric:tabular-nums;min-width:1em}
@@ -118,18 +118,22 @@
   .band.b2{background:var(--l2)} .band.b3{background:var(--l3)}
   .band.b4{background:var(--l4)} .band.b5{background:var(--l5)}
   .band.b6{background:var(--l6)}
-  .floorline{background:var(--floor);color:var(--floor-ink);margin-top:0;
-    padding:14px 20px;text-align:center;font-weight:700;
-    font-size:clamp(15px,2.8vw,20px);letter-spacing:.2px}
+  /* The floor: a measured double rule, drawn like an instrument line,
+     with the human sentence of the one rule standing under it. */
+  .floorline{border-top:1px solid var(--ink);margin:4px 0 0;
+    padding:0 20px 30px;font-weight:700;color:var(--ink);
+    font-size:clamp(16px,2.8vw,21px)}
+  .floorline span{display:block;border-top:4px solid var(--ink);padding-top:14px;
+    max-width:1060px;margin:0 auto}
 
-  section{padding:52px 0 6px}
+  section{padding:72px 0 6px}
   h2{font-size:clamp(22px,4vw,28px);letter-spacing:-.5px;margin:0 0 18px;font-weight:800}
   h3{margin:0}
 
   /* THE STRATA: one ruled row per layer, like a ledger. */
   .row{display:grid;grid-template-columns:230px 1fr auto;gap:8px 26px;align-items:start;
     border-top:1px solid var(--line);border-left:6px solid var(--line);
-    padding:16px 0 16px 16px;margin:0}
+    padding:22px 0 22px 16px;margin:0}
   .row.r0{border-left-color:var(--l0)} .row.r1{border-left-color:var(--l1)}
   .row.r2{border-left-color:var(--l2)} .row.r3{border-left-color:var(--l3)}
   .row.r4{border-left-color:var(--l4)} .row.r5{border-left-color:var(--l5)}
@@ -140,15 +144,22 @@
   .row .proof{margin:0;font-size:16px;max-width:38em}
   .row .links{display:flex;flex-direction:column;gap:6px;align-items:flex-start}
   .row .links a{font-weight:700;font-size:15px}
+  /* Isotype marks: one mark per unit the check counted, solid for what
+     passed or stands, hollow for what fell or was let through. */
+  .marks{margin:12px 0 0;line-height:0}
+  .marks span{display:inline-block;width:9px;height:9px;background:var(--ink);margin:0 3px 3px 0}
+  .marks span.hollow{background:transparent;border:1.5px solid var(--ink)}
+  .marks.many span{width:7px;height:7px;margin:0 2px 2px 0}
 
   /* THE DOORS */
   .door{display:block;border-top:1px solid var(--line);
-    padding:14px 0 14px 16px;margin:0;
+    padding:18px 0 18px 16px;margin:0;
     font-size:17px;font-weight:600;color:var(--ink);text-decoration:none}
   .door:hover{text-decoration:underline}
 
-  /* THE RECORD */
-  .record{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:10px 22px}
+  /* THE RECORD: ruled lines, kept like a ledger. */
+  .record{list-style:none;margin:0;padding:0}
+  .record li{border-top:1px solid var(--line);padding:11px 0 11px 16px}
   .record a{font-weight:600;text-decoration:none;font-size:16px}
   .record a:hover{text-decoration:underline}
 
@@ -201,7 +212,7 @@
       <div class="band b6"><span class="bnum">6</span><span>trust and meaning</span><span class="bact">Lumen</span></div>
     </div>
   </div>
-  <p class="floorline">The one rule: raise the floor beneath everyone.</p>
+  <p class="floorline"><span>The one rule: raise the floor beneath everyone.</span></p>
 </header>
 
 <main class="wrap">
@@ -215,7 +226,7 @@
       <h3 class="need">the body: food, shelter, health, safety</h3>
       <p class="act">Ground</p>
     </div>
-    <p class="proof">8 listings for free food, shelter, and health help near New Rochelle; every one checked against the provider's own page on October 15, 2026; 4 more were dropped for failing the check.</p>
+    <div><p class="proof">8 listings for free food, shelter, and health help near New Rochelle; every one checked against the provider's own page on October 15, 2026; 4 more were dropped for failing the check.</p><p class="marks" role="img" aria-label="One mark for each listing checked on October 15, 2026: 8 solid marks for the listings that passed the check, 4 hollow marks for the ones that were dropped."><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span class="hollow"></span><span class="hollow"></span><span class="hollow"></span><span class="hollow"></span></p></div>
     <div class="links">
       <a class="see" href="https://auroracommons.github.io/ground/">See it</a>
       <a href="https://github.com/auroracommons/ground">Check it</a>
@@ -228,7 +239,7 @@
       <h3 class="need">the mind at peace</h3>
       <p class="act">Still</p>
     </div>
-    <p class="proof">A breathing pacer checked over 3 full rounds: its timing drifted by at most 1 millisecond. The page makes zero network calls; nothing leaves the device.</p>
+    <div><p class="proof">A breathing pacer checked over 3 full rounds: its timing drifted by at most 1 millisecond. The page makes zero network calls; nothing leaves the device.</p><p class="marks" role="img" aria-label="One mark for each of the 3 full rounds the breathing pacer was checked over."><span></span><span></span><span></span></p></div>
     <div class="links">
       <a class="see" href="https://auroracommons.github.io/still/">See it</a>
       <a href="https://github.com/auroracommons/still">Check it</a>
@@ -241,7 +252,7 @@
       <h3 class="need">learning</h3>
       <p class="act">Atlas</p>
     </div>
-    <p class="proof">One claim, shown with its full proof, the same on a phone, a watch, a voice, and a wall: the Sun is 99.86 percent of all the mass in the solar system, checked against its recorded sources on October 15, 2026.</p>
+    <div><p class="proof">One claim, shown with its full proof, the same on a phone, a watch, a voice, and a wall: the Sun is 99.86 percent of all the mass in the solar system, checked against its recorded sources on October 15, 2026.</p><p class="marks" role="img" aria-label="One mark for the one claim on the proof screen."><span></span></p></div>
     <div class="links">
       <a class="see" href="https://auroracommons.github.io/atlas/">See it</a>
       <a href="https://github.com/auroracommons/atlas">Check it</a>
@@ -254,7 +265,7 @@
       <h3 class="need">belonging</h3>
       <p class="act">Cohort</p>
     </div>
-    <p class="proof">In the live demo, 25 members, 48 messages, 27 shared resources, and 5 events; its test suite passes 7 of 7 checks from a clean start.</p>
+    <div><p class="proof">In the live demo, 25 members, 48 messages, 27 shared resources, and 5 events; its test suite passes 7 of 7 checks from a clean start.</p><p class="marks" role="img" aria-label="One mark for each of the 7 checks in the test suite, all 7 passing from a clean start."><span></span><span></span><span></span><span></span><span></span><span></span><span></span></p></div>
     <div class="links">
       <a class="see" href="https://auroracommons.github.io/cohort/">See it</a>
       <a href="https://github.com/auroracommons/cohort">Check it</a>
@@ -267,7 +278,7 @@
       <h3 class="need">shared truth</h3>
       <p class="act">Graph</p>
     </div>
-    <p class="proof">Of every 100 facts Graph pulls from text, about 94 are right, measured on its labeled test set on October 15, 2026; 7 of 7 tests pass.</p>
+    <div><p class="proof">Of every 100 facts Graph pulls from text, about 94 are right, measured on its labeled test set on October 15, 2026; 7 of 7 tests pass.</p><p class="marks many" role="img" aria-label="One mark for each fact in a hundred counted: the solid marks picture about 94 of every 100 facts pulled right, the hollow marks the rest."><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span class="hollow"></span><span class="hollow"></span><span class="hollow"></span><span class="hollow"></span><span class="hollow"></span><span class="hollow"></span></p></div>
     <div class="links">
       <a class="see" href="https://auroracommons.github.io/graph/">See it</a>
       <a href="https://github.com/auroracommons/graph">Check it</a>
@@ -280,7 +291,7 @@
       <h3 class="need">autonomy</h3>
       <p class="act">Machine</p>
     </div>
-    <p class="proof">A transformer built from scratch passes 7 of 7 gradient checks at a tolerance of 1 in 100,000; its small language model has 358,052 parts, each one counted by the code.</p>
+    <div><p class="proof">A transformer built from scratch passes 7 of 7 gradient checks at a tolerance of 1 in 100,000; its small language model has 358,052 parts, each one counted by the code.</p><p class="marks" role="img" aria-label="One mark for each of the 7 gradient checks, all 7 passing."><span></span><span></span><span></span><span></span><span></span><span></span><span></span></p></div>
     <div class="links">
       <a class="see" href="https://auroracommons.github.io/machine/">See it</a>
       <a href="https://github.com/auroracommons/machine">Check it</a>
@@ -293,7 +304,7 @@
       <h3 class="need">trust and meaning</h3>
       <p class="act">Lumen</p>
     </div>
-    <p class="proof">A guardrail tested on 41 questions from one tradition's text: it blocked 12 of 12 questions it must refuse, allowed 8 of 8 it must allow.</p>
+    <div><p class="proof">A guardrail tested on 41 questions from one tradition's text: it blocked 12 of 12 questions it must refuse, allowed 8 of 8 it must allow.</p><p class="marks" role="img" aria-label="One mark for each question in the guardrail test: 12 solid marks for the questions it blocked, 8 hollow marks for the questions it allowed."><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span class="hollow"></span><span class="hollow"></span><span class="hollow"></span><span class="hollow"></span><span class="hollow"></span><span class="hollow"></span><span class="hollow"></span><span class="hollow"></span></p></div>
     <div class="links">
       <a class="see" href="https://auroracommons.github.io/lumen/">See it</a>
       <a href="https://github.com/auroracommons/lumen">Check it</a>
