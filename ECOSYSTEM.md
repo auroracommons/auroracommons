@@ -135,6 +135,18 @@ Standings are published per layer, and records can be beaten by anyone, includin
 
 None of this touches any person's place, voice, or pursuit. A person's standing never depends on any firm's, and no firm speaks for any person.
 
+## The contest for standing
+
+For a person, nothing here is a contest. A person's place is given, not earned; a person with unmet needs gives nothing, and the tools stay free. Belonging is never competed for.
+
+For entities it is different. A firm's place on the map is given, as everyone's is. Its standing is not. Standing, the featured spot in a layer or a field, is a title earned, held, and lost in the open. No seat is guaranteed. Size earns nothing. Pledges earn nothing. Past glory earns nothing. Money alone earns nothing beyond the labeled funding line the funds rules allow: standing follows verified contribution only.
+
+Standings are published per layer and per field from the public ledger, measured as verified contribution in proportion to capacity. That proportion is the point: efficiency and nimbleness beat bulk, and a small firm, or a single person, can take a giant's spot by out verifying it. Standing expires. Like a listing on a Ground board, it stands only while its proof is fresh: keep raising the floor, or yield the spot to whoever is raising it now.
+
+Working together is how the contest is won. Work that others verifiably build on earns credit from the outcomes it enabled, so the surest way to lead a field is to make the field stronger. That shared scoreboard is the firms' common road to a better future after AI, improving with every round of the record. Proven unfairness still costs the place itself, under the one rule, in the open.
+
+The standard these rules are built toward, stated as a standard and never as an achievement, is perfect incentives: the cheapest way to gain standing must always be to actually raise the floor. When a cheaper way is found that gains standing without raising it, that way is closed in the open and the closing recorded. The rules are versioned like everything else, improved with every iteration, and every change is published with its reason.
+
 ## Skin in the game
 
 Everyone who takes part holds a real stake, in four forms. Credit: every verified contribution is entered in the public ledger, proportional to what was proven, and credit is never sold or laundered. Voice: say in the roadmap is weighted by verified contribution, earned and visible. Ownership: everything is open source and forkable, so anyone's stake can never be held hostage; if the stewardship ever betrays the intentions, the ecosystem itself can be taken up and carried on by the people who built it. Upside: when the ecosystem produces revenue, the ledger is the published basis for sharing it, and the terms will be published before money moves, not after.

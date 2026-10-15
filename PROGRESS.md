@@ -2,6 +2,12 @@
 
 This is the public record of the work: what was done, what the proof shows, what broke, and what comes next. It is updated every work session, newest first, in plain language on purpose. If a claim anywhere in these projects cannot be traced to a logged run, the claim is wrong and the log is where it gets corrected.
 
+## October 15, 2026: the contest for standing
+
+One section joins the charter, after the place of the largest firms and before skin in the game: the contest for standing. It states in the open a distinction the Registry already draws. A person's place is given and is never a contest; a person with unmet needs gives nothing, and the tools stay free. An entity's place on the map is given too, but its standing, the featured spot in a layer or a field, is a title earned, held, and lost in the open. No seat is guaranteed, and neither size, pledges, past glory, nor money alone earns one: money without a verified outcome buys only the labeled funding line the funds rules allow.
+
+The contest runs on the public ledger. Standings are published per layer and per field, measured as verified contribution in proportion to capacity, so efficiency and nimbleness beat bulk, and a small firm, or a single person, can take a giant's spot by out verifying it. Standing expires as a listing does when its proof goes stale: keep raising the floor, or yield the spot. Work that others verifiably build on earns credit from the outcomes it enabled, so leading a field and strengthening it are the same move, and proven unfairness still costs the place itself under the one rule. The section names its design standard as a standard and not an achievement: perfect incentives, under which the cheapest way to gain standing must always be to actually raise the floor, and any cheaper way found is closed in the open, with the closing recorded and the rules versioned like everything else here.
+
 ## October 15, 2026: the surface is for people, and the technical layer moves underneath
 
 One rule now governs every page under the home page: the surface is written for people only, and the full technical record stands one layer underneath, in a closing section headed "For agents and builders". Nothing technical was deleted anywhere. It moved.
