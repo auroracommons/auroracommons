@@ -105,6 +105,20 @@ Individuals, including the poor: begin with one verified contribution of what th
 
 Everyone wins: nothing here is won at another's expense. Standing comes only from contribution, open to all.
 
+## The place of the largest firms
+
+The largest firms hold what the Commons cannot build: logistics, manufacturing, distribution, pharmacies, networks, and computing at planetary scale. Their place: to carry verified help layer by layer of The Ascent, where their capacity moves the floor fastest. A place is a seat and a record, never a vote: governance stays one person, one voice; credit never buys votes or agenda power.
+
+What they give is capacity made verifiable: supply and delivery for Ground boards, datasets and claims opened as Proofs, primitives adopted in production, results reported back, funding in participatory budgets whose spending members decide, and baselines published for others to beat.
+
+What they get is structural, not promised: a public record of verified contribution no advertising can buy and no rival can fake, because every entry carries its proof. Standing in that record is the asset members, partners, workers, and governments check before trusting, hiring, buying, or adopting. The floor rising is their market rising: people with needs met become customers, workers, and builders, measured in the open, not asserted.
+
+Priorities change by the nature of the system: the record is public, proportional, and open to any rival on the same terms. Verified contribution becomes a field of competition beside price and quality. Competing stays; what it is about widens. No one is asked to be generous. The design makes the beneficial move the advantageous one.
+
+Standings are published per layer, and records can be beaten by anyone, including a single person, with the beating credited in the same open record. Joining is voluntary; leaving is free; the only ground for losing a place is the one rule: proven unfairness, in the open.
+
+None of this touches any person's place, voice, or pursuit. A person's standing never depends on any firm's, and no firm speaks for any person.
+
 ## Skin in the game
 
 Everyone who takes part holds a real stake, in four forms. Credit: every verified contribution is entered in the public ledger, proportional to what was proven, and credit is never sold or laundered. Voice: say in the roadmap is weighted by verified contribution, earned and visible. Ownership: everything is open source and forkable, so anyone's stake can never be held hostage; if the stewardship ever betrays the intentions, the ecosystem itself can be taken up and carried on by the people who built it. Upside: when the ecosystem produces revenue, the ledger is the published basis for sharing it, and the terms will be published before money moves, not after.

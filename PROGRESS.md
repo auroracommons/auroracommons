@@ -2,6 +2,10 @@
 
 This is the public record of the work: what was done, what the proof shows, what broke, and what comes next. It is updated every work session, newest first, in plain language on purpose. If a claim anywhere in these projects cannot be traced to a logged run, the claim is wrong and the log is where it gets corrected.
 
+## October 15, 2026: the place of the largest firms
+
+The charter now gives the largest firms a direct purpose and place. They are carriers of scale: the logistics, manufacturing, distribution, networks, and computing the Commons cannot build, put to carrying verified help layer by layer of The Ascent. Their incentive is standing in a public record of verified contribution that no advertising can buy, and a rising floor that is also a rising market. Competition is redirected rather than removed: standings are published per layer and records can be beaten by anyone. Governance is untouched: a place is a seat and a record, never a vote, and no person's standing depends on any firm's.
+
 ## October 15, 2026: one site, one bar
 
 Every Commons site now opens with the same slim bar: the Aurora Commons wordmark, then Foundations and the seven acts in layer order, each one tap away. All the sites read as one site.
