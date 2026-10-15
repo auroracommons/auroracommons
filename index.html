@@ -62,6 +62,17 @@
   .doors{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px}
   .doors .card p{margin:6px 0 0;font-size:14.5px;color:#33373d}
   .doors h3{font-size:17px}
+  /* Cross highlighting: an Ascent row and its exhibit card light up together */
+  .rung{cursor:pointer}
+  .rung.hl{border-color:var(--accent);background:var(--chip)}
+  .rung:focus{outline:2px solid var(--accent);outline-offset:2px}
+  .acts .card.hl{border-color:var(--accent);box-shadow:0 0 0 2px rgba(46,93,67,.35)}
+  /* Door effect lines: lit on hover, keyboard focus, and tap */
+  .doors .card .effect{margin-top:12px;background:var(--bg);border:1px dashed var(--line);
+    border-radius:10px;padding:10px 12px;font-size:14.5px;color:var(--soft);
+    transition:background .2s,border-color .2s,color .2s}
+  .doors .card:hover .effect,.doors .card:focus-within .effect,.doors .card.lit .effect{
+    background:var(--chip);border-color:var(--accent);border-style:solid;color:var(--ink)}
   .chips{display:flex;flex-wrap:wrap;gap:8px;justify-content:center}
   .chip{display:inline-block;background:var(--card);border:1px solid var(--line);border-radius:999px;
     padding:7px 15px;font-size:14.5px;font-weight:600;color:var(--accent);text-decoration:none}
@@ -88,13 +99,13 @@
   <h2>The Ascent</h2>
   <p class="sub">One map of human needs, ground up. Five acts, and a first build on each of the two lowest layers.</p>
   <div class="ascent">
-    <div class="rung r6"><span class="lname">6 · Trust and meaning</span><span class="lact">Lumen</span></div>
-    <div class="rung r5"><span class="lname">5 · Autonomy</span><span class="lact">Machine</span></div>
-    <div class="rung r4"><span class="lname">4 · Shared truth</span><span class="lact">Graph</span></div>
-    <div class="rung r3"><span class="lname">3 · Belonging</span><span class="lact">Cohort</span></div>
-    <div class="rung r2"><span class="lname">2 · Learning</span><span class="lact">Atlas</span></div>
-    <div class="rung r1"><span class="lname">1 · The mind at peace</span><span class="lact">Still</span></div>
-    <div class="rung r0 ground"><span class="lname">0 · The body</span><span class="lact">Ground</span></div>
+    <div class="rung r6" data-act="lumen" tabindex="0"><span class="lname">6 · Trust and meaning</span><span class="lact">Lumen</span></div>
+    <div class="rung r5" data-act="machine" tabindex="0"><span class="lname">5 · Autonomy</span><span class="lact">Machine</span></div>
+    <div class="rung r4" data-act="graph" tabindex="0"><span class="lname">4 · Shared truth</span><span class="lact">Graph</span></div>
+    <div class="rung r3" data-act="cohort" tabindex="0"><span class="lname">3 · Belonging</span><span class="lact">Cohort</span></div>
+    <div class="rung r2" data-act="atlas" tabindex="0"><span class="lname">2 · Learning</span><span class="lact">Atlas</span></div>
+    <div class="rung r1" data-act="still" tabindex="0"><span class="lname">1 · The mind at peace</span><span class="lact">Still</span></div>
+    <div class="rung r0 ground" data-act="ground" tabindex="0"><span class="lname">0 · The body</span><span class="lact">Ground</span></div>
   </div>
 </section>
 
@@ -103,7 +114,7 @@
   <p class="sub">Each card is a working exhibit. The number on every card comes from a logged run or a logged check in its repository.</p>
   <div class="acts">
 
-    <div class="card">
+    <div class="card" data-act="ground">
       <div class="shot"><span>Ground</span></div>
       <div class="need">Layer 0 · The body</div>
       <h3>Ground</h3>
@@ -114,7 +125,7 @@
       </div>
     </div>
 
-    <div class="card">
+    <div class="card" data-act="still">
       <div class="shot"><span>Still</span></div>
       <div class="need">Layer 1 · The mind at peace</div>
       <h3>Still</h3>
@@ -125,7 +136,7 @@
       </div>
     </div>
 
-    <div class="card">
+    <div class="card" data-act="atlas">
       <div class="shot"><span>Atlas</span></div>
       <div class="need">Layer 2 · Learning</div>
       <h3>Atlas</h3>
@@ -136,7 +147,7 @@
       </div>
     </div>
 
-    <div class="card">
+    <div class="card" data-act="cohort">
       <div class="shot"><span>Cohort</span></div>
       <div class="need">Layer 3 · Belonging</div>
       <h3>Cohort</h3>
@@ -147,7 +158,7 @@
       </div>
     </div>
 
-    <div class="card">
+    <div class="card" data-act="machine">
       <div class="shot"><span>Machine</span></div>
       <div class="need">Layer 5 · Autonomy</div>
       <h3>Machine</h3>
@@ -158,7 +169,7 @@
       </div>
     </div>
 
-    <div class="card">
+    <div class="card" data-act="graph">
       <div class="shot"><span>Graph</span></div>
       <div class="need">Layer 4 · Shared truth</div>
       <h3>Graph</h3>
@@ -169,7 +180,7 @@
       </div>
     </div>
 
-    <div class="card">
+    <div class="card" data-act="lumen">
       <div class="shot"><span>Lumen</span></div>
       <div class="need">Layer 6 · Trust and meaning</div>
       <h3>Lumen</h3>
@@ -207,17 +218,17 @@
   <div class="doors">
     <div class="card">
       <h3>Verify one listing</h3>
-      <p>Verify one listing in Ground: your name and date keep it alive.</p>
+      <div class="effect">Verify one listing in Ground: your name and date keep it alive.</div>
       <div class="btns"><a class="btn solid" href="https://github.com/auroracommons/ground">Open Ground</a></div>
     </div>
     <div class="card">
       <h3>Check one claim</h3>
-      <p>Check one claim in Atlas: recompute its seal and log the check.</p>
+      <div class="effect">Check one claim in Atlas: recompute its seal and log the check.</div>
       <div class="btns"><a class="btn solid" href="https://auroracommons.github.io/atlas/">Open the Atlas proof</a></div>
     </div>
     <div class="card">
       <h3>Report one thing wrong</h3>
-      <p>Report one thing that is wrong: it is fixed or answered in the open.</p>
+      <div class="effect">Report one thing that is wrong: it is fixed or answered in the open.</div>
       <div class="btns"><a class="btn solid" href="https://github.com/auroracommons/auroracommons/issues">Open an issue</a></div>
     </div>
   </div>
@@ -244,5 +255,44 @@
 </footer>
 
 </div>
+<script>
+  // Ascent rows and exhibit cards highlight each other, both ways, on
+  // hover, keyboard focus, and tap. Dependency free.
+  (function(){
+    var rungs = document.querySelectorAll(".rung[data-act]");
+    var cards = {};
+    document.querySelectorAll(".acts .card[data-act]").forEach(function(c){
+      cards[c.getAttribute("data-act")] = c;
+    });
+    function setHL(act, on){
+      rungs.forEach(function(r){
+        if (r.getAttribute("data-act") === act) r.classList.toggle("hl", on);
+      });
+      var c = cards[act];
+      if (c) c.classList.toggle("hl", on);
+    }
+    rungs.forEach(function(r){
+      var act = r.getAttribute("data-act");
+      r.addEventListener("mouseenter", function(){ setHL(act, true); });
+      r.addEventListener("mouseleave", function(){ setHL(act, false); });
+      r.addEventListener("focus", function(){ setHL(act, true); });
+      r.addEventListener("blur", function(){ setHL(act, false); });
+      r.addEventListener("click", function(){ setHL(act, true); });
+    });
+    Object.keys(cards).forEach(function(act){
+      var c = cards[act];
+      c.addEventListener("mouseenter", function(){ setHL(act, true); });
+      c.addEventListener("mouseleave", function(){ setHL(act, false); });
+      c.addEventListener("focusin", function(){ setHL(act, true); });
+      c.addEventListener("focusout", function(){ setHL(act, false); });
+      c.addEventListener("click", function(){ setHL(act, true); });
+    });
+    // Doors: a tap lights the effect line on touch screens, where there
+    // is no hover. Hover and keyboard focus light it through CSS alone.
+    document.querySelectorAll(".doors .card").forEach(function(d){
+      d.addEventListener("click", function(){ d.classList.add("lit"); });
+    });
+  })();
+</script>
 </body>
 </html>

@@ -2,6 +2,14 @@
 
 This is the public record of the work: what was done, what the proof shows, what broke, and what comes next. It is updated every work session, newest first, in plain language on purpose. If a claim anywhere in these projects cannot be traced to a logged run, the claim is wrong and the log is where it gets corrected.
 
+## October 15, 2026: a UI clarity pass
+
+The standard, in one line: every tap should inform, help, or empower, in plain words, right away.
+Ground: the category chips now filter the board with a plain count line, cards gained call and directions links where the record carries them, and a Keep this listing alive button opens how a check lands on the card itself; stale listings render dimmed with a Needs a fresh check label.
+Still: a check in now registers on the page, the pacer reports the rounds breathed when it stops, saving confirms with the time, and Clear asks once inline before it wipes. No network calls, as before.
+Front page: Ascent rows and exhibit cards highlight each other on hover, focus, and tap, and each one minute door lights its effect line the same three ways.
+The Still pacer test was rerun after the edits: 9 of 9 transitions, maximum drift 1 ms, unchanged.
+
 ## October 15, 2026: the advisor takes a stage name
 
 On the project, the advisor is credited as Groundskeeper from today, by his choice. LinkedIn and job facing surfaces keep his real name.
