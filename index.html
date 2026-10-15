@@ -91,15 +91,15 @@
   body{margin:0;background:var(--paper);color:var(--ink);
     font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
     line-height:1.5;-webkit-font-smoothing:antialiased}
-  a{color:var(--accent)}
+  a{color:var(--ink);text-decoration:underline}
   .wrap{max-width:1060px;margin:0 auto;padding:0 20px}
 
-  /* The shared Commons bar: the same slim band tops every Commons site. */
-  .commonsbar{background:var(--floor);color:var(--floor-ink);display:flex;flex-wrap:wrap;
-    gap:4px 18px;align-items:center;padding:8px 20px;font-size:13.5px}
-  .commonsbar a{color:var(--floor-ink);text-decoration:none}
+  /* The shared Commons bar: one plain line of text links, on every Commons site. */
+  .commonsbar{display:flex;flex-wrap:wrap;gap:4px 18px;align-items:baseline;
+    padding:10px 20px 8px;font-size:14px;border-bottom:1px solid var(--line)}
+  .commonsbar a{color:var(--ink);text-decoration:none}
   .commonsbar a:hover{text-decoration:underline}
-  .commonsbar .wordmark{font-weight:800;letter-spacing:.2px;margin-right:4px}
+  .commonsbar .wordmark{font-weight:800;margin-right:4px}
 
   /* THE FLOOR: the first screen. Name, mission, the drawn strata, the floor. */
   .stage{min-height:100svh;display:flex;flex-direction:column}
@@ -126,29 +126,26 @@
   h2{font-size:clamp(22px,4vw,28px);letter-spacing:-.5px;margin:0 0 18px;font-weight:800}
   h3{margin:0}
 
-  /* THE STRATA: one row per layer. */
+  /* THE STRATA: one ruled row per layer, like a ledger. */
   .row{display:grid;grid-template-columns:230px 1fr auto;gap:8px 26px;align-items:start;
-    background:var(--card);border:1px solid var(--line);border-left:10px solid var(--line);
-    padding:18px 20px;margin:0 0 10px}
+    border-top:1px solid var(--line);border-left:6px solid var(--line);
+    padding:16px 0 16px 16px;margin:0}
   .row.r0{border-left-color:var(--l0)} .row.r1{border-left-color:var(--l1)}
   .row.r2{border-left-color:var(--l2)} .row.r3{border-left-color:var(--l3)}
   .row.r4{border-left-color:var(--l4)} .row.r5{border-left-color:var(--l5)}
   .row.r6{border-left-color:var(--l6)}
-  .row .layer{font-size:12.5px;font-weight:700;text-transform:uppercase;letter-spacing:.8px;color:var(--accent)}
+  .row .layer{font-size:13.5px;font-weight:700;margin:0}
   .row .need{font-size:18px;font-weight:700;line-height:1.3;margin:2px 0 0}
   .row .act{font-size:15px;color:#4c4234;margin:1px 0 0}
   .row .proof{margin:0;font-size:16px;max-width:38em}
-  .row .links{display:flex;flex-direction:column;gap:8px;align-items:flex-start}
-  .row .links a{font-weight:700;text-decoration:none;border:1px solid var(--accent);
-    padding:6px 14px;border-radius:6px;white-space:nowrap;font-size:14.5px}
-  .row .links a.see{background:var(--accent);color:#fff}
-  .row .links a:hover{text-decoration:underline}
+  .row .links{display:flex;flex-direction:column;gap:6px;align-items:flex-start}
+  .row .links a{font-weight:700;font-size:15px}
 
   /* THE DOORS */
-  .door{display:block;background:var(--card);border:1px solid var(--line);
-    border-left:10px solid var(--ink);padding:16px 20px;margin:0 0 10px;
+  .door{display:block;border-top:1px solid var(--line);
+    padding:14px 0 14px 16px;margin:0;
     font-size:17px;font-weight:600;color:var(--ink);text-decoration:none}
-  .door:hover{border-color:var(--accent);text-decoration:underline}
+  .door:hover{text-decoration:underline}
 
   /* THE RECORD */
   .record{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:10px 22px}
