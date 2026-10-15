@@ -4,11 +4,10 @@ This is the public record of the work: what was done, what the proof shows, what
 
 ## October 15, 2026: the mission is the headline
 
-**What shipped.** The front door was reframed today, at the founder's correction. His point, plainly: the point is not the five projects. Aurora Commons exists to address the hierarchy of human needs through open source, drawn openly as The Ascent, and the profile and the front page now lead with that mission. The five projects are presented as what they are, early exhibits of the mission at work, each with its receipt, under a short Early exhibits heading. The method is stated beside the mission: build on proven open source codebases, never reinvent the wheel.
-
-**The proof.** Words and order only. The motto was adopted into the record in the founder's own words: Stand on the shoulders of giants. It now stands on the profile and in the front page hero. No number changed anywhere, and the dated entries below stand exactly as written.
-
-**What is next.** Unchanged: the twice daily evolution pass, the November 16, 2026 checkpoint, and the first Ledger entries from outside contributors.
+The founder corrected the framing: the point is not the five projects.
+Aurora Commons addresses the hierarchy of human needs through open source.
+The projects are early exhibits. The motto, his words: Stand on the shoulders of giants.
+No number changed.
 
 ## October 15, 2026: the specificity pass
 
