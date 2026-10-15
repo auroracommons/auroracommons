@@ -43,3 +43,13 @@ One entry per work session. Every entry separates what shipped from what the pro
 ## October 15, 2026: the profile rebuilt
 
 The LinkedIn profile now tells the same story as the code. New headline (Program Management and Operations, Learning Systems Builder), an About that leads with program work and closes with the building, the live demo and the repositories in Featured, an honest self employed entry for the builder work, and skills reordered so Program Management and Artificial Intelligence lead. Every field was read back on the live profile after saving. Education, the photo, and the recruiters only job search settings were deliberately left untouched.
+
+## October 15, 2026: the Bedrock
+
+Today the work got its foundation document: The Bedrock, a map of human needs. The idea is simple. Hate and harm grow where needs have no legitimate path, so before building anything else, name what a human being actually needs, in the order the needs hold each other up.
+
+The map has seven layers. Layer 0 is the body: food, shelter, health, safety. Layer 1 is the mind at peace: mental health, steadiness, hope. Layer 2 is learning. Layer 3 is belonging. Layer 4 is shared truth. Layer 5 is autonomy, not being ruled by machines you cannot understand. Layer 6 is trust and meaning.
+
+Each of the five projects now states its layer at the top of its own front door, defines that need in the map's words, and links back to the full map. Supergravity serves learning, Cohort serves belonging, the Knowledge Graph serves shared truth, Neural Net Lab serves autonomy, and LUMEN serves trust and meaning. Their tests and evaluations were rerun for the change and came back identical to their baselines, and the five commits are in each project's history with the evidence in the messages.
+
+Two layers have no project, and the map says so in plain sight. The body and the mind at peace are named as open ground. They are commitments with roads in, adoption by real partners running real pilots, and gates on the roads. They are not claims, and nothing here will call them covered until working proof serves them.
