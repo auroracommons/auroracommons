@@ -8,7 +8,7 @@ One rule: be fair to others.
 
 ## Early exhibits
 
-- **Atlas**, learning: tutor eval groundedness 0.806, citation rate 1.0. [Live demo](https://auroracommons.github.io/atlas/) · [Repository](https://github.com/auroracommons/atlas)
+- **Atlas**, learning: one claim, proven the same on phone, watch, voice, and wall. [Live demo](https://auroracommons.github.io/atlas/) · [Repository](https://github.com/auroracommons/atlas)
 - **Cohort**, belonging: MCP server joins as a real client, session transcript committed. [Live demo](https://auroracommons.github.io/cohort/) · [Repository](https://github.com/auroracommons/cohort)
 - **Machine**, autonomy: transformer gradient checks 7 of 7, PyTorch 4.13x per step. [Live demo](https://auroracommons.github.io/machine/) · [Repository](https://github.com/auroracommons/machine)
 - **Graph**, shared truth: entities F1 0.937, relations F1 0.605. [Live demo](https://auroracommons.github.io/graph/) · [Repository](https://github.com/auroracommons/graph)

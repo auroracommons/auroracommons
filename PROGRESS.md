@@ -2,6 +2,12 @@
 
 This is the public record of the work: what was done, what the proof shows, what broke, and what comes next. It is updated every work session, newest first, in plain language on purpose. If a claim anywhere in these projects cannot be traced to a logged run, the claim is wrong and the log is where it gets corrected.
 
+## October 15, 2026: the proof screen, and the tutor dropped
+
+Atlas has a new front door: a proof screen. One claim from the atlas, the Sun is 99.86 percent of the solar system's mass, shown with its ground, its hand, its check, its links, and its seal, and rendered unchanged on a phone, a watch, by voice, and on a public display. The exhibit's point is human computer interaction beyond the smartphone: the surface changes, the proof does not. The catalog lives behind one link, nothing deleted.
+The tutor is dropped, by the founder's direction. Its code and its eval stay in the repo as an archived experiment, numbers exactly as published.
+The proof: the claim and its sources sit in content/astronomy.js in the atlas repo, the seal on the page is a real SHA-256 anyone can recompute, and the build, smoke test, and lint all pass with the eval baseline reproduced exactly.
+
 ## October 15, 2026: the mission is the headline
 
 The founder corrected the framing: the point is not the five projects.
