@@ -1,6 +1,6 @@
 # Billions, Verifiably
 
-## How people take part in the Aurora Commons
+## How people take part in the Topsoil Commons
 
 Every load bearing claim in this document is sourced from published research and production systems, cited in line, because a plan to involve billions that begins by inflating its own numbers has already failed.
 

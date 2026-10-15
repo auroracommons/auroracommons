@@ -1,4 +1,4 @@
-# Aurora Commons: the timeline
+# Topsoil Commons: the timeline
 
 These are intentions with gates, not promises. A phase begins only when the previous gate's published numbers hold.
 

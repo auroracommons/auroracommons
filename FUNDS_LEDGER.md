@@ -1,6 +1,6 @@
 # The Funds Ledger: Money In and Money Out
 
-Opened October 15, 2026. This is the public record of every amount Aurora Commons receives and spends. The rules, stated once and binding on every entry: money moves only through the fiscal host, never into a personal account; every amount is entered here with its date, its source or its purpose, and its amount; and every entry reconciles to the host's own statement, so any stranger can check it. The full rules are in [Funds](FUNDS.md) on this profile.
+Opened October 15, 2026. This is the public record of every amount Topsoil Commons receives and spends. The rules, stated once and binding on every entry: money moves only through the fiscal host, never into a personal account; every amount is entered here with its date, its source or its purpose, and its amount; and every entry reconciles to the host's own statement, so any stranger can check it. The full rules are in [Funds](FUNDS.md) on this profile.
 
 ## Entries
 

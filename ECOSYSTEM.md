@@ -4,6 +4,8 @@
 
 An open source ecosystem that any person, school, company, or government can build on, spanning every industry, organized around human needs and human wants, where each piece makes every other piece more useful. Not a suite of products. Free basic tools for the needs every person has. Start with one. A commons of working tools that other people adopt, extend, and carry into places the founders will never see.
 
+The Commons tries to build what its time has not built yet, and it does not say so. Its claims never run ahead of its proofs: anything announced here can be checked by a stranger, and anything not yet proven is written as not yet proven. Change is brought at the pace the people it serves can check and choose for themselves, by adoption and never by imposition, because a floor raised under people who did not choose it is not raised for long. Diligence here means one habit, repeated: verify first, then announce, every time.
+
 ## The seed is already planted
 
 The five acts are not five products. They are five basic tools, and basic tools are what ecosystems grow from:
@@ -16,7 +18,7 @@ The five acts are not five products. They are five basic tools, and basic tools 
 
 ## The Ascent
 
-The ecosystem stands on a map of human needs: [The Ascent](https://github.com/auroracommons/auroracommons/blob/main/NEEDS.md), published on the profile. Seven layers, read from the ground up:
+The ecosystem stands on a map of human needs: [The Ascent](https://github.com/topsoilcommons/topsoilcommons/blob/main/NEEDS.md), published on the profile. Seven layers, read from the ground up:
 
 - Layer 0, the body: food, shelter, health, safety. Served by Ground, a verified local resource board (first minimal build).
 - Layer 1, the mind at peace: mental health, steadiness, hope. Served by Still, a quiet offline practice tool (first minimal build).

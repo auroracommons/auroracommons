@@ -1,6 +1,6 @@
 # One Person, One Voice
 
-## The democratic foundation of the Aurora Commons
+## The democratic foundation of the Topsoil Commons
 
 ## The one rule
 

@@ -1,10 +1,10 @@
 # Funds
 
-How money would move in Aurora Commons, stated in the open before any money moves. Written October 15, 2026. The ledger that proves every word here is [The Funds Ledger](FUNDS_LEDGER.md).
+How money would move in Topsoil Commons, stated in the open before any money moves. Written October 15, 2026. The ledger that proves every word here is [The Funds Ledger](FUNDS_LEDGER.md).
 
 ## The state today
 
-As of October 15, 2026, Aurora Commons has received no funds: no donations, no grants, and no sales revenue. The count of amounts received is zero, and the count of amounts spent is zero. No money is held by the project, and no money is held by its advisor on the project's behalf.
+As of October 15, 2026, Topsoil Commons has received no funds: no donations, no grants, and no sales revenue. The count of amounts received is zero, and the count of amounts spent is zero. No money is held by the project, and no money is held by its advisor on the project's behalf.
 
 ## The one channel
 
@@ -12,11 +12,11 @@ When money does move, it moves through one channel only: the fiscal host. Money 
 
 ## The intended host, not yet appointed
 
-The intended host is Open Source Collective. It is intended, not appointed: no application has been submitted, and no relationship exists between Aurora Commons and Open Source Collective today.
+The intended host is Open Source Collective. It is intended, not appointed: no application has been submitted, and no relationship exists between Topsoil Commons and Open Source Collective today.
 
 The host's terms, read from its own documentation on October 15, 2026: a fixed host fee of 10 percent of incoming funds, collected when the money arrives, with no setup fees, no minimum balances, and no recurring charges. Payment processors charge their own fees on top of that.
 
-Two open items stand in the open. The host asks that a project live under an organizational repository rather than a personal account, and the Commons' work lives under the auroracommons GitHub account; whether the host accepts that account as it stands is the host's call. And the host is a 501(c)(6) nonprofit, so gifts given through it are not tax deductible charitable contributions for United States donors.
+Two open items stand in the open. The host asks that a project live under an organizational repository rather than a personal account, and the Commons' work lives under the topsoilcommons GitHub account; whether the host accepts that account as it stands is the host's call. And the host is a 501(c)(6) nonprofit, so gifts given through it are not tax deductible charitable contributions for United States donors.
 
 ## What money would be spent on
 

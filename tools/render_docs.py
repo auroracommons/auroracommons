@@ -76,10 +76,10 @@ RECORD_ORDER = [
     ("FUNDS_LEDGER.md", "The funds ledger", "record-funds-ledger"),
 ]
 
-BLOB = "https://github.com/auroracommons/auroracommons/blob/main/"
-SITE = "https://auroracommons.github.io/auroracommons/"
+BLOB = "https://github.com/topsoilcommons/topsoilcommons/blob/main/"
+SITE = "https://topsoilcommons.github.io/topsoilcommons/"
 
-ORIENTATION = ("Part of the Record: the written record of Aurora "
+ORIENTATION = ("Part of the Record: the written record of Topsoil "
                "Commons, on one page each.")
 
 PAGE_OF = dict(DOCS)
@@ -404,19 +404,19 @@ CSS = """  :root{
   @media (max-width:560px){h1{font-size:32px}}"""
 
 BAR_LINKS = [
-    ("Ground", "https://auroracommons.github.io/ground/"),
-    ("Still", "https://auroracommons.github.io/still/"),
-    ("Atlas", "https://auroracommons.github.io/atlas/"),
-    ("Cohort", "https://auroracommons.github.io/cohort/"),
-    ("Graph", "https://auroracommons.github.io/graph/"),
-    ("Machine", "https://auroracommons.github.io/machine/"),
-    ("Lumen", "https://auroracommons.github.io/lumen/"),
+    ("Ground", "https://topsoilcommons.github.io/ground/"),
+    ("Still", "https://topsoilcommons.github.io/still/"),
+    ("Atlas", "https://topsoilcommons.github.io/atlas/"),
+    ("Cohort", "https://topsoilcommons.github.io/cohort/"),
+    ("Graph", "https://topsoilcommons.github.io/graph/"),
+    ("Machine", "https://topsoilcommons.github.io/machine/"),
+    ("Lumen", "https://topsoilcommons.github.io/lumen/"),
 ]
 
 
 def bar(current=None):
-    lines = ['<nav class="commons-bar" aria-label="Aurora Commons sites">',
-             '  <a class="brand" href="%s">Aurora Commons</a>' % SITE]
+    lines = ['<nav class="commons-bar" aria-label="Topsoil Commons sites">',
+             '  <a class="brand" href="%s"><svg class="bar-mark" viewBox="0 0 24 24" width="17" height="17" aria-hidden="true" focusable="false" style="flex:none;align-self:center;margin-right:7px"><g fill="currentColor"><rect x="4" y="2.5" width="16" height="2"/><rect x="4" y="5.5" width="16" height="2"/><rect x="4" y="8.5" width="16" height="2"/><rect x="4" y="11.5" width="4.5" height="8"/><rect x="15.5" y="11.5" width="4.5" height="8"/><rect x="2" y="20.5" width="20" height="2.2"/></g></svg>Topsoil Commons</a>' % SITE]
     if current:
         lines.append('  <span class="current" aria-current="page">%s '
                      '(you are here)</span>' % html.escape(current))
@@ -432,7 +432,7 @@ SKIP_LINK = '<a class="skip" href="#main">Skip to the content</a>'
 FOOTER = """<footer>
   <p>One rule: raise the floor beneath everyone.</p>
   <p>Advised by Groundskeeper.</p>
-  <p><a href="https://www.linkedin.com/company/aurora-commons-io/">Aurora Commons on LinkedIn</a></p>
+  <p><a href="https://www.linkedin.com/company/topsoil-commons/">Topsoil Commons on LinkedIn</a></p>
 </footer>"""
 
 
@@ -448,15 +448,15 @@ def page(md_name, page_name, title, body):
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
 <meta property="og:type" content="website">
-<meta property="og:site_name" content="Aurora Commons">
+<meta property="og:site_name" content="Topsoil Commons">
 <meta property="og:title" content="%s">
 <meta property="og:url" content="%s%s">
-<meta property="og:image" content="https://auroracommons.github.io/auroracommons/assets/aurora-logo.png">
+<meta property="og:image" content="https://topsoilcommons.github.io/topsoilcommons/assets/aurora-logo.png">
 <meta property="og:image:width" content="1600">
 <meta property="og:image:height" content="1600">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="%s">
-<meta name="twitter:image" content="https://auroracommons.github.io/auroracommons/assets/aurora-logo.png">
+<meta name="twitter:image" content="https://topsoilcommons.github.io/topsoilcommons/assets/aurora-logo.png">
 <style>
 %s
 </style>
@@ -530,15 +530,15 @@ def record_page(sections):
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
 <meta property="og:type" content="website">
-<meta property="og:site_name" content="Aurora Commons">
+<meta property="og:site_name" content="Topsoil Commons">
 <meta property="og:title" content="The Record">
 <meta property="og:url" content="%srecord.html">
-<meta property="og:image" content="https://auroracommons.github.io/auroracommons/assets/aurora-logo.png">
+<meta property="og:image" content="https://topsoilcommons.github.io/topsoilcommons/assets/aurora-logo.png">
 <meta property="og:image:width" content="1600">
 <meta property="og:image:height" content="1600">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="The Record">
-<meta name="twitter:image" content="https://auroracommons.github.io/auroracommons/assets/aurora-logo.png">
+<meta name="twitter:image" content="https://topsoilcommons.github.io/topsoilcommons/assets/aurora-logo.png">
 <style>
 %s
 </style>
