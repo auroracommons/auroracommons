@@ -29,3 +29,7 @@ One entry per work session. Every entry separates what shipped from what the pro
 **What broke, and the fix.** Cohort's new CI failed its first run because its demo needs the platform server running and CI had not started one; the workflow now starts the server first, and the failed run and the fix are both in the public history. A line in the Knowledge Graph README called the whole system zero dependency; an import scan showed the extraction core is standard library only while NumPy and Matplotlib serve metrics and charts, and the sentence now says exactly that.
 
 **What is next.** The LinkedIn profile is rebuilt around this evidence (draft prepared), the daily evolution pass begins improving one project per day under the new working agreements, and the first public checkpoint lands November 16, 2026.
+
+## October 15, 2026: the profile rebuilt
+
+The LinkedIn profile now tells the same story as the code. New headline (Program Management and Operations, Learning Systems Builder), an About that leads with program work and closes with the building, the live demo and the repositories in Featured, an honest self employed entry for the builder work, and skills reordered so Program Management and Artificial Intelligence lead. Every field was read back on the live profile after saving. Education, the photo, and the recruiters only job search settings were deliberately left untouched.
