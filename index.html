@@ -94,6 +94,13 @@
   a{color:var(--accent)}
   .wrap{max-width:1060px;margin:0 auto;padding:0 20px}
 
+  /* The shared Commons bar: the same slim band tops every Commons site. */
+  .commonsbar{background:var(--floor);color:var(--floor-ink);display:flex;flex-wrap:wrap;
+    gap:4px 18px;align-items:center;padding:8px 20px;font-size:13.5px}
+  .commonsbar a{color:var(--floor-ink);text-decoration:none}
+  .commonsbar a:hover{text-decoration:underline}
+  .commonsbar .wordmark{font-weight:800;letter-spacing:.2px;margin-right:4px}
+
   /* THE FLOOR: the first screen. Name, mission, the drawn strata, the floor. */
   .stage{min-height:100svh;display:flex;flex-direction:column}
   .stage .who{padding:34px 20px 10px;max-width:1060px;margin:0 auto;width:100%}
@@ -157,6 +164,7 @@
     .row .links{flex-direction:row;flex-wrap:wrap}
   }
   @media (max-width:300px){
+    .commonsbar{padding:8px 10px;gap:4px 12px}
     .wrap{padding:0 10px}
     .stage .who{padding:22px 10px 6px}
     .drawing{padding:12px 10px 0}
@@ -170,6 +178,17 @@
 <body>
 
 <header class="stage">
+  <nav class="commonsbar" aria-label="Aurora Commons sites">
+    <a class="wordmark" href="index.html">Aurora Commons</a>
+    <a href="foundations.html">Foundations</a>
+    <a href="https://auroracommons.github.io/ground/">Ground</a>
+    <a href="https://auroracommons.github.io/still/">Still</a>
+    <a href="https://auroracommons.github.io/atlas/">Atlas</a>
+    <a href="https://auroracommons.github.io/cohort/">Cohort</a>
+    <a href="https://auroracommons.github.io/graph/">Graph</a>
+    <a href="https://auroracommons.github.io/machine/">Machine</a>
+    <a href="https://auroracommons.github.io/lumen/">Lumen</a>
+  </nav>
   <div class="who">
     <h1>Aurora Commons</h1>
     <p class="mission">Aurora Commons addresses the hierarchy of human needs through open source.</p>
@@ -314,6 +333,7 @@
 
 <footer>
   <div class="wrap">
+    <p><a href="https://www.linkedin.com/company/aurora-commons-io/">Aurora Commons on LinkedIn</a></p>
     <p>Advised by Groundskeeper.</p>
     <p>Our motto: stand on the shoulders of giants.</p>
   </div>

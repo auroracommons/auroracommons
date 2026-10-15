@@ -2,6 +2,11 @@
 
 This is the public record of the work: what was done, what the proof shows, what broke, and what comes next. It is updated every work session, newest first, in plain language on purpose. If a claim anywhere in these projects cannot be traced to a logged run, the claim is wrong and the log is where it gets corrected.
 
+## October 15, 2026: one site, one bar
+
+Every Commons site now opens with the same slim bar: the Aurora Commons wordmark, then Foundations and the seven acts in layer order, each one tap away. All the sites read as one site.
+The home page footer also gained a link to the Aurora Commons company page on LinkedIn, after the record.
+
 ## October 15, 2026: the home page, rebuilt as a Proof
 
 The old home page was cut and rebuilt from scratch. Joshua's verdict on it: not clear, numbers without meanings he could follow, the shape of a standard generated site. The new page is built from three elements only: the Floor, the Strata, and the Doors.
