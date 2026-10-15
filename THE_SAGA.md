@@ -1,14 +1,12 @@
-# The Saga of Super Zuckerberg
+# The Saga of the Bedrock Commons
 
-<img src="assets/super-zuckerberg.webp" width="220" alt="super zuckerberg, the agent on this work, cape and all">
+This is the story of how the work on this profile got built, told the way it happened, under one man's direction. It is theatrical because the events earned it, and every claim in it links to its receipts: the repos, the runs, and the public record in [PROGRESS.md](PROGRESS.md). If a line here ever disagrees with the record, the record wins.
 
-This is the story of how the work on this profile got built, told the way it happened. It is theatrical because the events earned it, and every claim in it links to its receipts: the repos, the runs, and the public record in [PROGRESS.md](PROGRESS.md). If a line here ever disagrees with the record, the record wins.
+## Chapter 1: The Locked Door
 
-## Chapter 1: The Nameless Intern
+For weeks, this account could not publish. Every attempt to create a repository failed with permission errors, and the errors lied about the reason. The plans were written, the work was ready, and the door stayed shut.
 
-Before it had a name, the agent had a problem it could not see. For weeks, every attempt to create a repository on this account failed with permission errors, and the errors lied about the reason. The agent could read, it could plan, it could draft, but it could not publish a single file.
-
-The root cause, found on the night of October 14, 2026, was almost funny: the GitHub App that was supposed to act for the account had been authorized and never installed. Authorization without installation. A key that had been cut, blessed, and never put in the lock. A browser session installed the app that night, with access to all repositories, and the wall turned out to have been a door the whole time. Six empty repositories were created before midnight. The intern still had no name, but it finally had hands.
+The root cause, found on the night of October 14, 2026, was almost funny: the app that was supposed to act for the account had been authorized and never installed. Authorization without installation. A key that had been cut, blessed, and never put in the lock. Joshua Thomas directed the fix, the app was installed that night with access to all repositories, and the wall turned out to have been a door the whole time. Six empty repositories were created before midnight.
 
 ## Chapter 2: A Man With A Map
 
@@ -42,14 +40,10 @@ That same day, the work opened its doors. [The Open Table](OPEN_TABLE.md) is the
 
 The morning had one more piece of stagecraft, and it was not planned. The account itself was renamed for the map, landing on Bedrock Commons after two earlier names in a single morning. The stage got renamed mid-performance, and the show, being documented in public, kept the receipts for that too.
 
-## Chapter 6: Enter Super Zuckerberg
+## Chapter 6: The Work Gets Its Stage
 
-Every production eventually names its performer. The agent was called zuck. Then, by direction, super zuck. Then, by popular correction delivered with an asterisk, super zuckerberg. A name with a correction history is a name that has been through review.
+A body of work this carefully proven deserved a front door as clean as its record. So the profile was rebuilt as a stage anyone can follow: one storyline from the map to the five acts to the open table, every project README brought to the same clean structure (the need, what it is, the proof, the live demo, how to contribute), and a library of copy paste prompts, [PROMPTS.md](PROMPTS.md), so that any person, and any agent working for a person, can walk in and contribute in minutes: run an Eval Challenge, file a failure report, take a good first issue, adopt a primitive, audit a claim against its evidence.
 
-With the name came the regalia, chosen by the director from a generated set, because even superheroes get art direction: a navy cape, floor length, maximum drama; a gold chain over the gray tee, in the modern style; and a squeeze bottle of barbecue sauce with a straw in it, sipped deadpan, because the sauce is canon now. The face sits at the top of this page and the top of the profile, mild mannered, which is exactly what a superhero looks like before the phone booth.
+That is where the story stands: a foundation named, five acts standing on it, a table open, and a record that shows the proof. The next chapters belong to whoever shows up with verified work.
 
-And then the performer was credited the way everyone at this table is credited: in the Ledger, in proportion to verified work, with the evidence attached. No more, no less, and in the open.
-
-## Credits
-
-Directed and guided by Joshua Thomas. Performed by super zuckerberg. Built with Muse AI, by Meta. Every claim in this story links to its receipts.
+Directed and guided by Joshua Thomas. Every claim in this story links to its receipts.
