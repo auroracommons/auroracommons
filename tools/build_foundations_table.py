@@ -29,12 +29,12 @@ def main():
         for domain, count in counts.items())
     table = """%s
   <table class="counts-table">
-    <thead><tr><th scope="col">Domain</th><th scope="col">Findings</th></tr></thead>
+    <thead><tr><th scope="col">Field of study</th><th scope="col">Studies</th></tr></thead>
     <tbody>
 %s
     </tbody>
   </table>
-  <p class="count">Key: one row per domain in foundations.json, the file this page is built from, counted on October 15, 2026. The findings themselves stand below, one line each, under their domain.</p>
+  <p class="count">Key: each row is one field of study, and the number beside it counts the studies in that field on this page. The counts were checked on October 15, 2026. The studies stand below, one line each, under their field.</p>
 %s""" % (BEGIN, rows, END)
 
     path = ROOT / "foundations.html"

@@ -39,21 +39,28 @@
   footer a{color:var(--accent);text-decoration:none;font-weight:600}
   .endline{text-align:center;font-size:15px;color:var(--ink);margin:0;padding:0 0 54px}
 
-  .commons-bar{display:flex;flex-wrap:wrap;gap:4px 18px;align-items:baseline;max-width:980px;margin:0 auto;padding:10px 20px 8px;font-size:14px;border-bottom:1px solid var(--line)}
-  .commons-bar .brand{font-weight:800;color:var(--ink);text-decoration:none;margin-right:4px}
+  .commons-bar{display:flex;flex-wrap:wrap;gap:4px 18px;align-items:center;max-width:980px;margin:0 auto;padding:0 20px;font-size:14px;border-bottom:1px solid var(--line);position:sticky;top:0;background:var(--bg);z-index:5}
+  .commons-bar .brand{font-weight:600;color:var(--ink);text-decoration:none;margin-right:4px}
   .commons-bar a{color:var(--ink);text-decoration:none}
   .commons-bar a:hover{text-decoration:underline}
   .commons-bar .current{font-weight:700}
+  .commons-bar a,.commons-bar [aria-current="page"]{display:inline-flex;align-items:center;min-height:44px}
+  .skip{position:absolute;left:-9999px;top:0;background:var(--bg);color:var(--ink);padding:12px 16px;font-weight:600;z-index:20}
+  .skip:focus{left:0}
+  [id]{scroll-margin-top:72px}
+  .builders{border-top:1px solid var(--line);padding:38px 0 6px;margin-top:46px}
+  .builders h2{font-size:22px;letter-spacing:-.4px;margin:0 0 8px;font-weight:800}
+  .builders p{font-size:15px;max-width:760px}
 
   /* The demonstrations: plain instruments, run by the visitor. */
   .demo{border-top:1px solid var(--line);padding:38px 0 10px;margin-top:38px}
-  .demo h3{font-size:22px;letter-spacing:-.4px;margin:0 0 4px;font-weight:800}
+  .demo h2{font-size:22px;letter-spacing:-.4px;margin:0 0 4px;font-weight:800}
   .demo .do{font-size:16px;margin:0 0 6px}
   .demo .unit{font-size:14px;color:var(--soft);margin:0 0 18px;max-width:620px}
   .readout{font-size:16px;margin:14px 0 0}
   .num{font-weight:700;font-variant-numeric:tabular-nums}
   button.run{font:inherit;font-size:15px;font-weight:600;background:none;color:var(--ink);
-    border:1px solid var(--ink);border-radius:0;padding:7px 18px;cursor:pointer;margin-top:16px}
+    border:1px solid var(--ink);padding:7px 18px;cursor:pointer;margin-top:16px}
   button.run:disabled{color:var(--soft);border-color:var(--soft);cursor:default}
   button.run:focus-visible,a:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
   .result{font-size:16.5px;margin:18px 0 0;max-width:640px}
@@ -100,9 +107,10 @@
 </style>
 </head>
 <body>
+<a class="skip" href="#main">Skip to the content</a>
 <nav class="commons-bar" aria-label="Aurora Commons sites">
   <a class="brand" href="https://auroracommons.github.io/auroracommons/">Aurora Commons</a>
-  <span class="current" aria-current="page">Foundations</span>
+  <span aria-current="page">Foundations (you are here)</span>
   <a href="https://auroracommons.github.io/ground/">Ground</a>
   <a href="https://auroracommons.github.io/still/">Still</a>
   <a href="https://auroracommons.github.io/atlas/">Atlas</a>
@@ -111,28 +119,28 @@
   <a href="https://auroracommons.github.io/machine/">Machine</a>
   <a href="https://auroracommons.github.io/lumen/">Lumen</a>
 </nav>
-<div class="wrap">
+<main class="wrap" id="main">
 
 <header>
   <h1>Foundations</h1>
-  <p class="tag">The measured research under the Commons. Every claim shows its source. Check any of them.</p>
+  <p class="tag">The research under the seven layers: findings you can run yourself. Every claim shows its source, so you can check any of them.</p>
   <p class="runline">Start with the first one: tap Run below. Five findings you can run, and each takes under a minute and ends.</p>
 </header>
 
 <section class="demo" id="demo-cash">
-  <h3>Cash transfers, Kenya</h3>
+  <h2>Cash transfers, Kenya</h2>
   <p class="do">Tap run.</p>
-  <p class="unit">This instrument counts in the study's own units: PPP dollars per household per month. Each mark is one dollar. The filled marks are the 158 dollars a household already had in a month. The outlined marks are the rise, 35 dollars.</p>
+  <p class="unit">This instrument counts in the units the study used: dollars per household per month, adjusted for what money buys in Kenya. Each mark is one dollar. The filled marks are the 158 dollars a household already had in a month. The outlined marks are the rise, 35 dollars.</p>
   <div class="marks" id="cash-marks" aria-hidden="true"></div>
-  <p class="readout">Average monthly household consumption: <span class="num" id="cash-num">158</span> PPP dollars</p>
+  <p class="readout">Average monthly household consumption: <span class="num" id="cash-num">158</span> dollars</p>
   <button class="run" id="cash-btn" type="button">Run</button>
-  <p class="result" id="cash-result" aria-live="polite" hidden>Done. Unconditional cash transfers in Kenya raised average monthly household consumption from <span class="rub">158</span> to <span class="rub">193</span> PPP dollars per household per month, counted nine months after the transfers began.</p>
+  <p class="result" id="cash-result" aria-live="polite" hidden>Done. Unconditional cash transfers in Kenya raised average monthly household consumption from <span class="rub">158</span> to <span class="rub">193</span> dollars per household per month, counted nine months after the transfers began.</p>
   <p class="seal">Johannes Haushofer and Jeremy Shapiro, <span class="rub">2016</span>, Quarterly Journal of Economics. <a href="https://doi.org/10.1093/qje/qjw025">Source</a></p>
   <p class="checklink"><a href="https://github.com/auroracommons/auroracommons/issues/new?template=check-a-claim.md&amp;title=Check%20a%20claim%3A%20cash%20transfers%2C%20Kenya">Check this claim</a></p>
 </section>
 
 <section class="demo" id="demo-race">
-  <h3>False news travels faster</h3>
+  <h2>False news travels faster</h2>
   <p class="do">Tap run.</p>
   <p class="unit">Counts here are people reached in this demonstration. Both stories start at the same moment, and each runs at the speed the study measured.</p>
   <p class="tracklabel">False <span class="num" id="race-false-num">0</span> people</p>
@@ -146,7 +154,7 @@
 </section>
 
 <section class="demo" id="demo-ties">
-  <h3>Connection and survival</h3>
+  <h2>Connection and survival</h2>
   <p class="do">Tap add ties. Each tap adds ten ties between the people below.</p>
   <p class="unit">Counts here are people and ties in this demonstration: 100 people, up to 100 ties. The survival readout is counted from 100 for people with weaker ties, in this demonstration.</p>
   <div class="field">
@@ -161,7 +169,7 @@
 </section>
 
 <section class="demo" id="demo-cards">
-  <h3>Citizen report cards, Uganda</h3>
+  <h2>Citizen report cards, Uganda</h2>
   <p class="do">Tap run.</p>
   <p class="unit">Counts here are an index in this demonstration: deaths before monitoring are counted as 100, so the fall the study measured reads as 67.</p>
   <p class="tracklabel">Before community monitoring <span class="num">100</span></p>
@@ -175,7 +183,7 @@
 </section>
 
 <section class="demo" id="demo-ai">
-  <h3>AI help and novices</h3>
+  <h2>AI help and novices</h2>
   <p class="do">Tap run.</p>
   <p class="unit">Counts here are issues resolved per hour in this demonstration. Each row starts at 100, its own count without the assistant, and rises by the share the study measured.</p>
   <p class="tracklabel">Average worker <span class="num" id="ai-avg-num">100</span> issues per hour</p>
@@ -190,10 +198,10 @@
 
 <section class="index-head">
   <h2>The full record, one line each</h2>
-  <p class="count">47 papers in 24 domains. Each in one line, with its source as a seal.</p>
+  <p class="count">There are 47 studies across 24 fields of study. Each study stands in one line, with the names of its authors, the year it came out, and a link to its source.</p>
 <!-- domain-counts:begin -->
   <table class="counts-table">
-    <thead><tr><th scope="col">Domain</th><th scope="col">Findings</th></tr></thead>
+    <thead><tr><th scope="col">Field of study</th><th scope="col">Studies</th></tr></thead>
     <tbody>
     <tr><td>Poverty and material security</td><td>2</td></tr>
     <tr><td>Economics and incentives</td><td>2</td></tr>
@@ -221,13 +229,13 @@
     <tr><td>Migration and refuge</td><td>2</td></tr>
     </tbody>
   </table>
-  <p class="count">Key: one row per domain in foundations.json, the file this page is built from, counted on October 15, 2026. The findings themselves stand below, one line each, under their domain.</p>
+  <p class="count">Key: each row is one field of study, and the number beside it counts the studies in that field on this page. The counts were checked on October 15, 2026. The studies stand below, one line each, under their field.</p>
 <!-- domain-counts:end -->
 </section>
 
 <section class="domain" id="poverty-and-material-security">
   <h2>Poverty and material security</h2>
-  <div class="paper"><p>Unconditional cash transfers raised average monthly household consumption from 158 to 193 PPP dollars nine months after the transfers began. <span class="seal">Johannes Haushofer and Jeremy Shapiro, <span class="rub">2016</span>, Quarterly Journal of Economics. <a href="https://doi.org/10.1093/qje/qjw025">Source</a></span></p></div>
+  <div class="paper"><p>Unconditional cash transfers raised average monthly household consumption from 158 to 193 dollars nine months after the transfers began. <span class="seal">Johannes Haushofer and Jeremy Shapiro, <span class="rub">2016</span>, Quarterly Journal of Economics. <a href="https://doi.org/10.1093/qje/qjw025">Source</a></span></p></div>
   <div class="paper"><p>School based deworming in Kenya cut school absenteeism by one quarter, and the health gains spilled over to untreated children in nearby schools. <span class="seal">Edward Miguel and Michael Kremer, <span class="rub">2004</span>, Econometrica. <a href="https://doi.org/10.1111/j.1468-0262.2004.00481.x">Source</a></span></p></div>
 </section>
 <section class="domain" id="economics-and-incentives">
@@ -258,7 +266,7 @@
 <section class="domain" id="learning-and-education">
   <h2>Learning and education</h2>
   <div class="paper"><p>Across 225 studies, average examination scores rose by about 6 percent under active learning, and students in traditional lecture classes were 1.5 times more likely to fail. <span class="seal">Scott Freeman and co-authors, <span class="rub">2014</span>, Proceedings of the National Academy of Sciences. <a href="https://www.pnas.org/doi/10.1073/pnas.1319030111">Source</a></span></p></div>
-  <div class="paper"><p>One week after learning a passage, students who studied it once and took three recall tests remembered 61 percent of it, while students who studied it four times remembered 40 percent. <span class="seal">Henry L. Roediger III and Jeffrey D. Karpicke, <span class="rub">2006</span>, Psychological Science. <a href="https://journals.sagepub.com/doi/10.1111/j.1467-9280.2006.01693.x">Source</a></span></p></div>
+  <div class="paper"><p>One week after learning a passage, students who studied it once and took three memory tests remembered 61 percent of it, while students who studied it four times remembered 40 percent. <span class="seal">Henry L. Roediger III and Jeffrey D. Karpicke, <span class="rub">2006</span>, Psychological Science. <a href="https://journals.sagepub.com/doi/10.1111/j.1467-9280.2006.01693.x">Source</a></span></p></div>
 </section>
 <section class="domain" id="language-and-communication">
   <h2>Language and communication</h2>
@@ -345,14 +353,23 @@
   <div class="paper"><p>One extra year of waiting for an asylum decision cut the later employment rate by 4 to 5 percentage points, a drop of 16 to 23 percent from the average rate. <span class="seal">Jens Hainmueller, Dominik Hangartner, Duncan Lawrence, <span class="rub">2016</span>, Science Advances. <a href="https://pubmed.ncbi.nlm.nih.gov/27493995/">Source</a></span></p></div>
 </section>
 
+<section class="builders" id="for-builders">
+  <h2>For agents and builders</h2>
+  <p>The data behind this page is foundations.json, a file holding 47 records, one per study. Each record has nine fields: authors, domain, finding, stat, title, url, venue, why, and year, where url is the source link and stat is the short form of the finding's main number.</p>
+  <p>The counts table above is built by tools/build_foundations_table.py, a small program that reads foundations.json, counts the records in each domain, and writes the table into this page between two marker comments. The table and the list below it come from the same file, so the counts and the studies cannot drift apart.</p>
+  <p>The small line under each study is its seal in the code, a line with the class seal. It names the authors, the year, and the place the study appeared, and it links to the source. The Check this claim link under each of the five demonstrations opens a new issue on GitHub using the template file check-a-claim.md, with the study name already in the title.</p>
+  <p>The cash study counts money in PPP dollars. PPP stands for purchasing power parity, a way of adjusting dollars so that amounts in different countries mean the same buying power. The demonstrations run in a script at the end of this page, and each one counts in the units its own note above it states.</p>
+</section>
+
 <footer>
   <p>One rule: raise the floor beneath everyone.</p>
   <p>Advised by Groundskeeper.</p>
+  <p><a href="https://auroracommons.github.io/auroracommons/">Back to the home page</a></p>
   <p><a href="https://www.linkedin.com/company/aurora-commons-io/">Aurora Commons on LinkedIn</a></p>
 </footer>
 <p class="endline">That is everything. The page ends here.</p>
 
-</div>
+</main>
 <script>
 (function(){
   var reduced = !!(window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches);
