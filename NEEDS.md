@@ -15,14 +15,14 @@ And beneath the layers, the grain: every need on this map is lived by one person
 ### Layer 0: The body. Food, shelter, health, safety.
 The material floor. Reliable food, a safe place to sleep, a body that is cared for, a life not lived in fear of violence or ruinous bills.
 Unmet, it looks like: hunger inside a system that wastes food by the ton, families one emergency from the street, treatable illness untreated.
-Served by: no act yet. This is named honestly as open ground.
-The path in: the ecosystem enters by adoption, the same road as every industry. A food logistics team adopts the Graph to structure what is wasted and what is needed. A community health educator adopts the Atlas to teach. The gate is a real partner running a real pilot with measured results, the Phase 1 and Phase 2 gates in the strategy. Until that evidence exists, this layer is a commitment with a road, not a claim.
+Served by: Ground, the Commons' first minimal build for this layer. A verified local resource board: every listing is a Proof, checked on the provider's own page, with a check date and an expiry 30 days later, and shown as stale in the open when that date passes. The seed board carries 8 listings in New Rochelle and nearby Westchester, all verified October 15, 2026.
+The path onward: the ecosystem still enters new towns by adoption, the same road as every industry. A food logistics team adopts the Graph to structure what is wasted and what is needed. A community health educator adopts the Atlas to teach. A board is a start, not coverage: this layer is served minimally, and the record says exactly how far that goes.
 
 ### Layer 1: The mind at peace. Mental health, steadiness, hope.
 A mind that can rest. Treatment and support for suffering, freedom from constant dread, and hope treated as infrastructure: a credible path, proof someone like you walked it, a first step small enough to take today.
 Unmet, it looks like: despair, addiction, isolation that hardens into contempt for self and others.
-Served by: partly, and thinly. Cohort serves it through belonging. Lumen serves it through meaning. The public record serves it through visible paths and kept promises.
-Status: partial. No act is dedicated to it, and this map does not pretend otherwise. A dedicated act earns its place only through the same gates as everything else: proven demand, a partner, measured results.
+Served by: Still, a dedicated first minimal build for this layer, and partly by others. Still is a quiet single page practice tool: a check in, a breathing pacer, and a writing space that never leaves the device. It makes no medical claims and says plainly that it is not medical care. Cohort also serves this layer through belonging, Lumen through meaning, and the public record through visible paths and kept promises.
+Status: first build. Still is minimal on purpose, and this map does not pretend it is more. What grows from it earns its place through the same gates as everything else: proven demand, a partner, measured results.
 
 ### Layer 2: Learning. Education and growing capability.
 The ability to learn what you need, when you need it, at a price that does not exclude you, from teaching that does not invent its facts.

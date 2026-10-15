@@ -18,15 +18,15 @@ The five acts are not five products. They are five primitives, and primitives ar
 
 The ecosystem stands on a map of human needs: [The Ascent](https://github.com/auroracommons/auroracommons/blob/main/NEEDS.md), published on the profile. Seven layers, read from the ground up:
 
-- Layer 0, the body: food, shelter, health, safety. Open ground, no act yet.
-- Layer 1, the mind at peace: mental health, steadiness, hope. Partly served, no dedicated act.
+- Layer 0, the body: food, shelter, health, safety. Served by Ground, a verified local resource board (first minimal build).
+- Layer 1, the mind at peace: mental health, steadiness, hope. Served by Still, a quiet offline practice tool (first minimal build).
 - Layer 2, learning: education and growing capability. Served by Atlas.
 - Layer 3, belonging: connection, community, being known. Served by Cohort.
 - Layer 4, shared truth: facts a community can stand on. Served by Graph.
 - Layer 5, autonomy: not ruled by machines you cannot understand. Served by Machine.
 - Layer 6, trust and meaning: safety, values, a reason. Served by Lumen.
 
-Every project names its layer at its own front door and links back to the map. A need counts as covered only when working proof serves it. The two uncovered layers stay named as open ground, with adoption roads and gates, until evidence earns them a project.
+Every project names its layer at its own front door and links back to the map. A need counts as covered only when working proof serves it. Layers 0 and 1 are served by first minimal builds, named as such, and they grow only as the evidence earns it.
 
 ## The complete system
 

@@ -37,3 +37,7 @@ The same things the founder gets, in proportion to what you prove: credit in a p
 ## Where to start
 
 Read the map first: NEEDS.md, the Ascent, so your work lands on a named human need. Pick a door. Make the smallest true thing you can prove. Open the request. Welcome to the table.
+
+## The participation rule
+
+Every way in must be doable in minutes, credited by name, stage name, or anonymously in a public place, and shown with its effect: what it kept true, fixed, or fed. A steady stage name is a full identity for credit. A door that cannot show its effect is not a door.

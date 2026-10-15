@@ -7,6 +7,15 @@ This is the public record of the work: what was done, what the proof shows, what
 On the project, the advisor is credited as Groundskeeper from today, by his choice. LinkedIn and job facing surfaces keep his real name.
 Participation credit works the same for everyone: a real name, a stage name, or anonymous.
 Past entries stand as written.
+## October 15, 2026: Ground and Still, first builds on Layers 0 and 1
+
+**What shipped.** Ground, a verified local resource board for the body: 8 listings in New Rochelle and nearby Westchester (food 3, shelter 4, health 1), each one a Proof with the provider's own page as its source, a check date, and an expiry 30 days later, shown stale in the open after that date. Still, a quiet practice tool for the mind at peace: a check in, a breathing pacer, and a writing space that never leaves the device, with a separated crisis block at the bottom. Both are built as local publish trees at the standard of the other exhibits; their repositories, deploy keys, and Pages follow in a later step, and their demo links on this page point at the addresses those steps will switch on.
+
+**The proof.** Every Ground listing was checked on the provider's own page on October 15, 2026, and 4 candidates that could not be verified that way were dropped and counted in Ground's README. The Still pacer was measured by a committed test: 9 of 9 phase transitions over 3 full cycles, maximum drift 1 ms. The crisis lines were checked against the pages their operators publish and the FCC and SAMHSA 988 pages. No medical claims anywhere, in either exhibit.
+
+**The doors.** Participation got its rule today, in the Open Table: every way in is doable in minutes, credited by name, stage name, or anonymously, and shown with its effect. The front page now carries three one minute doors: verify a listing in Ground, check a claim in Atlas, report one thing that is wrong. Ground's board credits each verifier on the listing itself, and checks.json is its public log.
+
+**What is next.** Create the Ground and Still repositories with their deploy keys, push both trees, and run the 110 percent pass for each: CI, release, live demo verified.
 
 ## October 15, 2026: one table, and the aim stated
 

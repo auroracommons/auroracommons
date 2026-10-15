@@ -8,6 +8,8 @@ One rule: be fair to others.
 
 ## Early exhibits
 
+- **Ground**, the body: 8 listings verified with check dates and expiries. [Live demo](https://auroracommons.github.io/ground/) · [Repository](https://github.com/auroracommons/ground)
+- **Still**, the mind at peace: a quiet practice tool that works offline, no data leaves the device. [Live demo](https://auroracommons.github.io/still/) · [Repository](https://github.com/auroracommons/still)
 - **Atlas**, learning: one claim, proven the same on phone, watch, voice, and wall. [Live demo](https://auroracommons.github.io/atlas/) · [Repository](https://github.com/auroracommons/atlas)
 - **Cohort**, belonging: MCP server joins as a real client, session transcript committed. [Live demo](https://auroracommons.github.io/cohort/) · [Repository](https://github.com/auroracommons/cohort)
 - **Machine**, autonomy: transformer gradient checks 7 of 7, PyTorch 4.13x per step. [Live demo](https://auroracommons.github.io/machine/) · [Repository](https://github.com/auroracommons/machine)
