@@ -36,6 +36,8 @@ Research here improves continuously. Claims live as Proofs (see THE_PROOF.md). E
 
 The information standard is total. The system studies all fields of thought. It considers all cultures, all values, all desires, all flaws, all strengths, and all patterns, weighing them symmetrically, before it claims to understand a need.
 
+The aim is to raise the floor of global poverty faster than ever before, and faster every year. The floor is measured per layer of The Ascent and published, so the aim stands as a curve the Commons must show, not a slogan.
+
 ## The democratic foundation
 
 The Commons governs itself by a rule stated in full in [One Person, One Voice](DEMOCRACY.md): every human who can communicate a preference holds one vote and an equal right to contribute, a capacity that usually arrives around age three. No vote is bought, sold, lent, inherited, weighted, or cast by proxy. Decisions are tiered by how hard they are to undo, never people by worth: everyday decisions by simple majority, structural decisions after a published deliberation period by supermajority, irreversible decisions by supermajority twice with a cooling off period between the votes. Contribution runs wider than the franchise, open to every human and to agents under a named human operator, and it is honored in the public ledger in proportion to verified work. It never converts into extra votes.
@@ -88,6 +90,20 @@ The primitives integrate through open surfaces anyone can connect to: agents and
 - Anchors, the companies, foundations, family offices, and governments at the open table, get named participation in proportion to verified contribution, early sight of the roadmap, and the standing that comes from funding what demonstrably works.
 
 What each level gives back is equally clear: use, feedback, contribution, adoption, or funding, each recorded in the public ledger.
+
+## One table
+
+One table, one rule, one public ledger, one standard of proof: be fair to others. Corporations, governments, billionaires, and the poor sit on the same terms, and the strong are bound first.
+
+Corporations: contribute primitives, distribution, data, or funding in the open, under the public ledger. They get work that can become shared standards, a verified record no campaign can buy, and infrastructure that lowers their cost of serving every market.
+
+Governments: adopt and fund the open substrate, publish outcomes either way, and keep governance out of any party's hands, their own included. They get infrastructure that outlasts administrations, counts with fraud published beside them, which makes them believable, and cheaper services as the primitives spread.
+
+Billionaires and family offices: fund the gates and anchors on the published terms, and take the same seat as everyone else. They get a legacy measured in verified contribution, not coverage, plus leverage: capital that unlocks work thousands multiply. Credit stays proportional to proof, so wealth buys work, never standing.
+
+Individuals, including the poor: begin with one verified contribution of what they have: local knowledge, time, checking, building. They get tools free forever, credit from the first contribution, and distributions on published terms from the same ledger when the Commons earns. The path from first step to shared ownership is visible from day one.
+
+Everyone wins: nothing here is won at another's expense. Standing comes only from contribution, open to all.
 
 ## Skin in the game
 

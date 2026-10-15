@@ -2,6 +2,11 @@
 
 This is the public record of the work: what was done, what the proof shows, what broke, and what comes next. It is updated every work session, newest first, in plain language on purpose. If a claim anywhere in these projects cannot be traced to a logged run, the claim is wrong and the log is where it gets corrected.
 
+## October 15, 2026: one table, and the aim stated
+
+The charter gains "One table": one rule, one public ledger, and one standard of proof for corporations, governments, billionaires, and the poor alike, each with its directive and its long term incentive stated plainly.
+The same pass writes the aim into "The complete system": raise the floor of global poverty faster than ever before, and faster every year, measured per layer of The Ascent and published.
+
 ## October 15, 2026: Layers 0 and 1 get built
 
 By Joshua's call, Layers 0 and 1 move from open ground to the Commons' first minimal builds: Ground for the body, Still for the mind at peace, built on proven open source.
