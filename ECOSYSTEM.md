@@ -16,6 +16,26 @@ The five acts are not five products. They are five primitives, and primitives ar
 - Knowledge structure (Knowledge Graph Explorer, the Graph): extraction that publishes its own errors, so knowledge stays honest about what it does not know.
 - Trust (LUMEN, the Guardrails): refusal and safety behavior that can be tested, reused, and argued with in public.
 
+## The bedrock
+
+The ecosystem stands on a map of human needs: [The Bedrock](https://github.com/bedrockcommons/bedrockcommons/blob/main/NEEDS.md), published on the profile. Seven layers, read from the ground up:
+
+- Layer 0, the body: food, shelter, health, safety. Open ground, no act yet.
+- Layer 1, the mind at peace: mental health, steadiness, hope. Partly served, no dedicated act.
+- Layer 2, learning: education and growing capability. Served by Supergravity.
+- Layer 3, belonging: connection, community, being known. Served by Cohort.
+- Layer 4, shared truth: facts a community can stand on. Served by Knowledge Graph Explorer.
+- Layer 5, autonomy: not ruled by machines you cannot understand. Served by Neural Net Lab.
+- Layer 6, trust and meaning: safety, values, a reason. Served by LUMEN.
+
+Every project names its layer at its own front door and links back to the map. A need counts as covered only when working proof serves it. The two uncovered layers stay named as open ground, with adoption roads and gates, until evidence earns them a project.
+
+## The democratic foundation
+
+The Commons governs itself by a rule stated in full in [One Person, One Voice](DEMOCRACY.md): every human who can communicate a preference holds one vote and an equal right to contribute, a capacity that usually arrives around age three. No vote is bought, sold, lent, inherited, weighted, or cast by proxy. Decisions are tiered by how hard they are to undo, never people by worth: everyday decisions by simple majority, structural decisions after a published deliberation period by supermajority, irreversible decisions by supermajority twice with a cooling off period between the votes. Contribution runs wider than the franchise, open to every human and to agents under a named human operator, and it is honored in the public ledger in proportion to verified work. It never converts into extra votes.
+
+Direction stays human. Joshua Thomas directs the building. The members direct the governance. Artificial intelligence serves this work as a tool: preparing material, explaining questions in plain language, counting ballots, publishing records. It holds no vote, no veto, no seat, and no agenda power, and it does not frame the questions the members vote on. Question wording is proposed in the open, amended by any member, and adopted by vote before it is used.
+
 ## How the compounding works
 
 Each primitive strengthens the others. The graph gives the tutor structure. The evals give every piece its proof. The commons gives the work its people. The guardrails give the whole thing its trustworthiness. On top of that sit the mechanisms already written into the strategy: shared evaluations so proof travels, one knowledge graph so structure travels, open licenses so anyone can build without asking, the open table so contribution is credited in proportion to what is verified, and a first step small enough to take today inside every piece, because hope is infrastructure.

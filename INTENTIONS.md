@@ -4,7 +4,7 @@ Stated plainly, in public, so anyone can hold this work to them.
 
 ## Why this exists
 
-Human needs go unmet at scale: learning that adapts to the learner, knowledge that stays honest, coordination that does not require trusting a black box, and AI systems that refuse harm and explain themselves. These projects are one builder's attempt, with an AI partner, to put working open tools into those gaps, with the proof attached.
+Human needs go unmet at scale: learning that adapts to the learner, knowledge that stays honest, coordination that does not require trusting a black box, and AI systems that refuse harm and explain themselves. These projects are one builder's attempt to put working open tools into those gaps, with the proof attached.
 
 ## What this work will do
 
@@ -12,6 +12,8 @@ Human needs go unmet at scale: learning that adapts to the learner, knowledge th
 - Publish the evidence with the claims: evaluations, benchmarks, failures, and fixes, all in the open.
 - Invite participation at every level, from a first small contribution to institutional partnership, with credit recorded in public and in proportion to verified contribution.
 - Grow by adoption through stated phase gates, and publish a written reason whenever a gate is missed.
+- Give every member a voice under the democratic foundation published with this record: one person, one vote from the age a person can communicate a preference, and an equal right to contribute.
+- Keep direction human. AI tools serve this work. They do not direct it, vote in it, frame its questions, or hold its agenda.
 
 ## What this work will never do
 
@@ -19,6 +21,7 @@ Human needs go unmet at scale: learning that adapts to the learner, knowledge th
 - Sell governance, influence, or credit. Recognition follows verified contribution only.
 - Use dark patterns, manufactured urgency, or any design that steers people without their knowledge.
 - Publish a metric that a logged run cannot back up.
+- Allow a vote to be bought, weighted, inherited, or cast by proxy, or let anyone or anything quietly set the agenda the members vote on.
 
 ## The money part, plainly
 

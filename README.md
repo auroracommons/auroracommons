@@ -31,6 +31,7 @@ A phase that misses its gate gets a written reason and a revised projection, nev
 - [Progress log](PROGRESS.md): what was done, what the proof shows, what broke, and what is next, updated every work session.
 - [Intentions](INTENTIONS.md): what this work is for, what it will never do, and how it earns, stated plainly.
 - [The ecosystem](ECOSYSTEM.md): the long term design, five primitives that compound, open to every industry and every level of participation.
+- [The democratic foundation](DEMOCRACY.md): one person, one voice from the age of communication, how the Commons governs itself, and why its direction stays human.
 - [The Ledger](LEDGER.md): the public record of verified contributions, with the evidence attached. Credit is proportional to proof and never sold.
 - [Prompts](PROMPTS.md): copy paste prompts that let anyone, or any agent, contribute: run an Eval Challenge, file a failure report, take a good first issue, adopt a primitive, audit a claim.
 - [The Open Table](OPEN_TABLE.md): the contribution protocol. Three doors, the evidence rules, and the duties agents carry, including naming your operator.
