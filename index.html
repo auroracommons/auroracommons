@@ -37,7 +37,7 @@
       "proof": "8 listings for free food, shelter, and health help near New Rochelle; every one checked against the provider's own page on October 15, 2026; 4 more were dropped for failing the check.",
       "unlocks": "Unlocks the ability to act at all.",
       "see": "https://auroracommons.github.io/ground/",
-      "check": "https://github.com/auroracommons/ground"
+      "check": "https://auroracommons.github.io/index/"
     },
     {
       "layer": 1,
@@ -46,7 +46,7 @@
       "proof": "A breathing pacer checked over 3 full rounds: its timing drifted by at most 1 millisecond. The page makes zero network calls; nothing leaves the device.",
       "unlocks": "Unlocks the ability to choose.",
       "see": "https://auroracommons.github.io/still/",
-      "check": "https://github.com/auroracommons/still"
+      "check": "https://auroracommons.github.io/index/"
     },
     {
       "layer": 2,
@@ -55,7 +55,7 @@
       "proof": "One claim, shown with its full proof, the same on a phone, a watch, a voice, and a wall: the Sun is 99.86 percent of all the mass in the solar system, checked against its recorded sources on October 15, 2026.",
       "unlocks": "Unlocks the ability to understand.",
       "see": "https://auroracommons.github.io/atlas/",
-      "check": "https://github.com/auroracommons/atlas"
+      "check": "https://auroracommons.github.io/index/"
     },
     {
       "layer": 3,
@@ -64,7 +64,7 @@
       "proof": "In the live demo, 25 members, 48 messages, 27 shared resources, and 5 events; its test suite passes 7 of 7 checks from a clean start.",
       "unlocks": "Unlocks the ability to contribute.",
       "see": "https://auroracommons.github.io/cohort/",
-      "check": "https://github.com/auroracommons/cohort"
+      "check": "https://auroracommons.github.io/index/"
     },
     {
       "layer": 4,
@@ -73,7 +73,7 @@
       "proof": "Of every 100 facts Graph pulls from text, about 94 are right, measured on its labeled test set on October 15, 2026; 7 of 7 tests pass.",
       "unlocks": "Unlocks the ability to discern.",
       "see": "https://auroracommons.github.io/graph/",
-      "check": "https://github.com/auroracommons/graph"
+      "check": "https://auroracommons.github.io/index/"
     },
     {
       "layer": 5,
@@ -82,7 +82,7 @@
       "proof": "A transformer built from scratch passes 7 of 7 gradient checks at a tolerance of 1 in 100,000; its small language model has 358,052 parts, each one counted by the code.",
       "unlocks": "Unlocks the ability to build.",
       "see": "https://auroracommons.github.io/machine/",
-      "check": "https://github.com/auroracommons/machine"
+      "check": "https://auroracommons.github.io/index/"
     },
     {
       "layer": 6,
@@ -91,7 +91,7 @@
       "proof": "A guardrail tested on 41 questions from one tradition's text: it blocked 12 of 12 questions it must refuse, allowed 8 of 8 it must allow.",
       "unlocks": "Unlocks the ability to commit.",
       "see": "https://auroracommons.github.io/lumen/",
-      "check": "https://github.com/auroracommons/lumen"
+      "check": "https://auroracommons.github.io/index/"
     }
   ]
 }
@@ -118,11 +118,17 @@
   .wrap{max-width:1060px;margin:0 auto;padding:0 20px}
 
   /* The shared Commons bar: one plain line of text links, on every Commons site. */
-  .commonsbar{display:flex;flex-wrap:wrap;gap:4px 18px;align-items:baseline;
-    padding:10px 20px 8px;font-size:14px;border-bottom:1px solid var(--line)}
-  .commonsbar a{color:var(--ink);text-decoration:none}
-  .commonsbar a:hover{text-decoration:underline}
-  .commonsbar .wordmark{font-weight:800;margin-right:4px}
+  .commons-bar{display:flex;flex-wrap:wrap;gap:4px 18px;align-items:baseline;
+    padding:10px 20px 8px;font-size:14px;border-bottom:1px solid var(--line);
+    position:sticky;top:0;background:var(--paper)}
+  .commons-bar a{color:var(--ink);text-decoration:none;display:inline-flex;align-items:center;min-height:44px}
+  .commons-bar a:hover{text-decoration:underline}
+  .commons-bar .wordmark{font-weight:600;margin-right:4px}
+  .commons-bar .current{font-weight:700;display:inline-flex;align-items:center;min-height:44px}
+  .skip{position:absolute;left:12px;top:-60px;background:var(--paper);color:var(--ink);padding:10px 12px;font-size:14px}
+  .skip:focus{top:8px}
+  a:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
+  [id]{scroll-margin-top:72px}
 
   /* THE FLOOR: the first screen. Name, mission, the drawn strata, the floor. */
   .stage{min-height:100svh;display:flex;flex-direction:column}
@@ -211,7 +217,7 @@
     .row .links{flex-direction:row;flex-wrap:wrap}
   }
   @media (max-width:300px){
-    .commonsbar{padding:8px 10px;gap:4px 12px}
+    .commons-bar{padding:8px 10px;gap:4px 12px}
     .wrap{padding:0 10px}
     .stage .who{padding:22px 10px 6px}
     .stageblock{padding:8px 10px 0}
@@ -224,11 +230,13 @@
 </style>
 </head>
 <body>
+<a class="skip" href="#main">Skip to the content</a>
 
 <header class="stage">
-  <nav class="commonsbar" aria-label="Aurora Commons sites">
+  <nav class="commons-bar" aria-label="Aurora Commons sites">
     <span class="wordmark">Aurora Commons</span>
-    <a href="foundations.html">Foundations</a>
+    <span class="current" aria-current="page">(you are here)</span>
+    <a href="https://auroracommons.github.io/auroracommons/foundations.html">Foundations</a>
     <a href="https://auroracommons.github.io/ground/">Ground</a>
     <a href="https://auroracommons.github.io/still/">Still</a>
     <a href="https://auroracommons.github.io/atlas/">Atlas</a>
@@ -252,7 +260,7 @@
     <div><p class="proof"><span class="rub">8</span> listings for free food, shelter, and health help near New Rochelle; every one checked against the provider's own page on <span class="rub">October 15, 2026</span>; <span class="rub">4</span> more were dropped for failing the check.</p><p>Unlocks the ability to act at all.</p><p class="marks" role="img" aria-label="One mark for each listing checked on October 15, 2026: 8 solid marks for the listings that passed the check, 4 hollow marks for the ones that were dropped."><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span class="hollow"></span><span class="hollow"></span><span class="hollow"></span><span class="hollow"></span></p></div>
     <div class="links">
       <a class="see" href="https://auroracommons.github.io/ground/">See it</a>
-      <a href="https://github.com/auroracommons/ground" class="check">Check it</a>
+      <a href="https://auroracommons.github.io/index/" class="check">Check it</a>
       <button type="button" class="share" data-share data-title="Aurora Commons" data-text="Ground, the body: food, shelter, health, safety. One layer of Aurora Commons." data-url="https://auroracommons.github.io/auroracommons/#layer-0">Share</button>
     </div>
   </article>
@@ -275,7 +283,7 @@
   <p class="floorline"><span>The one rule: raise the floor beneath everyone.</span></p>
 </header>
 
-<main class="wrap">
+<main class="wrap" id="main">
 
 <section aria-labelledby="strata-h">
   <h2 id="strata-h">The strata</h2>
@@ -290,7 +298,7 @@
     <div><p class="proof">A breathing pacer checked over <span class="rub">3</span> full rounds: its timing drifted by at most <span class="rub">1</span> millisecond. The page makes <span class="rub">zero</span> network calls; nothing leaves the device.</p><p>Unlocks the ability to choose.</p><p class="marks" role="img" aria-label="One mark for each of the 3 full rounds the breathing pacer was checked over."><span></span><span></span><span></span></p></div>
     <div class="links">
       <a class="see" href="https://auroracommons.github.io/still/">See it</a>
-      <a href="https://github.com/auroracommons/still" class="check">Check it</a>
+      <a href="https://auroracommons.github.io/index/" class="check">Check it</a>
       <button type="button" class="share" data-share data-title="Aurora Commons" data-text="Still, the mind at peace. One layer of Aurora Commons." data-url="https://auroracommons.github.io/auroracommons/#layer-1">Share</button>
     </div>
   </article>
@@ -304,7 +312,7 @@
     <div><p class="proof">One claim, shown with its full proof, the same on a phone, a watch, a voice, and a wall: the Sun is <span class="rub">99.86</span> percent of all the mass in the solar system, checked against its recorded sources on <span class="rub">October 15, 2026</span>.</p><p>Unlocks the ability to understand.</p><p class="marks" role="img" aria-label="One mark for the one claim on the proof screen."><span></span></p></div>
     <div class="links">
       <a class="see" href="https://auroracommons.github.io/atlas/">See it</a>
-      <a href="https://github.com/auroracommons/atlas" class="check">Check it</a>
+      <a href="https://auroracommons.github.io/index/" class="check">Check it</a>
       <button type="button" class="share" data-share data-title="Aurora Commons" data-text="Atlas, learning. One layer of Aurora Commons." data-url="https://auroracommons.github.io/auroracommons/#layer-2">Share</button>
     </div>
   </article>
@@ -318,7 +326,7 @@
     <div><p class="proof">In the live demo, <span class="rub">25</span> members, <span class="rub">48</span> messages, <span class="rub">27</span> shared resources, and <span class="rub">5</span> events; its test suite passes <span class="rub">7</span> of <span class="rub">7</span> checks from a clean start.</p><p>Unlocks the ability to contribute.</p><p class="marks" role="img" aria-label="One mark for each of the 7 checks in the test suite, all 7 passing from a clean start."><span></span><span></span><span></span><span></span><span></span><span></span><span></span></p></div>
     <div class="links">
       <a class="see" href="https://auroracommons.github.io/cohort/">See it</a>
-      <a href="https://github.com/auroracommons/cohort" class="check">Check it</a>
+      <a href="https://auroracommons.github.io/index/" class="check">Check it</a>
       <button type="button" class="share" data-share data-title="Aurora Commons" data-text="Cohort, belonging. One layer of Aurora Commons." data-url="https://auroracommons.github.io/auroracommons/#layer-3">Share</button>
     </div>
   </article>
@@ -332,7 +340,7 @@
     <div><p class="proof">Of every <span class="rub">100</span> facts Graph pulls from text, about <span class="rub">94</span> are right, measured on its labeled test set on <span class="rub">October 15, 2026</span>; <span class="rub">7</span> of <span class="rub">7</span> tests pass.</p><p>Unlocks the ability to discern.</p><p class="marks many" role="img" aria-label="One mark for each fact in a hundred counted: the solid marks picture about 94 of every 100 facts pulled right, the hollow marks the rest."><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span class="hollow"></span><span class="hollow"></span><span class="hollow"></span><span class="hollow"></span><span class="hollow"></span><span class="hollow"></span></p></div>
     <div class="links">
       <a class="see" href="https://auroracommons.github.io/graph/">See it</a>
-      <a href="https://github.com/auroracommons/graph" class="check">Check it</a>
+      <a href="https://auroracommons.github.io/index/" class="check">Check it</a>
       <button type="button" class="share" data-share data-title="Aurora Commons" data-text="Graph, shared truth. One layer of Aurora Commons." data-url="https://auroracommons.github.io/auroracommons/#layer-4">Share</button>
     </div>
   </article>
@@ -346,7 +354,7 @@
     <div><p class="proof">A transformer built from scratch passes <span class="rub">7</span> of <span class="rub">7</span> gradient checks at a tolerance of <span class="rub">1</span> in <span class="rub">100,000</span>; its small language model has <span class="rub">358,052</span> parts, each one counted by the code.</p><p>Unlocks the ability to build.</p><p class="marks" role="img" aria-label="One mark for each of the 7 gradient checks, all 7 passing."><span></span><span></span><span></span><span></span><span></span><span></span><span></span></p></div>
     <div class="links">
       <a class="see" href="https://auroracommons.github.io/machine/">See it</a>
-      <a href="https://github.com/auroracommons/machine" class="check">Check it</a>
+      <a href="https://auroracommons.github.io/index/" class="check">Check it</a>
       <button type="button" class="share" data-share data-title="Aurora Commons" data-text="Machine, autonomy. One layer of Aurora Commons." data-url="https://auroracommons.github.io/auroracommons/#layer-5">Share</button>
     </div>
   </article>
@@ -360,7 +368,7 @@
     <div><p class="proof">A guardrail tested on <span class="rub">41</span> questions from one tradition's text: it blocked <span class="rub">12</span> of <span class="rub">12</span> questions it must refuse, allowed <span class="rub">8</span> of <span class="rub">8</span> it must allow.</p><p>Unlocks the ability to commit.</p><p class="marks" role="img" aria-label="One mark for each question in the guardrail test: 12 solid marks for the questions it blocked, 8 hollow marks for the questions it allowed."><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span class="hollow"></span><span class="hollow"></span><span class="hollow"></span><span class="hollow"></span><span class="hollow"></span><span class="hollow"></span><span class="hollow"></span><span class="hollow"></span></p></div>
     <div class="links">
       <a class="see" href="https://auroracommons.github.io/lumen/">See it</a>
-      <a href="https://github.com/auroracommons/lumen" class="check">Check it</a>
+      <a href="https://auroracommons.github.io/index/" class="check">Check it</a>
       <button type="button" class="share" data-share data-title="Aurora Commons" data-text="Lumen, trust and meaning. One layer of Aurora Commons." data-url="https://auroracommons.github.io/auroracommons/#layer-6">Share</button>
     </div>
   </article>
@@ -377,20 +385,10 @@
   <h2 id="record-h">The record</h2>
   <nav aria-label="The public record">
     <ul class="record">
-      <li><a href="progress.html">PROGRESS.md</a> Every work session: what shipped, what broke, what is next.</li>
       <li><a href="foundations.html">Foundations</a> Findings you can run yourself, each in under a minute.</li>
       <li><a href="life.html">In life: what the record means for living bodies</a></li>
-      <li><a href="ecosystem.html">ECOSYSTEM.md</a> The charter: how the whole Commons fits together, and who it serves.</li>
-      <li><a href="needs.html">NEEDS.md</a> The map of human needs, and the layer that answers each one.</li>
-      <li><a href="democracy.html">DEMOCRACY.md</a> One person, one voice: how members direct the Commons.</li>
-      <li><a href="participation.html">PARTICIPATION.md</a> How anyone takes part, and how the counts stay honest.</li>
-      <li><a href="registry.html">REGISTRY.md</a> A place for every person and group, given, not earned.</li>
-      <li><a href="open-table.html">OPEN_TABLE.md</a> The doors in for people and agents, and the rules at the table.</li>
-      <li><a href="ledger.html">LEDGER.md</a> Who did what, credited in the open, in proportion to the work.</li>
-      <li><a href="funds.html">FUNDS.md</a> Funds: how money would move, in the open, and the ledger that proves it.</li>
-      <li><a href="intentions.html">INTENTIONS.md</a> What this is for, what it will never do, and the money part in plain words.</li>
-      <li><a href="interactions.html">INTERACTIONS.md</a> Where checks and reports from visitors are answered in the open.</li>
       <li><a href="https://auroracommons.github.io/index/">The Index: the Commons record in time order, each entry with its check</a></li>
+      <li><a href="record.html">The Record</a> The whole written record on one page: the charter, the needs, the rules, the log, and the money.</li>
     </ul>
   </nav>
 </section>

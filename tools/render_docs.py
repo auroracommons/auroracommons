@@ -15,6 +15,24 @@ are rewritten to the matching page address, so a reader moving through
 the record stays on the site. Each page carries one small source tag
 under its title naming the markdown file kept on GitHub.
 
+Human surface split: each page shows plain content first. A whole block
+moves to a closing section headed "For agents and builders" when the
+block is technical apparatus: it contains a code span, a hash string of
+16 or more hex characters, or it is a short pointer line whose whole
+content is a file name used as prose (a word ending in .md, .json,
+.py, .js, or .ts). A longer block that mixes plain prose with one such
+file reference stays on the surface when moving it would break the
+document's sense, and the script prints one line for every such
+judgment. The progress log is dense with short commit ids throughout,
+so it uses a rendition instead: a short plain summary on the surface,
+with the newest entry's date and heading read from the file itself,
+and the whole document complete underneath. Any other document whose
+split would leave fewer than two blocks on the surface falls back to
+the same rendition handling.
+
+The script also builds record.html, one page carrying the whole
+written record, section by section, under the same split rules.
+
 Run: python3 tools/render_docs.py
 """
 
@@ -40,8 +58,28 @@ DOCS = [
     ("INTERACTIONS.md", "interactions.html"),
 ]
 
+# The whole written record on one page, in this order: the markdown
+# file, the plain name shown to readers, and the section anchor.
+RECORD_ORDER = [
+    ("ECOSYSTEM.md", "The charter", "record-ecosystem"),
+    ("NEEDS.md", "The needs map", "record-needs"),
+    ("DEMOCRACY.md", "Democracy", "record-democracy"),
+    ("PARTICIPATION.md", "Participation", "record-participation"),
+    ("REGISTRY.md", "The registry", "record-registry"),
+    ("OPEN_TABLE.md", "The open table", "record-open-table"),
+    ("LEDGER.md", "The ledger", "record-ledger"),
+    ("INTENTIONS.md", "Intentions", "record-intentions"),
+    ("PROGRESS.md", "The progress log", "record-progress"),
+    ("INTERACTIONS.md", "Interactions", "record-interactions"),
+    ("FUNDS.md", "Funds", "record-funds"),
+    ("FUNDS_LEDGER.md", "The funds ledger", "record-funds-ledger"),
+]
+
 BLOB = "https://github.com/auroracommons/auroracommons/blob/main/"
 SITE = "https://auroracommons.github.io/auroracommons/"
+
+ORIENTATION = ("Part of the Record: the written record of Aurora "
+               "Commons, on one page each.")
 
 PAGE_OF = dict(DOCS)
 # Any link target naming one of these files becomes its page address.
@@ -94,7 +132,13 @@ def split_row(line):
     return [cell.strip() for cell in line.strip().strip("|").split("|")]
 
 
-def render(md_text):
+def render_blocks(md_text, shift=0):
+    """Render markdown to a list of HTML blocks.
+
+    shift demotes every heading by that many levels, so a document can
+    sit inside a section of a larger page (record.html) and keep the
+    heading order sound.
+    """
     lines = md_text.split("\n")
     out = []
     title = None
@@ -117,7 +161,7 @@ def render(md_text):
             if title is None and level == 1:
                 title = text
             else:
-                tag = "h2" if level <= 2 else "h3"
+                tag = "h%d" % min(6, (2 if level <= 2 else 3) + shift)
                 out.append("<%s>%s</%s>" % (tag, inline(text), tag))
             i += 1
             continue
@@ -181,7 +225,134 @@ def render(md_text):
         para.append(stripped)
         i += 1
     flush_para()
-    return title, "\n".join(out)
+    return title, out
+
+
+def render(md_text):
+    title, blocks = render_blocks(md_text)
+    return title, "\n".join(blocks)
+
+
+FILE_TOKEN = re.compile(r"\b[\w-]+\.(?:md|json|py|js|ts)\b")
+HEX_LONG = re.compile(r"\b[0-9a-f]{16,}\b")
+
+
+def block_text(block):
+    return html.unescape(re.sub(r"<[^>]+>", " ", block))
+
+
+def split_blocks(blocks):
+    """Split rendered blocks into surface blocks and apparatus blocks.
+
+    Returns (surface, apparatus, notes). Relative order is preserved
+    inside each list, and no block is reworded: relocation only.
+    """
+    surface = []
+    apparatus = []
+    notes = []
+    for idx, block in enumerate(blocks):
+        if block.startswith("<h"):
+            surface.append(block)
+            continue
+        text = block_text(block)
+        words = text.split()
+        files = FILE_TOKEN.findall(text)
+        if "<code>" in block:
+            apparatus.append(block)
+            notes.append("block %d moved underneath: it contains a "
+                         "code span" % idx)
+        elif HEX_LONG.search(text):
+            apparatus.append(block)
+            notes.append("block %d moved underneath: it contains a "
+                         "hash string of 16 or more hex characters" % idx)
+        elif files and len(words) <= 14:
+            apparatus.append(block)
+            notes.append("block %d moved underneath: a short pointer "
+                         "line whose whole content is the file "
+                         "reference %s" % (idx, files[0]))
+        elif files:
+            surface.append(block)
+            notes.append("block %d kept on the surface: plain prose "
+                         "that mixes one file reference (%s) with "
+                         "human content, and moving it would break "
+                         "the document's sense" % (idx, files[0]))
+        else:
+            surface.append(block)
+    return surface, apparatus, notes
+
+
+def newest_entry(md_text):
+    """The date and heading of the newest progress entry, from the file.
+
+    Entries are headed with a level two heading of the form
+    "October 15, 2026: some heading", newest first.
+    """
+    for line in md_text.split("\n"):
+        match = re.match(r"^##\s+(.*)$", line.strip())
+        if match:
+            heading = match.group(1).strip()
+            if ": " in heading:
+                date, rest = heading.split(": ", 1)
+                return date.strip(), rest.strip()
+            return "", heading
+    return "", ""
+
+
+def rendition_blocks(md_name, md_text, blocks):
+    """The plain surface used when a document is shown by rendition."""
+    if md_name == "PROGRESS.md":
+        date, heading = newest_entry(md_text)
+        out = ["<p>This page is the progress log: the public record of "
+               "the work, what was done, what the proof shows, what "
+               "broke, and what comes next, updated every work session "
+               "with the newest entry first.</p>"]
+        if date and heading:
+            out.append("<p>The newest entry is dated %s, and its "
+                       "heading is: %s.</p>" % (
+                           html.escape(date, quote=False),
+                           html.escape(heading, quote=False)))
+        elif heading:
+            out.append("<p>The newest entry is headed: %s.</p>"
+                       % html.escape(heading, quote=False))
+        out.append("<p>The full log stands underneath, word for "
+                   "word.</p>")
+        return out
+    # Any other document: one plain line taken from its own opening,
+    # the first paragraph of the document itself.
+    for block in blocks:
+        if block.startswith("<p>"):
+            text = re.sub(r"\s+", " ", block_text(block)).strip()
+            return ["<p>%s</p>" % html.escape(text, quote=False)]
+    return []
+
+
+def surface_and_tech(md_name, md_text, shift=0):
+    """Return (title, handling, surface blocks, tech blocks, notes)."""
+    title, blocks = render_blocks(md_text, shift=shift)
+    if md_name == "PROGRESS.md":
+        return (title, "rendition",
+                rendition_blocks(md_name, md_text, blocks), blocks,
+                ["the progress log is dense with short commit ids and "
+                 "file references throughout, so the whole document "
+                 "stands underneath a plain rendition"])
+    surface, apparatus, notes = split_blocks(blocks)
+    if len(surface) < 2:
+        return (title, "rendition (fallback: the split would leave "
+                "fewer than two blocks on the surface)",
+                rendition_blocks(md_name, md_text, blocks), blocks,
+                notes)
+    return title, "split", surface, apparatus, notes
+
+
+def tech_section(md_name, tech_blocks, level=2):
+    tag = "h%d" % level
+    parts = ['<section class="tech">',
+             "<%s>For agents and builders</%s>" % (tag, tag),
+             '<p><a href="%s%s">The full text and source of this '
+             'document, kept on GitHub</a>.</p>' % (BLOB, md_name)]
+    parts += tech_blocks
+    parts.append("</section>")
+    return "\n".join(parts)
 
 
 CSS = """  :root{
@@ -198,10 +369,12 @@ CSS = """  :root{
   .source{font-size:13px;color:var(--soft);margin:0 0 10px}
   .source a{color:var(--accent);text-decoration:none;font-weight:600}
   .source a:hover{text-decoration:underline}
+  .orientation{font-size:15px;margin:0 0 4px}
   .doc{padding:18px 0 4px;max-width:760px}
   .doc p{font-size:16px;margin:0 0 14px}
   .doc h2{font-size:25px;letter-spacing:-.5px;margin:34px 0 10px;font-weight:800}
   .doc h3{font-size:19px;letter-spacing:-.3px;margin:26px 0 8px;font-weight:800}
+  .doc h4{font-size:16px;margin:22px 0 8px;font-weight:800}
   .doc ul,.doc ol{font-size:16px;margin:0 0 14px;padding-left:24px}
   .doc li{margin:0 0 6px}
   .doc a{color:var(--accent);font-weight:600}
@@ -210,15 +383,23 @@ CSS = """  :root{
   .doc thead th{border-top:0}
   .doc code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.92em}
   .doc blockquote{margin:0 0 14px;padding-left:16px;border-left:3px solid var(--line)}
+  .tech{border-top:1px solid var(--line);margin-top:36px;padding-top:4px}
+  .contents{font-size:16px;margin:0 0 14px;padding-left:24px}
+  .contents li{margin:0 0 6px}
+  section.record-doc{border-top:1px solid var(--line);margin-top:36px;padding-top:4px}
   footer{padding:54px 0 62px;margin-top:46px;border-top:1px solid var(--line);
     color:var(--soft);font-size:14px}
   footer a{color:var(--accent);text-decoration:none;font-weight:600}
   .endline{text-align:center;font-size:15px;color:var(--ink);margin:0;padding:0 0 54px}
-  .commons-bar{display:flex;flex-wrap:wrap;gap:4px 18px;align-items:baseline;max-width:980px;margin:0 auto;padding:10px 20px 8px;font-size:14px;border-bottom:1px solid var(--line)}
-  .commons-bar .brand{font-weight:800;color:var(--ink);text-decoration:none;margin-right:4px}
-  .commons-bar a{color:var(--ink);text-decoration:none}
+  .commons-bar{display:flex;flex-wrap:wrap;gap:4px 18px;align-items:baseline;max-width:980px;margin:0 auto;padding:10px 20px 8px;font-size:14px;border-bottom:1px solid var(--line);position:sticky;top:0;background:var(--bg)}
+  .commons-bar .brand{font-weight:600;color:var(--ink);text-decoration:none;margin-right:4px}
+  .commons-bar a{color:var(--ink);text-decoration:none;display:inline-flex;align-items:center;min-height:44px}
   .commons-bar a:hover{text-decoration:underline}
-  .commons-bar .current{font-weight:700}
+  .commons-bar .current{font-weight:700;display:inline-flex;align-items:center;min-height:44px}
+  .skip{position:absolute;left:12px;top:-60px;background:var(--bg);color:var(--ink);padding:10px 12px;font-size:14px}
+  .skip:focus{top:8px}
+  a:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
+  [id]{scroll-margin-top:72px}
   @media (max-width:560px){h1{font-size:32px}}"""
 
 BAR_LINKS = [
@@ -232,14 +413,30 @@ BAR_LINKS = [
 ]
 
 
+def bar(current=None):
+    lines = ['<nav class="commons-bar" aria-label="Aurora Commons sites">',
+             '  <a class="brand" href="%s">Aurora Commons</a>' % SITE]
+    if current:
+        lines.append('  <span class="current" aria-current="page">%s '
+                     '(you are here)</span>' % html.escape(current))
+    lines.append('  <a href="%sfoundations.html">Foundations</a>' % SITE)
+    lines += ['  <a href="%s">%s</a>' % (url, name)
+              for name, url in BAR_LINKS]
+    lines.append("</nav>")
+    return "\n".join(lines)
+
+
+SKIP_LINK = '<a class="skip" href="#main">Skip to the content</a>'
+
+FOOTER = """<footer>
+  <p>One rule: raise the floor beneath everyone.</p>
+  <p>Advised by Groundskeeper.</p>
+  <p><a href="https://www.linkedin.com/company/aurora-commons-io/">Aurora Commons on LinkedIn</a></p>
+</footer>"""
+
+
 def page(md_name, page_name, title, body):
     short = title if title else md_name
-    bar = ['<nav class="commons-bar" aria-label="Aurora Commons sites">',
-           '  <a class="brand" href="%s">Aurora Commons</a>' % SITE,
-           '  <span class="current" aria-current="page">%s</span>'
-           % html.escape(short)]
-    bar += ['  <a href="%s">%s</a>' % (url, name) for name, url in BAR_LINKS]
-    bar.append("</nav>")
     return """<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -265,26 +462,111 @@ def page(md_name, page_name, title, body):
 </head>
 <body>
 %s
+%s
 <div class="wrap">
 <header>
   <h1>%s</h1>
   <p class="source">Source: %s, kept on <a href="%s%s">GitHub</a>.</p>
+  <p class="orientation">%s</p>
 </header>
-<main class="doc">
+<main class="doc" id="main">
 %s
 </main>
-<footer>
-  <p>One rule: raise the floor beneath everyone.</p>
-  <p>Advised by Groundskeeper.</p>
-  <p><a href="https://www.linkedin.com/company/aurora-commons-io/">Aurora Commons on LinkedIn</a></p>
-</footer>
+%s
 <p class="endline">That is everything. The page ends here.</p>
 </div>
 </body>
 </html>
 """ % (html.escape(short), html.escape(short), SITE, page_name,
-       html.escape(short), CSS, "\n".join(bar), html.escape(short),
-       md_name, BLOB, md_name, body)
+       html.escape(short), CSS, SKIP_LINK, bar(short),
+       html.escape(short), md_name, BLOB, md_name, ORIENTATION, body,
+       FOOTER)
+
+
+def ecosystem_opening():
+    """Sentences copied word for word from ECOSYSTEM.md itself.
+
+    The first sentence of the destination paragraph, and the aim
+    sentence from the complete system section, both read from the file
+    at build time.
+    """
+    text = (ROOT / "ECOSYSTEM.md").read_text(encoding="utf-8")
+    lines = text.split("\n")
+    destination = ""
+    for i, line in enumerate(lines):
+        if line.strip() == "## The destination":
+            para = []
+            for follow in lines[i + 1:]:
+                if follow.strip() == "":
+                    if para:
+                        break
+                    continue
+                para.append(follow.strip())
+            destination = " ".join(para)
+            break
+    first = destination[:destination.find(". ") + 1] if ". " in \
+        destination else destination
+    aim = ""
+    match = re.search(r"The aim is [^.]*\.", text)
+    if match:
+        aim = match.group(0)
+    return [s for s in (first, aim) if s]
+
+
+def record_page(sections):
+    opening = "\n".join("<p>%s</p>" % html.escape(s, quote=False)
+                        for s in ecosystem_opening())
+    contents = "\n".join(
+        '      <li><a href="#%s">%s</a></li>' % (slug, name)
+        for _md, name, slug in RECORD_ORDER)
+    return """<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Record</title>
+<meta name="theme-color" content="#fbfaf7">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Aurora Commons">
+<meta property="og:title" content="The Record">
+<meta property="og:url" content="%srecord.html">
+<meta property="og:image" content="https://auroracommons.github.io/auroracommons/assets/aurora-logo.png">
+<meta property="og:image:width" content="1600">
+<meta property="og:image:height" content="1600">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="The Record">
+<meta name="twitter:image" content="https://auroracommons.github.io/auroracommons/assets/aurora-logo.png">
+<style>
+%s
+</style>
+</head>
+<body>
+%s
+%s
+<div class="wrap">
+<header>
+  <h1 id="top">The Record</h1>
+</header>
+<main class="doc" id="main">
+%s
+<p>Raise the floor beneath everyone.</p>
+<h2>Contents</h2>
+<nav aria-label="Contents of the record">
+  <ul class="contents">
+%s
+  </ul>
+</nav>
+%s
+</main>
+%s
+<p class="endline">That is everything. The page ends here.</p>
+</div>
+</body>
+</html>
+""" % (SITE, CSS, SKIP_LINK, bar("The Record"), opening, contents,
+       "\n".join(sections), FOOTER)
 
 
 def main():
@@ -293,14 +575,47 @@ def main():
         if not source.exists():
             print("render_docs: missing %s" % md_name, file=sys.stderr)
             sys.exit(1)
-        title, body = render(source.read_text(encoding="utf-8"))
+        md_text = source.read_text(encoding="utf-8")
+        title, handling, surface, tech, notes = surface_and_tech(
+            md_name, md_text)
         if not title:
             print("render_docs: %s has no title heading" % md_name,
                   file=sys.stderr)
             sys.exit(1)
+        body = "\n".join(surface + [tech_section(md_name, tech)])
         (ROOT / page_name).write_text(
             page(md_name, page_name, title, body), encoding="utf-8")
-        print("render_docs: %s -> %s" % (md_name, page_name))
+        print("render_docs: %s -> %s [%s]" % (md_name, page_name,
+                                              handling))
+        for note in notes:
+            print("render_docs:   %s: %s" % (md_name, note))
+
+    sections = []
+    for md_name, plain_name, slug in RECORD_ORDER:
+        source = ROOT / md_name
+        if not source.exists():
+            print("render_docs: missing %s" % md_name, file=sys.stderr)
+            sys.exit(1)
+        md_text = source.read_text(encoding="utf-8")
+        _title, handling, surface, tech, notes = surface_and_tech(
+            md_name, md_text, shift=1)
+        parts = ['<section class="record-doc" id="%s">' % slug,
+                 "<h2>%s</h2>" % plain_name,
+                 '<p class="source">Source: %s, kept on '
+                 '<a href="%s%s">GitHub</a>.</p>' % (md_name, BLOB,
+                                                     md_name)]
+        parts += surface
+        parts.append(tech_section(md_name, tech, level=3))
+        parts.append('<p><a href="#top">Back to the top</a></p>')
+        parts.append("</section>")
+        sections.append("\n".join(parts))
+        print("render_docs: record.html section %s [%s]" % (md_name,
+                                                            handling))
+        for note in notes:
+            print("render_docs:   record %s: %s" % (md_name, note))
+    (ROOT / "record.html").write_text(record_page(sections),
+                                      encoding="utf-8")
+    print("render_docs: record.html written")
 
 
 if __name__ == "__main__":

@@ -32,10 +32,12 @@
   .source{font-size:13px;color:var(--soft);margin:0 0 10px}
   .source a{color:var(--accent);text-decoration:none;font-weight:600}
   .source a:hover{text-decoration:underline}
+  .orientation{font-size:15px;margin:0 0 4px}
   .doc{padding:18px 0 4px;max-width:760px}
   .doc p{font-size:16px;margin:0 0 14px}
   .doc h2{font-size:25px;letter-spacing:-.5px;margin:34px 0 10px;font-weight:800}
   .doc h3{font-size:19px;letter-spacing:-.3px;margin:26px 0 8px;font-weight:800}
+  .doc h4{font-size:16px;margin:22px 0 8px;font-weight:800}
   .doc ul,.doc ol{font-size:16px;margin:0 0 14px;padding-left:24px}
   .doc li{margin:0 0 6px}
   .doc a{color:var(--accent);font-weight:600}
@@ -44,22 +46,32 @@
   .doc thead th{border-top:0}
   .doc code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.92em}
   .doc blockquote{margin:0 0 14px;padding-left:16px;border-left:3px solid var(--line)}
+  .tech{border-top:1px solid var(--line);margin-top:36px;padding-top:4px}
+  .contents{font-size:16px;margin:0 0 14px;padding-left:24px}
+  .contents li{margin:0 0 6px}
+  section.record-doc{border-top:1px solid var(--line);margin-top:36px;padding-top:4px}
   footer{padding:54px 0 62px;margin-top:46px;border-top:1px solid var(--line);
     color:var(--soft);font-size:14px}
   footer a{color:var(--accent);text-decoration:none;font-weight:600}
   .endline{text-align:center;font-size:15px;color:var(--ink);margin:0;padding:0 0 54px}
-  .commons-bar{display:flex;flex-wrap:wrap;gap:4px 18px;align-items:baseline;max-width:980px;margin:0 auto;padding:10px 20px 8px;font-size:14px;border-bottom:1px solid var(--line)}
-  .commons-bar .brand{font-weight:800;color:var(--ink);text-decoration:none;margin-right:4px}
-  .commons-bar a{color:var(--ink);text-decoration:none}
+  .commons-bar{display:flex;flex-wrap:wrap;gap:4px 18px;align-items:baseline;max-width:980px;margin:0 auto;padding:10px 20px 8px;font-size:14px;border-bottom:1px solid var(--line);position:sticky;top:0;background:var(--bg)}
+  .commons-bar .brand{font-weight:600;color:var(--ink);text-decoration:none;margin-right:4px}
+  .commons-bar a{color:var(--ink);text-decoration:none;display:inline-flex;align-items:center;min-height:44px}
   .commons-bar a:hover{text-decoration:underline}
-  .commons-bar .current{font-weight:700}
+  .commons-bar .current{font-weight:700;display:inline-flex;align-items:center;min-height:44px}
+  .skip{position:absolute;left:12px;top:-60px;background:var(--bg);color:var(--ink);padding:10px 12px;font-size:14px}
+  .skip:focus{top:8px}
+  a:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
+  [id]{scroll-margin-top:72px}
   @media (max-width:560px){h1{font-size:32px}}
 </style>
 </head>
 <body>
+<a class="skip" href="#main">Skip to the content</a>
 <nav class="commons-bar" aria-label="Aurora Commons sites">
   <a class="brand" href="https://auroracommons.github.io/auroracommons/">Aurora Commons</a>
-  <span class="current" aria-current="page">Billions, Verifiably</span>
+  <span class="current" aria-current="page">Billions, Verifiably (you are here)</span>
+  <a href="https://auroracommons.github.io/auroracommons/foundations.html">Foundations</a>
   <a href="https://auroracommons.github.io/ground/">Ground</a>
   <a href="https://auroracommons.github.io/still/">Still</a>
   <a href="https://auroracommons.github.io/atlas/">Atlas</a>
@@ -72,8 +84,9 @@
 <header>
   <h1>Billions, Verifiably</h1>
   <p class="source">Source: PARTICIPATION.md, kept on <a href="https://github.com/auroracommons/auroracommons/blob/main/PARTICIPATION.md">GitHub</a>.</p>
+  <p class="orientation">Part of the Record: the written record of Aurora Commons, on one page each.</p>
 </header>
-<main class="doc">
+<main class="doc" id="main">
 <h2>How people take part in the Aurora Commons</h2>
 <p>Every load bearing claim in this document is sourced from published research and production systems, cited in line, because a plan to involve billions that begins by inflating its own numbers has already failed.</p>
 <h2>Where we honestly stand</h2>
@@ -131,6 +144,10 @@
 <h2>Real change, accounted</h2>
 <p>Participation is not the outcome. Outcomes are counted per layer of the Ascent, with method and data published and independent evaluation invited and funded, with results published either way: learning gains on the tutor's own eval pattern extended to real learners; belonging measured by whether people stay and whether they report being known; shared truth measured by corrections issued and stood behind; and when the open layers are entered, food and shelter counted in physical units from partner records. Failures are published with the same care. The change record sits beside the contribution ledger, so anyone can weigh what the Commons' people did against what the Commons' people changed, and judge whether the ratio is fair.</p>
 <p>Colophon: written October 15, 2026, from a charge set by Groundskeeper, who advises this work: figure out how to get billions of people involved, verifiably, and have the collective projects drive real change.</p>
+<section class="tech">
+<h2>For agents and builders</h2>
+<p><a href="https://github.com/auroracommons/auroracommons/blob/main/PARTICIPATION.md">The full text and source of this document, kept on GitHub</a>.</p>
+</section>
 </main>
 <footer>
   <p>One rule: raise the floor beneath everyone.</p>

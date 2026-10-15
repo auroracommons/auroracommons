@@ -32,10 +32,12 @@
   .source{font-size:13px;color:var(--soft);margin:0 0 10px}
   .source a{color:var(--accent);text-decoration:none;font-weight:600}
   .source a:hover{text-decoration:underline}
+  .orientation{font-size:15px;margin:0 0 4px}
   .doc{padding:18px 0 4px;max-width:760px}
   .doc p{font-size:16px;margin:0 0 14px}
   .doc h2{font-size:25px;letter-spacing:-.5px;margin:34px 0 10px;font-weight:800}
   .doc h3{font-size:19px;letter-spacing:-.3px;margin:26px 0 8px;font-weight:800}
+  .doc h4{font-size:16px;margin:22px 0 8px;font-weight:800}
   .doc ul,.doc ol{font-size:16px;margin:0 0 14px;padding-left:24px}
   .doc li{margin:0 0 6px}
   .doc a{color:var(--accent);font-weight:600}
@@ -44,22 +46,32 @@
   .doc thead th{border-top:0}
   .doc code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.92em}
   .doc blockquote{margin:0 0 14px;padding-left:16px;border-left:3px solid var(--line)}
+  .tech{border-top:1px solid var(--line);margin-top:36px;padding-top:4px}
+  .contents{font-size:16px;margin:0 0 14px;padding-left:24px}
+  .contents li{margin:0 0 6px}
+  section.record-doc{border-top:1px solid var(--line);margin-top:36px;padding-top:4px}
   footer{padding:54px 0 62px;margin-top:46px;border-top:1px solid var(--line);
     color:var(--soft);font-size:14px}
   footer a{color:var(--accent);text-decoration:none;font-weight:600}
   .endline{text-align:center;font-size:15px;color:var(--ink);margin:0;padding:0 0 54px}
-  .commons-bar{display:flex;flex-wrap:wrap;gap:4px 18px;align-items:baseline;max-width:980px;margin:0 auto;padding:10px 20px 8px;font-size:14px;border-bottom:1px solid var(--line)}
-  .commons-bar .brand{font-weight:800;color:var(--ink);text-decoration:none;margin-right:4px}
-  .commons-bar a{color:var(--ink);text-decoration:none}
+  .commons-bar{display:flex;flex-wrap:wrap;gap:4px 18px;align-items:baseline;max-width:980px;margin:0 auto;padding:10px 20px 8px;font-size:14px;border-bottom:1px solid var(--line);position:sticky;top:0;background:var(--bg)}
+  .commons-bar .brand{font-weight:600;color:var(--ink);text-decoration:none;margin-right:4px}
+  .commons-bar a{color:var(--ink);text-decoration:none;display:inline-flex;align-items:center;min-height:44px}
   .commons-bar a:hover{text-decoration:underline}
-  .commons-bar .current{font-weight:700}
+  .commons-bar .current{font-weight:700;display:inline-flex;align-items:center;min-height:44px}
+  .skip{position:absolute;left:12px;top:-60px;background:var(--bg);color:var(--ink);padding:10px 12px;font-size:14px}
+  .skip:focus{top:8px}
+  a:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
+  [id]{scroll-margin-top:72px}
   @media (max-width:560px){h1{font-size:32px}}
 </style>
 </head>
 <body>
+<a class="skip" href="#main">Skip to the content</a>
 <nav class="commons-bar" aria-label="Aurora Commons sites">
   <a class="brand" href="https://auroracommons.github.io/auroracommons/">Aurora Commons</a>
-  <span class="current" aria-current="page">Progress log</span>
+  <span class="current" aria-current="page">Progress log (you are here)</span>
+  <a href="https://auroracommons.github.io/auroracommons/foundations.html">Foundations</a>
   <a href="https://auroracommons.github.io/ground/">Ground</a>
   <a href="https://auroracommons.github.io/still/">Still</a>
   <a href="https://auroracommons.github.io/atlas/">Atlas</a>
@@ -72,8 +84,15 @@
 <header>
   <h1>Progress log</h1>
   <p class="source">Source: PROGRESS.md, kept on <a href="https://github.com/auroracommons/auroracommons/blob/main/PROGRESS.md">GitHub</a>.</p>
+  <p class="orientation">Part of the Record: the written record of Aurora Commons, on one page each.</p>
 </header>
-<main class="doc">
+<main class="doc" id="main">
+<p>This page is the progress log: the public record of the work, what was done, what the proof shows, what broke, and what comes next, updated every work session with the newest entry first.</p>
+<p>The newest entry is dated October 15, 2026, and its heading is: the funds system, built before any money moves.</p>
+<p>The full log stands underneath, word for word.</p>
+<section class="tech">
+<h2>For agents and builders</h2>
+<p><a href="https://github.com/auroracommons/auroracommons/blob/main/PROGRESS.md">The full text and source of this document, kept on GitHub</a>.</p>
 <p>This is the public record of the work: what was done, what the proof shows, what broke, and what comes next. It is updated every work session, newest first, in plain language on purpose. If a claim anywhere in these projects cannot be traced to a logged run, the claim is wrong and the log is where it gets corrected.</p>
 <h2>October 15, 2026: the funds system, built before any money moves</h2>
 <p>Two documents join the public record, written before the Commons has handled a single amount, so the rules stand in public before they are ever needed. Funds states how money would move: through one channel only, the fiscal host, never into a personal account and never in cash handled privately. It states the state of today with its date. As of October 15, 2026, the Commons has received no funds: no donations, no grants, and no sales revenue, and no money is held by the project or by its advisor on its behalf. The intended host is named as intended and not appointed: Open Source Collective, with its fee stated as a fixed 10 percent of incoming funds, read from the host's own documentation on October 15, 2026, and the two open items stated beside it, the host's organizational account question and its 501(c)(6) shape, under which gifts given through it are not tax deductible for United States donors. Funds also states what is never sold: governance, votes, credit, the framing of the questions members vote on, personal data, and the right to leave and to carry the work on by forking it. And it states, as present fact and as rule, that the advisor is paid nothing from Commons funds, and that this stays true unless and until terms saying otherwise are published in advance in that document.</p>
@@ -209,6 +228,7 @@
 <p>Billions, Verifiably (PARTICIPATION.md) defines involvement in five tiers, reached, first step, contributor, recurring, citizen, published separately and never blended, because OpenStreetMap's roughly 10.6 million registered accounts against its 40,000 to 50,000 monthly mappers show exactly how participation numbers lie. The growth road runs through the institutions that already hold the billions, the way DHIS2 entered more than seventy national health systems as a substrate, and the engine of change is participatory budgeting, the mechanism with the strongest evidence on earth: in Porto Alegre, where it began, household sewer and water connections rose from about 75 percent in 1988 to about 98 percent in 1997 on budgets citizens directed. Verification is structural: public ledgers a stranger can recount, auditable tallies on the Colorado risk limiting audit standard, and fraud estimates published beside every count, the way Gitcoin's audited rounds published their sybil removals and a residual fraud tax of 0.61 percent. The document also records the cautionary findings in the open, including France's climate convention, where only about 40 percent of citizen proposals survived into law, which is why every Commons vote states in advance exactly what it controls.</p>
 <p>A Place for Everyone (REGISTRY.md) opens the Commons Registry: every individual and every entity gets a place on the map, given rather than earned, held on the single condition of the one rule, be fair to others. Standing grows only by verified contribution and is never sold. The first invitation rings are named honestly as invited, not involved.</p>
 <p>Next: the Phase 0 pilot enrolls the founding circle under these counting rules, so the first published tier numbers are small, true, and recountable.</p>
+</section>
 </main>
 <footer>
   <p>One rule: raise the floor beneath everyone.</p>
