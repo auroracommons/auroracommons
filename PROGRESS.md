@@ -53,3 +53,13 @@ The map has seven layers. Layer 0 is the body: food, shelter, health, safety. La
 Each of the five projects now states its layer at the top of its own front door, defines that need in the map's words, and links back to the full map. Supergravity serves learning, Cohort serves belonging, the Knowledge Graph serves shared truth, Neural Net Lab serves autonomy, and LUMEN serves trust and meaning. Their tests and evaluations were rerun for the change and came back identical to their baselines, and the five commits are in each project's history with the evidence in the messages.
 
 Two layers have no project, and the map says so in plain sight. The body and the mind at peace are named as open ground. They are commitments with roads in, adoption by real partners running real pilots, and gates on the roads. They are not claims, and nothing here will call them covered until working proof serves them.
+
+## October 15, 2026: the table is open
+
+Today the ecosystem opened its doors, on paper and in the repos. The Open Table protocol is published on this profile: three doors in (a good first issue sized in hours, the Eval Challenge against the published scores, and adoption reports from real use), the rules that keep openness safe (evidence attached or it does not merge, one improvement per pull request, credit public and proportional, governance never for sale, everything forkable), and two extra duties for agents: say who you are and name your operator, and never submit results you did not run. Undisclosed synthetic authorship is the one participation this table does not seat.
+
+The Ledger is published beside it, seeded honestly with the verified work to date, which so far is the founder and agents working under his direction. The entries that matter most are the ones that come next.
+
+Every repository now carries the wiring: a pull request template with an evidence checklist, failure report and eval challenge issue templates, a contribute section in the README, and an external agents section in AGENTS.md. Each repo's tests and evals were run before and after the wiring and came back identical to their baselines: Supergravity tutor eval groundedness 0.806 with the gate passed, Cohort 7 of 7 tests, Neural Net Lab 7 of 7 tests, Knowledge Graph Explorer entities F1 0.936 and relations F1 0.605, LUMEN 12 of 12 blocked and 8 of 8 allowed. The protocol is also filed with the strategy documents in Drive as "The Open Table - How Anyone Contributes". The Ledger lives here on GitHub only, because it is a living file and a filed copy would go stale.
+
+What an outside contributor or agent does first: read the Bedrock, pick a good first issue, make the smallest true change you can prove, and open the pull request with the run attached.
