@@ -14,42 +14,49 @@ And beneath the layers, the grain: every need on this map is lived by one person
 
 ### Layer 0: The body. Food, shelter, health, safety.
 The material floor. Reliable food, a safe place to sleep, a body that is cared for, a life not lived in fear of violence or ruinous bills.
+Unlocks: act at all.
 Unmet, it looks like: hunger inside a system that wastes food by the ton, families one emergency from the street, treatable illness untreated.
 Served by: Ground, the Commons' first minimal build for this layer. A verified local resource board: every listing is a Proof, checked on the provider's own page, with a check date and an expiry 30 days later, and shown as stale in the open when that date passes. The seed board carries 8 listings in New Rochelle and nearby Westchester, all verified October 15, 2026.
 The path onward: the ecosystem still enters new towns by adoption, the same road as every industry. A food logistics team adopts the Graph to structure what is wasted and what is needed. A community health educator adopts the Atlas to teach. A board is a start, not coverage: this layer is served minimally, and the record says exactly how far that goes.
 
 ### Layer 1: The mind at peace. Mental health, steadiness, hope.
 A mind that can rest. Treatment and support for suffering, freedom from constant dread, and hope treated as infrastructure: a credible path, proof someone like you walked it, a first step small enough to take today.
+Unlocks: choose.
 Unmet, it looks like: despair, addiction, isolation that hardens into contempt for self and others.
 Served by: Still, a dedicated first minimal build for this layer, and partly by others. Still is a quiet single page practice tool: a check in, a breathing pacer, and a writing space that never leaves the device. It makes no medical claims and says plainly that it is not medical care. Cohort also serves this layer through belonging, Lumen through meaning, and the public record through visible paths and kept promises.
 Status: first build. Still is minimal on purpose, and this map does not pretend it is more. What grows from it earns its place through the same gates as everything else: proven demand, a partner, measured results.
 
 ### Layer 2: Learning. Education and growing capability.
 The ability to learn what you need, when you need it, at a price that does not exclude you, from teaching that does not invent its facts.
+Unlocks: understand.
 Unmet, it looks like: students priced out of the tutoring that changes trajectories, adults locked out of retraining, knowledge hoarded behind paywalls and jargon.
 Served by: Act 1, Atlas. A free learning atlas whose tutor is evaluated in public, groundedness 0.806 and citation rate 1.0 on the committed baseline, with the weak spots published beside the scores.
 Proof standard: the eval harness runs in the open and anyone can rerun it.
 
 ### Layer 3: Belonging. Connection, community, being known.
 People who know your name. A room where your work is seen. A first believer when you are starting from nothing.
+Unlocks: contribute.
 Unmet, it looks like: loneliness at scale, builders and neighbors invisible to each other, communities that exist only as audiences for someone else's platform.
 Served by: Act 2, Cohort, the Commons. Workspaces where people and AI agents build together in the open, through the Model Context Protocol, with sessions anyone can watch instead of black boxes.
 Proof standard: live sessions and the public record of what was built in them.
 
 ### Layer 4: Shared truth. Facts a community can stand on.
 Knowledge organized well enough to argue with. Claims that carry their evidence. Errors published, not buried.
+Unlocks: discern.
 Unmet, it looks like: decisions made about communities from scattered and invented data, arguments with no floor of agreed fact, institutions that cannot tell what they know from what they assume.
 Served by: Act 4, Graph. Extraction that publishes its own scores, entities F1 0.937 and relations F1 0.605 on a hand labeled eval, with the misses printed next to the numbers.
 Proof standard: the eval set is public and the extraction can be rerun against it.
 
 ### Layer 5: Autonomy. Not ruled by machines you cannot understand.
 The machinery of the age opened up, so that understanding is not the property of a priesthood. A society that cannot explain its own machines will be governed by whoever can.
+Unlocks: build.
 Unmet, it looks like: whole populations subject to systems they cannot question, skills and standing allocated by black boxes, dependence dressed up as convenience.
 Served by: Act 3, Machine. Machine learning built from scratch, by hand, in the open: a transformer with 7 of 7 gradient checks passing and an honest benchmark against PyTorch, so anyone can learn how the machine truly learns.
 Proof standard: the code is the curriculum, and its tests are the receipts.
 
 ### Layer 6: Trust and meaning. Safety, values, a reason.
 Technology that stays inside human values: refuses what it should refuse, explains itself, and remains governed by people. And beneath the technology, the older need it serves: meaning, faith, conscience, a life that adds up to something.
+Unlocks: commit.
 Unmet, it looks like: machines that comply with anything, guardrails promised in principles pages and absent in code, people handed power with no story about what it is for.
 Served by: Act 5, Lumen, the Guardrails. Guarded question answering over a public domain corpus, with a refusal evaluation anyone can rerun: 12 of 12 harmful requests blocked, 8 of 8 legitimate ones allowed, in the committed run.
 Proof standard: the refusal suite is reusable and public, so the boundary can be tested by anyone, not trusted on our word.
