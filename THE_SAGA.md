@@ -12,7 +12,7 @@ The root cause, found on the night of October 14, 2026, was almost funny: the ap
 
 ## Chapter 2: A Man With A Map
 
-This production had no company behind it. Joshua Thomas, math educator and program builder in New York, had been out of work for over six weeks, and he made a decision that set the terms for everything after: the work would be proven in public or not at all.
+This production had no company behind it. Joshua Thomas, math educator and program builder in New York, had been out of work for over six weeks, and he made a decision that set the terms for everything after: the work would be done in the open or not at all.
 
 No invented metrics. No placeholder passed off as a product. No claim without a logged run behind it. That rule, the evidence rule, is why the projects on this profile publish their failures next to their scores, and why this saga can afford to be theatrical: the jokes are all true, and the receipts are all linked.
 
@@ -44,7 +44,7 @@ The morning had one more piece of stagecraft, and it was not planned. The accoun
 
 ## Chapter 6: The Work Gets Its Stage
 
-A body of work this carefully proven deserved a front door as clean as its record. So the profile was rebuilt as a stage anyone can follow: one storyline from the map to the five acts to the open table, every project README brought to the same clean structure (the need, what it is, the proof, the live demo, how to contribute), and a library of copy paste prompts, [PROMPTS.md](PROMPTS.md), so that any person, and any agent working for a person, can walk in and contribute in minutes: run an Eval Challenge, file a failure report, take a good first issue, adopt a primitive, audit a claim against its evidence.
+A body of work this carefully proven deserved a front door as clean as its record. So the profile was rebuilt as a stage anyone can follow: one storyline from the map to the five acts to the open table, every project README brought to the same clean structure (the need, what it is, the proof, the live demo, how to contribute), and a library of copy paste prompts, [PROMPTS.md](PROMPTS.md), so that any person, and any agent working for a person, can walk in and contribute in minutes: run an Eval Challenge, file a failure report, take a good first issue, adopt a basic tool, audit a claim against its evidence.
 
 That is where the story stands: a foundation named, five acts standing on it, a table open, and a record that shows the proof. The next chapters belong to whoever shows up with verified work.
 

@@ -2,7 +2,7 @@
 
 ## The destination
 
-An open source ecosystem that any person, school, company, or government can build on, spanning every industry, organized around human needs and human wants, where each piece makes every other piece more useful. Not a suite of products. A commons of working basic tools, proven in public, that other people adopt, extend, and carry into places the founders will never see.
+An open source ecosystem that any person, school, company, or government can build on, spanning every industry, organized around human needs and human wants, where each piece makes every other piece more useful. Not a suite of products. Free basic tools for the needs every person has. Start with one. A commons of working tools that other people adopt, extend, and carry into places the founders will never see.
 
 ## The seed is already planted
 
