@@ -1,6 +1,6 @@
 # One Person, One Voice
 
-## The democratic foundation of the Bedrock Commons
+## The democratic foundation of the Aurora Commons
 
 ## The one rule
 

@@ -2,6 +2,14 @@
 
 This is the public record of the work: what was done, what the proof shows, what broke, and what comes next. It is updated every work session, newest first, in plain language on purpose. If a claim anywhere in these projects cannot be traced to a logged run, the claim is wrong and the log is where it gets corrected.
 
+## October 15, 2026: the Aurora pivot, names that serve all
+
+**What shipped.** Every name in this work changed today, in one pass, at the founder's direction. Bedrock Commons is now Aurora Commons, and the map of human needs, The Bedrock, is now The Ascent. The five acts carry the names of what they are: Supergravity is now Atlas, Neural Net Lab is now Machine, Knowledge Graph Explorer is now Graph, and LUMEN is now Lumen; Cohort keeps its name. The account, all six repositories, every demo address, the visual front page, and the published documents were swept to the new names, and the front page was rebuilt visual first: the Ascent drawn, the acts as cards, the Proof as one diagram, captions instead of essays. Lumen's README now states its framing plainly: the guardrail method belongs to no tradition, each community's own texts are guarded by that community's own rules, its current corpus is a first exhibit from one tradition, and the door is open to every tradition's texts and to secular works of meaning.
+
+**The proof.** The reason is the record's own logic, stated by the founder in four words: serve all. A commons that belongs to everyone cannot carry names that belong to one field, one tradition, or one stone. What did not change is everything that carries weight: every published number stands exactly as measured, the one rule stands (be fair to others), the advisor framing stands, and the historical entries below stand exactly as written, under the names of their day, because a public record does not get quietly rewritten.
+
+**What is next.** Unchanged: the twice daily evolution pass, now under the new names, the November 16, 2026 checkpoint, and the first Ledger entries from outside contributors.
+
 ## October 15, 2026: the advisor steps back, and the Commons gets a front page
 
 **What shipped.** The founder restated his own role today, in his words: an advisor, not a director. His name came off the top of this profile, the direction clauses in the charter, the democratic foundation, the participation engine, and the registry now say what he actually is (he advises the building; the members direct the governance), the provenance lines moved to colophons at the foot of each document, and the saga credit line now reads: Advised by Joshua Thomas. The same session built the Commons a visual front page, index.html in this repository, linked from the top of this profile, so the whole system can be seen on one page: the map, the five acts with their proof, the one rule, and the doors in.

@@ -1,8 +1,8 @@
-# Bedrock Commons
+# Aurora Commons
 
 Open source primitives for human needs, proven in public. Five working exhibits on one map of human needs, with the proof published beside every claim and the failures printed next to the wins. This profile is the workshop.
 
-**Start here:** [The visual tour](https://bedrockcommons.github.io/bedrockcommons/), the whole Commons explained on one page. Then [The Bedrock](NEEDS.md), the map of human needs the whole ecosystem stands on. [The Open Table](OPEN_TABLE.md), how anyone contributes here, human or agent. [The Saga](THE_SAGA.md), the story of how this got built, with receipts.
+**Start here:** [The visual tour](https://auroracommons.github.io/auroracommons/), the whole Commons explained on one page. Then [The Ascent](NEEDS.md), the map of human needs the whole ecosystem stands on. [The Open Table](OPEN_TABLE.md), how anyone contributes here, human or agent. [The Saga](THE_SAGA.md), the story of how this got built, with receipts.
 
 ## The five acts
 
@@ -10,11 +10,11 @@ One thesis in five acts: technology should increase human capability without tak
 
 | Act | Serves | Proof | Live demo |
 |---|---|---|---|
-| 1. [Supergravity, the Atlas](https://github.com/bedrockcommons/supergravity) | Learning (Bedrock Layer 2) | Tutor eval: groundedness 0.806, citation rate 1.0, run in CI | [Demo](https://bedrockcommons.github.io/supergravity/) |
-| 2. [Cohort, the Commons](https://github.com/bedrockcommons/cohort) | Belonging (Bedrock Layer 3) | Tests 7 of 7, MCP server verified by a recorded live agent session | [Demo](https://bedrockcommons.github.io/cohort/) |
-| 3. [Neural Net Lab, the Machine](https://github.com/bedrockcommons/neural-net-lab) | Autonomy (Bedrock Layer 5) | Gradient checks 7 of 7; PyTorch benchmark 4.13x faster per step, published beside the from scratch result | [Demo](https://bedrockcommons.github.io/neural-net-lab/) |
-| 4. [Knowledge Graph Explorer, the Graph](https://github.com/bedrockcommons/knowledge-graph-explorer) | Shared truth (Bedrock Layer 4) | Hand labeled eval: entities F1 0.936, relations F1 0.605, errors published | [Demo](https://bedrockcommons.github.io/knowledge-graph-explorer/) |
-| 5. [LUMEN, the Guardrails](https://github.com/bedrockcommons/lumen-faith-platform) | Trust and meaning (Bedrock Layer 6) | Refusal eval: 12 of 12 blocked, 8 of 8 allowed | [Demo](https://bedrockcommons.github.io/lumen-faith-platform/) |
+| 1. [Atlas](https://github.com/auroracommons/atlas) | Learning (Ascent Layer 2) | Tutor eval: groundedness 0.806, citation rate 1.0, run in CI | [Demo](https://auroracommons.github.io/atlas/) |
+| 2. [Cohort, the Commons](https://github.com/auroracommons/cohort) | Belonging (Ascent Layer 3) | Tests 7 of 7, MCP server verified by a recorded live agent session | [Demo](https://auroracommons.github.io/cohort/) |
+| 3. [Machine](https://github.com/auroracommons/machine) | Autonomy (Ascent Layer 5) | Gradient checks 7 of 7; PyTorch benchmark 4.13x faster per step, published beside the from scratch result | [Demo](https://auroracommons.github.io/machine/) |
+| 4. [Graph](https://github.com/auroracommons/graph) | Shared truth (Ascent Layer 4) | Hand labeled eval: entities F1 0.936, relations F1 0.605, errors published | [Demo](https://auroracommons.github.io/graph/) |
+| 5. [Lumen, the Guardrails](https://github.com/auroracommons/lumen) | Trust and meaning (Ascent Layer 6) | Refusal eval: 12 of 12 blocked, 8 of 8 allowed | [Demo](https://auroracommons.github.io/lumen/) |
 
 ## Where this is headed (projections, gated, not promises)
 
@@ -37,6 +37,6 @@ A phase that misses its gate gets a written reason and a revised projection, nev
 - [The Ledger](LEDGER.md): the public record of verified contributions, with the evidence attached. Credit is proportional to proof and never sold.
 - [Prompts](PROMPTS.md): copy paste prompts that let anyone, or any agent, contribute: run an Eval Challenge, file a failure report, take a good first issue, adopt a primitive, audit a claim.
 - [The Open Table](OPEN_TABLE.md): the contribution protocol. Three doors, the evidence rules, and the duties agents carry, including naming your operator.
-- [Good first issues across all five projects](https://github.com/search?q=user%3Abedrockcommons+label%3A%22good+first+issue%22+state%3Aopen&type=issues): each one sized in hours and written for a newcomer.
+- [Good first issues across all five projects](https://github.com/search?q=user%3Aauroracommons+label%3A%22good+first+issue%22+state%3Aopen&type=issues): each one sized in hours and written for a newcomer.
 
 Advised by Joshua Thomas, a math educator and program builder in New York.

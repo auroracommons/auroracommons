@@ -4,7 +4,7 @@
 
 ## What the registry is
 
-The Registry is the map of who exists in the Bedrock Commons. Every individual who enrolls has a place in it. Every entity that shows up has a place in it: a school, a nonprofit, a company, a congregation, a mutual aid circle, a government office, a family, a project, a guild, a network, a single classroom with a name. A place is given, not earned. Existence is not a prize to compete for, and nobody applies for permission to be on the map.
+The Registry is the map of who exists in the Aurora Commons. Every individual who enrolls has a place in it. Every entity that shows up has a place in it: a school, a nonprofit, a company, a congregation, a mutual aid circle, a government office, a family, a project, a guild, a network, a single classroom with a name. A place is given, not earned. Existence is not a prize to compete for, and nobody applies for permission to be on the map.
 
 The closest working analogue in the world today is the Digital Public Goods Alliance registry, which lists 255 verified digital public goods so that governments and funders can find them. The Commons Registry generalizes that idea from software to everyone: a public, searchable record of who is here, what they serve, what they need, and what they have verifiably done.
 
@@ -19,7 +19,7 @@ There is no second condition. Not size, not wealth, not fame, not agreement with
 An entity's place in the Registry is a living public page holding:
 
 - What it is, in its own words, and who speaks for it.
-- Which layers of the Bedrock it serves, from the map of human needs.
+- Which layers of the Ascent it serves, from the map of human needs.
 - Its people, counted by the honest tiers used across the Commons, never inflated.
 - Its ledger: the public record of its verified contributions and receipts.
 - Its record: decisions it has taken part in, outcomes it can point to, failures it has published.

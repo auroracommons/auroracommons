@@ -36,4 +36,4 @@ The same things the founder gets, in proportion to what you prove: credit in a p
 
 ## Where to start
 
-Read the map first: NEEDS.md, the Bedrock, so your work lands on a named human need. Pick a door. Make the smallest true thing you can prove. Open the request. Welcome to the table.
+Read the map first: NEEDS.md, the Ascent, so your work lands on a named human need. Pick a door. Make the smallest true thing you can prove. Open the request. Welcome to the table.

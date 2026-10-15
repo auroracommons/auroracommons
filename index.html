@@ -3,121 +3,158 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Bedrock Commons</title>
+<title>Aurora Commons</title>
 <meta name="description" content="Open source primitives for human needs, proven in public. Five working exhibits on one map of human needs.">
 <style>
   :root{
     --bg:#fbfaf7; --ink:#1b1e23; --soft:#5a6068; --line:#e4e0d6;
     --card:#ffffff; --accent:#2e5d43; --accent-ink:#ffffff;
-    --chip:#eef3f0;
+    --chip:#eef3f0; --dawn:#e8a33d; --open:#9a7b2d;
   }
   *{box-sizing:border-box}
   body{margin:0;background:var(--bg);color:var(--ink);
     font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
-    line-height:1.55;-webkit-font-smoothing:antialiased}
+    line-height:1.5;-webkit-font-smoothing:antialiased}
   .wrap{max-width:980px;margin:0 auto;padding:0 20px}
-  header{padding:72px 0 8px;text-align:center}
-  h1{font-size:52px;letter-spacing:-1.5px;margin:0 0 10px;font-weight:800}
-  .tag{font-size:20px;color:var(--soft);max-width:640px;margin:0 auto}
-  .rule{display:inline-block;margin-top:26px;background:var(--chip);
+  header{padding:64px 0 4px;text-align:center}
+  h1{font-size:52px;letter-spacing:-1.5px;margin:14px 0 8px;font-weight:800}
+  .tag{font-size:19px;color:var(--soft);max-width:600px;margin:0 auto}
+  .rule{display:inline-block;margin-top:24px;background:var(--chip);
     border:1px solid var(--line);border-radius:999px;padding:8px 18px;font-size:15px}
   .rule strong{color:var(--accent)}
-  section{padding:44px 0 6px}
-  h2{font-size:26px;letter-spacing:-.5px;margin:0 0 6px}
-  .sub{color:var(--soft);margin:0 0 22px;max-width:680px}
+  section{padding:46px 0 4px}
+  h2{font-size:25px;letter-spacing:-.5px;margin:0 0 4px;text-align:center}
+  .sub{color:var(--soft);margin:0 auto 22px;max-width:620px;text-align:center;font-size:15px}
+  /* The Ascent diagram */
+  .ascent{max-width:680px;margin:0 auto;display:flex;flex-direction:column;gap:5px}
+  .rung{display:flex;justify-content:space-between;align-items:center;gap:14px;
+    border:1px solid var(--line);border-radius:10px;padding:10px 16px;background:var(--card)}
+  .rung .lname{font-weight:600;font-size:15px}
+  .rung .lact{color:var(--soft);font-size:14px;text-align:right}
+  .rung.ground{background:#f4efe3}
+  .rung.open{background:transparent;border-style:dashed}
+  .rung.open .lact{color:var(--open);font-weight:600}
+  .rung.r5{margin:0 12px} .rung.r4{margin:0 24px}
+  .rung.r3{margin:0 36px} .rung.r2{margin:0 48px} .rung.r1{margin:0 60px} .rung.r0{margin:0 72px}
+  /* Act cards */
   .acts{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:16px}
-  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px}
-  .card h3{margin:0 0 2px;font-size:18px}
-  .card .need{color:var(--accent);font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:.6px}
-  .card p{margin:8px 0 0;font-size:15px;color:#33373d}
-  .card .proof{margin-top:12px;font-size:14px;background:var(--chip);border-radius:8px;padding:8px 10px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px}
+  .shot{height:110px;border-radius:9px;background:linear-gradient(160deg,#eef3f0,#f7f3e8);
+    display:flex;align-items:center;justify-content:center;margin-bottom:14px}
+  .shot span{font-size:34px;font-weight:800;color:var(--accent);opacity:.55;letter-spacing:-1px}
+  .card .need{color:var(--accent);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.7px}
+  .card h3{margin:2px 0 0;font-size:19px}
+  .stat{font-size:26px;font-weight:800;letter-spacing:-.5px;margin-top:10px}
+  .stat small{display:block;font-size:13px;font-weight:500;color:var(--soft);letter-spacing:0}
   .btns{margin-top:14px;display:flex;gap:8px}
   .btn{display:inline-block;text-decoration:none;font-size:14px;font-weight:600;
     padding:7px 14px;border-radius:8px;border:1px solid var(--accent);color:var(--accent)}
   .btn.solid{background:var(--accent);color:var(--accent-ink)}
-  .layers{border:1px solid var(--line);border-radius:14px;overflow:hidden;background:var(--card)}
-  .layer{display:flex;justify-content:space-between;gap:16px;padding:12px 18px;border-top:1px solid var(--line)}
-  .layer:first-child{border-top:none}
-  .layer .lname{font-weight:600}
-  .layer .lwhat{color:var(--soft);text-align:right;font-size:14px}
-  .open{color:#9a7b2d;font-weight:600}
+  /* The Proof diagram */
+  .proof{max-width:680px;margin:0 auto;text-align:center}
+  .proofgrid{display:grid;grid-template-columns:1fr auto 1fr;gap:10px;align-items:center;max-width:640px;margin:0 auto}
+  .pcell{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:10px 8px;font-weight:600;font-size:15px}
+  .pcell small{display:block;font-weight:500;color:var(--soft);font-size:12.5px}
+  .pcenter{background:var(--accent);color:#fff;border-radius:50%;width:128px;height:128px;
+    display:flex;flex-direction:column;align-items:center;justify-content:center;font-weight:800;font-size:17px;line-height:1.25;padding:10px}
+  .pcenter small{font-weight:500;font-size:12px;opacity:.85}
+  /* Doors and record */
   .doors{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px}
-  .record{columns:2;column-gap:28px;font-size:16px}
-  .record a{color:var(--accent);text-decoration:none;font-weight:600}
-  .record li{margin:0 0 10px;break-inside:avoid}
-  .record span{color:var(--soft);font-weight:400}
-  footer{padding:56px 0 64px;margin-top:44px;border-top:1px solid var(--line);
+  .doors .card p{margin:6px 0 0;font-size:14.5px;color:#33373d}
+  .doors h3{font-size:17px}
+  .chips{display:flex;flex-wrap:wrap;gap:8px;justify-content:center}
+  .chip{display:inline-block;background:var(--card);border:1px solid var(--line);border-radius:999px;
+    padding:7px 15px;font-size:14.5px;font-weight:600;color:var(--accent);text-decoration:none}
+  footer{padding:54px 0 62px;margin-top:46px;border-top:1px solid var(--line);
     color:var(--soft);font-size:14px;text-align:center}
   footer a{color:var(--accent);text-decoration:none;font-weight:600}
-  @media (max-width:560px){h1{font-size:38px}.record{columns:1}}
+  @media (max-width:560px){h1{font-size:38px}.rung.r5,.rung.r4,.rung.r3,.rung.r2,.rung.r1,.rung.r0{margin:0}}
 </style>
 </head>
 <body>
 <div class="wrap">
 
 <header>
-  <h1>Bedrock Commons</h1>
-  <p class="tag">Open source primitives for human needs, proven in public. Five working exhibits on one map of human needs, with the proof published beside every claim.</p>
+  <svg width="72" height="44" viewBox="0 0 72 44" aria-hidden="true">
+    <path d="M10 40 A26 26 0 0 1 62 40" fill="none" stroke="#e8a33d" stroke-width="5" stroke-linecap="round"/>
+    <line x1="2" y1="40" x2="70" y2="40" stroke="#2e5d43" stroke-width="3" stroke-linecap="round"/>
+  </svg>
+  <h1>Aurora Commons</h1>
+  <p class="tag">Open source work for human needs. Proven in public, for all, every faith and none.</p>
   <div class="rule">The one rule: <strong>be fair to others.</strong></div>
 </header>
 
 <section>
+  <h2>The Ascent</h2>
+  <p class="sub">One map of human needs, ground up. Five acts stand on it. Two layers are open ground.</p>
+  <div class="ascent">
+    <div class="rung r6"><span class="lname">6 · Trust and meaning</span><span class="lact">Lumen</span></div>
+    <div class="rung r5"><span class="lname">5 · Autonomy</span><span class="lact">Machine</span></div>
+    <div class="rung r4"><span class="lname">4 · Shared truth</span><span class="lact">Graph</span></div>
+    <div class="rung r3"><span class="lname">3 · Belonging</span><span class="lact">Cohort</span></div>
+    <div class="rung r2"><span class="lname">2 · Learning</span><span class="lact">Atlas</span></div>
+    <div class="rung r1 open"><span class="lname">1 · The mind at peace</span><span class="lact">Open ground</span></div>
+    <div class="rung r0 ground"><span class="lname">0 · The body</span><span class="lact">Open ground</span></div>
+  </div>
+</section>
+
+<section>
   <h2>The five acts</h2>
-  <p class="sub">One thesis in five acts: technology should increase human capability without taking human agency away. Every number below comes from a logged run in the project repository.</p>
+  <p class="sub">Each act is a working exhibit. The number on every card comes from a logged run in its repository.</p>
   <div class="acts">
 
     <div class="card">
+      <div class="shot"><span>Atlas</span></div>
       <div class="need">Layer 2 · Learning</div>
-      <h3>Supergravity, the Atlas</h3>
-      <p>A learning atlas and AI tutor that answers from sources it can cite, and says so when it cannot.</p>
-      <div class="proof">Proof: tutor eval groundedness 0.806, citation rate 1.0, run in CI.</div>
+      <h3>Atlas</h3>
+      <div class="stat">0.806<small>tutor eval groundedness, citations 1.0</small></div>
       <div class="btns">
-        <a class="btn solid" href="https://bedrockcommons.github.io/supergravity/">Live demo</a>
-        <a class="btn" href="https://github.com/bedrockcommons/supergravity">Repository</a>
+        <a class="btn solid" href="https://auroracommons.github.io/atlas/">Live demo</a>
+        <a class="btn" href="https://github.com/auroracommons/atlas">Repository</a>
       </div>
     </div>
 
     <div class="card">
+      <div class="shot"><span>Cohort</span></div>
       <div class="need">Layer 3 · Belonging</div>
-      <h3>Cohort, the Commons</h3>
-      <p>A community platform with an MCP server, so people and their agents can share one workspace.</p>
-      <div class="proof">Proof: tests 7 of 7, MCP server verified by a recorded live agent session.</div>
+      <h3>Cohort</h3>
+      <div class="stat">7 of 7<small>tests passing, MCP server live session verified</small></div>
       <div class="btns">
-        <a class="btn solid" href="https://bedrockcommons.github.io/cohort/">Project page</a>
-        <a class="btn" href="https://github.com/bedrockcommons/cohort">Repository</a>
+        <a class="btn solid" href="https://auroracommons.github.io/cohort/">Project page</a>
+        <a class="btn" href="https://github.com/auroracommons/cohort">Repository</a>
       </div>
     </div>
 
     <div class="card">
+      <div class="shot"><span>Machine</span></div>
       <div class="need">Layer 5 · Autonomy</div>
-      <h3>Neural Net Lab, the Machine</h3>
-      <p>Neural networks built from scratch, so machine intelligence is something people can actually understand.</p>
-      <div class="proof">Proof: gradient checks 7 of 7; PyTorch benchmark 4.13x faster per step, published beside the from scratch result.</div>
+      <h3>Machine</h3>
+      <div class="stat">7 of 7<small>gradient checks, transformer built from scratch</small></div>
       <div class="btns">
-        <a class="btn solid" href="https://bedrockcommons.github.io/neural-net-lab/">Live results</a>
-        <a class="btn" href="https://github.com/bedrockcommons/neural-net-lab">Repository</a>
+        <a class="btn solid" href="https://auroracommons.github.io/machine/">Live results</a>
+        <a class="btn" href="https://github.com/auroracommons/machine">Repository</a>
       </div>
     </div>
 
     <div class="card">
+      <div class="shot"><span>Graph</span></div>
       <div class="need">Layer 4 · Shared truth</div>
-      <h3>Knowledge Graph Explorer, the Graph</h3>
-      <p>Turns text into a knowledge graph, and publishes how often the extraction is wrong.</p>
-      <div class="proof">Proof: hand labeled eval, entities F1 0.936, relations F1 0.605, errors published.</div>
+      <h3>Graph</h3>
+      <div class="stat">0.936<small>entities F1 on a hand labeled eval, errors published</small></div>
       <div class="btns">
-        <a class="btn solid" href="https://bedrockcommons.github.io/knowledge-graph-explorer/">Live demo</a>
-        <a class="btn" href="https://github.com/bedrockcommons/knowledge-graph-explorer">Repository</a>
+        <a class="btn solid" href="https://auroracommons.github.io/graph/">Live demo</a>
+        <a class="btn" href="https://github.com/auroracommons/graph">Repository</a>
       </div>
     </div>
 
     <div class="card">
+      <div class="shot"><span>Lumen</span></div>
       <div class="need">Layer 6 · Trust and meaning</div>
-      <h3>LUMEN, the Guardrails</h3>
-      <p>A guarded retrieval design study: an AI that refuses what it should refuse, and proves it on a published eval.</p>
-      <div class="proof">Proof: refusal eval 12 of 12 blocked, 8 of 8 allowed.</div>
+      <h3>Lumen</h3>
+      <div class="stat">12 of 12<small>refusals blocked in the published eval, 8 of 8 allowed</small></div>
       <div class="btns">
-        <a class="btn solid" href="https://bedrockcommons.github.io/lumen-faith-platform/">Study page</a>
-        <a class="btn" href="https://github.com/bedrockcommons/lumen-faith-platform">Repository</a>
+        <a class="btn solid" href="https://auroracommons.github.io/lumen/">Study page</a>
+        <a class="btn" href="https://github.com/auroracommons/lumen">Repository</a>
       </div>
     </div>
 
@@ -125,59 +162,62 @@
 </section>
 
 <section>
-  <h2>The Bedrock: a map of human needs</h2>
-  <p class="sub">The acts stand on a map of what people actually need, ground up. Two layers are still open ground, entered only when a partner and proven demand arrive. Wants sit above the bedrock, and are never served by exploiting an unmet need below it.</p>
-  <div class="layers">
-    <div class="layer"><span class="lname">Layer 6 · Trust and meaning</span><span class="lwhat">LUMEN, the Guardrails</span></div>
-    <div class="layer"><span class="lname">Layer 5 · Autonomy</span><span class="lwhat">Neural Net Lab, the Machine</span></div>
-    <div class="layer"><span class="lname">Layer 4 · Shared truth</span><span class="lwhat">Knowledge Graph Explorer, the Graph</span></div>
-    <div class="layer"><span class="lname">Layer 3 · Belonging</span><span class="lwhat">Cohort, the Commons</span></div>
-    <div class="layer"><span class="lname">Layer 2 · Learning</span><span class="lwhat">Supergravity, the Atlas</span></div>
-    <div class="layer"><span class="lname">Layer 1 · The mind at peace</span><span class="lwhat"><span class="open">Open ground, partial</span></span></div>
-    <div class="layer"><span class="lname">Layer 0 · The body: food, shelter, health, safety</span><span class="lwhat"><span class="open">Open ground</span></span></div>
+  <h2>The Proof</h2>
+  <p class="sub">The building block of this Commons. One claim, bound to its evidence, held by a named human, carrying its own check.</p>
+  <div class="proof">
+    <div class="proofgrid">
+      <div class="pcell">Claim<small>one sentence, plain words</small></div>
+      <div class="pcenter">A Proof<small>checkable by anyone</small></div>
+      <div class="pcell">Ground<small>the evidence it stands on</small></div>
+      <div class="pcell">Hand<small>the human who stands behind it</small></div>
+      <div></div>
+      <div class="pcell">Check<small>verified, corrections appended</small></div>
+      <div class="pcell">Links<small>what it supports and contradicts</small></div>
+      <div></div>
+      <div class="pcell">Seal<small>a hash, so copies can be verified</small></div>
+    </div>
   </div>
-  <p class="sub" style="margin-top:14px">The full map: <a href="https://github.com/bedrockcommons/bedrockcommons/blob/main/NEEDS.md" style="color:var(--accent);font-weight:600;text-decoration:none">The Bedrock, NEEDS.md</a></p>
 </section>
 
 <section>
   <h2>Take part</h2>
-  <p class="sub">The table is open to people and to agents, on one condition: evidence. Contribution credit is public, proportional to proof, and never sold. A place in the Commons is given, not earned, and is lost only for unfairness to others, proven in the open.</p>
+  <p class="sub">Three doors. One condition: evidence.</p>
   <div class="doors">
     <div class="card">
       <h3>Take a good first issue</h3>
-      <p>Small, real tasks in all five projects, each sized in hours and written for a newcomer.</p>
-      <div class="btns"><a class="btn solid" href="https://github.com/search?q=user%3Abedrockcommons+label%3A%22good+first+issue%22+state%3Aopen&type=issues">Browse issues</a></div>
+      <p>Small real tasks in all five projects, sized in hours.</p>
+      <div class="btns"><a class="btn solid" href="https://github.com/search?q=user%3Aauroracommons+label%3A%22good+first+issue%22+state%3Aopen&type=issues">Browse issues</a></div>
     </div>
     <div class="card">
       <h3>Run the Eval Challenge</h3>
-      <p>Beat a published baseline, or expose a real failure, and send it as a pull request with the run attached.</p>
-      <div class="btns"><a class="btn solid" href="https://github.com/bedrockcommons/bedrockcommons/blob/main/OPEN_TABLE.md">The Open Table</a></div>
+      <p>Beat a published baseline, or expose a real failure, with the run attached.</p>
+      <div class="btns"><a class="btn solid" href="https://github.com/auroracommons/auroracommons/blob/main/OPEN_TABLE.md">The Open Table</a></div>
     </div>
     <div class="card">
       <h3>Start with a prompt</h3>
-      <p>Copy paste prompts that let anyone, or any agent, contribute in minutes, or audit any claim here against its evidence.</p>
-      <div class="btns"><a class="btn solid" href="https://github.com/bedrockcommons/bedrockcommons/blob/main/PROMPTS.md">Prompt library</a></div>
+      <p>Copy paste prompts to contribute, or to audit any claim here.</p>
+      <div class="btns"><a class="btn solid" href="https://github.com/auroracommons/auroracommons/blob/main/PROMPTS.md">Prompt library</a></div>
     </div>
   </div>
 </section>
 
 <section>
   <h2>The public record</h2>
-  <p class="sub">Everything about how this work runs is published, including the failures. Governance belongs to the members: one person, one voice, from the age a person can communicate a preference. Artificial intelligence works here as a tool, with no vote, no veto, and no hand in framing the questions.</p>
-  <ul class="record">
-    <li><a href="https://github.com/bedrockcommons/bedrockcommons/blob/main/PROGRESS.md">Progress log</a> <span>· what shipped, what the proof shows, what broke</span></li>
-    <li><a href="https://github.com/bedrockcommons/bedrockcommons/blob/main/INTENTIONS.md">Intentions</a> <span>· what this work is for, and what it will never do</span></li>
-    <li><a href="https://github.com/bedrockcommons/bedrockcommons/blob/main/ECOSYSTEM.md">The ecosystem</a> <span>· the long term design, five primitives that compound</span></li>
-    <li><a href="https://github.com/bedrockcommons/bedrockcommons/blob/main/DEMOCRACY.md">One person, one voice</a> <span>· the democratic foundation</span></li>
-    <li><a href="https://github.com/bedrockcommons/bedrockcommons/blob/main/PARTICIPATION.md">Billions, verifiably</a> <span>· the participation engine, with its sources</span></li>
-    <li><a href="https://github.com/bedrockcommons/bedrockcommons/blob/main/REGISTRY.md">A place for everyone</a> <span>· the Commons Registry</span></li>
-    <li><a href="https://github.com/bedrockcommons/bedrockcommons/blob/main/LEDGER.md">The Ledger</a> <span>· verified contributions, with the evidence attached</span></li>
-    <li><a href="https://github.com/bedrockcommons/bedrockcommons/blob/main/THE_SAGA.md">The Saga</a> <span>· the story of how this got built, with receipts</span></li>
-  </ul>
+  <p class="sub">Everything about how this work runs is published, failures included.</p>
+  <div class="chips">
+    <a class="chip" href="https://github.com/auroracommons/auroracommons/blob/main/PROGRESS.md">Progress log</a>
+    <a class="chip" href="https://github.com/auroracommons/auroracommons/blob/main/INTENTIONS.md">Intentions</a>
+    <a class="chip" href="https://github.com/auroracommons/auroracommons/blob/main/ECOSYSTEM.md">The ecosystem</a>
+    <a class="chip" href="https://github.com/auroracommons/auroracommons/blob/main/DEMOCRACY.md">One person, one voice</a>
+    <a class="chip" href="https://github.com/auroracommons/auroracommons/blob/main/PARTICIPATION.md">Billions, verifiably</a>
+    <a class="chip" href="https://github.com/auroracommons/auroracommons/blob/main/REGISTRY.md">A place for everyone</a>
+    <a class="chip" href="https://github.com/auroracommons/auroracommons/blob/main/LEDGER.md">The Ledger</a>
+    <a class="chip" href="https://github.com/auroracommons/auroracommons/blob/main/THE_SAGA.md">The Saga</a>
+  </div>
 </section>
 
 <footer>
-  <p>Bedrock Commons · <a href="https://github.com/bedrockcommons">github.com/bedrockcommons</a></p>
+  <p>Aurora Commons · <a href="https://github.com/auroracommons">github.com/auroracommons</a></p>
   <p>Advised by Joshua Thomas.</p>
 </footer>
 

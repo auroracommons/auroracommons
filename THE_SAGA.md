@@ -1,5 +1,7 @@
 # The Saga of the Bedrock Commons
 
+> A note on names, added October 15, 2026: the names in this story are the names of their day. Later that day the work was renamed to serve all, every faith and none: Bedrock Commons is now Aurora Commons, Supergravity is now Atlas, Neural Net Lab is now Machine, Knowledge Graph Explorer is now Graph, and LUMEN is now Lumen. The story below stands as written.
+
 This is the story of how the work on this profile got built, told the way it happened, under one man's direction. It is theatrical because the events earned it, and every claim in it links to its receipts: the repos, the runs, and the public record in [PROGRESS.md](PROGRESS.md). If a line here ever disagrees with the record, the record wins.
 
 ## Chapter 1: The Locked Door

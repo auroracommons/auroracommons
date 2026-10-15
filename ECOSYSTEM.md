@@ -8,23 +8,23 @@ An open source ecosystem that any person, school, company, or government can bui
 
 The five acts are not five products. They are five primitives, and primitives are what ecosystems grow from:
 
-- Learning (Supergravity, the Atlas): a tutor that shows its evidence, with evaluation anyone can rerun.
+- Learning (Atlas): a tutor that shows its evidence, with evaluation anyone can rerun.
 - Coordination (Cohort, the Commons): people and AI agents meeting in the open through the Model Context Protocol, with visible sessions instead of black boxes.
-- Machine intelligence literacy (Neural Net Lab, the Machine): the machinery of AI itself, built from scratch in the open so anyone can learn how it truly works.
-- Knowledge structure (Knowledge Graph Explorer, the Graph): extraction that publishes its own errors, so knowledge stays honest about what it does not know.
-- Trust (LUMEN, the Guardrails): refusal and safety behavior that can be tested, reused, and argued with in public.
+- Machine intelligence literacy (Machine): the machinery of AI itself, built from scratch in the open so anyone can learn how it truly works.
+- Knowledge structure (Graph): extraction that publishes its own errors, so knowledge stays honest about what it does not know.
+- Trust (Lumen, the Guardrails): refusal and safety behavior that can be tested, reused, and argued with in public.
 
-## The bedrock
+## The Ascent
 
-The ecosystem stands on a map of human needs: [The Bedrock](https://github.com/bedrockcommons/bedrockcommons/blob/main/NEEDS.md), published on the profile. Seven layers, read from the ground up:
+The ecosystem stands on a map of human needs: [The Ascent](https://github.com/auroracommons/auroracommons/blob/main/NEEDS.md), published on the profile. Seven layers, read from the ground up:
 
 - Layer 0, the body: food, shelter, health, safety. Open ground, no act yet.
 - Layer 1, the mind at peace: mental health, steadiness, hope. Partly served, no dedicated act.
-- Layer 2, learning: education and growing capability. Served by Supergravity.
+- Layer 2, learning: education and growing capability. Served by Atlas.
 - Layer 3, belonging: connection, community, being known. Served by Cohort.
-- Layer 4, shared truth: facts a community can stand on. Served by Knowledge Graph Explorer.
-- Layer 5, autonomy: not ruled by machines you cannot understand. Served by Neural Net Lab.
-- Layer 6, trust and meaning: safety, values, a reason. Served by LUMEN.
+- Layer 4, shared truth: facts a community can stand on. Served by Graph.
+- Layer 5, autonomy: not ruled by machines you cannot understand. Served by Machine.
+- Layer 6, trust and meaning: safety, values, a reason. Served by Lumen.
 
 Every project names its layer at its own front door and links back to the map. A need counts as covered only when working proof serves it. The two uncovered layers stay named as open ground, with adoption roads and gates, until evidence earns them a project.
 
