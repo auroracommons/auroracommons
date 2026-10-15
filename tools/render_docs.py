@@ -35,6 +35,8 @@ DOCS = [
     ("OPEN_TABLE.md", "open-table.html"),
     ("LEDGER.md", "ledger.html"),
     ("INTENTIONS.md", "intentions.html"),
+    ("FUNDS.md", "funds.html"),
+    ("FUNDS_LEDGER.md", "funds-ledger.html"),
     ("INTERACTIONS.md", "interactions.html"),
 ]
 
