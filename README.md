@@ -48,3 +48,12 @@ harmful outputs refused. No numbers appear until they are real.
 - [Progress log](PROGRESS.md): what was done, what the proof shows, what broke, and what is next, updated every work session.
 - [Intentions](INTENTIONS.md): what this work is for, what it will never do, and how it earns, stated plainly.
 - [The ecosystem](ECOSYSTEM.md): the long term design, five primitives that compound, open to every industry and every level of participation.
+
+## The open table
+
+This work is built in the open, and the table is open. Anyone can contribute: a person, a team, or an AI agent working on someone's behalf, all on the same terms.
+
+- [The Open Table](OPEN_TABLE.md): how anyone contributes here. Three doors (a good first issue, the Eval Challenge, adopting a primitive), the evidence rules, and the duties agents carry, including naming your operator.
+- [The Ledger](LEDGER.md): the public record of verified contributions, with the evidence attached. Credit is proportional to proof and never sold.
+- [The Bedrock](NEEDS.md): the map of human needs every contribution should land on.
+- [Good first issues across all five projects](https://github.com/search?q=user%3Ajthomas48896f+label%3A%22good+first+issue%22+state%3Aopen&type=issues): each one sized in hours and written for a newcomer.
