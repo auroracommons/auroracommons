@@ -2,6 +2,10 @@
 
 This is the public record of the work: what was done, what the proof shows, what broke, and what comes next. It is updated every work session, newest first, in plain language on purpose. If a claim anywhere in these projects cannot be traced to a logged run, the claim is wrong and the log is where it gets corrected.
 
+## October 15, 2026: the layers name what they unlock
+
+The Ascent now reads as one progression on every surface. NEEDS.md carries one Unlocks line under each layer. Each row of the home page strata states what its layer unlocks, in a plain line after its proof sentence, and site.json and the page's embedded data carry the same seven sentences word for word. Each act surface names the layer it is built on and the ability it unlocks: Ground unlocks the ability to act at all, Still the ability to choose, Atlas the ability to understand, Cohort the ability to contribute, Graph the ability to discern, Machine the ability to build, and Lumen the ability to commit. The gates held while the lines went in: the home page proof sentences and its closing line are unchanged, the Atlas Proof and its seal are byte identical, Still stayed at zero network calls with its pacer test green, and every repo's tests passed before its commit. The local canonical copy of NEEDS.md matches the published one exactly.
+
 ## October 15, 2026: the timeline
 
 TIMELINE.md is published. It states the interaction rules every phase obeys: mobile first, first value inside a minute, sessions that end on purpose, nothing essential behind an account, offline tolerance with Still's zero network page as the reference. Then Phases 0 to 4 on the forward strategy's gates, one scope line per capability per phase, scope growing only along the participation ladder's verified numbers, with intentions labeled as intentions. Under the iteration rule set today, iterations are significant or they do not ship: every expansion names its trigger, the verified progress or the research finding that earns it, and an expansion with no trigger does not appear. The document is 1,145 words, written to be read on a phone.
