@@ -2,6 +2,13 @@
 
 This is the public record of the work: what was done, what the proof shows, what broke, and what comes next. It is updated every work session, newest first, in plain language on purpose. If a claim anywhere in these projects cannot be traced to a logged run, the claim is wrong and the log is where it gets corrected.
 
+## October 15, 2026: the home page, rebuilt as a Proof
+
+The old home page was cut and rebuilt from scratch. Joshua's verdict on it: not clear, numbers without meanings he could follow, the shape of a standard generated site. The new page is built from three elements only: the Floor, the Strata, and the Doors.
+The Floor is the first screen: the name, the mission in one line, the seven strata of the Ascent drawn as layers rising from a drawn floor line, and the floor line labeled with the one rule. The Strata give each layer one row: the need in plain words, the act that serves it, one proof sentence, and two links, See it and Check it. The Doors keep the three one minute doors, word for word. The record closes the page as plain labeled links.
+The redesign runs on a number law, now the page's standing rule: no bare numbers anywhere. Every number stands inside a sentence that says what was counted, out of how many, when it was checked, and where to verify it. The bare decimals are gone; what remains are counts of real things.
+The capture is interoperable on purpose: semantic landmarks and a strict heading order, so text extraction yields the same page a person sees; a JSON-LD block in the page and a companion site.json file holding the same facts as structured data; every visual drawn in HTML and CSS, carrying its text with it; zero external requests.
+
 ## October 15, 2026: Foundations, the measured research under the Commons
 
 The Commons now publishes the research it stands on: 24 papers across 12 domains, from poverty and health to learning, cooperation, and shared truth. Every paper was opened and read at its source by the researcher who chose it. One domain pair arrived with the same paper twice; the duplicate was replaced at build time with a second paper read at its source, and the swap is noted in the data file.

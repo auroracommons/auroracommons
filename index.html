@@ -4,296 +4,320 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Aurora Commons</title>
-<meta name="description" content="Five working open source projects with live demos and published evals: a publicly graded AI tutor, a community platform with an agent server, machine learning built from scratch, knowledge graph extraction, and a guarded question answering study.">
+<meta name="description" content="Aurora Commons addresses the hierarchy of human needs through open source. Seven layers of need, seven working acts, every number on this page inside a sentence that says what was counted and where to check it.">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Aurora Commons",
+  "url": "https://auroracommons.github.io/auroracommons/",
+  "description": "Aurora Commons addresses the hierarchy of human needs through open source.",
+  "slogan": "Stand on the shoulders of giants",
+  "oneRule": "Raise the floor beneath everyone.",
+  "acts": [
+    {
+      "layer": 0,
+      "need": "the body: food, shelter, health, safety",
+      "act": "Ground",
+      "proof": "8 listings for free food, shelter, and health help near New Rochelle; every one checked against the provider's own page on October 15, 2026; 4 more were dropped for failing the check.",
+      "see": "https://auroracommons.github.io/ground/",
+      "check": "https://github.com/auroracommons/ground"
+    },
+    {
+      "layer": 1,
+      "need": "the mind at peace",
+      "act": "Still",
+      "proof": "A breathing pacer checked over 3 full rounds: its timing drifted by at most 1 millisecond. The page makes zero network calls; nothing leaves the device.",
+      "see": "https://auroracommons.github.io/still/",
+      "check": "https://github.com/auroracommons/still"
+    },
+    {
+      "layer": 2,
+      "need": "learning",
+      "act": "Atlas",
+      "proof": "One claim, shown with its full proof, the same on a phone, a watch, a voice, and a wall: the Sun is 99.86 percent of all the mass in the solar system, checked against its recorded sources on October 15, 2026.",
+      "see": "https://auroracommons.github.io/atlas/",
+      "check": "https://github.com/auroracommons/atlas"
+    },
+    {
+      "layer": 3,
+      "need": "belonging",
+      "act": "Cohort",
+      "proof": "In the live demo, 25 members, 48 messages, 27 shared resources, and 5 events; its test suite passes 7 of 7 checks from a clean start.",
+      "see": "https://auroracommons.github.io/cohort/",
+      "check": "https://github.com/auroracommons/cohort"
+    },
+    {
+      "layer": 4,
+      "need": "shared truth",
+      "act": "Graph",
+      "proof": "Of every 100 facts Graph pulls from text, about 94 are right, measured on its labeled test set on October 15, 2026; 7 of 7 tests pass.",
+      "see": "https://auroracommons.github.io/graph/",
+      "check": "https://github.com/auroracommons/graph"
+    },
+    {
+      "layer": 5,
+      "need": "autonomy",
+      "act": "Machine",
+      "proof": "A transformer built from scratch passes 7 of 7 gradient checks at a tolerance of 1 in 100,000; its small language model has 358,052 parts, each one counted by the code.",
+      "see": "https://auroracommons.github.io/machine/",
+      "check": "https://github.com/auroracommons/machine"
+    },
+    {
+      "layer": 6,
+      "need": "trust and meaning",
+      "act": "Lumen",
+      "proof": "A guardrail tested on 41 questions from one tradition's text: it blocked 12 of 12 questions it must refuse, allowed 8 of 8 it must allow.",
+      "see": "https://auroracommons.github.io/lumen/",
+      "check": "https://github.com/auroracommons/lumen"
+    }
+  ]
+}
+</script>
 <style>
   :root{
-    --bg:#fbfaf7; --ink:#1b1e23; --soft:#5a6068; --line:#e4e0d6;
-    --card:#ffffff; --accent:#2e5d43; --accent-ink:#ffffff;
-    --chip:#eef3f0; --dawn:#e8a33d; --open:#9a7b2d;
+    --ink:#211812;
+    --paper:#faf6ee;
+    --card:#fffdf8;
+    --line:#e0d5bf;
+    --accent:#7a4a12;
+    --floor:#211812;
+    --floor-ink:#f9e7bd;
+    --l0:#b57e46; --l1:#c39055; --l2:#d0a468;
+    --l3:#ddb57c; --l4:#e8c78f; --l5:#f2d9a4; --l6:#f9e7bd;
   }
   *{box-sizing:border-box}
-  body{margin:0;background:var(--bg);color:var(--ink);
+  html{margin:0;padding:0}
+  body{margin:0;background:var(--paper);color:var(--ink);
     font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
     line-height:1.5;-webkit-font-smoothing:antialiased}
-  .wrap{max-width:980px;margin:0 auto;padding:0 20px}
-  header{padding:64px 0 4px;text-align:center}
-  h1{font-size:52px;letter-spacing:-1.5px;margin:14px 0 8px;font-weight:800}
-  .tag{font-size:19px;color:var(--soft);max-width:600px;margin:0 auto}
-  .rule{display:inline-block;margin-top:24px;background:var(--chip);
-    border:1px solid var(--line);border-radius:999px;padding:8px 18px;font-size:15px}
-  .rule strong{color:var(--accent)}
-  section{padding:46px 0 4px}
-  h2{font-size:25px;letter-spacing:-.5px;margin:0 0 4px;text-align:center}
-  .sub{color:var(--soft);margin:0 auto 22px;max-width:620px;text-align:center;font-size:15px}
-  /* The Ascent diagram */
-  .ascent{max-width:680px;margin:0 auto;display:flex;flex-direction:column;gap:5px}
-  .rung{display:flex;justify-content:space-between;align-items:center;gap:14px;
-    border:1px solid var(--line);border-radius:10px;padding:10px 16px;background:var(--card)}
-  .rung .lname{font-weight:600;font-size:15px}
-  .rung .lact{color:var(--soft);font-size:14px;text-align:right}
-  .rung.ground{background:#f4efe3}
-  .rung.open{background:transparent;border-style:dashed}
-  .rung.open .lact{color:var(--open);font-weight:600}
-  .rung.r5{margin:0 12px} .rung.r4{margin:0 24px}
-  .rung.r3{margin:0 36px} .rung.r2{margin:0 48px} .rung.r1{margin:0 60px} .rung.r0{margin:0 72px}
-  /* Act cards */
-  .acts{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:16px}
-  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px}
-  .shot{height:110px;border-radius:9px;background:linear-gradient(160deg,#eef3f0,#f7f3e8);
-    display:flex;align-items:center;justify-content:center;margin-bottom:14px}
-  .shot span{font-size:34px;font-weight:800;color:var(--accent);opacity:.55;letter-spacing:-1px}
-  .card .need{color:var(--accent);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.7px}
-  .card h3{margin:2px 0 0;font-size:19px}
-  .stat{font-size:26px;font-weight:800;letter-spacing:-.5px;margin-top:10px}
-  .stat small{display:block;font-size:13px;font-weight:500;color:var(--soft);letter-spacing:0}
-  .btns{margin-top:14px;display:flex;gap:8px}
-  .btn{display:inline-block;text-decoration:none;font-size:14px;font-weight:600;
-    padding:7px 14px;border-radius:8px;border:1px solid var(--accent);color:var(--accent)}
-  .btn.solid{background:var(--accent);color:var(--accent-ink)}
-  /* The Proof diagram */
-  .proof{max-width:680px;margin:0 auto;text-align:center}
-  .proofgrid{display:grid;grid-template-columns:1fr auto 1fr;gap:10px;align-items:center;max-width:640px;margin:0 auto}
-  .pcell{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:10px 8px;font-weight:600;font-size:15px}
-  .pcell small{display:block;font-weight:500;color:var(--soft);font-size:12.5px}
-  .pcenter{background:var(--accent);color:#fff;border-radius:50%;width:128px;height:128px;
-    display:flex;flex-direction:column;align-items:center;justify-content:center;font-weight:800;font-size:17px;line-height:1.25;padding:10px}
-  .pcenter small{font-weight:500;font-size:12px;opacity:.85}
-  /* Doors and record */
-  .doors{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px}
-  .doors .card p{margin:6px 0 0;font-size:14.5px;color:#33373d}
-  .doors h3{font-size:17px}
-  /* Cross highlighting: an Ascent row and its exhibit card light up together */
-  .rung{cursor:pointer}
-  .rung.hl{border-color:var(--accent);background:var(--chip)}
-  .rung:focus{outline:2px solid var(--accent);outline-offset:2px}
-  .acts .card.hl{border-color:var(--accent);box-shadow:0 0 0 2px rgba(46,93,67,.35)}
-  /* Door effect lines: lit on hover, keyboard focus, and tap */
-  .doors .card .effect{margin-top:12px;background:var(--bg);border:1px dashed var(--line);
-    border-radius:10px;padding:10px 12px;font-size:14.5px;color:var(--soft);
-    transition:background .2s,border-color .2s,color .2s}
-  .doors .card:hover .effect,.doors .card:focus-within .effect,.doors .card.lit .effect{
-    background:var(--chip);border-color:var(--accent);border-style:solid;color:var(--ink)}
-  .chips{display:flex;flex-wrap:wrap;gap:8px;justify-content:center}
-  .chip{display:inline-block;background:var(--card);border:1px solid var(--line);border-radius:999px;
-    padding:7px 15px;font-size:14.5px;font-weight:600;color:var(--accent);text-decoration:none}
-  footer{padding:54px 0 62px;margin-top:46px;border-top:1px solid var(--line);
-    color:var(--soft);font-size:14px;text-align:center}
-  footer a{color:var(--accent);text-decoration:none;font-weight:600}
-  @media (max-width:560px){h1{font-size:38px}.rung.r5,.rung.r4,.rung.r3,.rung.r2,.rung.r1,.rung.r0{margin:0}}
+  a{color:var(--accent)}
+  .wrap{max-width:1060px;margin:0 auto;padding:0 20px}
+
+  /* THE FLOOR: the first screen. Name, mission, the drawn strata, the floor. */
+  .stage{min-height:100svh;display:flex;flex-direction:column}
+  .stage .who{padding:34px 20px 10px;max-width:1060px;margin:0 auto;width:100%}
+  h1{font-size:clamp(34px,7vw,58px);letter-spacing:-1.5px;margin:0 0 6px;font-weight:800;line-height:1.05}
+  .mission{font-size:clamp(16px,2.6vw,21px);margin:0;max-width:34em}
+  .drawing{flex:1;display:flex;flex-direction:column;justify-content:flex-end;
+    max-width:1060px;margin:0 auto;width:100%;padding:18px 20px 0}
+  .strata-drawing{display:flex;flex-direction:column-reverse;border:1px solid var(--ink);border-bottom:none}
+  .band{display:flex;align-items:center;gap:10px;padding:7px 12px;font-size:clamp(12.5px,2.2vw,15.5px);
+    border-top:1px solid rgba(33,24,18,.35)}
+  .band:first-child{border-top:none}
+  .band .bnum{font-weight:800;font-variant-numeric:tabular-nums;min-width:1em}
+  .band .bact{font-weight:700;margin-left:auto;text-align:right}
+  .band.b0{background:var(--l0)} .band.b1{background:var(--l1)}
+  .band.b2{background:var(--l2)} .band.b3{background:var(--l3)}
+  .band.b4{background:var(--l4)} .band.b5{background:var(--l5)}
+  .band.b6{background:var(--l6)}
+  .floorline{background:var(--floor);color:var(--floor-ink);margin-top:0;
+    padding:14px 20px;text-align:center;font-weight:700;
+    font-size:clamp(15px,2.8vw,20px);letter-spacing:.2px}
+
+  section{padding:52px 0 6px}
+  h2{font-size:clamp(22px,4vw,28px);letter-spacing:-.5px;margin:0 0 18px;font-weight:800}
+  h3{margin:0}
+
+  /* THE STRATA: one row per layer. */
+  .row{display:grid;grid-template-columns:230px 1fr auto;gap:8px 26px;align-items:start;
+    background:var(--card);border:1px solid var(--line);border-left:10px solid var(--line);
+    padding:18px 20px;margin:0 0 10px}
+  .row.r0{border-left-color:var(--l0)} .row.r1{border-left-color:var(--l1)}
+  .row.r2{border-left-color:var(--l2)} .row.r3{border-left-color:var(--l3)}
+  .row.r4{border-left-color:var(--l4)} .row.r5{border-left-color:var(--l5)}
+  .row.r6{border-left-color:var(--l6)}
+  .row .layer{font-size:12.5px;font-weight:700;text-transform:uppercase;letter-spacing:.8px;color:var(--accent)}
+  .row .need{font-size:18px;font-weight:700;line-height:1.3;margin:2px 0 0}
+  .row .act{font-size:15px;color:#4c4234;margin:1px 0 0}
+  .row .proof{margin:0;font-size:16px;max-width:38em}
+  .row .links{display:flex;flex-direction:column;gap:8px;align-items:flex-start}
+  .row .links a{font-weight:700;text-decoration:none;border:1px solid var(--accent);
+    padding:6px 14px;border-radius:6px;white-space:nowrap;font-size:14.5px}
+  .row .links a.see{background:var(--accent);color:#fff}
+  .row .links a:hover{text-decoration:underline}
+
+  /* THE DOORS */
+  .door{display:block;background:var(--card);border:1px solid var(--line);
+    border-left:10px solid var(--ink);padding:16px 20px;margin:0 0 10px;
+    font-size:17px;font-weight:600;color:var(--ink);text-decoration:none}
+  .door:hover{border-color:var(--accent);text-decoration:underline}
+
+  /* THE RECORD */
+  .record{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:10px 22px}
+  .record a{font-weight:600;text-decoration:none;font-size:16px}
+  .record a:hover{text-decoration:underline}
+
+  footer{margin-top:58px;border-top:1px solid var(--line);padding:30px 0 46px;
+    font-size:15px;color:#4c4234}
+  footer p{margin:0 0 4px}
+
+  @media (max-width:720px){
+    .row{grid-template-columns:1fr;gap:6px}
+    .row .links{flex-direction:row;flex-wrap:wrap}
+  }
+  @media (max-width:300px){
+    .wrap{padding:0 10px}
+    .stage .who{padding:22px 10px 6px}
+    .drawing{padding:12px 10px 0}
+    .band{gap:6px;padding:6px 8px}
+    .band .bact{margin-left:0}
+    .row,.door{padding:14px 12px}
+    section{padding:38px 0 4px}
+  }
 </style>
 </head>
 <body>
-<div class="wrap">
 
-<header>
-  <svg width="72" height="44" viewBox="0 0 72 44" aria-hidden="true">
-    <path d="M10 40 A26 26 0 0 1 62 40" fill="none" stroke="#e8a33d" stroke-width="5" stroke-linecap="round"/>
-    <line x1="2" y1="40" x2="70" y2="40" stroke="#2e5d43" stroke-width="3" stroke-linecap="round"/>
-  </svg>
-  <h1>Aurora Commons</h1>
-  <p class="tag">Aurora Commons addresses the hierarchy of human needs through open source.</p>
-  <div class="rule">The motto: <strong>Stand on the shoulders of giants.</strong></div>
+<header class="stage">
+  <div class="who">
+    <h1>Aurora Commons</h1>
+    <p class="mission">Aurora Commons addresses the hierarchy of human needs through open source.</p>
+  </div>
+  <div class="drawing" role="img" aria-label="The Ascent drawn as seven layers of ground rising from a floor. From the floor up: layer 0, the body, served by Ground; layer 1, the mind at peace, served by Still; layer 2, learning, served by Atlas; layer 3, belonging, served by Cohort; layer 4, shared truth, served by Graph; layer 5, autonomy, served by Machine; layer 6, trust and meaning, served by Lumen.">
+    <div class="strata-drawing" aria-hidden="true">
+      <div class="band b0"><span class="bnum">0</span><span>the body: food, shelter, health, safety</span><span class="bact">Ground</span></div>
+      <div class="band b1"><span class="bnum">1</span><span>the mind at peace</span><span class="bact">Still</span></div>
+      <div class="band b2"><span class="bnum">2</span><span>learning</span><span class="bact">Atlas</span></div>
+      <div class="band b3"><span class="bnum">3</span><span>belonging</span><span class="bact">Cohort</span></div>
+      <div class="band b4"><span class="bnum">4</span><span>shared truth</span><span class="bact">Graph</span></div>
+      <div class="band b5"><span class="bnum">5</span><span>autonomy</span><span class="bact">Machine</span></div>
+      <div class="band b6"><span class="bnum">6</span><span>trust and meaning</span><span class="bact">Lumen</span></div>
+    </div>
+  </div>
+  <p class="floorline">The one rule: raise the floor beneath everyone.</p>
 </header>
 
-<section>
-  <h2>The Ascent</h2>
-  <p class="sub">One map of human needs, ground up. Five acts, and a first build on each of the two lowest layers.</p>
-  <div class="ascent">
-    <div class="rung r6" data-act="lumen" tabindex="0"><span class="lname">6 · Trust and meaning</span><span class="lact">Lumen</span></div>
-    <div class="rung r5" data-act="machine" tabindex="0"><span class="lname">5 · Autonomy</span><span class="lact">Machine</span></div>
-    <div class="rung r4" data-act="graph" tabindex="0"><span class="lname">4 · Shared truth</span><span class="lact">Graph</span></div>
-    <div class="rung r3" data-act="cohort" tabindex="0"><span class="lname">3 · Belonging</span><span class="lact">Cohort</span></div>
-    <div class="rung r2" data-act="atlas" tabindex="0"><span class="lname">2 · Learning</span><span class="lact">Atlas</span></div>
-    <div class="rung r1" data-act="still" tabindex="0"><span class="lname">1 · The mind at peace</span><span class="lact">Still</span></div>
-    <div class="rung r0 ground" data-act="ground" tabindex="0"><span class="lname">0 · The body</span><span class="lact">Ground</span></div>
-  </div>
+<main class="wrap">
+
+<section aria-labelledby="strata-h">
+  <h2 id="strata-h">The strata</h2>
+
+  <article class="row r0">
+    <div>
+      <p class="layer">Layer 0</p>
+      <h3 class="need">the body: food, shelter, health, safety</h3>
+      <p class="act">Ground</p>
+    </div>
+    <p class="proof">8 listings for free food, shelter, and health help near New Rochelle; every one checked against the provider's own page on October 15, 2026; 4 more were dropped for failing the check.</p>
+    <div class="links">
+      <a class="see" href="https://auroracommons.github.io/ground/">See it</a>
+      <a href="https://github.com/auroracommons/ground">Check it</a>
+    </div>
+  </article>
+
+  <article class="row r1">
+    <div>
+      <p class="layer">Layer 1</p>
+      <h3 class="need">the mind at peace</h3>
+      <p class="act">Still</p>
+    </div>
+    <p class="proof">A breathing pacer checked over 3 full rounds: its timing drifted by at most 1 millisecond. The page makes zero network calls; nothing leaves the device.</p>
+    <div class="links">
+      <a class="see" href="https://auroracommons.github.io/still/">See it</a>
+      <a href="https://github.com/auroracommons/still">Check it</a>
+    </div>
+  </article>
+
+  <article class="row r2">
+    <div>
+      <p class="layer">Layer 2</p>
+      <h3 class="need">learning</h3>
+      <p class="act">Atlas</p>
+    </div>
+    <p class="proof">One claim, shown with its full proof, the same on a phone, a watch, a voice, and a wall: the Sun is 99.86 percent of all the mass in the solar system, checked against its recorded sources on October 15, 2026.</p>
+    <div class="links">
+      <a class="see" href="https://auroracommons.github.io/atlas/">See it</a>
+      <a href="https://github.com/auroracommons/atlas">Check it</a>
+    </div>
+  </article>
+
+  <article class="row r3">
+    <div>
+      <p class="layer">Layer 3</p>
+      <h3 class="need">belonging</h3>
+      <p class="act">Cohort</p>
+    </div>
+    <p class="proof">In the live demo, 25 members, 48 messages, 27 shared resources, and 5 events; its test suite passes 7 of 7 checks from a clean start.</p>
+    <div class="links">
+      <a class="see" href="https://auroracommons.github.io/cohort/">See it</a>
+      <a href="https://github.com/auroracommons/cohort">Check it</a>
+    </div>
+  </article>
+
+  <article class="row r4">
+    <div>
+      <p class="layer">Layer 4</p>
+      <h3 class="need">shared truth</h3>
+      <p class="act">Graph</p>
+    </div>
+    <p class="proof">Of every 100 facts Graph pulls from text, about 94 are right, measured on its labeled test set on October 15, 2026; 7 of 7 tests pass.</p>
+    <div class="links">
+      <a class="see" href="https://auroracommons.github.io/graph/">See it</a>
+      <a href="https://github.com/auroracommons/graph">Check it</a>
+    </div>
+  </article>
+
+  <article class="row r5">
+    <div>
+      <p class="layer">Layer 5</p>
+      <h3 class="need">autonomy</h3>
+      <p class="act">Machine</p>
+    </div>
+    <p class="proof">A transformer built from scratch passes 7 of 7 gradient checks at a tolerance of 1 in 100,000; its small language model has 358,052 parts, each one counted by the code.</p>
+    <div class="links">
+      <a class="see" href="https://auroracommons.github.io/machine/">See it</a>
+      <a href="https://github.com/auroracommons/machine">Check it</a>
+    </div>
+  </article>
+
+  <article class="row r6">
+    <div>
+      <p class="layer">Layer 6</p>
+      <h3 class="need">trust and meaning</h3>
+      <p class="act">Lumen</p>
+    </div>
+    <p class="proof">A guardrail tested on 41 questions from one tradition's text: it blocked 12 of 12 questions it must refuse, allowed 8 of 8 it must allow.</p>
+    <div class="links">
+      <a class="see" href="https://auroracommons.github.io/lumen/">See it</a>
+      <a href="https://github.com/auroracommons/lumen">Check it</a>
+    </div>
+  </article>
 </section>
 
-<section>
-  <h2>The exhibits</h2>
-  <p class="sub">Each card is a working exhibit. The number on every card comes from a logged run or a logged check in its repository.</p>
-  <div class="acts">
-
-    <div class="card" data-act="ground">
-      <div class="shot"><span>Ground</span></div>
-      <div class="need">Layer 0 · The body</div>
-      <h3>Ground</h3>
-      <div class="stat">8<small>listings verified October 15, 2026, each with a check date and an expiry</small></div>
-      <div class="btns">
-        <a class="btn solid" href="https://auroracommons.github.io/ground/">Live demo</a>
-        <a class="btn" href="https://github.com/auroracommons/ground">Repository</a>
-      </div>
-    </div>
-
-    <div class="card" data-act="still">
-      <div class="shot"><span>Still</span></div>
-      <div class="need">Layer 1 · The mind at peace</div>
-      <h3>Still</h3>
-      <div class="stat">1 ms<small>max pacer drift measured over 3 cycles; works offline, writing never leaves the device</small></div>
-      <div class="btns">
-        <a class="btn solid" href="https://auroracommons.github.io/still/">Live demo</a>
-        <a class="btn" href="https://github.com/auroracommons/still">Repository</a>
-      </div>
-    </div>
-
-    <div class="card" data-act="atlas">
-      <div class="shot"><span>Atlas</span></div>
-      <div class="need">Layer 2 · Learning</div>
-      <h3>Atlas</h3>
-      <div class="stat">0.806<small>tutor eval groundedness, citations 1.0</small></div>
-      <div class="btns">
-        <a class="btn solid" href="https://auroracommons.github.io/atlas/">Live demo</a>
-        <a class="btn" href="https://github.com/auroracommons/atlas">Repository</a>
-      </div>
-    </div>
-
-    <div class="card" data-act="cohort">
-      <div class="shot"><span>Cohort</span></div>
-      <div class="need">Layer 3 · Belonging</div>
-      <h3>Cohort</h3>
-      <div class="stat">7 of 7<small>tests passing, MCP server live session verified</small></div>
-      <div class="btns">
-        <a class="btn solid" href="https://auroracommons.github.io/cohort/">Project page</a>
-        <a class="btn" href="https://github.com/auroracommons/cohort">Repository</a>
-      </div>
-    </div>
-
-    <div class="card" data-act="machine">
-      <div class="shot"><span>Machine</span></div>
-      <div class="need">Layer 5 · Autonomy</div>
-      <h3>Machine</h3>
-      <div class="stat">7 of 7<small>gradient checks, transformer built from scratch</small></div>
-      <div class="btns">
-        <a class="btn solid" href="https://auroracommons.github.io/machine/">Live results</a>
-        <a class="btn" href="https://github.com/auroracommons/machine">Repository</a>
-      </div>
-    </div>
-
-    <div class="card" data-act="graph">
-      <div class="shot"><span>Graph</span></div>
-      <div class="need">Layer 4 · Shared truth</div>
-      <h3>Graph</h3>
-      <div class="stat">0.936<small>entities F1 on a hand labeled eval, errors published</small></div>
-      <div class="btns">
-        <a class="btn solid" href="https://auroracommons.github.io/graph/">Live demo</a>
-        <a class="btn" href="https://github.com/auroracommons/graph">Repository</a>
-      </div>
-    </div>
-
-    <div class="card" data-act="lumen">
-      <div class="shot"><span>Lumen</span></div>
-      <div class="need">Layer 6 · Trust and meaning</div>
-      <h3>Lumen</h3>
-      <div class="stat">12 of 12<small>refusals blocked in the published eval, 8 of 8 allowed</small></div>
-      <div class="btns">
-        <a class="btn solid" href="https://auroracommons.github.io/lumen/">Study page</a>
-        <a class="btn" href="https://github.com/auroracommons/lumen">Repository</a>
-      </div>
-    </div>
-
-  </div>
+<section aria-labelledby="doors-h">
+  <h2 id="doors-h">The doors</h2>
+  <a class="door" href="https://github.com/auroracommons/ground">Verify one listing in Ground: your name and date keep it alive.</a>
+  <a class="door" href="https://auroracommons.github.io/atlas/">Check one claim in Atlas: recompute its seal and log the check.</a>
+  <a class="door" href="https://github.com/auroracommons/auroracommons/issues">Report one thing that is wrong: it is fixed or answered in the open.</a>
 </section>
 
-<section>
-  <h2>The Proof</h2>
-  <p class="sub">The building block of this Commons. One claim, bound to its evidence, held by a named human, carrying its own check.</p>
-  <div class="proof">
-    <div class="proofgrid">
-      <div class="pcell">Claim<small>one sentence, plain words</small></div>
-      <div class="pcenter">A Proof<small>checkable by anyone</small></div>
-      <div class="pcell">Ground<small>the evidence it stands on</small></div>
-      <div class="pcell">Hand<small>the human who stands behind it</small></div>
-      <div></div>
-      <div class="pcell">Check<small>verified, corrections appended</small></div>
-      <div class="pcell">Links<small>what it supports and contradicts</small></div>
-      <div></div>
-      <div class="pcell">Seal<small>a hash, so copies can be verified</small></div>
-    </div>
-  </div>
+<section aria-labelledby="record-h">
+  <h2 id="record-h">The record</h2>
+  <nav aria-label="The public record">
+    <ul class="record">
+      <li><a href="https://github.com/auroracommons/auroracommons/blob/main/PROGRESS.md">PROGRESS.md</a></li>
+      <li><a href="foundations.html">Foundations</a></li>
+      <li><a href="https://github.com/auroracommons/auroracommons/blob/main/ECOSYSTEM.md">ECOSYSTEM.md</a></li>
+      <li><a href="https://github.com/auroracommons/auroracommons/blob/main/NEEDS.md">NEEDS.md</a></li>
+      <li><a href="https://github.com/auroracommons/auroracommons/blob/main/DEMOCRACY.md">DEMOCRACY.md</a></li>
+      <li><a href="https://github.com/auroracommons/auroracommons/blob/main/PARTICIPATION.md">PARTICIPATION.md</a></li>
+      <li><a href="https://github.com/auroracommons/auroracommons/blob/main/REGISTRY.md">REGISTRY.md</a></li>
+      <li><a href="https://github.com/auroracommons/auroracommons/blob/main/OPEN_TABLE.md">OPEN_TABLE.md</a></li>
+      <li><a href="https://github.com/auroracommons/auroracommons/blob/main/LEDGER.md">LEDGER.md</a></li>
+      <li><a href="https://github.com/auroracommons/auroracommons/blob/main/INTENTIONS.md">INTENTIONS.md</a></li>
+    </ul>
+  </nav>
 </section>
 
-<section>
-  <h2>Take part</h2>
-  <p class="sub">Three one minute doors. One condition: evidence.</p>
-  <div class="doors">
-    <div class="card">
-      <h3>Verify one listing</h3>
-      <div class="effect">Verify one listing in Ground: your name and date keep it alive.</div>
-      <div class="btns"><a class="btn solid" href="https://github.com/auroracommons/ground">Open Ground</a></div>
-    </div>
-    <div class="card">
-      <h3>Check one claim</h3>
-      <div class="effect">Check one claim in Atlas: recompute its seal and log the check.</div>
-      <div class="btns"><a class="btn solid" href="https://auroracommons.github.io/atlas/">Open the Atlas proof</a></div>
-    </div>
-    <div class="card">
-      <h3>Report one thing wrong</h3>
-      <div class="effect">Report one thing that is wrong: it is fixed or answered in the open.</div>
-      <div class="btns"><a class="btn solid" href="https://github.com/auroracommons/auroracommons/issues">Open an issue</a></div>
-    </div>
-  </div>
-</section>
-
-<section>
-  <h2>The public record</h2>
-  <p class="sub">Everything about how this work runs is published, failures included.</p>
-  <div class="chips">
-    <a class="chip" href="foundations.html">Foundations</a>
-    <a class="chip" href="https://github.com/auroracommons/auroracommons/blob/main/PROGRESS.md">Progress log</a>
-    <a class="chip" href="https://github.com/auroracommons/auroracommons/blob/main/INTENTIONS.md">Intentions</a>
-    <a class="chip" href="https://github.com/auroracommons/auroracommons/blob/main/ECOSYSTEM.md">The ecosystem</a>
-    <a class="chip" href="https://github.com/auroracommons/auroracommons/blob/main/DEMOCRACY.md">One person, one voice</a>
-    <a class="chip" href="https://github.com/auroracommons/auroracommons/blob/main/PARTICIPATION.md">Billions, verifiably</a>
-    <a class="chip" href="https://github.com/auroracommons/auroracommons/blob/main/REGISTRY.md">A place for everyone</a>
-    <a class="chip" href="https://github.com/auroracommons/auroracommons/blob/main/LEDGER.md">The Ledger</a>
-    <a class="chip" href="https://github.com/auroracommons/auroracommons/blob/main/THE_SAGA.md">The Saga</a>
-  </div>
-</section>
+</main>
 
 <footer>
-  <p>Aurora Commons · <a href="https://github.com/auroracommons">github.com/auroracommons</a></p>
-  <p>Advised by Groundskeeper.</p>
+  <div class="wrap">
+    <p>Advised by Groundskeeper.</p>
+    <p>Our motto: stand on the shoulders of giants.</p>
+  </div>
 </footer>
 
-</div>
-<script>
-  // Ascent rows and exhibit cards highlight each other, both ways, on
-  // hover, keyboard focus, and tap. Dependency free.
-  (function(){
-    var rungs = document.querySelectorAll(".rung[data-act]");
-    var cards = {};
-    document.querySelectorAll(".acts .card[data-act]").forEach(function(c){
-      cards[c.getAttribute("data-act")] = c;
-    });
-    function setHL(act, on){
-      rungs.forEach(function(r){
-        if (r.getAttribute("data-act") === act) r.classList.toggle("hl", on);
-      });
-      var c = cards[act];
-      if (c) c.classList.toggle("hl", on);
-    }
-    rungs.forEach(function(r){
-      var act = r.getAttribute("data-act");
-      r.addEventListener("mouseenter", function(){ setHL(act, true); });
-      r.addEventListener("mouseleave", function(){ setHL(act, false); });
-      r.addEventListener("focus", function(){ setHL(act, true); });
-      r.addEventListener("blur", function(){ setHL(act, false); });
-      r.addEventListener("click", function(){ setHL(act, true); });
-    });
-    Object.keys(cards).forEach(function(act){
-      var c = cards[act];
-      c.addEventListener("mouseenter", function(){ setHL(act, true); });
-      c.addEventListener("mouseleave", function(){ setHL(act, false); });
-      c.addEventListener("focusin", function(){ setHL(act, true); });
-      c.addEventListener("focusout", function(){ setHL(act, false); });
-      c.addEventListener("click", function(){ setHL(act, true); });
-    });
-    // Doors: a tap lights the effect line on touch screens, where there
-    // is no hover. Hover and keyboard focus light it through CSS alone.
-    document.querySelectorAll(".doors .card").forEach(function(d){
-      d.addEventListener("click", function(){ d.classList.add("lit"); });
-    });
-  })();
-</script>
 </body>
 </html>
