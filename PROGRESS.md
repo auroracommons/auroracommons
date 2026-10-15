@@ -2,6 +2,11 @@
 
 This is the public record of the work: what was done, what the proof shows, what broke, and what comes next. It is updated every work session, newest first, in plain language on purpose. If a claim anywhere in these projects cannot be traced to a logged run, the claim is wrong and the log is where it gets corrected.
 
+## October 15, 2026: Foundations, the measured research under the Commons
+
+The Commons now publishes the research it stands on: 24 papers across 12 domains, from poverty and health to learning, cooperation, and shared truth. Every paper was opened and read at its source by the researcher who chose it. One domain pair arrived with the same paper twice; the duplicate was replaced at build time with a second paper read at its source, and the swap is noted in the data file.
+The Foundations page shows each paper the same way: the measured number large, the finding in plain words, why it matters here, and the source one tap away. Check any of them.
+
 ## October 15, 2026: the one rule, restated
 
 Joshua judged the old rule corny and chose the one built to stand: raise the floor beneath everyone. It now stands where the old rule stood, at the head of the charter and the foundation documents and on this profile.
