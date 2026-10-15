@@ -130,6 +130,8 @@
   h1{font-size:clamp(34px,7vw,58px);letter-spacing:-1.5px;margin:0 0 6px;font-weight:800;line-height:1.05}
   .mission{font-size:clamp(16px,2.6vw,21px);margin:0;max-width:34em}
   .firststep{font-size:16px;margin:12px 0 0;max-width:34em}
+  .stageblock{max-width:1060px;margin:0 auto;width:100%;padding:10px 20px 0}
+  .today{font-size:15.5px;margin:16px 0 0;max-width:44em}
   .drawing{flex:1;display:flex;flex-direction:column;justify-content:flex-end;
     max-width:1060px;margin:0 auto;width:100%;padding:26px 20px 0}
   .strata-drawing{display:flex;flex-direction:column-reverse}
@@ -212,6 +214,7 @@
     .commonsbar{padding:8px 10px;gap:4px 12px}
     .wrap{padding:0 10px}
     .stage .who{padding:22px 10px 6px}
+    .stageblock{padding:8px 10px 0}
     .drawing{padding:12px 10px 0}
     .band{gap:6px;padding:6px 8px;min-height:40px}
     .band .bact{margin-left:0}
@@ -239,10 +242,28 @@
     <p class="mission">Aurora Commons addresses the hierarchy of human needs through open source.</p>
     <p class="firststep">Start with one: <a href="#layer-0">read the first proof in the strata below</a>, then open the See it link beside it.</p>
   </div>
+  <div class="stageblock">
+<article class="row r0" id="layer-0">
+    <div>
+      <p class="layer">Layer 0</p>
+      <h3 class="need">the body: food, shelter, health, safety</h3>
+      <p class="act">Ground</p>
+    </div>
+    <div><p class="proof"><span class="rub">8</span> listings for free food, shelter, and health help near New Rochelle; every one checked against the provider's own page on <span class="rub">October 15, 2026</span>; <span class="rub">4</span> more were dropped for failing the check.</p><p>Unlocks the ability to act at all.</p><p class="marks" role="img" aria-label="One mark for each listing checked on October 15, 2026: 8 solid marks for the listings that passed the check, 4 hollow marks for the ones that were dropped."><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span class="hollow"></span><span class="hollow"></span><span class="hollow"></span><span class="hollow"></span></p></div>
+    <div class="links">
+      <a class="see" href="https://auroracommons.github.io/ground/">See it</a>
+      <a href="https://github.com/auroracommons/ground" class="check">Check it</a>
+      <button type="button" class="share" data-share data-title="Aurora Commons" data-text="Ground, the body: food, shelter, health, safety. One layer of Aurora Commons." data-url="https://auroracommons.github.io/auroracommons/#layer-0">Share</button>
+    </div>
+  </article>
+    <!-- today:begin -->
+    <p class="today" id="today-line">Today, <span class="rub">October 15, 2026</span>: <span class="rub">103</span> listings for food, shelter, and health help stand checked in Ground, across <span class="rub">13</span> places, every one against its provider's own page; <span class="rub">47</span> findings stand in Foundations, each with its source named; and <span class="rub">41</span> entries stand in the public progress log. Each count can be checked where it is kept: the Ground and Foundations pages and the log linked in the record below.</p>
+    <!-- today:end -->
+  </div>
   <nav class="drawing" aria-label="The seven layers and their proofs">
     <div class="strata-drawing">
-      <a class="band b0" href="#layer-0"><span class="bnum">0</span><span>the body: food, shelter, health, safety</span><span class="bact">Ground</span></a>
-      <a class="band b1" href="#layer-1"><span class="bnum">1</span><span>the mind at peace</span><span class="bact">Still</span></a>
+      <a class="band b0" href="#layer-0"><span class="bnum">0</span><span>food and shelter</span><span class="bact">Ground</span></a>
+      <a class="band b1" href="#layer-1"><span class="bnum">1</span><span>a mind at peace</span><span class="bact">Still</span></a>
       <a class="band b2" href="#layer-2"><span class="bnum">2</span><span>learning</span><span class="bact">Atlas</span></a>
       <a class="band b3" href="#layer-3"><span class="bnum">3</span><span>belonging</span><span class="bact">Cohort</span></a>
       <a class="band b4" href="#layer-4"><span class="bnum">4</span><span>shared truth</span><span class="bact">Graph</span></a>
@@ -259,20 +280,6 @@
 <section aria-labelledby="strata-h">
   <h2 id="strata-h">The strata</h2>
   <p class="legend">Marks count one set named in the proof beside them. Dark marks show what passed, stood, or was blocked. Open marks show what was dropped, missed, or allowed.</p>
-
-  <article class="row r0" id="layer-0">
-    <div>
-      <p class="layer">Layer 0</p>
-      <h3 class="need">the body: food, shelter, health, safety</h3>
-      <p class="act">Ground</p>
-    </div>
-    <div><p class="proof"><span class="rub">8</span> listings for free food, shelter, and health help near New Rochelle; every one checked against the provider's own page on <span class="rub">October 15, 2026</span>; <span class="rub">4</span> more were dropped for failing the check.</p><p>Unlocks the ability to act at all.</p><p class="marks" role="img" aria-label="One mark for each listing checked on October 15, 2026: 8 solid marks for the listings that passed the check, 4 hollow marks for the ones that were dropped."><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span class="hollow"></span><span class="hollow"></span><span class="hollow"></span><span class="hollow"></span></p></div>
-    <div class="links">
-      <a class="see" href="https://auroracommons.github.io/ground/">See it</a>
-      <a href="https://github.com/auroracommons/ground" class="check">Check it</a>
-      <button type="button" class="share" data-share data-title="Aurora Commons" data-text="Ground, the body: food, shelter, health, safety. One layer of Aurora Commons." data-url="https://auroracommons.github.io/auroracommons/#layer-0">Share</button>
-    </div>
-  </article>
 
   <article class="row r1" id="layer-1">
     <div>

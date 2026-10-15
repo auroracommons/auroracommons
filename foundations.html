@@ -119,7 +119,7 @@
 <section class="demo" id="demo-cash">
   <h3>Cash transfers, Kenya</h3>
   <p class="do">Tap run.</p>
-  <p class="unit">This instrument counts in the study's own units: PPP dollars per household per month. Each mark is one dollar of the rise.</p>
+  <p class="unit">This instrument counts in the study's own units: PPP dollars per household per month. Each mark is one dollar. The filled marks are the 158 dollars a household already had in a month. The outlined marks are the rise, 35 dollars.</p>
   <div class="marks" id="cash-marks" aria-hidden="true"></div>
   <p class="readout">Average monthly household consumption: <span class="num" id="cash-num">158</span> PPP dollars</p>
   <button class="run" id="cash-btn" type="button">Run</button>
@@ -339,15 +339,18 @@
     btn.textContent = 'Run again';
   }
 
-  /* Cash transfers, Kenya: 35 marks, one per dollar of the rise. */
+  /* Cash transfers, Kenya: 193 marks, one per dollar. The starting value,
+     158, stands filled before any run. The rise, 35, stands outlined and
+     fills as the run counts up to 193. */
   (function(){
     var marks = document.getElementById('cash-marks');
     var num = document.getElementById('cash-num');
     var btn = document.getElementById('cash-btn');
     var result = document.getElementById('cash-result');
     var cells = [];
-    for (var i = 0; i < 35; i++) {
+    for (var i = 0; i < 193; i++) {
       var s = document.createElement('span');
+      if (i < 158) s.className = 'on';
       marks.appendChild(s);
       cells.push(s);
     }
@@ -357,7 +360,7 @@
       animate(1500, function(p){
         var lit = Math.round(35 * p);
         num.textContent = String(158 + Math.round(35 * p));
-        for (var j = 0; j < 35; j++) { cells[j].className = j < lit ? 'on' : ''; }
+        for (var j = 0; j < 35; j++) { cells[158 + j].className = j < lit ? 'on' : ''; }
       }, function(){ finish(btn, result); });
     });
   })();
