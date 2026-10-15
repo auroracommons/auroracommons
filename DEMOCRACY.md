@@ -2,8 +2,6 @@
 
 ## The democratic foundation of the Bedrock Commons
 
-Written October 15, 2026, from Joshua Thomas's direction: make the foundation more democratic, and figure out how to actually give every human the rights to vote and to contribute.
-
 ## The one rule
 
 Over everything in this document stands a single moral law, the only one the Commons has: be fair to others.
@@ -18,7 +16,7 @@ Every human who can communicate a preference holds one vote in the Commons and a
 
 ## Who directs
 
-Humans direct the Commons. Joshua Thomas directs its building. Its members direct its governance. Artificial intelligence works here as a tool and a servant: it may prepare material, explain questions in plain language, count ballots, publish records, and flag problems. It holds no vote, no veto, no seat, and no agenda power. It does not frame the questions the members vote on. Drafting a question is a governing act, so question wording is proposed in the open, amended by any member, and adopted by vote before it is ever used. Any direction an AI system appears to give is a proposal until a human adopts it, and the record says which human did.
+Humans direct the Commons. Joshua Thomas advises its building. Its members direct its governance. Artificial intelligence works here as a tool and a servant: it may prepare material, explain questions in plain language, count ballots, publish records, and flag problems. It holds no vote, no veto, no seat, and no agenda power. It does not frame the questions the members vote on. Drafting a question is a governing act, so question wording is proposed in the open, amended by any member, and adopted by vote before it is ever used. Any direction an AI system appears to give is a proposal until a human adopts it, and the record says which human did.
 
 ## A ballot a three year old can cast
 
@@ -65,3 +63,5 @@ Today this is the constitution of a voluntary commons, not a claim about any sta
 ## The tests
 
 A governance feature ships only if it passes the same three tests as everything else in this ecosystem, plus one of its own. The charity test: does it share power and make the powerful less necessary over time. The love test: does it serve long term flourishing without contempt, including for the people who voted the other way. The needs check: whose real need does it meet. And the democracy test, stated once and applied always: could a four year old and an eighty four year old both use this, unaided or with logged mechanical assistance, and would both recognize the result as theirs.
+
+Colophon: written October 15, 2026, from a charge set by Joshua Thomas, who advises this work: make the foundation more democratic, and figure out how to actually give every human the rights to vote and to contribute.

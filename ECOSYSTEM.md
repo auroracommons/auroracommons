@@ -1,7 +1,5 @@
 # The Ecosystem
 
-Written October 15, 2026, from Joshua's direction: build a comprehensive open source ecosystem that touches all aspects of society and leads to compounding usefulness and value. All industries. All needs. All wants. And if it requires it, reorganize the meaning of human computer interaction.
-
 ## The destination
 
 An open source ecosystem that any person, school, company, or government can build on, spanning every industry, organized around human needs and human wants, where each piece makes every other piece more useful. Not a suite of products. A commons of working primitives, proven in public, that other people adopt, extend, and carry into places the founders will never see.
@@ -36,7 +34,7 @@ The Commons governs itself by a rule stated in full in [One Person, One Voice](D
 
 One rule stands over the whole design: be fair to others. It is the Commons' only moral law, the sole ground on which anyone can lose their place, and it binds the strong first.
 
-Direction stays human. Joshua Thomas directs the building. The members direct the governance. Artificial intelligence serves this work as a tool: preparing material, explaining questions in plain language, counting ballots, publishing records. It holds no vote, no veto, no seat, and no agenda power, and it does not frame the questions the members vote on. Question wording is proposed in the open, amended by any member, and adopted by vote before it is used.
+Direction stays human. Joshua Thomas advises the building; he does not command it. The members direct the governance. Artificial intelligence serves this work as a tool: preparing material, explaining questions in plain language, counting ballots, publishing records. It holds no vote, no veto, no seat, and no agenda power, and it does not frame the questions the members vote on. Question wording is proposed in the open, amended by any member, and adopted by vote before it is used.
 
 ## The road to everyone
 
@@ -88,3 +86,5 @@ What each level gives back is equally clear: use, feedback, contribution, adopti
 Everyone who takes part holds a real stake, in four forms. Credit: every verified contribution is entered in the public ledger, proportional to what was proven, and credit is never sold or laundered. Voice: say in the roadmap is weighted by verified contribution, earned and visible. Ownership: everything is open source and forkable, so anyone's stake can never be held hostage; if the stewardship ever betrays the intentions, the ecosystem itself can be taken up and carried on by the people who built it. Upside: when the ecosystem produces revenue, the ledger is the published basis for sharing it, and the terms will be published before money moves, not after.
 
 The builders hold the first stake. The founder's name, record, and livelihood are on this in public, and the evidence rule binds the builders before it binds anyone else: no claim without logged proof, starting with ours.
+
+Colophon: written October 15, 2026, from a charge set by Joshua Thomas, who advises this work: build a comprehensive open source ecosystem that touches all aspects of society and leads to compounding usefulness and value. All industries. All needs. All wants. And if it requires it, reorganize the meaning of human computer interaction.

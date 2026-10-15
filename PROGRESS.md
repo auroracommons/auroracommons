@@ -2,6 +2,14 @@
 
 This is the public record of the work: what was done, what the proof shows, what broke, and what comes next. It is updated every work session, newest first, in plain language on purpose. If a claim anywhere in these projects cannot be traced to a logged run, the claim is wrong and the log is where it gets corrected.
 
+## October 15, 2026: the advisor steps back, and the Commons gets a front page
+
+**What shipped.** The founder restated his own role today, in his words: an advisor, not a director. His name came off the top of this profile, the direction clauses in the charter, the democratic foundation, the participation engine, and the registry now say what he actually is (he advises the building; the members direct the governance), the provenance lines moved to colophons at the foot of each document, and the saga credit line now reads: Advised by Joshua Thomas. The same session built the Commons a visual front page, index.html in this repository, linked from the top of this profile, so the whole system can be seen on one page: the map, the five acts with their proof, the one rule, and the doors in.
+
+**The proof.** Words and layout only. No number in any document changed, and the historical entries below stand exactly as written, because a public record does not get quietly rewritten. Every change sits in this repository commit history for anyone to diff.
+
+**What is next.** Unchanged: the twice daily evolution pass, the November 16, 2026 checkpoint, and the first Ledger entries from outside contributors.
+
 ## October 15, 2026: a final name and a storyline
 
 **What shipped.** The account took its final name today, bedrockcommons, after two renamings in one morning; the stage was renamed for the map, and the links across all six repositories were swept to match. Every project README was brought to one clean structure (the need, what it is, the proof, the live demo, how to contribute), with two copy paste prompts added to each so a person or an agent can start contributing in minutes. The profile itself was rebuilt the same way, and two new documents were published on it, under Joshua's direction: THE_SAGA.md, the theatrical and true story of how this work got built, chapter by chapter with its claims linked to receipts, and PROMPTS.md, the canonical prompt library (run an Eval Challenge, file a failure report, take a good first issue, adopt a primitive, audit a claim).

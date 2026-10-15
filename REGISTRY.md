@@ -2,8 +2,6 @@
 
 ## The Commons Registry
 
-Written October 15, 2026, from Joshua Thomas's direction: make a place for the entities that deserve to exist, for every individual no matter what, as long as they are fair to others.
-
 ## What the registry is
 
 The Registry is the map of who exists in the Bedrock Commons. Every individual who enrolls has a place in it. Every entity that shows up has a place in it: a school, a nonprofit, a company, a congregation, a mutual aid circle, a government office, a family, a project, a guild, a network, a single classroom with a name. A place is given, not earned. Existence is not a prize to compete for, and nobody applies for permission to be on the map.
@@ -51,3 +49,5 @@ Each ring is invited to take a place, adopt a primitive, or simply be counted as
 ## Why a registry changes anything
 
 Movements fail in the dark between people who need each other and never learn each other's names. A school with a tutoring breakthrough never meets the district that needs it. A funder hunting a trustworthy local partner finds only whoever markets loudest. A four year old's first contribution lands nowhere because no one built her a place to stand. The Registry is the Commons' answer to the dark: everyone findable, everyone credited, every need and every offer on the same map, ordered by fairness and proof rather than by money. Build the map honestly for years and it becomes the place the world checks first, which is another way of saying it becomes infrastructure. Infrastructure is what this ecosystem has intended to be from the first day.
+
+Colophon: written October 15, 2026, from a charge set by Joshua Thomas, who advises this work: make a place for the entities that deserve to exist, for every individual no matter what, as long as they are fair to others.

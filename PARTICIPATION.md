@@ -2,7 +2,7 @@
 
 ## The participation engine of the Bedrock Commons
 
-Written October 15, 2026, from Joshua Thomas's direction: figure out how to get billions of people involved, verifiably, and have the collective projects drive real change. Every load bearing claim in this document is sourced from published research and production systems, cited in line, because a plan to involve billions that begins by inflating its own numbers has already failed.
+Every load bearing claim in this document is sourced from published research and production systems, cited in line, because a plan to involve billions that begins by inflating its own numbers has already failed.
 
 ## Where we honestly stand
 
@@ -80,3 +80,5 @@ A rung is claimed only when the published tier numbers cross it for two consecut
 ## Real change, accounted
 
 Participation is not the outcome. Outcomes are counted per layer of the Bedrock, with method and data published and independent evaluation invited and funded, with results published either way: learning gains on the tutor's own eval pattern extended to real learners; belonging measured by whether people stay and whether they report being known; shared truth measured by corrections issued and stood behind; and when the open layers are entered, food and shelter counted in physical units from partner records. Failures are published with the same care. The change record sits beside the contribution ledger, so anyone can weigh what the Commons' people did against what the Commons' people changed, and judge whether the ratio is fair.
+
+Colophon: written October 15, 2026, from a charge set by Joshua Thomas, who advises this work: figure out how to get billions of people involved, verifiably, and have the collective projects drive real change.

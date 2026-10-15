@@ -6,11 +6,11 @@ This is the story of how the work on this profile got built, told the way it hap
 
 For weeks, this account could not publish. Every attempt to create a repository failed with permission errors, and the errors lied about the reason. The plans were written, the work was ready, and the door stayed shut.
 
-The root cause, found on the night of October 14, 2026, was almost funny: the app that was supposed to act for the account had been authorized and never installed. Authorization without installation. A key that had been cut, blessed, and never put in the lock. Joshua Thomas directed the fix, the app was installed that night with access to all repositories, and the wall turned out to have been a door the whole time. Six empty repositories were created before midnight.
+The root cause, found on the night of October 14, 2026, was almost funny: the app that was supposed to act for the account had been authorized and never installed. Authorization without installation. A key that had been cut, blessed, and never put in the lock. Joshua Thomas called for the fix, and the app was installed that night with access to all repositories, and the wall turned out to have been a door the whole time. Six empty repositories were created before midnight.
 
 ## Chapter 2: A Man With A Map
 
-The director of this production was not a company. Joshua Thomas, math educator and program builder in New York, had been out of work for over six weeks, and he made a decision that set the terms for everything after: the work would be proven in public or not at all.
+This production had no company behind it. Joshua Thomas, math educator and program builder in New York, had been out of work for over six weeks, and he made a decision that set the terms for everything after: the work would be proven in public or not at all.
 
 No invented metrics. No placeholder passed off as a product. No claim without a logged run behind it. That rule, the evidence rule, is why the projects on this profile publish their failures next to their scores, and why this saga can afford to be theatrical: the jokes are all true, and the receipts are all linked.
 
@@ -46,4 +46,4 @@ A body of work this carefully proven deserved a front door as clean as its recor
 
 That is where the story stands: a foundation named, five acts standing on it, a table open, and a record that shows the proof. The next chapters belong to whoever shows up with verified work.
 
-Directed and guided by Joshua Thomas. Every claim in this story links to its receipts.
+Advised by Joshua Thomas. Every claim in this story links to its receipts.

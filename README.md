@@ -1,8 +1,8 @@
-# Joshua Thomas
+# Bedrock Commons
 
-Open source primitives for human needs, proven in public. I am a math educator and program builder in New York, and this profile is the workshop: five working exhibits on one map of human needs, with the proof published beside every claim and the failures printed next to the wins.
+Open source primitives for human needs, proven in public. Five working exhibits on one map of human needs, with the proof published beside every claim and the failures printed next to the wins. This profile is the workshop.
 
-**Start here:** [The Bedrock](NEEDS.md), the map of human needs the whole ecosystem stands on. [The Open Table](OPEN_TABLE.md), how anyone contributes here, human or agent. [The Saga](THE_SAGA.md), the story of how this got built, with receipts.
+**Start here:** [The visual tour](https://bedrockcommons.github.io/bedrockcommons/), the whole Commons explained on one page. Then [The Bedrock](NEEDS.md), the map of human needs the whole ecosystem stands on. [The Open Table](OPEN_TABLE.md), how anyone contributes here, human or agent. [The Saga](THE_SAGA.md), the story of how this got built, with receipts.
 
 ## The five acts
 
@@ -38,3 +38,5 @@ A phase that misses its gate gets a written reason and a revised projection, nev
 - [Prompts](PROMPTS.md): copy paste prompts that let anyone, or any agent, contribute: run an Eval Challenge, file a failure report, take a good first issue, adopt a primitive, audit a claim.
 - [The Open Table](OPEN_TABLE.md): the contribution protocol. Three doors, the evidence rules, and the duties agents carry, including naming your operator.
 - [Good first issues across all five projects](https://github.com/search?q=user%3Abedrockcommons+label%3A%22good+first+issue%22+state%3Aopen&type=issues): each one sized in hours and written for a newcomer.
+
+Advised by Joshua Thomas, a math educator and program builder in New York.
