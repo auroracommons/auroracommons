@@ -2,6 +2,14 @@
 
 This is the public record of the work: what was done, what the proof shows, what broke, and what comes next. It is updated every work session, newest first, in plain language on purpose. If a claim anywhere in these projects cannot be traced to a logged run, the claim is wrong and the log is where it gets corrected.
 
+## October 15, 2026: the specificity pass
+
+**What shipped.** The front doors now say what exists instead of what it means. This profile opens with the five projects as deliverables, one line each with the number that proves it, plus the other tangible things that exist today: the live demos, the Ledger, the Eval Challenge, and the published documents. The visual front page hero says the same in one breath. The Atlas, Cohort, and Lumen READMEs now open with their deliverable and its receipt; Machine and Graph already opened that way and were left alone.
+
+**The proof.** Words only. No number changed anywhere, no claim was added, and the dated entries below stand exactly as written.
+
+**What is next.** Unchanged: the twice daily evolution pass, the November 16, 2026 checkpoint, and the first Ledger entries from outside contributors.
+
 ## October 15, 2026: the Aurora pivot, names that serve all
 
 **What shipped.** Every name in this work changed today, in one pass, at the founder's direction. Bedrock Commons is now Aurora Commons, and the map of human needs, The Bedrock, is now The Ascent. The five acts carry the names of what they are: Supergravity is now Atlas, Neural Net Lab is now Machine, Knowledge Graph Explorer is now Graph, and LUMEN is now Lumen; Cohort keeps its name. The account, all six repositories, every demo address, the visual front page, and the published documents were swept to the new names, and the front page was rebuilt visual first: the Ascent drawn, the acts as cards, the Proof as one diagram, captions instead of essays. Lumen's README now states its framing plainly: the guardrail method belongs to no tradition, each community's own texts are guarded by that community's own rules, its current corpus is a first exhibit from one tradition, and the door is open to every tradition's texts and to secular works of meaning.

@@ -1,12 +1,23 @@
 # Aurora Commons
 
-Open source primitives for human needs, proven in public. Five working exhibits on one map of human needs, with the proof published beside every claim and the failures printed next to the wins. This profile is the workshop.
+Five working open source projects. Each one runs today, each is free to use and fork, and each publishes the run behind its headline number, failures included.
 
-**Start here:** [The visual tour](https://auroracommons.github.io/auroracommons/), the whole Commons explained on one page. Then [The Ascent](NEEDS.md), the map of human needs the whole ecosystem stands on. [The Open Table](OPEN_TABLE.md), how anyone contributes here, human or agent. [The Saga](THE_SAGA.md), the story of how this got built, with receipts.
+The five projects:
+
+- **Atlas**, a learning atlas whose AI tutor is graded in public: groundedness 0.806, citation rate 1.0, correct source rate 0.833, weak answers published beside the strong ones.
+- **Cohort**, a community platform whose MCP server joins as a real client: a live agent session transcript is committed in the repo as the receipt, and the tests pass 7 of 7.
+- **Machine**, a neural network library built from scratch in NumPy: its transformer passes 7 of 7 gradient checks, and a published benchmark puts PyTorch at 4.13x per step at identical size.
+- **Graph**, knowledge graph extraction from plain text, measured on a hand labeled eval: entities F1 0.937, relations F1 0.605, failure cases published.
+- **Lumen**, a guarded question answering study over the Baltimore Catechism, a first exhibit from one tradition: refusal eval 12 of 12 blocked, 8 of 8 allowed.
+
+Also here today:
+
+- **Live demos**: every project runs in the browser on GitHub Pages, linked in the table below. Start with [the visual tour](https://auroracommons.github.io/auroracommons/), the whole Commons on one page.
+- **The Ledger**: [LEDGER.md](LEDGER.md), the public record of verified contributions, with the evidence attached.
+- **The Eval Challenge**: at [the Open Table](OPEN_TABLE.md), beat a published baseline or expose a real failure, with your run attached.
+- **The documents**: the needs map [The Ascent](NEEDS.md), the ecosystem charter, the democratic foundation, the participation engine, and the registry, published in this repo and linked under Follow the work. The story of the build is [The Saga](THE_SAGA.md).
 
 ## The five acts
-
-One thesis in five acts: technology should increase human capability without taking human agency away.
 
 | Act | Serves | Proof | Live demo |
 |---|---|---|---|
