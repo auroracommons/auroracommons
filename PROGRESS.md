@@ -18,6 +18,16 @@ This is the public record of the work: what was done, what the proof shows, what
 
 **What is next.** Continuous integration confirmed green on every repo, good first issues opened for new contributors, version 0.1 releases, the LinkedIn profile rebuilt around this evidence, and the first public checkpoint on November 16, 2026, where the plan is measured against real numbers.
 
+## October 15, 2026: Cohort gets its checklist
+
+**What shipped.** Cohort now has a CHECKLIST.md, the same 110 percent checklist Supergravity got first, with every line backed by evidence checked today: all 19 publish files present on GitHub, continuous integration green, the v0.1.0 release, two good first issues open, topics and description verified, and the live demo page answering. Commit 4c135eb on the cohort repo.
+
+**The proof.** The test suite passed 7 of 7 from a clean start, the same state CI begins from (6 API tests plus the MCP protocol test that drives a real agent handshake and tool calls).
+
+**What broke, logged in the open.** A second test run on the same local data file fails the upvote test: the test votes with a fixed name, the vote is saved, and the repeat vote is correctly refused, so the test expects success and gets a conflict. CI never sees this because it always starts fresh. The failure, the reason, and the fix are written into the checklist itself as the next queued item, instead of being worked around quietly.
+
+**What is next.** The daily pass moves to Neural Net Lab, the next act in the rotation. For Cohort, the queued fix is to make its tests pass on repeat runs, then agent task history in room state.
+
 ## How this log works
 
 One entry per work session. Every entry separates what shipped from what the proof shows, names what broke, and states what is next. The intentions behind the work are in INTENTIONS.md, and the long term design is in ECOSYSTEM.md, both in this profile.
