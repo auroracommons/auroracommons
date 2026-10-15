@@ -2,7 +2,7 @@
 
 Stated plainly, in public, so anyone can hold this work to them.
 
-One rule stands over everything recorded here: be fair to others. It is the only moral law of the Commons, and every intention below is that rule at work.
+One rule stands over everything recorded here: raise the floor beneath everyone. It is the only moral law of the Commons, and every intention below is that rule at work.
 
 ## Why this exists
 

@@ -4,11 +4,11 @@
 
 ## The one rule
 
-Over everything in this document stands a single moral law, the only one the Commons has: be fair to others.
+Over everything in this document stands a single moral law, the only one the Commons has: raise the floor beneath everyone.
 
 Every mechanism described below, ballots, tiers, ledgers, enrollment, exists to serve that rule, and any of them that cannot justify itself by it does not bind. Interpretations of the rule are kept in a public casebook of decided questions with their reasons, so that fair comes to mean something checkable rather than whatever the loudest voice in the room prefers. Hard cases are decided by the members through the deliberation and voting machinery in this document, with the reasoning published. The rule binds members toward everyone, member or stranger, and it binds the strong first of all: a founder, a sponsor, and an anchor are held to it before a newcomer is.
 
-A place in the Commons is lost for one reason only: unfairness to others, proven in the open. And fairness governs that judgment too. Consequence stays in proportion to the verified harm, repair is offered before removal, and a road back stands open to anyone who makes the harm good. Nobody is reduced to their worst act. That is the whole law. It is short enough for the youngest citizen of the Commons to learn by heart, because she will hear it in her own words: be fair to others.
+A place in the Commons is lost for one reason only: unfairness to others, proven in the open. And fairness governs that judgment too. Consequence stays in proportion to the verified harm, repair is offered before removal, and a road back stands open to anyone who makes the harm good. Nobody is reduced to their worst act. Fairness is the working test of that law, not the law itself. The law is short enough for the youngest citizen of the Commons to learn by heart, because she will hear it in her own words: raise the floor beneath everyone.
 
 ## The rule
 

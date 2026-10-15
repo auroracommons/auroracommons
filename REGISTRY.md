@@ -10,7 +10,7 @@ The closest working analogue in the world today is the Digital Public Goods Alli
 
 ## The one condition
 
-A place is held on exactly one condition, the one rule of the Commons: be fair to others.
+A place is held on exactly one condition, the one rule of the Commons: raise the floor beneath everyone.
 
 There is no second condition. Not size, not wealth, not fame, not agreement with the founder, not a clean past. Present conduct is what is judged, on evidence, in the open. A place is lost for one reason only: unfairness to others, proven with published evidence, with consequence in proportion to the verified harm, repair offered before removal, and a road back that stays open to anyone who makes the harm good. The process is the one already written into the democratic foundation, and it binds the strong first: a sponsor, an anchor, and the founder are judged before a newcomer is, because their unfairness would travel further.
 

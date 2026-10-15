@@ -42,7 +42,7 @@ The aim is to raise the floor of global poverty faster than ever before, and fas
 
 The Commons governs itself by a rule stated in full in [One Person, One Voice](DEMOCRACY.md): every human who can communicate a preference holds one vote and an equal right to contribute, a capacity that usually arrives around age three. No vote is bought, sold, lent, inherited, weighted, or cast by proxy. Decisions are tiered by how hard they are to undo, never people by worth: everyday decisions by simple majority, structural decisions after a published deliberation period by supermajority, irreversible decisions by supermajority twice with a cooling off period between the votes. Contribution runs wider than the franchise, open to every human and to agents under a named human operator, and it is honored in the public ledger in proportion to verified work. It never converts into extra votes.
 
-One rule stands over the whole design: be fair to others. It is the Commons' only moral law, the sole ground on which anyone can lose their place, and it binds the strong first.
+One rule stands over the whole design: raise the floor beneath everyone. It is the Commons' only moral law, and it binds the strong first. Fairness is how the rule is tested in practice, and proven unfairness is the sole ground on which anyone can lose their place.
 
 Direction stays human. Groundskeeper advises the building; he does not command it. The members direct the governance. Artificial intelligence serves this work as a tool: preparing material, explaining questions in plain language, counting ballots, publishing records. It holds no vote, no veto, no seat, and no agenda power, and it does not frame the questions the members vote on. Question wording is proposed in the open, amended by any member, and adopted by vote before it is used.
 
@@ -93,7 +93,7 @@ What each level gives back is equally clear: use, feedback, contribution, adopti
 
 ## One table
 
-One table, one rule, one public ledger, one standard of proof: be fair to others. Corporations, governments, billionaires, and the poor sit on the same terms, and the strong are bound first.
+One table, one rule, one public ledger, one standard of proof: raise the floor beneath everyone. Corporations, governments, billionaires, and the poor sit on the same terms, and the strong are bound first.
 
 Corporations: contribute primitives, distribution, data, or funding in the open, under the public ledger. They get work that can become shared standards, a verified record no campaign can buy, and infrastructure that lowers their cost of serving every market.
 

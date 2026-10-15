@@ -2,6 +2,12 @@
 
 This is the public record of the work: what was done, what the proof shows, what broke, and what comes next. It is updated every work session, newest first, in plain language on purpose. If a claim anywhere in these projects cannot be traced to a logged run, the claim is wrong and the log is where it gets corrected.
 
+## October 15, 2026: the one rule, restated
+
+Joshua judged the old rule corny and chose the one built to stand: raise the floor beneath everyone. It now stands where the old rule stood, at the head of the charter and the foundation documents and on this profile.
+Fairness is not discarded. It is the working test of the rule: the casebook, the proportionate consequences, and the condition on keeping a place all run on fairness, in service of the floor.
+Dated entries below keep the old words, as written. The record is not rewritten.
+
 ## October 15, 2026: a UI clarity pass
 
 The standard, in one line: every tap should inform, help, or empower, in plain words, right away.
