@@ -35,10 +35,38 @@
   footer{padding:54px 0 62px;margin-top:46px;border-top:1px solid var(--line);
     color:var(--soft);font-size:14px;text-align:center}
   footer a{color:var(--accent);text-decoration:none;font-weight:600}
+
+  .commons-bar{display:flex;flex-wrap:wrap;gap:6px 16px;align-items:baseline;
+    background:#ffffff;border-bottom:1px solid var(--line);padding:10px 20px;font-size:14.5px}
+  .commons-bar .brand{font-weight:800;color:var(--ink);text-decoration:none;font-size:16px}
+  .commons-bar a{color:var(--accent);text-decoration:none;font-weight:600}
+  .commons-bar a:hover{text-decoration:underline}
+  .commons-bar .current{font-weight:700;color:var(--soft)}
+  #domain-strip{position:sticky;top:0;z-index:5;background:var(--bg);
+    display:flex;flex-wrap:wrap;gap:6px;padding:10px 0 12px;border-bottom:1px solid var(--line)}
+  #domain-strip a{font-size:13px;font-weight:600;color:var(--accent);text-decoration:none;
+    background:var(--chip);padding:5px 11px;border-radius:20px}
+  #domain-strip a:hover{text-decoration:underline}
+  #domain-strip a.on{background:var(--accent);color:#ffffff}
+  #paper-count{text-align:center;color:var(--soft);font-size:15px;margin:20px 0 0}
+  .card .start{display:inline-block;background:var(--dawn);color:#1b1e23;font-size:11.5px;
+    font-weight:800;text-transform:uppercase;letter-spacing:.6px;padding:3px 9px;
+    border-radius:20px;margin-bottom:10px}
   @media (max-width:560px){h1{font-size:38px}}
 </style>
 </head>
 <body>
+<nav class="commons-bar" aria-label="Aurora Commons sites">
+  <a class="brand" href="https://auroracommons.github.io/auroracommons/">Aurora Commons</a>
+  <span class="current" aria-current="page">Foundations</span>
+  <a href="https://auroracommons.github.io/ground/">Ground</a>
+  <a href="https://auroracommons.github.io/still/">Still</a>
+  <a href="https://auroracommons.github.io/atlas/">Atlas</a>
+  <a href="https://auroracommons.github.io/cohort/">Cohort</a>
+  <a href="https://auroracommons.github.io/graph/">Graph</a>
+  <a href="https://auroracommons.github.io/machine/">Machine</a>
+  <a href="https://auroracommons.github.io/lumen/">Lumen</a>
+</nav>
 <div class="wrap">
 
 <header>
@@ -50,10 +78,32 @@
   <p class="tag">The measured research under the Commons. Every claim shows its source. Check any of them.</p>
 </header>
 
-<section>
+<nav id="domain-strip" aria-label="Foundations domains">
+  <a href="foundations.html" data-filter="">All</a>
+  <a href="#poverty-and-material-security" data-filter="poverty-and-material-security">Poverty and material security</a>
+  <a href="#economics-and-incentives" data-filter="economics-and-incentives">Economics and incentives</a>
+  <a href="#governance-and-democracy" data-filter="governance-and-democracy">Governance and democracy</a>
+  <a href="#health-and-the-body" data-filter="health-and-the-body">Health and the body</a>
+  <a href="#mind-and-mental-health" data-filter="mind-and-mental-health">Mind and mental health</a>
+  <a href="#meaning-values-and-flourishing" data-filter="meaning-values-and-flourishing">Meaning, values, and human flourishing</a>
+  <a href="#learning-and-education" data-filter="learning-and-education">Learning and education</a>
+  <a href="#language-and-communication" data-filter="language-and-communication">Language and communication</a>
+  <a href="#artificial-intelligence-and-human-computer-interaction" data-filter="artificial-intelligence-and-human-computer-interaction">Artificial intelligence and human computer interaction</a>
+  <a href="#belonging-and-social-connection" data-filter="belonging-and-social-connection">Belonging and social connection</a>
+  <a href="#cooperation-and-collective-action" data-filter="cooperation-and-collective-action">Cooperation and collective action</a>
+  <a href="#truth-and-shared-knowledge" data-filter="truth-and-shared-knowledge">Truth and shared knowledge</a>
+</nav>
+<p id="paper-count">24 papers in 12 domains</p>
+
+<section id="poverty-and-material-security" data-domain="Poverty and material security">
   <h2>Poverty and material security</h2>
   <div class="acts">
     <div class="card">
+      <div class="start">Start here</div>
+      <div class="start">Start here</div>
+      <div class="start">Start here</div>
+      <div class="start">Start here</div>
+      <div class="start">Start here</div>
       <div class="need">Poverty and material security</div>
       <div class="stat">158 to 193 PPP dollars</div>
       <p class="finding">Unconditional cash transfers raised average monthly household consumption from 158 to 193 PPP dollars nine months after the transfers began.</p>
@@ -72,7 +122,7 @@
   </div>
 </section>
 
-<section>
+<section id="economics-and-incentives" data-domain="Economics and incentives">
   <h2>Economics and incentives</h2>
   <div class="acts">
     <div class="card">
@@ -94,7 +144,7 @@
   </div>
 </section>
 
-<section>
+<section id="governance-and-democracy" data-domain="Governance and democracy">
   <h2>Governance and democracy</h2>
   <div class="acts">
     <div class="card">
@@ -116,7 +166,7 @@
   </div>
 </section>
 
-<section>
+<section id="health-and-the-body" data-domain="Health and the body">
   <h2>Health and the body</h2>
   <div class="acts">
     <div class="card">
@@ -138,7 +188,7 @@
   </div>
 </section>
 
-<section>
+<section id="mind-and-mental-health" data-domain="Mind and mental health">
   <h2>Mind and mental health</h2>
   <div class="acts">
     <div class="card">
@@ -160,7 +210,7 @@
   </div>
 </section>
 
-<section>
+<section id="meaning-values-and-flourishing" data-domain="Meaning, values, and human flourishing">
   <h2>Meaning, values, and human flourishing</h2>
   <div class="acts">
     <div class="card">
@@ -182,7 +232,7 @@
   </div>
 </section>
 
-<section>
+<section id="learning-and-education" data-domain="Learning and education">
   <h2>Learning and education</h2>
   <div class="acts">
     <div class="card">
@@ -204,7 +254,7 @@
   </div>
 </section>
 
-<section>
+<section id="language-and-communication" data-domain="Language and communication">
   <h2>Language and communication</h2>
   <div class="acts">
     <div class="card">
@@ -226,7 +276,7 @@
   </div>
 </section>
 
-<section>
+<section id="artificial-intelligence-and-human-computer-interaction" data-domain="Artificial intelligence and human computer interaction">
   <h2>Artificial intelligence and human computer interaction</h2>
   <div class="acts">
     <div class="card">
@@ -248,7 +298,7 @@
   </div>
 </section>
 
-<section>
+<section id="belonging-and-social-connection" data-domain="Belonging and social connection">
   <h2>Belonging and social connection</h2>
   <div class="acts">
     <div class="card">
@@ -270,7 +320,7 @@
   </div>
 </section>
 
-<section>
+<section id="cooperation-and-collective-action" data-domain="Cooperation and collective action">
   <h2>Cooperation and collective action</h2>
   <div class="acts">
     <div class="card">
@@ -292,7 +342,7 @@
   </div>
 </section>
 
-<section>
+<section id="truth-and-shared-knowledge" data-domain="Truth and shared knowledge">
   <h2>Truth and shared knowledge</h2>
   <div class="acts">
     <div class="card">
@@ -315,10 +365,50 @@
 </section>
 
 <footer>
-  <p>Aurora Commons · <a href="https://github.com/auroracommons">github.com/auroracommons</a> · <a href="index.html">Home</a></p>
+  <p>One rule: raise the floor beneath everyone.</p>
   <p>Advised by Groundskeeper.</p>
+  <p><a href="https://www.linkedin.com/company/aurora-commons-io/">Aurora Commons on LinkedIn</a></p>
 </footer>
 
 </div>
+<script>
+(function(){
+  var strip = document.getElementById('domain-strip');
+  var count = document.getElementById('paper-count');
+  var sections = Array.prototype.slice.call(document.querySelectorAll('section[data-domain]'));
+  function mark(id){
+    var links = strip.querySelectorAll('a[data-filter]');
+    for (var i = 0; i < links.length; i++){
+      var f = links[i].getAttribute('data-filter');
+      if ((f || null) === (id || null)) { links[i].classList.add('on'); }
+      else { links[i].classList.remove('on'); }
+    }
+  }
+  function show(id){
+    var shown = 0, name = null;
+    sections.forEach(function(sec){
+      var on = !id || sec.id === id;
+      sec.style.display = on ? '' : 'none';
+      if (on) { shown += sec.querySelectorAll('.card').length; name = sec.getAttribute('data-domain'); }
+    });
+    count.textContent = (id && name) ? (shown + ' papers in ' + name) : '24 papers in 12 domains';
+    mark(id);
+  }
+  strip.addEventListener('click', function(e){
+    var a = e.target;
+    while (a && !(a.tagName === 'A' && a.hasAttribute('data-filter'))) { a = a.parentNode; }
+    if (!a) { return; }
+    e.preventDefault();
+    var id = a.getAttribute('data-filter') || null;
+    show(id);
+    if (id) { history.replaceState(null, '', '#' + id); }
+    else { history.replaceState(null, '', location.pathname + location.search); }
+  });
+  var h = location.hash.replace('#', '');
+  var target = null;
+  sections.forEach(function(sec){ if (sec.id === h) { target = sec.id; } });
+  show(target);
+})();
+</script>
 </body>
 </html>
