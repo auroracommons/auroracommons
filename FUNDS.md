@@ -12,7 +12,7 @@ When money does move, it moves through one channel only: the fiscal host. Money 
 
 ## The intended host, not yet appointed
 
-The intended host is Open Source Collective. It is intended, not appointed: no application has been submitted, and no relationship exists between Topsoil Commons and Open Source Collective today.
+The intended host is Open Source Collective. It is intended, not appointed. An application was submitted to Open Source Collective on October 16, 2026, and is under review. No appointment has been made.
 
 The host's terms, read from its own documentation on October 15, 2026: a fixed host fee of 10 percent of incoming funds, collected when the money arrives, with no setup fees, no minimum balances, and no recurring charges. Payment processors charge their own fees on top of that.
 

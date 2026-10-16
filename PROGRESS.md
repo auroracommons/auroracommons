@@ -2,6 +2,10 @@
 
 This is the public record of the work: what was done, what the proof shows, what broke, and what comes next. It is updated every work session, newest first, in plain language on purpose. If a claim anywhere in these projects cannot be traced to a logged run, the claim is wrong and the log is where it gets corrected.
 
+## October 16, 2026: the fiscal host application is submitted and under review
+
+Joshua submitted the fiscal host application to Open Source Collective himself on October 16, 2026. The application is under review. Open Source Collective remains the intended host, not an appointed host, and no funds have been received. Funds now records the submission and the review state in the open.
+
 ## October 16, 2026: Ground grows to 155 listings across 19 places
 
 Ground's second wave is in. Fifty two listings in six new places join the boards: Stamford, Bridgeport, Hartford, and New Haven in Connecticut, Paterson in New Jersey, and Hempstead in New York, nine listings in each of Stamford, Bridgeport, Hartford, and Paterson and eight in each of New Haven and Hempstead. Ground now stands at 155 listings across 19 places. Every new listing was checked against its provider's own page on October 16, 2026, and expires on November 15, 2026; the 103 listings of the first wave keep their October 15, 2026 check and their November 14, 2026 expiry. The ship stands in the Ground repository as commit 8572f36, and the listings file at that site's root, the one file that holds every listing, now serves all 155.
