@@ -1,5 +1,5 @@
 Topsoil Commons
-https://topsoilcommons.github.io/topsoilcommons/
+https://topsoilcommons.org/
 
 What this is
 Topsoil Commons builds free basic tools for the needs every person has, in the order a person needs them, and keeps the whole record public.
@@ -28,35 +28,35 @@ https://topsoilcommons.github.io/lumen/
 
 The record pages
 Come in: the eight doors page, each door a use in under a minute and one small act.
-https://topsoilcommons.github.io/topsoilcommons/come-in.html
+https://topsoilcommons.org/come-in.html
 Home: the seven layers, their proofs, and the doors.
-https://topsoilcommons.github.io/topsoilcommons/
+https://topsoilcommons.org/
 Foundations: findings you can run yourself, each in under a minute, and the full set of studies with their sources.
-https://topsoilcommons.github.io/topsoilcommons/foundations.html
+https://topsoilcommons.org/foundations.html
 In life: what the record means for living bodies, and what life sends back into the record.
-https://topsoilcommons.github.io/topsoilcommons/life.html
+https://topsoilcommons.org/life.html
 The Index: the Commons record in time order, every entry a claim with its ground, its hand, and its check.
 https://topsoilcommons.github.io/index/
 The Record: the whole written record on one page, the charter, the needs, the rules, the log, and the money.
-https://topsoilcommons.github.io/topsoilcommons/record.html
+https://topsoilcommons.org/record.html
 The story: where this comes from, where it stands, and where it is going, in plain words.
-https://topsoilcommons.github.io/topsoilcommons/story.html
+https://topsoilcommons.org/story.html
 Advanced: the full record, the studies as a path, and the tools that check every claim, for deep learners in any field.
-https://topsoilcommons.github.io/topsoilcommons/advanced.html
+https://topsoilcommons.org/advanced.html
 The shelf: proven work by others and by the Commons, each entry with its license checked at its source and three doors, use it, adopt it, and change it.
-https://topsoilcommons.github.io/topsoilcommons/shelf.html
+https://topsoilcommons.org/shelf.html
 Public records: what stands in the open for each need, what the Commons holds, what others hold open for anyone, and what is missing, each record with its source and its limits.
-https://topsoilcommons.github.io/topsoilcommons/records.html
+https://topsoilcommons.org/records.html
 
 Machine files
 site.json: the seven acts as data, each with its need, its proof sentence, and its links.
-https://topsoilcommons.github.io/topsoilcommons/site.json
+https://topsoilcommons.org/site.json
 foundations.json: the studies in Foundations as data, each with its source.
-https://topsoilcommons.github.io/topsoilcommons/foundations.json
+https://topsoilcommons.org/foundations.json
 llms.txt: this file.
-https://topsoilcommons.github.io/topsoilcommons/llms.txt
+https://topsoilcommons.org/llms.txt
 sitemap.xml: every public page of this site.
-https://topsoilcommons.github.io/topsoilcommons/sitemap.xml
+https://topsoilcommons.org/sitemap.xml
 Ground listings as data: every listing with its checked date, its expiry date, and its provider source.
 https://topsoilcommons.github.io/ground/listings.json
 The Index entries as data: one file per month under entries/ and proposals/ in the Index repository.

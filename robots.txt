@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://topsoilcommons.github.io/topsoilcommons/sitemap.xml
+Sitemap: https://topsoilcommons.org/sitemap.xml

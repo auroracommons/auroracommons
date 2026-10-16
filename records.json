@@ -10,12 +10,12 @@
     {
      "line": "Ground's boards stand in 19 places, and every other place is not covered yet. The needs map says it in plain words: a board is a start, not coverage.",
      "name": "Coverage",
-     "source": "https://topsoilcommons.github.io/topsoilcommons/needs.html"
+     "source": "https://topsoilcommons.org/needs.html"
     },
     {
      "line": "In the six places added on October 16, 2026, no provider's own page stated menstrual supplies as an offer, and the Paterson board holds no domestic violence provision. Both facts stand in the progress log beside the listings.",
      "name": "Supplies and safety in the newest places",
-     "source": "https://topsoilcommons.github.io/topsoilcommons/progress.html"
+     "source": "https://topsoilcommons.org/progress.html"
     }
    ],
    "layer": 0,
@@ -53,7 +53,7 @@
     {
      "line": "Still is a first build, minimal on purpose, and the needs map says so in plain words. No treatment and no crisis service stands in the Commons' own record; Still itself points a person in crisis to the 988 line.",
      "name": "A first build, and no service",
-     "source": "https://topsoilcommons.github.io/topsoilcommons/needs.html"
+     "source": "https://topsoilcommons.org/needs.html"
     }
    ],
    "layer": 1,
@@ -111,12 +111,12 @@
     {
      "line": "The interactions log, the Commons' own count of its doors used, stands at no interactions answered yet. The room is built; it is not yet filled.",
      "name": "No interactions yet",
-     "source": "https://topsoilcommons.github.io/topsoilcommons/interactions.html"
+     "source": "https://topsoilcommons.org/interactions.html"
     },
     {
      "line": "Participation counts one enrolled human today: the founder. Every wider number in that document is a rung on a ladder, not a count of people.",
      "name": "One enrolled human",
-     "source": "https://topsoilcommons.github.io/topsoilcommons/participation.html"
+     "source": "https://topsoilcommons.org/participation.html"
     }
    ],
    "layer": 3,
@@ -142,7 +142,7 @@
     {
      "line": "The Index stands at 13 entries, all of them the Commons' own, all from October 2026. The shared timeline of the world that it is shaped for has not begun.",
      "name": "One month of entries",
-     "source": "https://topsoilcommons.github.io/topsoilcommons/progress.html"
+     "source": "https://topsoilcommons.org/progress.html"
     }
    ],
    "layer": 4,
@@ -200,7 +200,7 @@
     {
      "line": "For this need, the Commons' own record holds one guarded study and nothing else: no counsel, no community of faith, and no rite stands in it.",
      "name": "One study, and nothing else",
-     "source": "https://topsoilcommons.github.io/topsoilcommons/needs.html"
+     "source": "https://topsoilcommons.org/needs.html"
     }
    ],
    "layer": 6,

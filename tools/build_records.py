@@ -142,13 +142,13 @@ def shell(title, orientation, body, tech_lines):
 <meta property="og:title" content="%s">
 <meta property="og:description" content="%s">
 <meta property="og:url" content="%s%s">
-<meta property="og:image" content="https://topsoilcommons.github.io/topsoilcommons/assets/aurora-logo.png">
+<meta property="og:image" content="https://topsoilcommons.org/assets/aurora-logo.png">
 <meta property="og:image:width" content="1600">
 <meta property="og:image:height" content="1600">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="%s">
 <meta name="twitter:description" content="%s">
-<meta name="twitter:image" content="https://topsoilcommons.github.io/topsoilcommons/assets/aurora-logo.png">
+<meta name="twitter:image" content="https://topsoilcommons.org/assets/aurora-logo.png">
 <link rel="stylesheet" href="assets/commons.css">
 <style>
 %s

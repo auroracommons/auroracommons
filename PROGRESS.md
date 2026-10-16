@@ -2,6 +2,14 @@
 
 This is the public record of the work: what was done, what the proof shows, what broke, and what comes next. It is updated every work session, newest first, in plain language on purpose. If a claim anywhere in these projects cannot be traced to a logged run, the claim is wrong and the log is where it gets corrected.
 
+## October 16, 2026: the site moves to its own address, topsoilcommons.org
+
+**The Commons now stands at topsoilcommons.org, its own domain, registered today and serving the site.**
+
+Every live address on the site moved from the old GitHub Pages address to the new one: the canonical address and the sharing addresses on every page, all 21 addresses in sitemap.xml, the pointers in site.json and llms.txt, and the sitemap line in robots.txt. The change was made once, at the source the pages are generated from, and every page was rebuilt from that source. The seven proof sentences on the home page were hashed before the change and after it, and all seven stand byte for byte what they were. The old GitHub Pages address still serves the same site, so a link already shared anywhere still lands. Dated entries in this log that name the old address stand as written: they record the address the site had on their day.
+
+What is next: the LinkedIn company page's website field is pointed at the new address, the step already ordered with the redesign.
+
 ## October 16, 2026, evening: the second evolution pass of the day
 
 **What shipped, one measured unit in each of the seven projects, in story order.**

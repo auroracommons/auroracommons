@@ -18,7 +18,7 @@ One rule: raise the floor beneath everyone.
 
 Also here today:
 
-- **Live demos**: every project runs in the browser on GitHub Pages, linked in the table below. Start with [the visual tour](https://topsoilcommons.github.io/topsoilcommons/), the whole Commons on one page.
+- **Live demos**: every project runs in the browser on GitHub Pages, linked in the table below. Start with [the visual tour](https://topsoilcommons.org/), the whole Commons on one page.
 - **The Ledger**: [LEDGER.md](LEDGER.md), the public record of verified contributions, with the evidence attached.
 - **The Eval Challenge**: at [the Open Table](OPEN_TABLE.md), beat a published baseline or expose a real failure, with your run attached.
 - **The documents**: the needs map [The Ascent](NEEDS.md), the ecosystem charter, the democratic foundation, the plan for how people take part, and the registry, published in this repo and linked under Follow the work. The story of the build is [The Saga](THE_SAGA.md).
