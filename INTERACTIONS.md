@@ -5,3 +5,4 @@ A door is a form that takes about a minute. Every submission is a public issue, 
 | Date | Kind | Where | Result |
 | --- | --- | --- | --- |
 | October 15, 2026 | Doors wired | Home page, Ground, Atlas, Still | No interactions yet. |
+| October 16, 2026 | Pull request | Machine repository | First outside contribution: gradient checks for three layers from shyam1017, verified (16 of 16 tests) and merged the same day; good first issue #1 closed, credit in the Ledger. |
