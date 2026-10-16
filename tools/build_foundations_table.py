@@ -34,7 +34,7 @@ def main():
 %s
     </tbody>
   </table>
-  <p class="count">Key: each row is one field of study, and the number beside it counts the studies in that field on this page. The counts were checked on October 15, 2026. The studies stand below, one line each, under their field.</p>
+  <p class="count">Key: each row is one field of study, and the number beside it counts the studies in that field on this page. The counts were checked on October 16, 2026. The studies stand below, one line each, under their field.</p>
 %s""" % (BEGIN, rows, END)
 
     path = ROOT / "foundations.html"

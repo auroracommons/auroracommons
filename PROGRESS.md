@@ -2,6 +2,16 @@
 
 This is the public record of the work: what was done, what the proof shows, what broke, and what comes next. It is updated every work session, newest first, in plain language on purpose. If a claim anywhere in these projects cannot be traced to a logged run, the claim is wrong and the log is where it gets corrected.
 
+## October 16, 2026: Foundations grows to 71 studies, and the merge rechecks caught real errors
+
+Foundations now holds 71 studies across 38 fields of study, up from 47 studies across 24 fields. The 24 new studies were staged yesterday as candidates and merged today only after the rechecks the staging note owed were run: full author lists taken from the papers' own records, a spot recheck of eight transcribed DOIs, and one venue confirmation. The five runnable demonstrations on the Foundations page are unchanged.
+
+The rechecks earned their keep. Five source links in the staged candidates were wrong or dead, and each now points at the paper it names: the commitment savings study by Ashraf, Karlan, and Yin, the parental migration study by Antman, the guided play study by Fisher and co-authors, the makerspaces study by Sheridan and co-authors, and the chronic pain trial by Thorn and co-authors, whose staged DOI resolved nowhere and whose correct DOI names a different suffix. One staged record carried the wrong journal: the reablement trial by Tuntland and co-authors appeared in BMC Geriatrics, not BMC Health Services Research, and its own full text record at PubMed Central settles it. One staged record named its first author wrong: the newspaper closures study is by Joshua P. Darr, Matthew P. Hitt, and Johanna L. Dunaway. Every staged record that read "and co-authors" now carries its full author list, taken from the publisher metadata, the journal records, or the report itself. No record failed its recheck outright, so all 24 merged.
+
+One label was reconciled on the way in. The disaster recovery study by You and Kousky was staged under a new field name, weather and climate adaptation; it stands instead in the standing field, environment and climate adaptation, so the count of new fields is 14, not 15: sleep, grief and loss, addiction and recovery, savings, insurance, debt, play, music, craft and making, public space, local news, pain, libraries, and repair. Seven standing fields grew by a study or two, among them work and livelihoods, which had stood thinnest at one.
+
+The original 47 records stand byte identical at the head of foundations.json. The Foundations page lists every new study in one line under its field, and its counts table is rebuilt from the same file by its tool, now dated October 16, 2026. The home page today line, the story page, and the advanced page were regenerated from the same sources and carry the new totals, 71 findings across 38 fields, and every generator was run twice with the second run writing the same files as the first.
+
 ## October 16, 2026: the agent layer, a machine layer beside every page
 
 The site now speaks to two readers at once, and the human surface did not change. Beside every page stands a machine layer, written for agents, naming the same facts in files an agent can take away and check.
