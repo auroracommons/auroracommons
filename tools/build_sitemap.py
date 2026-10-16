@@ -27,6 +27,7 @@ PAGES = [
     "record.html",
     "story.html",
     "advanced.html",
+    "shelf.html",
 ]
 
 

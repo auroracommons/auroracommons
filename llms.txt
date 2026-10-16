@@ -41,6 +41,8 @@ The story: where this comes from, where it stands, and where it is going, in pla
 https://topsoilcommons.github.io/topsoilcommons/story.html
 Advanced: the full record, the studies as a path, and the tools that check every claim, for deep learners in any field.
 https://topsoilcommons.github.io/topsoilcommons/advanced.html
+The shelf: proven work by others and by the Commons, each entry with its license checked at its source and three doors, use it, adopt it, and change it.
+https://topsoilcommons.github.io/topsoilcommons/shelf.html
 
 Machine files
 site.json: the seven acts as data, each with its need, its proof sentence, and its links.

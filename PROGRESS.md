@@ -2,6 +2,14 @@
 
 This is the public record of the work: what was done, what the proof shows, what broke, and what comes next. It is updated every work session, newest first, in plain language on purpose. If a claim anywhere in these projects cannot be traced to a logged run, the claim is wrong and the log is where it gets corrected.
 
+## October 16, 2026: the shelf stands: proven work, its licenses rechecked, its doors open
+
+The shelf stands on its own page, built from a data file the way the rest of this site is built. It holds 14 works in two groups, counted on October 16, 2026. Six are standing works by others: ElectionGuard, Open Collective, LiquidFeedback, DHIS2, X-Road, and Keycloak. Eight are the exhibits of the Commons: Ground, Still, Atlas, Cohort, Graph, Machine, Lumen, and the Index. Each entry carries one plain line of what the work does, who keeps it, its license, a live place to try it, and three doors: use it, adopt it, and change it.
+
+Every license was read again at its source on October 16, 2026, before its work was listed. The readings found the MIT License at ElectionGuard, at Open Collective, and at each of the eight Commons exhibits; the MIT/X11 License stated on LiquidFeedback's own open source page; the BSD 3-Clause License at DHIS2; the Apache License 2.0 at Keycloak; and the MIT License that X-Road states in its README, where GitHub's automatic license check returns NOASSERTION and the README is the source relied on, printed as a caveat on the page itself.
+
+Two honest gaps stand in the open. ElectionGuard's repository has moved from Microsoft's account to the Election Tech Initiative, and the shelf names the keeper the work has today. LiquidFeedback's change it door stands without a link, because the repository link on the project's own page did not answer when it was checked on October 16, 2026, and no link was invented to fill the space. Every other link on the page was fetched on October 16, 2026 and answered.
+
 ## October 16, 2026: the Index gains a chain, so tampering shows
 
 The Index now carries a hash chain over its entries. Each of the 13 standing entries, the 12 adopted entries and the 1 proposal standing in the queue, carries a chain record that binds it to the entry before it, computed by a tool in the Index repository and checked by its validator, never written by hand. A small root file, chain.json, publishes the head hash and the entry count of each queue, so anyone holding a mirror copy can recompute the chain over their own copy and compare. The adopted queue stands at 12 entries, with head hash 7dfa556018effd72e7d1760970dfec5ecaec77bceae04b42de1aed819b43afb1.

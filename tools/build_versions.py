@@ -503,6 +503,10 @@ def build_advanced():
         line += (', <a href="%s%s">source on GitHub</a>.'
                  % (BLOB, md_name))
         out.append("<li>%s</li>" % line)
+    out.append('<li><a href="shelf.html">The shelf</a>: proven work '
+               'by others and by the Commons, each entry with its '
+               'license checked at its source and three doors, use '
+               'it, adopt it, and change it.</li>')
     out.append("</ul>")
     out.append("</section>")
 
