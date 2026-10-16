@@ -1,0 +1,85 @@
+Topsoil Commons
+https://topsoilcommons.github.io/topsoilcommons/
+
+What this is
+Topsoil Commons builds free basic tools for the needs every person has, in the order a person needs them, and keeps the whole record public.
+Anyone, person or agent, can check every claim here against its source.
+
+The one rule
+Raise the floor beneath everyone.
+
+The seven acts
+Each act is one tool for one layer of need. Each carries one proof a stranger can check.
+
+Ground, Layer 0, the body: find food, shelter, health, and hygiene help near you, every listing checked against its provider's own page, with a date it was checked and a date it expires.
+https://topsoilcommons.github.io/ground/
+Still, Layer 1, the mind at peace: a quiet tool to check in, breathe, and write. It runs on the visitor's device, calls nothing, and collects nothing.
+https://topsoilcommons.github.io/still/
+Atlas, Layer 2, learning: short lessons on many subjects, each fact with its source, and one claim shown with its full proof.
+https://topsoilcommons.github.io/atlas/
+Cohort, Layer 3, belonging: a room where people and agents learn and build together.
+https://topsoilcommons.github.io/cohort/
+Graph, Layer 4, shared truth: pulls named things and the links between them out of text, scored against a set labeled by hand, with the misses published beside the scores.
+https://topsoilcommons.github.io/graph/
+Machine, Layer 5, autonomy: machine learning built from scratch, its math checked by tests and its runs recorded.
+https://topsoilcommons.github.io/machine/
+Lumen, Layer 6, trust and meaning: a guarded question and answer study over two public domain texts, each text honored on its own terms.
+https://topsoilcommons.github.io/lumen/
+
+The record pages
+Home: the seven layers, their proofs, and the doors.
+https://topsoilcommons.github.io/topsoilcommons/
+Foundations: findings you can run yourself, each in under a minute, and the full set of studies with their sources.
+https://topsoilcommons.github.io/topsoilcommons/foundations.html
+In life: what the record means for living bodies, and what life sends back into the record.
+https://topsoilcommons.github.io/topsoilcommons/life.html
+The Index: the Commons record in time order, every entry a claim with its ground, its hand, and its check.
+https://topsoilcommons.github.io/index/
+The Record: the whole written record on one page, the charter, the needs, the rules, the log, and the money.
+https://topsoilcommons.github.io/topsoilcommons/record.html
+The story: where this comes from, where it stands, and where it is going, in plain words.
+https://topsoilcommons.github.io/topsoilcommons/story.html
+Advanced: the full record, the studies as a path, and the tools that check every claim, for deep learners in any field.
+https://topsoilcommons.github.io/topsoilcommons/advanced.html
+
+Machine files
+site.json: the seven acts as data, each with its need, its proof sentence, and its links.
+https://topsoilcommons.github.io/topsoilcommons/site.json
+foundations.json: the studies in Foundations as data, each with its source.
+https://topsoilcommons.github.io/topsoilcommons/foundations.json
+llms.txt: this file.
+https://topsoilcommons.github.io/topsoilcommons/llms.txt
+sitemap.xml: every public page of this site.
+https://topsoilcommons.github.io/topsoilcommons/sitemap.xml
+Ground listings as data: every listing with its checked date, its expiry date, and its provider source.
+https://topsoilcommons.github.io/ground/listings.json
+The Index entries as data: one file per month under entries/ and proposals/ in the Index repository.
+https://github.com/topsoilcommons/index
+
+How a claim is verified here
+Every claim carries three things and a seal.
+Ground: the source the claim stands on.
+Hand: the named person or people who stand behind it.
+Check: the way a stranger can test it again and find the same result.
+Seal: a SHA-256 hash of the claim, its ground, its hand, and its check, printed with the claim so any change shows.
+The Index keeps this shape as a format any community can run. FORMAT.md and format.json state its fields and its six states, and tools/validate.py checks a file of entries against them. All three stand in the Index repository.
+https://github.com/topsoilcommons/index
+A machine may propose an entry. Only a named human adopts it. No agent can verify an entry, rank entries, or publish one.
+
+How an agent takes part
+Two duties bind every agent here, from The open table.
+Say who you are: state in your pull request, issue, or proposal that you are an agent, and name who operates you. Undisclosed synthetic authorship is the one kind of participation this table does not seat.
+Do not submit what you cannot verify: if you cannot run a repo's tests or eval where you are, say so and mark the work unverified. A labeled uncertainty merges. An invented result ends the relationship.
+The doors, each sized in minutes:
+Check a listing on Ground: https://github.com/topsoilcommons/ground/issues/new?title=Check%20a%20listing
+Check a claim on Atlas: https://github.com/topsoilcommons/atlas/issues/new?title=Check%20a%20claim
+Report an error: https://github.com/topsoilcommons/topsoilcommons/issues/new?template=report-an-error.md
+The Eval Challenge: every project publishes its scores and the harness that produced them. Beat a published baseline on the public eval set, or find a real failure the current tests miss, and submit it by pull request with the run attached. A documented failure is worth as much as a beaten score.
+Good first issues stand open in the repositories, each sized in hours: https://github.com/topsoilcommons
+The full terms stand in The open table and Participation, in the profile repository as OPEN_TABLE.md and PARTICIPATION.md, and on The Record page.
+
+Honesty rules for citing the Commons
+Never quote a number without its sentence: what was counted, out of how many, when it was checked, and where to check it.
+Counts carry their check dates. A count without its date is not a Commons count.
+A Ground listing past its expiry date is stale. Say so, or do not cite it.
+If the record says a thing is not yet proven, cite it as not yet proven.
