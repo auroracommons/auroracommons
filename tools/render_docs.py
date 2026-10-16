@@ -79,6 +79,19 @@ RECORD_ORDER = [
 BLOB = "https://github.com/topsoilcommons/topsoilcommons/blob/main/"
 SITE = "https://topsoilcommons.org/"
 
+
+def url_of(page_name):
+    """The public address form of a page file: no file suffix.
+
+    The host serves every page at the clean address and redirects the
+    suffixed form to it, so the site's own links and canonical
+    addresses speak the clean form. The file on disk keeps its name;
+    only the printed address changes.
+    """
+    if page_name.endswith(".html"):
+        return page_name[:-5]
+    return page_name
+
 ORIENTATION = ("Part of the Record: the written record of Topsoil "
                "Commons, on one page each.")
 
@@ -125,8 +138,8 @@ PAGE_OF = dict(DOCS)
 # Any link target naming one of these files becomes its page address.
 TARGETS = {}
 for md_name, page_name in DOCS:
-    TARGETS[md_name] = page_name
-    TARGETS[BLOB + md_name] = page_name
+    TARGETS[md_name] = url_of(page_name)
+    TARGETS[BLOB + md_name] = url_of(page_name)
 
 
 def rewrite_url(url):
@@ -445,7 +458,7 @@ def bar(current=None):
     if current:
         lines.append('  <span class="current" aria-current="page">%s '
                      '(you are here)</span>' % html.escape(current))
-    lines.append('  <a href="%sfoundations.html">Foundations</a>' % SITE)
+    lines.append('  <a href="%sfoundations">Foundations</a>' % SITE)
     lines += ['  <a href="%s">%s</a>' % (url, name)
               for name, url in BAR_LINKS]
     lines.append("</nav>")
@@ -509,8 +522,8 @@ def page(md_name, page_name, title, body):
 </div>
 </body>
 </html>
-""" % (html.escape(short), desc, SITE, page_name,
-       html.escape(short), desc, SITE, page_name,
+""" % (html.escape(short), desc, SITE, url_of(page_name),
+       html.escape(short), desc, SITE, url_of(page_name),
        html.escape(short), desc, CSS, SKIP_LINK, bar(short),
        html.escape(short), md_name, BLOB, md_name, ORIENTATION, body,
        FOOTER)
@@ -559,7 +572,7 @@ def record_page(sections):
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>The Record</title>
 <meta name="description" content="%s">
-<link rel="canonical" href="%srecord.html">
+<link rel="canonical" href="%srecord">
 <meta name="theme-color" content="#fbfaf7">
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
@@ -567,7 +580,7 @@ def record_page(sections):
 <meta property="og:site_name" content="Topsoil Commons">
 <meta property="og:title" content="The Record">
 <meta property="og:description" content="%s">
-<meta property="og:url" content="%srecord.html">
+<meta property="og:url" content="%srecord">
 <meta property="og:image" content="https://topsoilcommons.org/assets/aurora-logo.png">
 <meta property="og:image:width" content="1600">
 <meta property="og:image:height" content="1600">

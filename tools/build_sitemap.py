@@ -34,8 +34,9 @@ PAGES = [
 
 
 def page_urls():
-    urls = [SITE + page for page in PAGES]
-    urls.extend(SITE + html_name for _md, html_name in rd.DOCS)
+    urls = [SITE + rd.url_of(page) for page in PAGES]
+    urls.extend(SITE + rd.url_of(html_name)
+                for _md, html_name in rd.DOCS)
     return urls
 
 

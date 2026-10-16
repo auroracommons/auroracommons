@@ -2,6 +2,16 @@
 
 This is the public record of the work: what was done, what the proof shows, what broke, and what comes next. It is updated every work session, newest first, in plain language on purpose. If a claim anywhere in these projects cannot be traced to a logged run, the claim is wrong and the log is where it gets corrected.
 
+## October 16, 2026: the site's own addresses go clean
+
+**Every address the Commons prints for its own pages is now the clean form, with no file suffix at the end.**
+
+Until tonight the site named its own pages with the suffix, as in foundations.html, in its canonical addresses, its sitemap, and its links from page to page, while the host at topsoilcommons.org was already redirecting each suffixed address to the clean form. The addresses the Commons printed therefore cost every reader and every agent one redirect hop, and each page's canonical address pointed at an address that is not the final one. The change was made once, at the sources the pages are generated from: the document renderer, the story and advanced builder, the records and shelf builders, and the sitemap builder now form addresses without the suffix, the hand kept pages (home, come in, foundations, in life, and the missing page) were moved to the same form, and so were the page pointers in site.json and llms.txt. The pages themselves did not change. The seven proof sentences on the home page were hashed before the change and after it, and all seven stand byte for byte what they were. One small weight change rode along: two style rules on the home page that carried identical declarations were merged into one rule, and the home page stands at 29,115 bytes, down from 29,266 bytes counted before this pass. The suffixed addresses still land, because the host redirects them, and the GitHub Pages mirror serves the clean form directly, so no link shared anywhere breaks.
+
+Design check: check 2 from DESIGN.md, no banned template vocabulary on the surface: holds. This pass adds no visual pattern; it removes a suffix.
+
+Addresses inside record data stand as they are, deliberately. The source pointers stored in records.json, the adopted entries of the Index chain, and the Ground listings file were not touched: changing an address inside data is a record decision, and it is written as a proposal in the production reinvention plan kept with the working papers, beside the plan's later phases: the seven acts and the Index moving under this domain one at a time, the headers and edge pass, and the bar reduced to three destinations once the acts stand under the domain. Each of those waits for its own decision, in the open.
+
 ## October 16, 2026: the site moves to its own address, topsoilcommons.org
 
 **The Commons now stands at topsoilcommons.org, its own domain, registered today and serving the site.**

@@ -28,25 +28,25 @@ https://topsoilcommons.github.io/lumen/
 
 The record pages
 Come in: the eight doors page, each door a use in under a minute and one small act.
-https://topsoilcommons.org/come-in.html
+https://topsoilcommons.org/come-in
 Home: the seven layers, their proofs, and the doors.
 https://topsoilcommons.org/
 Foundations: findings you can run yourself, each in under a minute, and the full set of studies with their sources.
-https://topsoilcommons.org/foundations.html
+https://topsoilcommons.org/foundations
 In life: what the record means for living bodies, and what life sends back into the record.
-https://topsoilcommons.org/life.html
+https://topsoilcommons.org/life
 The Index: the Commons record in time order, every entry a claim with its ground, its hand, and its check.
 https://topsoilcommons.github.io/index/
 The Record: the whole written record on one page, the charter, the needs, the rules, the log, and the money.
-https://topsoilcommons.org/record.html
+https://topsoilcommons.org/record
 The story: where this comes from, where it stands, and where it is going, in plain words.
-https://topsoilcommons.org/story.html
+https://topsoilcommons.org/story
 Advanced: the full record, the studies as a path, and the tools that check every claim, for deep learners in any field.
-https://topsoilcommons.org/advanced.html
+https://topsoilcommons.org/advanced
 The shelf: proven work by others and by the Commons, each entry with its license checked at its source and three doors, use it, adopt it, and change it.
-https://topsoilcommons.org/shelf.html
+https://topsoilcommons.org/shelf
 Public records: what stands in the open for each need, what the Commons holds, what others hold open for anyone, and what is missing, each record with its source and its limits.
-https://topsoilcommons.org/records.html
+https://topsoilcommons.org/records
 
 Machine files
 site.json: the seven acts as data, each with its need, its proof sentence, and its links.

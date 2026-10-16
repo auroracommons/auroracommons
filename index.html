@@ -134,10 +134,10 @@
   .entry{margin:26px 0 4px;max-width:38em}
   .entry h2{margin:0 0 10px}
   .entry .entry-line{font-size:16px;margin:0 0 6px;max-width:34em}
-  .frontdoors a{display:block;border-top:1px solid var(--line);
+  .frontdoors a,.door{display:block;border-top:1px solid var(--line);
     padding:18px 0 18px 16px;margin:0;
     font-size:17px;font-weight:600;color:var(--ink);text-decoration:none}
-  .frontdoors a:hover{text-decoration:underline}
+  .frontdoors a:hover,.door:hover{text-decoration:underline}
   .stageblock{max-width:1060px;margin:0 auto;width:100%;padding:10px 20px 0}
   .today{font-size:15.5px;margin:16px 0 0;max-width:44em}
   .drawing{flex:1;display:flex;flex-direction:column;justify-content:flex-end;
@@ -198,11 +198,8 @@
   .row .links .share:hover{text-decoration:underline}
   .legend{font-size:13.5px;color:#4c4234;margin:12px 2px 18px}
 
-  /* THE DOORS */
-  .door{display:block;border-top:1px solid var(--line);
-    padding:18px 0 18px 16px;margin:0;
-    font-size:17px;font-weight:600;color:var(--ink);text-decoration:none}
-  .door:hover{text-decoration:underline}
+  /* THE DOORS: the .door rule is the one merged with .frontdoors a
+     in the floor section above; the two carried identical declarations. */
 
   /* THE RECORD: ruled lines, kept like a ledger. */
   .record{list-style:none;margin:0;padding:0}
@@ -238,7 +235,7 @@
   <nav class="commons-bar" aria-label="Topsoil Commons sites">
     <span class="wordmark"><svg class="bar-mark" viewBox="0 0 24 24" width="17" height="17" aria-hidden="true" focusable="false" style="flex:none;align-self:center;margin-right:7px"><g fill="currentColor"><rect x="4" y="2.5" width="16" height="2"/><rect x="4" y="5.5" width="16" height="2"/><rect x="4" y="8.5" width="16" height="2"/><rect x="4" y="11.5" width="4.5" height="8"/><rect x="15.5" y="11.5" width="4.5" height="8"/><rect x="2" y="20.5" width="20" height="2.2"/></g></svg>Topsoil Commons</span>
     <span class="current" aria-current="page">(you are here)</span>
-    <a href="https://topsoilcommons.org/foundations.html">Foundations</a>
+    <a href="https://topsoilcommons.org/foundations">Foundations</a>
     <a href="https://topsoilcommons.github.io/ground/">Ground</a>
     <a href="https://topsoilcommons.github.io/still/">Still</a>
     <a href="https://topsoilcommons.github.io/atlas/">Atlas</a>
@@ -255,14 +252,14 @@
       <h2>What brought you here?</h2>
       <p class="entry-line">Pick the line that sounds like you. Each door opens a use in under a minute, then one small act, if you want it. No account. No fee.</p>
       <nav class="frontdoors" aria-label="What brought you here">
-        <a href="come-in.html#door-1">I need help today</a>
-        <a href="come-in.html#door-2">I lost work, or money is tight</a>
-        <a href="come-in.html#door-3">Something is unfair, and I want it on the record</a>
-        <a href="come-in.html#door-4">I feel alone, and I want to belong</a>
-        <a href="come-in.html#door-5">My mind will not settle</a>
-        <a href="come-in.html#door-6">I want to learn something</a>
-        <a href="come-in.html#door-7">I have something to give</a>
-        <a href="come-in.html#door-8">I run something that helps people</a>
+        <a href="come-in#door-1">I need help today</a>
+        <a href="come-in#door-2">I lost work, or money is tight</a>
+        <a href="come-in#door-3">Something is unfair, and I want it on the record</a>
+        <a href="come-in#door-4">I feel alone, and I want to belong</a>
+        <a href="come-in#door-5">My mind will not settle</a>
+        <a href="come-in#door-6">I want to learn something</a>
+        <a href="come-in#door-7">I have something to give</a>
+        <a href="come-in#door-8">I run something that helps people</a>
       </nav>
     </div>
   </div>
@@ -281,7 +278,7 @@
     </div>
   </article>
     <!-- today:begin -->
-    <p class="today" id="today-line">Today, <span class="rub">October 16, 2026</span>: <span class="rub">155</span> listings for food, shelter, and health help stand checked in Ground, across <span class="rub">19</span> places, every one against its provider's own page; <span class="rub">71</span> findings stand in Foundations, each with its source named; and <span class="rub">60</span> entries stand in the public progress log. Each count can be checked where it is kept: the Ground and Foundations pages and the log linked in the record below.</p>
+    <p class="today" id="today-line">Today, <span class="rub">October 16, 2026</span>: <span class="rub">155</span> listings for food, shelter, and health help stand checked in Ground, across <span class="rub">19</span> places, every one against its provider's own page; <span class="rub">71</span> findings stand in Foundations, each with its source named; and <span class="rub">61</span> entries stand in the public progress log. Each count can be checked where it is kept: the Ground and Foundations pages and the log linked in the record below.</p>
     <!-- today:end -->
   </div>
   <nav class="drawing" aria-label="The seven layers and their proofs">
@@ -392,8 +389,8 @@
 
 <section aria-labelledby="doors-h">
   <h2 id="doors-h">The doors</h2>
-  <a class="door" href="story.html">The story: where this comes from, where it stands, where it is going.</a>
-  <a class="door" href="advanced.html">Advanced: the full record, the studies, the data, and the tools that check it.</a>
+  <a class="door" href="story">The story: where this comes from, where it stands, where it is going.</a>
+  <a class="door" href="advanced">Advanced: the full record, the studies, the data, and the tools that check it.</a>
   <a class="door" href="https://github.com/topsoilcommons/ground/issues/new?title=Check%20a%20listing">Verify one listing in Ground: your name and date keep it alive.</a>
   <a class="door" href="https://github.com/topsoilcommons/atlas/issues/new?title=Check%20a%20claim">Check one claim in Atlas: recompute its seal and log the check.</a>
   <a class="door" href="https://github.com/topsoilcommons/topsoilcommons/issues/new?template=report-an-error.md">Report one thing that is wrong: it is fixed or answered in the open.</a>
@@ -404,9 +401,9 @@
   <nav aria-label="Ways in">
     <ul class="record">
       <li><a href="https://topsoilcommons.github.io/ground/">Ground</a> and <a href="https://topsoilcommons.github.io/still/">Still</a>, if you need help today. Food, shelter, and health help near you, each listing with its check date; and a quiet tool to steady your mind.</li>
-      <li><a href="come-in.html">Come in</a>, if you want to contribute. Every act states its minutes and what it changes, and lands in the public ledger under your name, a stage name, or no name, as you choose.</li>
-      <li><a href="records.html">Public records</a>, if you run an organization or a government. What stands in the open for every need, the governance documents, and the registry. A place is given, never bought.</li>
-      <li><a href="funds.html">Funds</a>, if you support or fund work like this. The intended host is Open Source Collective; an application was submitted on October 16, 2026 and is under review; no host is appointed and no funds have been received. Money moves only through the host, never to a personal account.</li>
+      <li><a href="come-in">Come in</a>, if you want to contribute. Every act states its minutes and what it changes, and lands in the public ledger under your name, a stage name, or no name, as you choose.</li>
+      <li><a href="records">Public records</a>, if you run an organization or a government. What stands in the open for every need, the governance documents, and the registry. A place is given, never bought.</li>
+      <li><a href="funds">Funds</a>, if you support or fund work like this. The intended host is Open Source Collective; an application was submitted on October 16, 2026 and is under review; no host is appointed and no funds have been received. Money moves only through the host, never to a personal account.</li>
       <li><a href="https://topsoilcommons.github.io/index/">The Index</a>, if you check claims. Every entry a claim with its ground, its hand, and its check, in time order; recompute a seal yourself and file what you get.</li>
     </ul>
   </nav>
@@ -416,10 +413,10 @@
   <h2 id="record-h">The record</h2>
   <nav aria-label="The public record">
     <ul class="record">
-      <li><a href="foundations.html">Foundations</a> Findings you can run yourself, each in under a minute.</li>
-      <li><a href="life.html">In life: what the record means for living bodies</a></li>
+      <li><a href="foundations">Foundations</a> Findings you can run yourself, each in under a minute.</li>
+      <li><a href="life">In life: what the record means for living bodies</a></li>
       <li><a href="https://topsoilcommons.github.io/index/">The Index: the Commons record in time order, each entry with its check</a></li>
-      <li><a href="record.html">The Record</a> The whole written record on one page: the charter, the needs, the rules, the log, and the money.</li>
+      <li><a href="record">The Record</a> The whole written record on one page: the charter, the needs, the rules, the log, and the money.</li>
     </ul>
   </nav>
 </section>

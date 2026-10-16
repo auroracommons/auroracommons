@@ -172,8 +172,8 @@ def shell(title, orientation, body, tech_lines):
 </div>
 </body>
 </html>
-""" % (title, desc, SITE, CURRENT_PAGE, title, desc, SITE,
-       CURRENT_PAGE, title, desc, css, rd.SKIP_LINK,
+""" % (title, desc, SITE, rd.url_of(CURRENT_PAGE), title, desc, SITE,
+       rd.url_of(CURRENT_PAGE), title, desc, css, rd.SKIP_LINK,
        rd.bar(title), title, orientation, body, tech, rd.FOOTER)
 
 

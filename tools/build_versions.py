@@ -334,8 +334,8 @@ def shell(title, orientation, body, tech_lines):
 </div>
 </body>
 </html>
-""" % (title, desc, SITE, CURRENT_PAGE, title, desc, SITE,
-       CURRENT_PAGE, title, desc, css, rd.SKIP_LINK,
+""" % (title, desc, SITE, rd.url_of(CURRENT_PAGE), title, desc, SITE,
+       rd.url_of(CURRENT_PAGE), title, desc, css, rd.SKIP_LINK,
        rd.bar(title), title, orientation, body, tech, rd.FOOTER)
 
 
@@ -418,7 +418,7 @@ def build_story():
     out.append("<p>%d findings stand in Foundations, across %d fields "
                "of study, each with its source named. %d of them can "
                "be run right on the page, each in under a minute: "
-               '<a href="foundations.html">run the findings</a>.</p>'
+               '<a href="foundations">run the findings</a>.</p>'
                % (findings, len(domains), len(demos)))
     out.append("<p>The Index keeps the record in time order: %d "
                "entries stand in it today, %d of them verified and %d "
@@ -429,7 +429,7 @@ def build_story():
     out.append("<p>The whole written record stands open: the charter, "
                "the needs map, the rules, the money, and a progress "
                "log of %d dated entries, with the failures left in. "
-               '<a href="record.html">Read the record</a>.</p>'
+               '<a href="record">Read the record</a>.</p>'
                % entries)
 
     # The proposed future.
@@ -445,10 +445,10 @@ def build_story():
 
     # The doors onward.
     out.append("<h2>Begin</h2>")
-    out.append('<p class="doorline">Start with one: <a href="index.html'
+    out.append('<p class="doorline">Start with one: <a href="https://topsoilcommons.org/'
                '#layer-0">read the first proof on the home page</a>, '
                "then open the See it link beside it.</p>")
-    out.append('<p>For the deeper room: <a href="advanced.html">'
+    out.append('<p>For the deeper room: <a href="advanced">'
                "Advanced</a>, the full record, the studies, the data, "
                "and the tools that check it.</p>")
 
@@ -461,7 +461,7 @@ def build_story():
         "their proofs, "
         '<a href="foundations.json">foundations.json</a> and the '
         "Ground totals recorded in "
-        '<a href="life.html">In life</a> for the present counts, and '
+        '<a href="life">In life</a> for the present counts, and '
         '<a href="%sPROGRESS.md">PROGRESS.md</a> for the log and '
         "Index counts.</p>" % (BLOB, BLOB),
     ]
@@ -496,25 +496,27 @@ def build_advanced():
     out.append('<section id="record">')
     out.append("<h2>The written record, in reading order</h2>")
     out.append("<p>The whole written record stands on one page, "
-               '<a href="record.html">The Record</a>, and document by '
+               '<a href="record">The Record</a>, and document by '
                "document below, in the order the Record reads them. "
                "Each document also stands on its own page, and its "
                "source is kept on GitHub.</p>")
     out.append('<ul class="plain">')
     for md_name, plain_name, slug in rd.RECORD_ORDER:
         own = rd.PAGE_OF.get(md_name)
-        line = ('<a href="record.html#%s">%s</a> (%s)'
+        if own:
+            own = rd.url_of(own)
+        line = ('<a href="record#%s">%s</a> (%s)'
                 % (slug, plain_name, md_name))
         if own:
             line += ', also <a href="%s">on its own page</a>' % own
         line += (', <a href="%s%s">source on GitHub</a>.'
                  % (BLOB, md_name))
         out.append("<li>%s</li>" % line)
-    out.append('<li><a href="shelf.html">The shelf</a>: proven work '
+    out.append('<li><a href="shelf">The shelf</a>: proven work '
                'by others and by the Commons, each entry with its '
                'license checked at its source and three doors, use '
                'it, adopt it, and change it.</li>')
-    out.append('<li><a href="records.html">Public records</a>: '
+    out.append('<li><a href="records">Public records</a>: '
                'what stands in the open for each need, what the '
                'Commons holds, what others hold open for anyone, '
                'and what is missing, each record with its source '
@@ -535,7 +537,7 @@ def build_advanced():
                "minute:</p>")
     out.append('<ul class="plain">')
     for demo_id, demo_title in demos:
-        out.append('<li><a href="foundations.html#%s">%s</a></li>'
+        out.append('<li><a href="foundations#%s">%s</a></li>'
                    % (demo_id, esc(demo_title)))
     out.append("</ul>")
     out.append("<p>The fields, and where to begin in each:</p>")
@@ -544,7 +546,7 @@ def build_advanced():
         records = [r for r in data if r["domain"] == domain]
         first = records[0]
         out.append(
-            '<li><a href="foundations.html#%s">%s</a>: %d %s. Begin '
+            '<li><a href="foundations#%s">%s</a>: %d %s. Begin '
             'with <a href="%s">%s</a> (%s, %s).</li>'
             % (domain_anchor(domain, anchors), esc(domain),
                len(records), "study" if len(records) == 1 else "studies",
@@ -563,7 +565,7 @@ def build_advanced():
     out.append("<p>The timeline opens with the long arc: farming's ten "
                "independent origins and the milestones each harvest "
                "made possible. It stands at the head of "
-               '<a href="record.html#record-timeline">The Record</a> '
+               '<a href="record#record-timeline">The Record</a> '
                "and in full in "
                '<a href="%sTIMELINE.md">TIMELINE.md</a>.</p>' % BLOB)
     out.append("<p>%s</p>" % esc(timeline_ranges_note(timeline)))
@@ -573,7 +575,7 @@ def build_advanced():
                "argued points. Two claims were left out for lack of "
                "support, and the log says so: an Indus origin of "
                "farming, and an early date for enset. The entry stands "
-               'in <a href="progress.html">the progress log</a>.</p>'
+               'in <a href="progress">the progress log</a>.</p>'
                % sources)
     out.append("</section>")
 
@@ -588,18 +590,18 @@ def build_advanced():
     out.append('<ul class="plain">')
     out.append(
         '<li>Money and the body. The Kenya cash transfer finding, in '
-        '<a href="foundations.html#%s">Poverty and material '
+        '<a href="foundations#%s">Poverty and material '
         'security</a>, measures the floor of the body directly: '
         'money with no conditions raised what households consumed. '
-        '<a href="foundations.html#%s">Run it</a>. The tool at that '
+        '<a href="foundations#%s">Run it</a>. The tool at that '
         'layer is <a href="%s">Ground</a>.</li>'
         % (domain_anchor("Poverty and material security", anchors),
            demo["Cash transfers, Kenya"], site["acts"][0]["see"]))
     out.append(
         '<li>Printed facts and shared truth. The Uganda report cards '
-        'finding, in <a href="foundations.html#%s">Governance and '
+        'finding, in <a href="foundations#%s">Governance and '
         'democracy</a>, shows a community scorecard moving clinics '
-        'and schools. <a href="foundations.html#%s">Run it</a>. '
+        'and schools. <a href="foundations#%s">Run it</a>. '
         '<a href="%s">Graph</a> works the same bet at the layer of '
         'shared truth, and the Index files claims the same way, with '
         'their checks attached.</li>'
@@ -607,10 +609,10 @@ def build_advanced():
            demo["Citizen report cards, Uganda"], site["acts"][4]["see"]))
     out.append(
         '<li>Help and learning. The study of AI help and novices, in '
-        '<a href="foundations.html#%s">Artificial intelligence and '
+        '<a href="foundations#%s">Artificial intelligence and '
         'human computer interaction</a>, found the least practiced '
         'gained the most from the same help. '
-        '<a href="foundations.html#%s">Run it</a>. '
+        '<a href="foundations#%s">Run it</a>. '
         '<a href="%s">Atlas</a> is built on that shape at the layer '
         'of learning: one claim at a time, its proof shown.</li>'
         % (domain_anchor("Artificial intelligence and human computer "
@@ -618,8 +620,8 @@ def build_advanced():
            demo["AI help and novices"], site["acts"][2]["see"]))
     out.append(
         '<li>Speed and truth. False news travels faster than true '
-        'news, in <a href="foundations.html#%s">Truth and shared '
-        'knowledge</a>. <a href="foundations.html#%s">Run the '
+        'news, in <a href="foundations#%s">Truth and shared '
+        'knowledge</a>. <a href="foundations#%s">Run the '
         'race</a>. The Index exists in the shape of that finding: '
         'one timeline for everyone, claims before verdicts, '
         'corrections added and never quietly edited.</li>'
@@ -627,9 +629,9 @@ def build_advanced():
            demo["False news travels faster"]))
     out.append(
         '<li>Ties and belonging. Connection and survival, in '
-        '<a href="foundations.html#%s">Belonging and social '
+        '<a href="foundations#%s">Belonging and social '
         'connection</a>, ties the strength of a person\'s ties to '
-        'living longer. <a href="foundations.html#%s">Run it</a>. '
+        'living longer. <a href="foundations#%s">Run it</a>. '
         '<a href="%s">Cohort</a> serves that layer, and '
         '<a href="%s">Still</a> serves the mind that carries it.</li>'
         % (domain_anchor("Belonging and social connection", anchors),
@@ -712,10 +714,10 @@ def build_advanced():
                '<a href="%stopsoilcommons/tree/main/tools">tools</a> '
                'of the record repository.</li>' % (GH, GH))
     out.append('<li>Taking part: the doors on the '
-               '<a href="index.html">home page</a> are sized in '
+               '<a href="https://topsoilcommons.org/">home page</a> are sized in '
                'minutes and credited in the open; the rules stand in '
-               '<a href="open-table.html">The open table</a> and '
-               '<a href="participation.html">Participation</a>.</li>')
+               '<a href="open-table">The open table</a> and '
+               '<a href="participation">Participation</a>.</li>')
     out.append("</ul>")
     out.append("</section>")
 
@@ -727,14 +729,14 @@ def build_advanced():
     out.append("<li>Money: the funds ledger opened on %s, and its one "
                "entry records %s in, no funds received yet, and no "
                "host appointed. Every later amount joins it there. "
-               '<a href="funds.html">Funds</a> and '
-               '<a href="funds-ledger.html">the funds ledger</a>.</li>'
+               '<a href="funds">Funds</a> and '
+               '<a href="funds-ledger">the funds ledger</a>.</li>'
                % (fdate, famount))
     if interactions_empty():
         out.append("<li>People: the doors for taking part were wired "
                    "on October 15, 2026, and no outside interaction "
                    "stands answered yet. The log of them stands open "
-                   'and empty: <a href="interactions.html">'
+                   'and empty: <a href="interactions">'
                    "Interactions</a>.</li>")
     if "Spanish staged, awaiting a fluent human check" in timeline:
         out.append("<li>Languages: Still stands in English. Its "
@@ -752,7 +754,7 @@ def build_advanced():
     out.append("</ul>")
     out.append("</section>")
 
-    out.append('<p>For the plain telling: <a href="story.html">The '
+    out.append('<p>For the plain telling: <a href="story">The '
                "story</a>, where this comes from, where it stands, "
                "and where it is going.</p>")
 
