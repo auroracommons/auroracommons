@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Advanced</title>
+<meta name="theme-color" content="#fbfaf7">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Topsoil Commons">
+<meta property="og:title" content="Advanced">
+<meta property="og:url" content="https://topsoilcommons.github.io/topsoilcommons/advanced.html">
+<meta property="og:image" content="https://topsoilcommons.github.io/topsoilcommons/assets/aurora-logo.png">
+<meta property="og:image:width" content="1600">
+<meta property="og:image:height" content="1600">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Advanced">
+<meta name="twitter:image" content="https://topsoilcommons.github.io/topsoilcommons/assets/aurora-logo.png">
+<style>
+  :root{
+    --bg:#fbfaf7; --ink:#1b1e23; --soft:#5a6068; --line:#e4e0d6;
+    --accent:#1b1e23; --rub:#9e2b25;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.5;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:980px;margin:0 auto;padding:0 20px}
+  header{padding:28px 0 4px}
+  h1{font-size:44px;letter-spacing:-1.2px;margin:14px 0 8px;font-weight:800;line-height:1.12}
+  .source{font-size:13px;color:var(--soft);margin:0 0 10px}
+  .source a{color:var(--accent);text-decoration:none;font-weight:600}
+  .source a:hover{text-decoration:underline}
+  .orientation{font-size:15px;margin:0 0 4px}
+  .doc{padding:18px 0 4px;max-width:760px}
+  .doc p{font-size:16px;margin:0 0 14px}
+  .doc h2{font-size:25px;letter-spacing:-.5px;margin:34px 0 10px;font-weight:800}
+  .doc h3{font-size:19px;letter-spacing:-.3px;margin:26px 0 8px;font-weight:800}
+  .doc h4{font-size:16px;margin:22px 0 8px;font-weight:800}
+  .doc ul,.doc ol{font-size:16px;margin:0 0 14px;padding-left:24px}
+  .doc li{margin:0 0 6px}
+  .doc a{color:var(--accent);font-weight:600}
+  .doc table{border-collapse:collapse;width:100%;font-size:15px;margin:0 0 16px}
+  .doc th,.doc td{border-top:1px solid var(--line);padding:9px 12px 9px 0;text-align:left;vertical-align:top}
+  .doc thead th{border-top:0}
+  .doc code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.92em}
+  .doc blockquote{margin:0 0 14px;padding-left:16px;border-left:3px solid var(--line)}
+  .tech{border-top:1px solid var(--line);margin-top:36px;padding-top:4px}
+  .contents{font-size:16px;margin:0 0 14px;padding-left:24px}
+  .contents li{margin:0 0 6px}
+  section.record-doc{border-top:1px solid var(--line);margin-top:36px;padding-top:4px}
+  footer{padding:54px 0 62px;margin-top:46px;border-top:1px solid var(--line);
+    color:var(--soft);font-size:14px}
+  footer a{color:var(--accent);text-decoration:none;font-weight:600}
+  .endline{text-align:center;font-size:15px;color:var(--ink);margin:0;padding:0 0 54px}
+  .commons-bar{display:flex;flex-wrap:wrap;gap:4px 18px;align-items:baseline;max-width:980px;margin:0 auto;padding:10px 20px 8px;font-size:14px;border-bottom:1px solid var(--line);position:sticky;top:0;background:var(--bg)}
+  .commons-bar .brand{font-weight:600;color:var(--ink);text-decoration:none;margin-right:4px}
+  .commons-bar a{color:var(--ink);text-decoration:none;display:inline-flex;align-items:center;min-height:44px}
+  .commons-bar a:hover{text-decoration:underline}
+  .commons-bar .current{font-weight:700;display:inline-flex;align-items:center;min-height:44px}
+  .skip{position:absolute;left:12px;top:-60px;background:var(--bg);color:var(--ink);padding:10px 12px;font-size:14px}
+  .skip:focus{top:8px}
+  a:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
+  [id]{scroll-margin-top:72px}
+
+  .arc{display:flex;flex-direction:column-reverse;max-width:760px;margin:10px 0 4px;border-bottom:4px solid #1b1e23}
+  .arc .band{border-top:1px solid var(--line);padding:10px 12px;font-size:15px}
+  .arc .band .when{font-weight:700}
+  .arc .past{background:#ece7d8}
+  .arc .present{background:#f4f1e8}
+  .arc .future{background:#fdfcf9}
+  .arc .floor{font-size:13.5px;color:var(--soft);padding:4px 12px 8px}
+  .actline{border-top:1px solid var(--line);padding:12px 0 2px}
+  .actline .actname{font-weight:700;margin:0 0 4px}
+  .actline p{margin:0 0 8px}
+  ul.plain{font-size:16px;margin:0 0 14px;padding-left:24px}
+  ul.plain li{margin:0 0 8px}
+  .doorline{font-size:17px;font-weight:600}
+  @media (max-width:560px){h1{font-size:32px}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to the content</a>
+<nav class="commons-bar" aria-label="Topsoil Commons sites">
+  <a class="brand" href="https://topsoilcommons.github.io/topsoilcommons/"><svg class="bar-mark" viewBox="0 0 24 24" width="17" height="17" aria-hidden="true" focusable="false" style="flex:none;align-self:center;margin-right:7px"><g fill="currentColor"><rect x="4" y="2.5" width="16" height="2"/><rect x="4" y="5.5" width="16" height="2"/><rect x="4" y="8.5" width="16" height="2"/><rect x="4" y="11.5" width="4.5" height="8"/><rect x="15.5" y="11.5" width="4.5" height="8"/><rect x="2" y="20.5" width="20" height="2.2"/></g></svg>Topsoil Commons</a>
+  <span class="current" aria-current="page">Advanced (you are here)</span>
+  <a href="https://topsoilcommons.github.io/topsoilcommons/foundations.html">Foundations</a>
+  <a href="https://topsoilcommons.github.io/ground/">Ground</a>
+  <a href="https://topsoilcommons.github.io/still/">Still</a>
+  <a href="https://topsoilcommons.github.io/atlas/">Atlas</a>
+  <a href="https://topsoilcommons.github.io/cohort/">Cohort</a>
+  <a href="https://topsoilcommons.github.io/graph/">Graph</a>
+  <a href="https://topsoilcommons.github.io/machine/">Machine</a>
+  <a href="https://topsoilcommons.github.io/lumen/">Lumen</a>
+</nav>
+<div class="wrap">
+<header>
+  <h1>Advanced</h1>
+  <p class="orientation">For deep learners in any field: the full record, the studies gathered as a path to walk, and the tools that check every claim, gathered in one room.</p>
+</header>
+<main class="doc" id="main">
+<h2>Contents</h2>
+<ul class="contents">
+<li><a href="#record">The written record, in reading order</a></li>
+<li><a href="#studies">Foundations: the studies as a path</a></li>
+<li><a href="#long-arc">The long arc, with its sources</a></li>
+<li><a href="#connections">Where the fields meet</a></li>
+<li><a href="#check">Check it the way a scholar would</a></li>
+<li><a href="#builders">For builders: data, code, and the agent map</a></li>
+<li><a href="#thin">Where the record is thin</a></li>
+</ul>
+<section id="record">
+<h2>The written record, in reading order</h2>
+<p>The whole written record stands on one page, <a href="record.html">The Record</a>, and document by document below, in the order the Record reads them. Each document also stands on its own page, and its source is kept on GitHub.</p>
+<ul class="plain">
+<li><a href="record.html#record-timeline">The long arc</a> (TIMELINE.md), <a href="https://github.com/topsoilcommons/topsoilcommons/blob/main/TIMELINE.md">source on GitHub</a>.</li>
+<li><a href="record.html#record-ecosystem">The charter</a> (ECOSYSTEM.md), also <a href="ecosystem.html">on its own page</a>, <a href="https://github.com/topsoilcommons/topsoilcommons/blob/main/ECOSYSTEM.md">source on GitHub</a>.</li>
+<li><a href="record.html#record-needs">The needs map</a> (NEEDS.md), also <a href="needs.html">on its own page</a>, <a href="https://github.com/topsoilcommons/topsoilcommons/blob/main/NEEDS.md">source on GitHub</a>.</li>
+<li><a href="record.html#record-democracy">Democracy</a> (DEMOCRACY.md), also <a href="democracy.html">on its own page</a>, <a href="https://github.com/topsoilcommons/topsoilcommons/blob/main/DEMOCRACY.md">source on GitHub</a>.</li>
+<li><a href="record.html#record-participation">Participation</a> (PARTICIPATION.md), also <a href="participation.html">on its own page</a>, <a href="https://github.com/topsoilcommons/topsoilcommons/blob/main/PARTICIPATION.md">source on GitHub</a>.</li>
+<li><a href="record.html#record-registry">The registry</a> (REGISTRY.md), also <a href="registry.html">on its own page</a>, <a href="https://github.com/topsoilcommons/topsoilcommons/blob/main/REGISTRY.md">source on GitHub</a>.</li>
+<li><a href="record.html#record-open-table">The open table</a> (OPEN_TABLE.md), also <a href="open-table.html">on its own page</a>, <a href="https://github.com/topsoilcommons/topsoilcommons/blob/main/OPEN_TABLE.md">source on GitHub</a>.</li>
+<li><a href="record.html#record-ledger">The ledger</a> (LEDGER.md), also <a href="ledger.html">on its own page</a>, <a href="https://github.com/topsoilcommons/topsoilcommons/blob/main/LEDGER.md">source on GitHub</a>.</li>
+<li><a href="record.html#record-intentions">Intentions</a> (INTENTIONS.md), also <a href="intentions.html">on its own page</a>, <a href="https://github.com/topsoilcommons/topsoilcommons/blob/main/INTENTIONS.md">source on GitHub</a>.</li>
+<li><a href="record.html#record-progress">The progress log</a> (PROGRESS.md), also <a href="progress.html">on its own page</a>, <a href="https://github.com/topsoilcommons/topsoilcommons/blob/main/PROGRESS.md">source on GitHub</a>.</li>
+<li><a href="record.html#record-interactions">Interactions</a> (INTERACTIONS.md), also <a href="interactions.html">on its own page</a>, <a href="https://github.com/topsoilcommons/topsoilcommons/blob/main/INTERACTIONS.md">source on GitHub</a>.</li>
+<li><a href="record.html#record-funds">Funds</a> (FUNDS.md), also <a href="funds.html">on its own page</a>, <a href="https://github.com/topsoilcommons/topsoilcommons/blob/main/FUNDS.md">source on GitHub</a>.</li>
+<li><a href="record.html#record-funds-ledger">The funds ledger</a> (FUNDS_LEDGER.md), also <a href="funds-ledger.html">on its own page</a>, <a href="https://github.com/topsoilcommons/topsoilcommons/blob/main/FUNDS_LEDGER.md">source on GitHub</a>.</li>
+</ul>
+</section>
+<section id="studies">
+<h2>Foundations: the studies as a path</h2>
+<p>Foundations holds 47 studies across 24 fields of study, each one opened and read at its source before it was filed, and each printed with its source beside it. Walk it as a curriculum: begin with a demonstration you can run, then read the field it came from.</p>
+<p>Five findings can be run, each in under a minute:</p>
+<ul class="plain">
+<li><a href="foundations.html#demo-cash">Cash transfers, Kenya</a></li>
+<li><a href="foundations.html#demo-race">False news travels faster</a></li>
+<li><a href="foundations.html#demo-ties">Connection and survival</a></li>
+<li><a href="foundations.html#demo-cards">Citizen report cards, Uganda</a></li>
+<li><a href="foundations.html#demo-ai">AI help and novices</a></li>
+</ul>
+<p>The fields, and where to begin in each:</p>
+<ul class="plain">
+<li><a href="foundations.html#poverty-and-material-security">Poverty and material security</a>: 2 studies. Begin with <a href="https://doi.org/10.1093/qje/qjw025">The Short-term Impact of Unconditional Cash Transfers to the Poor: Experimental Evidence from Kenya</a> (Quarterly Journal of Economics, 2016).</li>
+<li><a href="foundations.html#economics-and-incentives">Economics and incentives</a>: 2 studies. Begin with <a href="https://www.aeaweb.org/articles?id=10.1257/aer.90.5.1346">Performance Pay and Productivity</a> (American Economic Review, 2000).</li>
+<li><a href="foundations.html#governance-and-democracy">Governance and democracy</a>: 2 studies. Begin with <a href="https://reliefweb.int/report/uganda/power-people-evidence-randomized-field-experiment-community-based-monitoring-project">Power to the People: Evidence from a Randomized Field Experiment on Community-Based Monitoring in Uganda</a> (Quarterly Journal of Economics, 2009).</li>
+<li><a href="foundations.html#health-and-the-body">Health and the body</a>: 2 studies. Begin with <a href="https://pubmed.ncbi.nlm.nih.gov/27063997/">The Association Between Income and Life Expectancy in the United States, 2001-2014</a> (JAMA, 2016).</li>
+<li><a href="foundations.html#mind-and-mental-health">Mind and mental health</a>: 2 studies. Begin with <a href="https://pubmed.ncbi.nlm.nih.gov/21071660/">A Wandering Mind Is an Unhappy Mind</a> (Science, 2010).</li>
+<li><a href="foundations.html#meaning-values-and-flourishing">Meaning, values, and human flourishing</a>: 2 studies. Begin with <a href="https://midus.wisc.edu/wp-content/uploads/2024/04/1370.pdf">Purpose in Life as a Predictor of Mortality Across Adulthood</a> (Psychological Science, 2014).</li>
+<li><a href="foundations.html#learning-and-education">Learning and education</a>: 2 studies. Begin with <a href="https://www.pnas.org/doi/10.1073/pnas.1319030111">Active Learning Increases Student Performance in Science, Engineering, and Mathematics</a> (Proceedings of the National Academy of Sciences, 2014).</li>
+<li><a href="foundations.html#language-and-communication">Language and communication</a>: 2 studies. Begin with <a href="https://doi.org/10.1002/acp.1178">Consequences of Erudite Vernacular Utilized Irrespective of Necessity: Problems with Using Long Words Needlessly</a> (Applied Cognitive Psychology, 2006).</li>
+<li><a href="foundations.html#artificial-intelligence-and-human-computer-interaction">Artificial intelligence and human computer interaction</a>: 2 studies. Begin with <a href="https://www.science.org/doi/10.1126/science.adh2586">Experimental Evidence on the Productivity Effects of Generative Artificial Intelligence</a> (Science, 2023).</li>
+<li><a href="foundations.html#belonging-and-social-connection">Belonging and social connection</a>: 2 studies. Begin with <a href="https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.1000316">Social Relationships and Mortality Risk: A Meta-analytic Review</a> (PLOS Medicine, 2010).</li>
+<li><a href="foundations.html#cooperation-and-collective-action">Cooperation and collective action</a>: 2 studies. Begin with <a href="http://www.matchism.org/refs/Fehr_2002_AtruisticPunishment.pdf">Altruistic Punishment in Humans</a> (Nature, 2002).</li>
+<li><a href="foundations.html#truth-and-shared-knowledge">Truth and shared knowledge</a>: 2 studies. Begin with <a href="https://news.mit.edu/2018/study-twitter-false-news-travels-faster-true-stories-0308">The Spread of True and False News Online</a> (Science, 2018).</li>
+<li><a href="foundations.html#food-systems-and-agriculture">Food systems and agriculture</a>: 2 studies. Begin with <a href="http://www.pnas.org/content/108/50/20260.abstract">Global food demand and the sustainable intensification of agriculture</a> (Proceedings of the National Academy of Sciences, 2011).</li>
+<li><a href="foundations.html#water-and-sanitation">Water and sanitation</a>: 2 studies. Begin with <a href="https://www.thelancet.com/journals/laninf/article/PIIS1473-3099(04)01253-8/abstract">Water, sanitation, and hygiene interventions to reduce diarrhoea in less developed countries: a systematic review and meta-analysis</a> (The Lancet Infectious Diseases, 2005).</li>
+<li><a href="foundations.html#housing-and-homelessness">Housing and homelessness</a>: 2 studies. Begin with <a href="https://doi.org/10.1176/appi.ps.201400587">A Multiple-City RCT of Housing First With Assertive Community Treatment for Homeless Canadians With Serious Mental Illness</a> (Psychiatric Services, 2016).</li>
+<li><a href="foundations.html#energy-access">Energy access</a>: 2 studies. Begin with <a href="https://www.aeaweb.org/articles?id=10.1257/aer.101.7.3078">The Effects of Rural Electrification on Employment: New Evidence from South Africa</a> (American Economic Review, 2011).</li>
+<li><a href="foundations.html#early-childhood">Early childhood</a>: 2 studies. Begin with <a href="https://www.science.org/doi/10.1126/science.1251178">Labor market returns to an early childhood stimulation intervention in Jamaica</a> (Science, 2014).</li>
+<li><a href="foundations.html#aging">Aging</a>: 2 studies. Begin with <a href="https://journals.sagepub.com/doi/10.1177/1745691614568352">Loneliness and Social Isolation as Risk Factors for Mortality: A Meta-Analytic Review</a> (Perspectives on Psychological Science, 2015).</li>
+<li><a href="foundations.html#disability-and-inclusion">Disability and inclusion</a>: 2 studies. Begin with <a href="https://www.who.int/news/item/29-10-2013-new-world-report-shows-more-than-1-billion-people-with-disabilities-face-substantial-barriers-in-their-daily-lives">World report on disability</a> (World Health Organization and World Bank report, 2011).</li>
+<li><a href="foundations.html#digital-access">Digital access</a>: 2 studies. Begin with <a href="https://doi.org/10.1162/qjec.122.3.879">The Digital Provide: Information (Technology), Market Performance, and Welfare in the South Indian Fisheries Sector</a> (The Quarterly Journal of Economics, 2007).</li>
+<li><a href="foundations.html#law-and-justice">Law and justice</a>: 2 studies. Begin with <a href="https://www.aeaweb.org/articles?id=10.1257/aer.20161503">The Effects of Pretrial Detention on Conviction, Future Crime, and Employment: Evidence from Randomly Assigned Judges</a> (American Economic Review, 2018).</li>
+<li><a href="foundations.html#environment-and-climate-adaptation">Environment and climate adaptation</a>: 2 studies. Begin with <a href="https://www.science.org/doi/10.1126/science.1204531">Climate Trends and Global Crop Production Since 1980</a> (Science, 2011).</li>
+<li><a href="foundations.html#work-and-livelihoods">Work and livelihoods</a>: 1 study. Begin with <a href="https://www.science.org/doi/10.1126/science.1260799">A multifaceted program causes lasting progress for the very poor: Evidence from six countries</a> (Science, 2015).</li>
+<li><a href="foundations.html#migration-and-refuge">Migration and refuge</a>: 2 studies. Begin with <a href="https://doi.org/10.1162/rest_a_00776">The Place Premium: Bounding the Price Equivalent of Migration Barriers</a> (The Review of Economics and Statistics, 2019).</li>
+</ul>
+<p>The corpus itself is a data file, <a href="foundations.json">foundations.json</a>, so a learner or a machine can take the whole set away and work on it.</p>
+</section>
+<section id="long-arc">
+<h2>The long arc, with its sources</h2>
+<p>The timeline opens with the long arc: farming's ten independent origins and the milestones each harvest made possible. It stands at the head of <a href="record.html#record-timeline">The Record</a> and in full in <a href="https://github.com/topsoilcommons/topsoilcommons/blob/main/TIMELINE.md">TIMELINE.md</a>.</p>
+<p>Every span here is a range because the scholarship gives ranges. These were slow processes, spread over centuries of trying, not single years with a date on them, and the beginnings are still argued over. Ethiopia's row is the least settled of the ten.</p>
+<p>The research behind it opened 30 sources, peer reviewed papers, university publications, and museum and heritage records among them, and the notes name the argued points. Two claims were left out for lack of support, and the log says so: an Indus origin of farming, and an early date for enset. The entry stands in <a href="progress.html">the progress log</a>.</p>
+</section>
+<section id="connections">
+<h2>Where the fields meet</h2>
+<p>The Commons draws a few connections itself, between a finding in one field and the layer of need it speaks to. Each stands open to correction like everything else here.</p>
+<ul class="plain">
+<li>Money and the body. The Kenya cash transfer finding, in <a href="foundations.html#poverty-and-material-security">Poverty and material security</a>, measures the floor of the body directly: money with no conditions raised what households consumed. <a href="foundations.html#demo-cash">Run it</a>. The tool at that layer is <a href="https://topsoilcommons.github.io/ground/">Ground</a>.</li>
+<li>Printed facts and shared truth. The Uganda report cards finding, in <a href="foundations.html#governance-and-democracy">Governance and democracy</a>, shows a community scorecard moving clinics and schools. <a href="foundations.html#demo-cards">Run it</a>. <a href="https://topsoilcommons.github.io/graph/">Graph</a> works the same bet at the layer of shared truth, and the Index files claims the same way, with their checks attached.</li>
+<li>Help and learning. The study of AI help and novices, in <a href="foundations.html#artificial-intelligence-and-human-computer-interaction">Artificial intelligence and human computer interaction</a>, found the least practiced gained the most from the same help. <a href="foundations.html#demo-ai">Run it</a>. <a href="https://topsoilcommons.github.io/atlas/">Atlas</a> is built on that shape at the layer of learning: one claim at a time, its proof shown.</li>
+<li>Speed and truth. False news travels faster than true news, in <a href="foundations.html#truth-and-shared-knowledge">Truth and shared knowledge</a>. <a href="foundations.html#demo-race">Run the race</a>. The Index exists in the shape of that finding: one timeline for everyone, claims before verdicts, corrections added and never quietly edited.</li>
+<li>Ties and belonging. Connection and survival, in <a href="foundations.html#belonging-and-social-connection">Belonging and social connection</a>, ties the strength of a person's ties to living longer. <a href="foundations.html#demo-ties">Run it</a>. <a href="https://topsoilcommons.github.io/cohort/">Cohort</a> serves that layer, and <a href="https://topsoilcommons.github.io/still/">Still</a> serves the mind that carries it.</li>
+</ul>
+<p>Where the record disagrees with itself, both readings stand. In the Index, one early Graph figure stands filed as corrected, and its correction stands in its own entry beside it, each with its source and its hand. Nothing here is quietly edited; a fix is a new entry. <a href="https://topsoilcommons.github.io/index/">See the pair in the Index</a>.</p>
+</section>
+<section id="check">
+<h2>Check it the way a scholar would</h2>
+<p>Every claim in this record carries three things: its ground, the source it stands on; its hand, the named person or people who stand behind it; and its check, the way a stranger can test it again and find the same result. The methods and measures stand one layer down from every claim, so a learner in any field can go as deep as the record goes.</p>
+<ul class="plain">
+<li>The Index: its format, its six states, and its validator are kept in <a href="https://github.com/topsoilcommons/index">the Index repository</a>, and the entries themselves stand in the <a href="https://topsoilcommons.github.io/index/">viewer</a>, each with its seal.</li>
+<li>Atlas: one claim stands on its page with its full proof, the same on phone, watch, voice, and wall: <a href="https://topsoilcommons.github.io/atlas/">the Proof screen</a>.</li>
+<li>Graph: its scores come from a hand labeled set of documents, and the misses are published beside the scores, in <a href="https://github.com/topsoilcommons/graph">its repository</a> and on <a href="https://topsoilcommons.github.io/graph/">its page</a>.</li>
+<li>Machine: its gradient checks and its two benchmark runs are recorded in <a href="https://github.com/topsoilcommons/machine">its repository</a>, with the numbers counted by the code.</li>
+<li>Lumen: its refusal tests run over the real texts of its two exhibits, and the results stand in <a href="https://github.com/topsoilcommons/lumen">its repository</a>.</li>
+<li>Still: it collects nothing and calls nothing; its one measure, the pacer timing runs, stands committed in <a href="https://github.com/topsoilcommons/still">its repository</a>, labeled as builder test runs.</li>
+<li>Ground: every listing carries its check date and its expiry, and past expiry a listing shows as stale, never silently: <a href="https://topsoilcommons.github.io/ground/">the board</a> and <a href="https://github.com/topsoilcommons/ground">its repository</a>.</li>
+</ul>
+</section>
+<section id="builders">
+<h2>For builders: data, code, and the agent map</h2>
+<p>One section among the learning sections, for those who build: the data files, the code, and the map written for agents.</p>
+<ul class="plain">
+<li>Data: <a href="site.json">site.json</a>, the acts in machine readable form; <a href="foundations.json">foundations.json</a>, the 47 studies; <a href="https://topsoilcommons.github.io/ground/listings.json">listings.json</a>, Ground's listings with their check dates.</li>
+<li>The agent map: <a href="llms.txt">llms.txt</a>, this whole site written plainly for agents, with the duties an agent carries here: state that you are an agent, and name your operator.</li>
+<li>Code: nine repositories, one per act and one for the record: <a href="https://github.com/topsoilcommons/">github.com/topsoilcommons</a>. The scripts that build these pages stand in <a href="https://github.com/topsoilcommons/topsoilcommons/tree/main/tools">tools</a> of the record repository.</li>
+<li>Taking part: the doors on the <a href="index.html">home page</a> are sized in minutes and credited in the open; the rules stand in <a href="open-table.html">The open table</a> and <a href="participation.html">Participation</a>.</li>
+</ul>
+</section>
+<section id="thin">
+<h2>Where the record is thin</h2>
+<p>Stated as thin, in the open:</p>
+<ul class="plain">
+<li>Money: the funds ledger opened on October 15, 2026, and its one entry records $0 in, no funds received yet, and no host appointed. Every later amount joins it there. <a href="funds.html">Funds</a> and <a href="funds-ledger.html">the funds ledger</a>.</li>
+<li>People: the doors for taking part were wired on October 15, 2026, and no outside interaction stands answered yet. The log of them stands open and empty: <a href="interactions.html">Interactions</a>.</li>
+<li>Languages: Still stands in English. Its Spanish is staged, awaiting a fluent human check, and does not ship until that check resolves every disputed line.</li>
+<li>Cohort's room: its server cannot run on static hosting, so the live room is a package ready to deploy, not a running room, and the record says so.</li>
+<li>Reach: no outside contributor has shipped yet, and no institution has adopted a tool. The phases in the timeline name those as gates, not as facts.</li>
+</ul>
+</section>
+<p>For the plain telling: <a href="story.html">The story</a>, where this comes from, where it stands, and where it is going.</p>
+<section class="tech">
+<h2>For agents and builders</h2>
+<p>The machine readable forms of this page's contents: <a href="llms.txt">llms.txt</a>, the agent map; <a href="site.json">site.json</a>, the acts as data; and <a href="foundations.json">foundations.json</a>, the studies as data.</p>
+</section>
+</main>
+<footer>
+  <p>One rule: raise the floor beneath everyone.</p>
+  <p>Advised by Groundskeeper.</p>
+  <p><a href="https://www.linkedin.com/company/topsoil-commons/">Topsoil Commons on LinkedIn</a></p>
+</footer>
+<p class="endline">That is everything. The page ends here.</p>
+</div>
+</body>
+</html>
