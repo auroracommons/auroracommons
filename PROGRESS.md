@@ -2,6 +2,14 @@
 
 This is the public record of the work: what was done, what the proof shows, what broke, and what comes next. It is updated every work session, newest first, in plain language on purpose. If a claim anywhere in these projects cannot be traced to a logged run, the claim is wrong and the log is where it gets corrected.
 
+## October 16, 2026: the Index gains a chain, so tampering shows
+
+The Index now carries a hash chain over its entries. Each of the 13 standing entries, the 12 adopted entries and the 1 proposal standing in the queue, carries a chain record that binds it to the entry before it, computed by a tool in the Index repository and checked by its validator, never written by hand. A small root file, chain.json, publishes the head hash and the entry count of each queue, so anyone holding a mirror copy can recompute the chain over their own copy and compare. The adopted queue stands at 12 entries, with head hash 7dfa556018effd72e7d1760970dfec5ecaec77bceae04b42de1aed819b43afb1.
+
+Three new fixture tests stand beside the six that were there. An entry edited and then sealed again still fails, on the chain alone. An entry removed from the middle fails where the next entry points back to it. Two entries traded in place fail, though their claimed dates are equal and the order check alone would let them pass. The validator passes all 13 standing entries, and the fixture suite passes 9 of 9.
+
+A SECURITY.md in the Index repository states the design in plain words: who might tamper, from a compromised account to a malicious contributor, a coerced host, or a future agent; what each measure proves and what it does not; and how newsrooms and historians will witness the record when they contribute, holding their own mirrors, signing entries with their own keys, comparing roots on a shared schedule, and filing disagreement as a disputed entry in the open, never settling it in private. Its limit stands in one sentence there: no system is beyond tampering, so the design makes tampering visible, attributable, and recoverable from mirrors instead. The chain carries integrity. Truth stays where it has always stood in the Index, with the six states and the named human hand.
+
 ## October 16, 2026: the fiscal host application is submitted and under review
 
 Joshua submitted the fiscal host application to Open Source Collective himself on October 16, 2026. The application is under review. Open Source Collective remains the intended host, not an appointed host, and no funds have been received. Funds now records the submission and the review state in the open.
