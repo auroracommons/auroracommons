@@ -6,6 +6,7 @@
 <title>Topsoil Commons</title>
 <meta name="description" content="Topsoil Commons addresses the hierarchy of human needs through open source. Seven layers of need, seven working acts, every number on this page inside a sentence that says what was counted and where to check it.">
 <meta name="theme-color" content="#fbfaf7">
+<link rel="canonical" href="https://topsoilcommons.github.io/topsoilcommons/">
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
 <meta property="og:type" content="website">
@@ -23,79 +24,89 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "Topsoil Commons",
-  "url": "https://topsoilcommons.github.io/topsoilcommons/",
-  "description": "Topsoil Commons addresses the hierarchy of human needs through open source.",
-  "slogan": "Stand on the shoulders of giants",
-  "oneRule": "Raise the floor beneath everyone.",
-  "acts": [
+  "@graph": [
     {
-      "layer": 0,
-      "need": "the body: food, shelter, health, safety",
-      "act": "Ground",
-      "proof": "8 listings for free food, shelter, and health help near New Rochelle; every one checked against the provider's own page on October 15, 2026; 4 more were dropped for failing the check.",
-      "unlocks": "Unlocks the ability to act at all.",
-      "see": "https://topsoilcommons.github.io/ground/",
-      "check": "https://topsoilcommons.github.io/index/"
+      "@type": "Organization",
+      "name": "Topsoil Commons",
+      "url": "https://topsoilcommons.github.io/topsoilcommons/",
+      "description": "Topsoil Commons addresses the hierarchy of human needs through open source.",
+      "slogan": "Stand on the shoulders of giants",
+      "oneRule": "Raise the floor beneath everyone.",
+      "acts": [
+        {
+          "layer": 0,
+          "need": "the body: food, shelter, health, safety",
+          "act": "Ground",
+          "proof": "8 listings for free food, shelter, and health help near New Rochelle; every one checked against the provider's own page on October 15, 2026; 4 more were dropped for failing the check.",
+          "unlocks": "Unlocks the ability to act at all.",
+          "see": "https://topsoilcommons.github.io/ground/",
+          "check": "https://topsoilcommons.github.io/index/"
+        },
+        {
+          "layer": 1,
+          "need": "the mind at peace",
+          "act": "Still",
+          "proof": "A breathing pacer checked over 3 full rounds: its timing drifted by at most 1 millisecond. The page makes zero network calls; nothing leaves the device.",
+          "unlocks": "Unlocks the ability to choose.",
+          "see": "https://topsoilcommons.github.io/still/",
+          "check": "https://topsoilcommons.github.io/index/"
+        },
+        {
+          "layer": 2,
+          "need": "learning",
+          "act": "Atlas",
+          "proof": "One claim, shown with its full proof, the same on a phone, a watch, a voice, and a wall: the Sun is 99.86 percent of all the mass in the solar system, checked against its recorded sources on October 15, 2026.",
+          "unlocks": "Unlocks the ability to understand.",
+          "see": "https://topsoilcommons.github.io/atlas/",
+          "check": "https://topsoilcommons.github.io/index/"
+        },
+        {
+          "layer": 3,
+          "need": "belonging",
+          "act": "Cohort",
+          "proof": "In the live demo, 25 members, 48 messages, 27 shared resources, and 5 events; its test suite passes 7 of 7 checks from a clean start.",
+          "unlocks": "Unlocks the ability to contribute.",
+          "see": "https://topsoilcommons.github.io/cohort/",
+          "check": "https://topsoilcommons.github.io/index/"
+        },
+        {
+          "layer": 4,
+          "need": "shared truth",
+          "act": "Graph",
+          "proof": "Of every 100 facts Graph pulls from text, about 94 are right, measured on its labeled test set on October 15, 2026; 7 of 7 tests pass.",
+          "unlocks": "Unlocks the ability to discern.",
+          "see": "https://topsoilcommons.github.io/graph/",
+          "check": "https://topsoilcommons.github.io/index/"
+        },
+        {
+          "layer": 5,
+          "need": "autonomy",
+          "act": "Machine",
+          "proof": "A transformer built from scratch passes 7 of 7 gradient checks at a tolerance of 1 in 100,000; its small language model has 358,052 parts, each one counted by the code.",
+          "unlocks": "Unlocks the ability to build.",
+          "see": "https://topsoilcommons.github.io/machine/",
+          "check": "https://topsoilcommons.github.io/index/"
+        },
+        {
+          "layer": 6,
+          "need": "trust and meaning",
+          "act": "Lumen",
+          "proof": "A guardrail tested on 41 questions from one tradition's text: it blocked 12 of 12 questions it must refuse, allowed 8 of 8 it must allow.",
+          "unlocks": "Unlocks the ability to commit.",
+          "see": "https://topsoilcommons.github.io/lumen/",
+          "check": "https://topsoilcommons.github.io/index/"
+        }
+      ]
     },
     {
-      "layer": 1,
-      "need": "the mind at peace",
-      "act": "Still",
-      "proof": "A breathing pacer checked over 3 full rounds: its timing drifted by at most 1 millisecond. The page makes zero network calls; nothing leaves the device.",
-      "unlocks": "Unlocks the ability to choose.",
-      "see": "https://topsoilcommons.github.io/still/",
-      "check": "https://topsoilcommons.github.io/index/"
-    },
-    {
-      "layer": 2,
-      "need": "learning",
-      "act": "Atlas",
-      "proof": "One claim, shown with its full proof, the same on a phone, a watch, a voice, and a wall: the Sun is 99.86 percent of all the mass in the solar system, checked against its recorded sources on October 15, 2026.",
-      "unlocks": "Unlocks the ability to understand.",
-      "see": "https://topsoilcommons.github.io/atlas/",
-      "check": "https://topsoilcommons.github.io/index/"
-    },
-    {
-      "layer": 3,
-      "need": "belonging",
-      "act": "Cohort",
-      "proof": "In the live demo, 25 members, 48 messages, 27 shared resources, and 5 events; its test suite passes 7 of 7 checks from a clean start.",
-      "unlocks": "Unlocks the ability to contribute.",
-      "see": "https://topsoilcommons.github.io/cohort/",
-      "check": "https://topsoilcommons.github.io/index/"
-    },
-    {
-      "layer": 4,
-      "need": "shared truth",
-      "act": "Graph",
-      "proof": "Of every 100 facts Graph pulls from text, about 94 are right, measured on its labeled test set on October 15, 2026; 7 of 7 tests pass.",
-      "unlocks": "Unlocks the ability to discern.",
-      "see": "https://topsoilcommons.github.io/graph/",
-      "check": "https://topsoilcommons.github.io/index/"
-    },
-    {
-      "layer": 5,
-      "need": "autonomy",
-      "act": "Machine",
-      "proof": "A transformer built from scratch passes 7 of 7 gradient checks at a tolerance of 1 in 100,000; its small language model has 358,052 parts, each one counted by the code.",
-      "unlocks": "Unlocks the ability to build.",
-      "see": "https://topsoilcommons.github.io/machine/",
-      "check": "https://topsoilcommons.github.io/index/"
-    },
-    {
-      "layer": 6,
-      "need": "trust and meaning",
-      "act": "Lumen",
-      "proof": "A guardrail tested on 41 questions from one tradition's text: it blocked 12 of 12 questions it must refuse, allowed 8 of 8 it must allow.",
-      "unlocks": "Unlocks the ability to commit.",
-      "see": "https://topsoilcommons.github.io/lumen/",
-      "check": "https://topsoilcommons.github.io/index/"
+      "@type": "WebSite",
+      "name": "Topsoil Commons",
+      "url": "https://topsoilcommons.github.io/topsoilcommons/"
     }
   ]
 }
 </script>
+<link rel="stylesheet" href="assets/commons.css">
 <style>
   :root{
     --ink:#211812;
@@ -109,26 +120,10 @@
     --l3:#d7b382; --l4:#e2c495; --l5:#eed6a9; --l6:#f9e7bd;
     --rub:#9e2b25;
   }
-  *{box-sizing:border-box}
   html{margin:0;padding:0}
-  body{margin:0;background:var(--paper);color:var(--ink);
-    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
-    line-height:1.5;-webkit-font-smoothing:antialiased}
   a{color:var(--ink);text-decoration:underline}
   .wrap{max-width:1060px;margin:0 auto;padding:0 20px}
 
-  /* The shared Commons bar: one plain line of text links, on every Commons site. */
-  .commons-bar{display:flex;flex-wrap:wrap;gap:4px 18px;align-items:baseline;
-    padding:10px 20px 8px;font-size:14px;border-bottom:1px solid var(--line);
-    position:sticky;top:0;background:var(--paper)}
-  .commons-bar a{color:var(--ink);text-decoration:none;display:inline-flex;align-items:center;min-height:44px}
-  .commons-bar a:hover{text-decoration:underline}
-  .commons-bar .wordmark{font-weight:600;margin-right:4px}
-  .commons-bar .current{font-weight:700;display:inline-flex;align-items:center;min-height:44px}
-  .skip{position:absolute;left:12px;top:-60px;background:var(--paper);color:var(--ink);padding:10px 12px;font-size:14px}
-  .skip:focus{top:8px}
-  a:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
-  [id]{scroll-margin-top:72px}
 
   /* THE FLOOR: the first screen. Name, mission, the drawn strata, the floor. */
   .stage{min-height:100svh;display:flex;flex-direction:column}
@@ -136,6 +131,13 @@
   h1{font-size:clamp(34px,7vw,58px);letter-spacing:-1.5px;margin:0 0 6px;font-weight:800;line-height:1.05}
   .mission{font-size:clamp(16px,2.6vw,21px);margin:0;max-width:34em}
   .firststep{font-size:16px;margin:12px 0 0;max-width:34em}
+  .entry{margin:26px 0 4px;max-width:38em}
+  .entry h2{margin:0 0 10px}
+  .entry .entry-line{font-size:16px;margin:0 0 6px;max-width:34em}
+  .frontdoors a{display:block;border-top:1px solid var(--line);
+    padding:18px 0 18px 16px;margin:0;
+    font-size:17px;font-weight:600;color:var(--ink);text-decoration:none}
+  .frontdoors a:hover{text-decoration:underline}
   .stageblock{max-width:1060px;margin:0 auto;width:100%;padding:10px 20px 0}
   .today{font-size:15.5px;margin:16px 0 0;max-width:44em}
   .drawing{flex:1;display:flex;flex-direction:column;justify-content:flex-end;
@@ -174,6 +176,7 @@
   .row.r6{border-left-color:var(--l6)}
   .row .layer{font-size:13.5px;font-weight:700;margin:0}
   .row .need{font-size:18px;font-weight:700;line-height:1.3;margin:2px 0 0}
+  .row h2.need{font-size:18px}
   .row .act{font-size:15px;color:#4c4234;margin:1px 0 0}
   .row .proof{margin:0;font-size:16px;max-width:38em}
   .row .links{display:flex;flex-direction:column;gap:6px;align-items:flex-start}
@@ -217,7 +220,6 @@
     .row .links{flex-direction:row;flex-wrap:wrap}
   }
   @media (max-width:300px){
-    .commons-bar{padding:8px 10px;gap:4px 12px}
     .wrap{padding:0 10px}
     .stage .who{padding:22px 10px 6px}
     .stageblock{padding:8px 10px 0}
@@ -248,13 +250,27 @@
   <div class="who">
     <h1>Topsoil Commons</h1>
     <p class="mission">Topsoil Commons addresses the hierarchy of human needs through open source.</p>
-    <p class="firststep">Start with one: <a href="#layer-0">read the first proof in the strata below</a>, then open the See it link beside it.</p>
+    <p class="firststep">Start with one: answer the question below, or read <a href="#layer-0">the first proof in the strata</a>.</p>
+    <div class="entry">
+      <h2>What brought you here?</h2>
+      <p class="entry-line">Pick the line that sounds like you. Each door opens a use in under a minute, then one small act, if you want it. No account. No fee.</p>
+      <nav class="frontdoors" aria-label="What brought you here">
+        <a href="come-in.html#door-1">I need help today</a>
+        <a href="come-in.html#door-2">I lost work, or money is tight</a>
+        <a href="come-in.html#door-3">Something is unfair, and I want it on the record</a>
+        <a href="come-in.html#door-4">I feel alone, and I want to belong</a>
+        <a href="come-in.html#door-5">My mind will not settle</a>
+        <a href="come-in.html#door-6">I want to learn something</a>
+        <a href="come-in.html#door-7">I have something to give</a>
+        <a href="come-in.html#door-8">I run something that helps people</a>
+      </nav>
+    </div>
   </div>
   <div class="stageblock">
 <article class="row r0" id="layer-0">
     <div>
       <p class="layer">Layer 0</p>
-      <h3 class="need">the body: food, shelter, health, safety</h3>
+      <h2 class="need">the body: food, shelter, health, safety</h2>
       <p class="act">Ground</p>
     </div>
     <div><p class="proof"><span class="rub">8</span> listings for free food, shelter, and health help near New Rochelle; every one checked against the provider's own page on <span class="rub">October 15, 2026</span>; <span class="rub">4</span> more were dropped for failing the check.</p><p>Unlocks the ability to act at all.</p><p class="marks" role="img" aria-label="One mark for each listing checked on October 15, 2026: 8 solid marks for the listings that passed the check, 4 hollow marks for the ones that were dropped."><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span class="hollow"></span><span class="hollow"></span><span class="hollow"></span><span class="hollow"></span></p></div>
@@ -265,7 +281,7 @@
     </div>
   </article>
     <!-- today:begin -->
-    <p class="today" id="today-line">Today, <span class="rub">October 16, 2026</span>: <span class="rub">155</span> listings for food, shelter, and health help stand checked in Ground, across <span class="rub">19</span> places, every one against its provider's own page; <span class="rub">71</span> findings stand in Foundations, each with its source named; and <span class="rub">57</span> entries stand in the public progress log. Each count can be checked where it is kept: the Ground and Foundations pages and the log linked in the record below.</p>
+    <p class="today" id="today-line">Today, <span class="rub">October 16, 2026</span>: <span class="rub">155</span> listings for food, shelter, and health help stand checked in Ground, across <span class="rub">19</span> places, every one against its provider's own page; <span class="rub">71</span> findings stand in Foundations, each with its source named; and <span class="rub">58</span> entries stand in the public progress log. Each count can be checked where it is kept: the Ground and Foundations pages and the log linked in the record below.</p>
     <!-- today:end -->
   </div>
   <nav class="drawing" aria-label="The seven layers and their proofs">
@@ -383,6 +399,19 @@
   <a class="door" href="https://github.com/topsoilcommons/topsoilcommons/issues/new?template=report-an-error.md">Report one thing that is wrong: it is fixed or answered in the open.</a>
 </section>
 
+<section aria-labelledby="ways-in-h">
+  <h2 id="ways-in-h">Ways in</h2>
+  <nav aria-label="Ways in">
+    <ul class="record">
+      <li><a href="https://topsoilcommons.github.io/ground/">Ground</a> and <a href="https://topsoilcommons.github.io/still/">Still</a>, if you need help today. Food, shelter, and health help near you, each listing with its check date; and a quiet tool to steady your mind.</li>
+      <li><a href="come-in.html">Come in</a>, if you want to contribute. Every act states its minutes and what it changes, and lands in the public ledger under your name, a stage name, or no name, as you choose.</li>
+      <li><a href="records.html">Public records</a>, if you run an organization or a government. What stands in the open for every need, the governance documents, and the registry. A place is given, never bought.</li>
+      <li><a href="funds.html">Funds</a>, if you support or fund work like this. The intended host is Open Source Collective; an application was submitted on October 16, 2026 and is under review; no host is appointed and no funds have been received. Money moves only through the host, never to a personal account.</li>
+      <li><a href="https://topsoilcommons.github.io/index/">The Index</a>, if you check claims. Every entry a claim with its ground, its hand, and its check, in time order; recompute a seal yourself and file what you get.</li>
+    </ul>
+  </nav>
+</section>
+
 <section aria-labelledby="record-h">
   <h2 id="record-h">The record</h2>
   <nav aria-label="The public record">
@@ -408,16 +437,6 @@
 
 <p class="wrap ending">That is everything. The page ends here.</p>
 
-<script>
-document.addEventListener("click", function(e){
-  var b = e.target && e.target.closest ? e.target.closest("[data-share]") : null;
-  if (!b) return;
-  var d = { title: b.getAttribute("data-title"), text: b.getAttribute("data-text"), url: b.getAttribute("data-url") };
-  if (navigator.share) { navigator.share(d).catch(function(){}); return; }
-  var old = b.textContent;
-  function done(){ b.textContent = "Link copied"; setTimeout(function(){ b.textContent = old; }, 2000); }
-  if (navigator.clipboard && navigator.clipboard.writeText) { navigator.clipboard.writeText(d.text + " " + d.url).then(done, done); }
-});
-</script>
+<script src="assets/share.js"></script>
 </body>
 </html>

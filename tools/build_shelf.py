@@ -50,6 +50,7 @@ def read(name):
 
 def shell(title, orientation, body, tech_lines):
     css = rd.CSS.replace("  @media", EXTRA_CSS + "  @media", 1)
+    desc = html.escape(orientation, quote=True)
     tech = "\n".join(
         ['<section class="tech">', "<h2>For agents and builders</h2>"]
         + tech_lines + ["</section>"])
@@ -59,19 +60,24 @@ def shell(title, orientation, body, tech_lines):
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>%s</title>
+<meta name="description" content="%s">
+<link rel="canonical" href="%s%s">
 <meta name="theme-color" content="#fbfaf7">
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Topsoil Commons">
 <meta property="og:title" content="%s">
+<meta property="og:description" content="%s">
 <meta property="og:url" content="%s%s">
 <meta property="og:image" content="https://topsoilcommons.github.io/topsoilcommons/assets/aurora-logo.png">
 <meta property="og:image:width" content="1600">
 <meta property="og:image:height" content="1600">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="%s">
+<meta name="twitter:description" content="%s">
 <meta name="twitter:image" content="https://topsoilcommons.github.io/topsoilcommons/assets/aurora-logo.png">
+<link rel="stylesheet" href="assets/commons.css">
 <style>
 %s
 </style>
@@ -94,7 +100,8 @@ def shell(title, orientation, body, tech_lines):
 </div>
 </body>
 </html>
-""" % (title, title, SITE, CURRENT_PAGE, title, css, rd.SKIP_LINK,
+""" % (title, desc, SITE, CURRENT_PAGE, title, desc, SITE,
+       CURRENT_PAGE, title, desc, css, rd.SKIP_LINK,
        rd.bar(title), title, orientation, body, tech, rd.FOOTER)
 
 

@@ -82,6 +82,45 @@ SITE = "https://topsoilcommons.github.io/topsoilcommons/"
 ORIENTATION = ("Part of the Record: the written record of Topsoil "
                "Commons, on one page each.")
 
+# One plain sentence per document, used as the page description in the
+# head (meta description, og:description, twitter:description). Keyed
+# by markdown file name, like DOCS.
+DESCRIPTIONS = {
+    "PROGRESS.md": "The public progress log of Topsoil Commons, with "
+                   "what was done, what the proof shows, what broke, "
+                   "and what comes next.",
+    "ECOSYSTEM.md": "The charter of Topsoil Commons, an open source "
+                    "ecosystem of free basic tools built around "
+                    "human needs.",
+    "NEEDS.md": "The Ascent, a map of human needs in the order they "
+                "hold each other up, and the work that serves each "
+                "layer.",
+    "DEMOCRACY.md": "How Topsoil Commons makes decisions, with one "
+                    "person and one voice, under its one rule.",
+    "PARTICIPATION.md": "How people take part in Topsoil Commons, "
+                        "with the tiers of involvement and the rules "
+                        "for counting them.",
+    "REGISTRY.md": "The Commons Registry, a public map of every "
+                   "person and group in Topsoil Commons and what "
+                   "they serve.",
+    "OPEN_TABLE.md": "The Open Table, the three doors anyone can use "
+                     "to contribute to Topsoil Commons.",
+    "LEDGER.md": "The Ledger, a public record of verified work in "
+                 "Topsoil Commons, with the evidence for each entry.",
+    "INTENTIONS.md": "The stated intentions of Topsoil Commons, "
+                     "written in public so anyone can hold the work "
+                     "to them.",
+    "FUNDS.md": "How money would move in Topsoil Commons, stated in "
+                "the open before any money moves.",
+    "FUNDS_LEDGER.md": "The funds ledger, a public record of every "
+                       "amount Topsoil Commons receives and spends.",
+    "INTERACTIONS.md": "The public log of interactions with Topsoil "
+                       "Commons, with each submission and its result.",
+}
+
+RECORD_DESCRIPTION = ("The whole written record of Topsoil Commons "
+                      "on one page, section by section.")
+
 PAGE_OF = dict(DOCS)
 # Any link target naming one of these files becomes its page address.
 TARGETS = {}
@@ -360,11 +399,6 @@ CSS = """  :root{
     --bg:#fbfaf7; --ink:#1b1e23; --soft:#5a6068; --line:#e4e0d6;
     --accent:#1b1e23; --rub:#9e2b25;
   }
-  *{box-sizing:border-box}
-  body{margin:0;background:var(--bg);color:var(--ink);
-    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
-    line-height:1.5;-webkit-font-smoothing:antialiased}
-  .wrap{max-width:980px;margin:0 auto;padding:0 20px}
   header{padding:28px 0 4px}
   h1{font-size:44px;letter-spacing:-1.2px;margin:14px 0 8px;font-weight:800;line-height:1.12}
   .source{font-size:13px;color:var(--soft);margin:0 0 10px}
@@ -388,19 +422,10 @@ CSS = """  :root{
   .contents{font-size:16px;margin:0 0 14px;padding-left:24px}
   .contents li{margin:0 0 6px}
   section.record-doc{border-top:1px solid var(--line);margin-top:36px;padding-top:4px}
-  footer{padding:54px 0 62px;margin-top:46px;border-top:1px solid var(--line);
+  footer{padding:54px 0 62px;margin-top:46px;
     color:var(--soft);font-size:14px}
   footer a{color:var(--accent);text-decoration:none;font-weight:600}
-  .endline{text-align:center;font-size:15px;color:var(--ink);margin:0;padding:0 0 54px}
-  .commons-bar{display:flex;flex-wrap:wrap;gap:4px 18px;align-items:baseline;max-width:980px;margin:0 auto;padding:10px 20px 8px;font-size:14px;border-bottom:1px solid var(--line);position:sticky;top:0;background:var(--bg)}
-  .commons-bar .brand{font-weight:600;color:var(--ink);text-decoration:none;margin-right:4px}
-  .commons-bar a{color:var(--ink);text-decoration:none;display:inline-flex;align-items:center;min-height:44px}
-  .commons-bar a:hover{text-decoration:underline}
-  .commons-bar .current{font-weight:700;display:inline-flex;align-items:center;min-height:44px}
-  .skip{position:absolute;left:12px;top:-60px;background:var(--bg);color:var(--ink);padding:10px 12px;font-size:14px}
-  .skip:focus{top:8px}
-  a:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
-  [id]{scroll-margin-top:72px}
+  .endline{margin:0;padding:0 0 54px}
   @media (max-width:560px){h1{font-size:32px}}"""
 
 BAR_LINKS = [
@@ -438,25 +463,31 @@ FOOTER = """<footer>
 
 def page(md_name, page_name, title, body):
     short = title if title else md_name
+    desc = html.escape(DESCRIPTIONS[md_name], quote=True)
     return """<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>%s</title>
+<meta name="description" content="%s">
+<link rel="canonical" href="%s%s">
 <meta name="theme-color" content="#fbfaf7">
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Topsoil Commons">
 <meta property="og:title" content="%s">
+<meta property="og:description" content="%s">
 <meta property="og:url" content="%s%s">
 <meta property="og:image" content="https://topsoilcommons.github.io/topsoilcommons/assets/aurora-logo.png">
 <meta property="og:image:width" content="1600">
 <meta property="og:image:height" content="1600">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="%s">
+<meta name="twitter:description" content="%s">
 <meta name="twitter:image" content="https://topsoilcommons.github.io/topsoilcommons/assets/aurora-logo.png">
+<link rel="stylesheet" href="assets/commons.css">
 <style>
 %s
 </style>
@@ -478,8 +509,9 @@ def page(md_name, page_name, title, body):
 </div>
 </body>
 </html>
-""" % (html.escape(short), html.escape(short), SITE, page_name,
-       html.escape(short), CSS, SKIP_LINK, bar(short),
+""" % (html.escape(short), desc, SITE, page_name,
+       html.escape(short), desc, SITE, page_name,
+       html.escape(short), desc, CSS, SKIP_LINK, bar(short),
        html.escape(short), md_name, BLOB, md_name, ORIENTATION, body,
        FOOTER)
 
@@ -526,19 +558,24 @@ def record_page(sections):
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>The Record</title>
+<meta name="description" content="%s">
+<link rel="canonical" href="%srecord.html">
 <meta name="theme-color" content="#fbfaf7">
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Topsoil Commons">
 <meta property="og:title" content="The Record">
+<meta property="og:description" content="%s">
 <meta property="og:url" content="%srecord.html">
 <meta property="og:image" content="https://topsoilcommons.github.io/topsoilcommons/assets/aurora-logo.png">
 <meta property="og:image:width" content="1600">
 <meta property="og:image:height" content="1600">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="The Record">
+<meta name="twitter:description" content="%s">
 <meta name="twitter:image" content="https://topsoilcommons.github.io/topsoilcommons/assets/aurora-logo.png">
+<link rel="stylesheet" href="assets/commons.css">
 <style>
 %s
 </style>
@@ -566,7 +603,10 @@ def record_page(sections):
 </div>
 </body>
 </html>
-""" % (SITE, CSS, SKIP_LINK, bar("The Record"), opening, contents,
+""" % (html.escape(RECORD_DESCRIPTION, quote=True), SITE,
+       html.escape(RECORD_DESCRIPTION, quote=True), SITE,
+       html.escape(RECORD_DESCRIPTION, quote=True), CSS, SKIP_LINK,
+       bar("The Record"), opening, contents,
        "\n".join(sections), FOOTER)
 
 

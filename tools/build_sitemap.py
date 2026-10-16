@@ -22,6 +22,7 @@ SITE = rd.SITE
 # Hand kept public pages of this site, in the order a reader meets them.
 PAGES = [
     "",
+    "come-in.html",
     "foundations.html",
     "life.html",
     "record.html",
