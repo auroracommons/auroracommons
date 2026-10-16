@@ -507,6 +507,11 @@ def build_advanced():
                'by others and by the Commons, each entry with its '
                'license checked at its source and three doors, use '
                'it, adopt it, and change it.</li>')
+    out.append('<li><a href="records.html">Public records</a>: '
+               'what stands in the open for each need, what the '
+               'Commons holds, what others hold open for anyone, '
+               'and what is missing, each record with its source '
+               'and its limits.</li>')
     out.append("</ul>")
     out.append("</section>")
 

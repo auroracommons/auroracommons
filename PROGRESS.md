@@ -2,6 +2,14 @@
 
 This is the public record of the work: what was done, what the proof shows, what broke, and what comes next. It is updated every work session, newest first, in plain language on purpose. If a claim anywhere in these projects cannot be traced to a logged run, the claim is wrong and the log is where it gets corrected.
 
+## October 16, 2026: public records stand, one section for every need
+
+A new page, Public records, gathers what already stands in the open, in the order of the needs it serves. It holds 59 records in eight sections, counted on October 16, 2026: 24 records of the Commons' own, 19 records held by others and open to anyone, and 16 records of what is missing or thin. Seven sections follow the seven layers of the Ascent, and the eighth holds curiosity and wants, which sit above the needs in the Commons' own map and stand last on the page on purpose.
+
+Each section opens with the story of its need in one plain sentence, then a small visual counted from that section's own records, with its key printed beside it. The records stand in three kinds: what the Commons holds, what others hold open for anyone, and what is missing or thin. Each section closes with a line that names what it does not show, and the page opens with the rule the whole record follows: every figure names its source and its limits.
+
+The Commons' figures are composed by the page's own tool from the files that already carry them, never typed by hand: the acts and their proof sentences from site.json, the Foundations counts from foundations.json, with all 71 studies in 38 fields filed under the need each study serves first, and the exhibits from shelf.json. Every record held by others was opened at its source on October 16, 2026, before its record was written. One source tried for the page did not answer and was left out, the Internet Sacred Text Archive, and no link was invented to fill its place. The Bureau of Labor Statistics page was read in full the same day; it turns away the scripted fetch used to check links, and its record says so in the open.
+
 ## October 16, 2026: the shelf stands: proven work, its licenses rechecked, its doors open
 
 The shelf stands on its own page, built from a data file the way the rest of this site is built. It holds 14 works in two groups, counted on October 16, 2026. Six are standing works by others: ElectionGuard, Open Collective, LiquidFeedback, DHIS2, X-Road, and Keycloak. Eight are the exhibits of the Commons: Ground, Still, Atlas, Cohort, Graph, Machine, Lumen, and the Index. Each entry carries one plain line of what the work does, who keeps it, its license, a live place to try it, and three doors: use it, adopt it, and change it.

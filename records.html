@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Public records</title>
+<meta name="theme-color" content="#fbfaf7">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Topsoil Commons">
+<meta property="og:title" content="Public records">
+<meta property="og:url" content="https://topsoilcommons.github.io/topsoilcommons/records.html">
+<meta property="og:image" content="https://topsoilcommons.github.io/topsoilcommons/assets/aurora-logo.png">
+<meta property="og:image:width" content="1600">
+<meta property="og:image:height" content="1600">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Public records">
+<meta name="twitter:image" content="https://topsoilcommons.github.io/topsoilcommons/assets/aurora-logo.png">
+<style>
+  :root{
+    --bg:#fbfaf7; --ink:#1b1e23; --soft:#5a6068; --line:#e4e0d6;
+    --accent:#1b1e23; --rub:#9e2b25;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.5;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:980px;margin:0 auto;padding:0 20px}
+  header{padding:28px 0 4px}
+  h1{font-size:44px;letter-spacing:-1.2px;margin:14px 0 8px;font-weight:800;line-height:1.12}
+  .source{font-size:13px;color:var(--soft);margin:0 0 10px}
+  .source a{color:var(--accent);text-decoration:none;font-weight:600}
+  .source a:hover{text-decoration:underline}
+  .orientation{font-size:15px;margin:0 0 4px}
+  .doc{padding:18px 0 4px;max-width:760px}
+  .doc p{font-size:16px;margin:0 0 14px}
+  .doc h2{font-size:25px;letter-spacing:-.5px;margin:34px 0 10px;font-weight:800}
+  .doc h3{font-size:19px;letter-spacing:-.3px;margin:26px 0 8px;font-weight:800}
+  .doc h4{font-size:16px;margin:22px 0 8px;font-weight:800}
+  .doc ul,.doc ol{font-size:16px;margin:0 0 14px;padding-left:24px}
+  .doc li{margin:0 0 6px}
+  .doc a{color:var(--accent);font-weight:600}
+  .doc table{border-collapse:collapse;width:100%;font-size:15px;margin:0 0 16px}
+  .doc th,.doc td{border-top:1px solid var(--line);padding:9px 12px 9px 0;text-align:left;vertical-align:top}
+  .doc thead th{border-top:0}
+  .doc code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.92em}
+  .doc blockquote{margin:0 0 14px;padding-left:16px;border-left:3px solid var(--line)}
+  .tech{border-top:1px solid var(--line);margin-top:36px;padding-top:4px}
+  .contents{font-size:16px;margin:0 0 14px;padding-left:24px}
+  .contents li{margin:0 0 6px}
+  section.record-doc{border-top:1px solid var(--line);margin-top:36px;padding-top:4px}
+  footer{padding:54px 0 62px;margin-top:46px;border-top:1px solid var(--line);
+    color:var(--soft);font-size:14px}
+  footer a{color:var(--accent);text-decoration:none;font-weight:600}
+  .endline{text-align:center;font-size:15px;color:var(--ink);margin:0;padding:0 0 54px}
+  .commons-bar{display:flex;flex-wrap:wrap;gap:4px 18px;align-items:baseline;max-width:980px;margin:0 auto;padding:10px 20px 8px;font-size:14px;border-bottom:1px solid var(--line);position:sticky;top:0;background:var(--bg)}
+  .commons-bar .brand{font-weight:600;color:var(--ink);text-decoration:none;margin-right:4px}
+  .commons-bar a{color:var(--ink);text-decoration:none;display:inline-flex;align-items:center;min-height:44px}
+  .commons-bar a:hover{text-decoration:underline}
+  .commons-bar .current{font-weight:700;display:inline-flex;align-items:center;min-height:44px}
+  .skip{position:absolute;left:12px;top:-60px;background:var(--bg);color:var(--ink);padding:10px 12px;font-size:14px}
+  .skip:focus{top:8px}
+  a:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
+  [id]{scroll-margin-top:72px}
+
+  .rec{border-top:1px solid var(--line);padding:12px 0 2px}
+  .rec .recname{font-weight:700;margin:0 0 4px}
+  .rec p{margin:0 0 8px}
+  .kinds{margin:10px 0 4px}
+  .kindrow{display:flex;align-items:center;gap:10px;margin:3px 0}
+  .kindlabel{flex:0 0 11em}
+  .kindbar{height:12px;background:var(--ink);min-width:2px}
+  .kindcount{flex:0 0 auto}
+  @media (max-width:560px){h1{font-size:32px}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to the content</a>
+<nav class="commons-bar" aria-label="Topsoil Commons sites">
+  <a class="brand" href="https://topsoilcommons.github.io/topsoilcommons/"><svg class="bar-mark" viewBox="0 0 24 24" width="17" height="17" aria-hidden="true" focusable="false" style="flex:none;align-self:center;margin-right:7px"><g fill="currentColor"><rect x="4" y="2.5" width="16" height="2"/><rect x="4" y="5.5" width="16" height="2"/><rect x="4" y="8.5" width="16" height="2"/><rect x="4" y="11.5" width="4.5" height="8"/><rect x="15.5" y="11.5" width="4.5" height="8"/><rect x="2" y="20.5" width="20" height="2.2"/></g></svg>Topsoil Commons</a>
+  <span class="current" aria-current="page">Public records (you are here)</span>
+  <a href="https://topsoilcommons.github.io/topsoilcommons/foundations.html">Foundations</a>
+  <a href="https://topsoilcommons.github.io/ground/">Ground</a>
+  <a href="https://topsoilcommons.github.io/still/">Still</a>
+  <a href="https://topsoilcommons.github.io/atlas/">Atlas</a>
+  <a href="https://topsoilcommons.github.io/cohort/">Cohort</a>
+  <a href="https://topsoilcommons.github.io/graph/">Graph</a>
+  <a href="https://topsoilcommons.github.io/machine/">Machine</a>
+  <a href="https://topsoilcommons.github.io/lumen/">Lumen</a>
+</nav>
+<div class="wrap">
+<header>
+  <h1>Public records</h1>
+  <p class="orientation">What stands in the open for each need a person has: what the Commons holds, what others hold open for anyone, and what is missing, each with its source and its limits.</p>
+  <p class="source">Built from <a href="records.json">records.json</a>, <a href="site.json">site.json</a>, <a href="foundations.json">foundations.json</a>, and <a href="shelf.json">shelf.json</a> by tools/build_records.py.</p>
+</header>
+<main class="doc" id="main">
+<p>Every figure on this page names its source and its limits. The records stand in the order of the needs they serve, needs first, and curiosity after, the way the needs map itself is built.</p>
+<p>This page holds 59 records in all, counted on October 16, 2026: 24 records of the Commons' own, 19 records held by others and open to anyone, and 16 records of what is missing or thin. They stand in eight sections: one for each of the seven layers of need, and one for curiosity and wants, which sit above the needs in the Commons' own map.</p>
+<h2>The body: food, shelter, health, safety</h2>
+<p>Layer 0 of the Ascent. Unlocks the ability to act at all.</p>
+<p>A person can do nothing else until the body is fed, sheltered, well, and safe.</p>
+<div class="kinds">
+<div class="kindrow"><span class="kindlabel">The Commons' own</span><span class="kindbar" style="width:75%"></span><span class="kindcount">3</span></div>
+<div class="kindrow"><span class="kindlabel">Held by others</span><span class="kindbar" style="width:100%"></span><span class="kindcount">4</span></div>
+<div class="kindrow"><span class="kindlabel">Missing or thin</span><span class="kindbar" style="width:75%"></span><span class="kindcount">3</span></div>
+</div>
+<p>Key: each bar counts the records of one kind in this section, counted from this section's own records on October 16, 2026. The longest bar is the largest count in the section, and the rest are drawn to the same scale.</p>
+<h3>What the Commons holds</h3>
+<div class="rec">
+<p class="recname">Ground</p>
+<p>8 listings for free food, shelter, and health help near New Rochelle; every one checked against the provider's own page on October 15, 2026; 4 more were dropped for failing the check.</p>
+<p>Kept by Topsoil Commons. Source: <a href="https://topsoilcommons.github.io/ground/">topsoilcommons.github.io/ground/</a>, checked October 16, 2026.</p>
+</div>
+<div class="rec">
+<p class="recname">Foundations, the studies under this need</p>
+<p>Foundations holds 24 studies in 10 fields filed under this need, each one opened at its source and printed with its source beside it.</p>
+<p>Kept by Topsoil Commons. Source: <a href="https://topsoilcommons.github.io/topsoilcommons/foundations.html">topsoilcommons.github.io/topsoilcommons/foundations.html</a>, checked October 16, 2026.</p>
+</div>
+<div class="rec">
+<p class="recname">On the shelf: Ground</p>
+<p>Find free food, shelter, health, and hygiene help near you, with each listing checked against its provider's own page.</p>
+<p>Kept by Topsoil Commons. Source: <a href="https://topsoilcommons.github.io/ground/">topsoilcommons.github.io/ground/</a>, checked October 16, 2026.</p>
+</div>
+<h3>Held by others, open to anyone</h3>
+<div class="rec">
+<p class="recname">Food assistance in the United States</p>
+<p>The federal food assistance program's own page: who can get help with food costs, and how to apply.</p>
+<p>Kept by the Food and Nutrition Service of the United States Department of Agriculture. Source: <a href="https://www.fns.usda.gov/snap/supplemental-nutrition-assistance-program">www.fns.usda.gov/snap/supplemental-nutrition-assistance-program</a>, checked October 16, 2026.</p>
+</div>
+<div class="rec">
+<p class="recname">Find a food bank</p>
+<p>A finder for food banks: give it a place, and it names the food banks near that place.</p>
+<p>Kept by Feeding America. Source: <a href="https://www.feedingamerica.org/find-your-local-foodbank">www.feedingamerica.org/find-your-local-foodbank</a>, checked October 16, 2026.</p>
+</div>
+<div class="rec">
+<p class="recname">Rental assistance</p>
+<p>The federal housing department's page on help with rent, and on the housing counselors who guide people to it for free.</p>
+<p>Kept by the United States Department of Housing and Urban Development. Source: <a href="https://www.hud.gov/topics/rental_assistance">www.hud.gov/topics/rental_assistance</a>, checked October 16, 2026.</p>
+</div>
+<div class="rec">
+<p class="recname">Find a health center</p>
+<p>A finder for clinics in the federal health center program, searchable by address.</p>
+<p>Kept by the Health Resources and Services Administration. Source: <a href="https://findahealthcenter.hrsa.gov/">findahealthcenter.hrsa.gov/</a>, checked October 16, 2026.</p>
+</div>
+<h3>Missing or thin</h3>
+<div class="rec">
+<p class="recname">Coverage</p>
+<p>Ground's boards stand in 19 places, and every other place is not covered yet. The needs map says it in plain words: a board is a start, not coverage.</p>
+<p>Ground: <a href="https://topsoilcommons.github.io/topsoilcommons/needs.html">the record it stands in</a>, checked October 16, 2026.</p>
+</div>
+<div class="rec">
+<p class="recname">Supplies and safety in the newest places</p>
+<p>In the six places added on October 16, 2026, no provider's own page stated menstrual supplies as an offer, and the Paterson board holds no domestic violence provision. Both facts stand in the progress log beside the listings.</p>
+<p>Ground: <a href="https://topsoilcommons.github.io/topsoilcommons/progress.html">the record it stands in</a>, checked October 16, 2026.</p>
+</div>
+<div class="rec">
+<p class="recname">Thin in the studies</p>
+<p>Of the 10 fields of study filed under this need in Foundations, 1 rest on one study each. One study is a beginning, and the record counts it as one.</p>
+<p>Ground: <a href="https://topsoilcommons.github.io/topsoilcommons/foundations.html">the record it stands in</a>, checked October 16, 2026.</p>
+</div>
+<p>What this does not show: the counts in this section are the Commons' own checks in 19 places, not a count of hunger, of illness, or of help given. The program pages above serve one country, the United States. A Ground listing past its expiry date is stale, and nothing here hides that.</p>
+<h2>The mind at peace</h2>
+<p>Layer 1 of the Ascent. Unlocks the ability to choose.</p>
+<p>A fed person still cannot choose well with a mind in turmoil, so steadiness comes next.</p>
+<div class="kinds">
+<div class="kindrow"><span class="kindlabel">The Commons' own</span><span class="kindbar" style="width:100%"></span><span class="kindcount">3</span></div>
+<div class="kindrow"><span class="kindlabel">Held by others</span><span class="kindbar" style="width:67%"></span><span class="kindcount">2</span></div>
+<div class="kindrow"><span class="kindlabel">Missing or thin</span><span class="kindbar" style="width:67%"></span><span class="kindcount">2</span></div>
+</div>
+<p>Key: each bar counts the records of one kind in this section, counted from this section's own records on October 16, 2026. The longest bar is the largest count in the section, and the rest are drawn to the same scale.</p>
+<h3>What the Commons holds</h3>
+<div class="rec">
+<p class="recname">Still</p>
+<p>A breathing pacer checked over 3 full rounds: its timing drifted by at most 1 millisecond. The page makes zero network calls; nothing leaves the device.</p>
+<p>Kept by Topsoil Commons. Source: <a href="https://topsoilcommons.github.io/still/">topsoilcommons.github.io/still/</a>, checked October 16, 2026.</p>
+</div>
+<div class="rec">
+<p class="recname">Foundations, the studies under this need</p>
+<p>Foundations holds 6 studies in 4 fields filed under this need, each one opened at its source and printed with its source beside it.</p>
+<p>Kept by Topsoil Commons. Source: <a href="https://topsoilcommons.github.io/topsoilcommons/foundations.html">topsoilcommons.github.io/topsoilcommons/foundations.html</a>, checked October 16, 2026.</p>
+</div>
+<div class="rec">
+<p class="recname">On the shelf: Still</p>
+<p>A quiet page to check in, breathe, and write. It runs on your own device and sends nothing anywhere.</p>
+<p>Kept by Topsoil Commons. Source: <a href="https://topsoilcommons.github.io/still/">topsoilcommons.github.io/still/</a>, checked October 16, 2026.</p>
+</div>
+<h3>Held by others, open to anyone</h3>
+<div class="rec">
+<p class="recname">The 988 Suicide and Crisis Lifeline</p>
+<p>A person in crisis in the United States can call or text 988 at any hour and reach a trained counselor. The site carries chat as well.</p>
+<p>Kept by the 988 Suicide and Crisis Lifeline. Source: <a href="https://988lifeline.org/">988lifeline.org/</a>, checked October 16, 2026.</p>
+</div>
+<div class="rec">
+<p class="recname">The SAMHSA National Helpline</p>
+<p>The federal helpline's own page: referrals and information for mental health and substance use treatment, free and private, day and night.</p>
+<p>Kept by the Substance Abuse and Mental Health Services Administration. Source: <a href="https://www.samhsa.gov/find-help/national-helpline">www.samhsa.gov/find-help/national-helpline</a>, checked October 16, 2026.</p>
+</div>
+<h3>Missing or thin</h3>
+<div class="rec">
+<p class="recname">A first build, and no service</p>
+<p>Still is a first build, minimal on purpose, and the needs map says so in plain words. No treatment and no crisis service stands in the Commons' own record; Still itself points a person in crisis to the 988 line.</p>
+<p>Ground: <a href="https://topsoilcommons.github.io/topsoilcommons/needs.html">the record it stands in</a>, checked October 16, 2026.</p>
+</div>
+<div class="rec">
+<p class="recname">Thin in the studies</p>
+<p>Of the 4 fields of study filed under this need in Foundations, 2 rest on one study each. One study is a beginning, and the record counts it as one.</p>
+<p>Ground: <a href="https://topsoilcommons.github.io/topsoilcommons/foundations.html">the record it stands in</a>, checked October 16, 2026.</p>
+</div>
+<p>What this does not show: Still's proof shows a page that runs on a device and calls nothing. It does not show that any mind was steadied, and no outcome for any person is measured anywhere in this section. The 988 line and the SAMHSA helpline serve the United States.</p>
+<h2>Learning</h2>
+<p>Layer 2 of the Ascent. Unlocks the ability to understand.</p>
+<p>With a steady mind, a person can learn, and learning is the first thing no one can take away.</p>
+<div class="kinds">
+<div class="kindrow"><span class="kindlabel">The Commons' own</span><span class="kindbar" style="width:100%"></span><span class="kindcount">3</span></div>
+<div class="kindrow"><span class="kindlabel">Held by others</span><span class="kindbar" style="width:100%"></span><span class="kindcount">3</span></div>
+<div class="kindrow"><span class="kindlabel">Missing or thin</span><span class="kindbar" style="width:67%"></span><span class="kindcount">2</span></div>
+</div>
+<p>Key: each bar counts the records of one kind in this section, counted from this section's own records on October 16, 2026. The longest bar is the largest count in the section, and the rest are drawn to the same scale.</p>
+<h3>What the Commons holds</h3>
+<div class="rec">
+<p class="recname">Atlas</p>
+<p>One claim, shown with its full proof, the same on a phone, a watch, a voice, and a wall: the Sun is 99.86 percent of all the mass in the solar system, checked against its recorded sources on October 15, 2026.</p>
+<p>Kept by Topsoil Commons. Source: <a href="https://topsoilcommons.github.io/atlas/">topsoilcommons.github.io/atlas/</a>, checked October 16, 2026.</p>
+</div>
+<div class="rec">
+<p class="recname">Foundations, the studies under this need</p>
+<p>Foundations holds 10 studies in 5 fields filed under this need, each one opened at its source and printed with its source beside it.</p>
+<p>Kept by Topsoil Commons. Source: <a href="https://topsoilcommons.github.io/topsoilcommons/foundations.html">topsoilcommons.github.io/topsoilcommons/foundations.html</a>, checked October 16, 2026.</p>
+</div>
+<div class="rec">
+<p class="recname">On the shelf: Atlas</p>
+<p>Short lessons on many subjects, each fact with its source, and one claim shown with its full proof.</p>
+<p>Kept by Topsoil Commons. Source: <a href="https://topsoilcommons.github.io/atlas/">topsoilcommons.github.io/atlas/</a>, checked October 16, 2026.</p>
+</div>
+<h3>Held by others, open to anyone</h3>
+<div class="rec">
+<p class="recname">Khan Academy</p>
+<p>Free lessons in math, science, and more, for learners and for the people who teach them.</p>
+<p>Kept by Khan Academy, a nonprofit organization. Source: <a href="https://www.khanacademy.org/">www.khanacademy.org/</a>, checked October 16, 2026.</p>
+</div>
+<div class="rec">
+<p class="recname">OpenStax</p>
+<p>Free textbooks, written for school and college courses and reviewed before they are published.</p>
+<p>Kept by OpenStax, at Rice University. Source: <a href="https://openstax.org/">openstax.org/</a>, checked October 16, 2026.</p>
+</div>
+<div class="rec">
+<p class="recname">Project Gutenberg</p>
+<p>Free ebooks, most of them works whose copyright has ended, gathered in one library since 1971.</p>
+<p>Kept by Project Gutenberg. Source: <a href="https://www.gutenberg.org/">www.gutenberg.org/</a>, checked October 16, 2026.</p>
+</div>
+<h3>Missing or thin</h3>
+<div class="rec">
+<p class="recname">One claim in full</p>
+<p>Atlas's public proof stands on one claim shown in full, with its ground, its hand, and its check. The rest of its teaching stands on the sources named lesson by lesson, not on one score for the whole atlas.</p>
+<p>Ground: <a href="https://topsoilcommons.github.io/atlas/">the record it stands in</a>, checked October 16, 2026.</p>
+</div>
+<div class="rec">
+<p class="recname">Thin in the studies</p>
+<p>Of the 5 fields of study filed under this need in Foundations, 2 rest on one study each. One study is a beginning, and the record counts it as one.</p>
+<p>Ground: <a href="https://topsoilcommons.github.io/topsoilcommons/foundations.html">the record it stands in</a>, checked October 16, 2026.</p>
+</div>
+<p>What this does not show: the size of a catalog is its keeper's own claim, and none of those claims was counted here. Each Foundations study is one study, opened and read at its source; one study is a finding to weigh, not a settled fact.</p>
+<h2>Belonging</h2>
+<p>Layer 3 of the Ascent. Unlocks the ability to contribute.</p>
+<p>What a person learns grows when other people know their name and share the work.</p>
+<div class="kinds">
+<div class="kindrow"><span class="kindlabel">The Commons' own</span><span class="kindbar" style="width:100%"></span><span class="kindcount">3</span></div>
+<div class="kindrow"><span class="kindlabel">Held by others</span><span class="kindbar" style="width:67%"></span><span class="kindcount">2</span></div>
+<div class="kindrow"><span class="kindlabel">Missing or thin</span><span class="kindbar" style="width:100%"></span><span class="kindcount">3</span></div>
+</div>
+<p>Key: each bar counts the records of one kind in this section, counted from this section's own records on October 16, 2026. The longest bar is the largest count in the section, and the rest are drawn to the same scale.</p>
+<h3>What the Commons holds</h3>
+<div class="rec">
+<p class="recname">Cohort</p>
+<p>In the live demo, 25 members, 48 messages, 27 shared resources, and 5 events; its test suite passes 7 of 7 checks from a clean start.</p>
+<p>Kept by Topsoil Commons. Source: <a href="https://topsoilcommons.github.io/cohort/">topsoilcommons.github.io/cohort/</a>, checked October 16, 2026.</p>
+</div>
+<div class="rec">
+<p class="recname">Foundations, the studies under this need</p>
+<p>Foundations holds 8 studies in 4 fields filed under this need, each one opened at its source and printed with its source beside it.</p>
+<p>Kept by Topsoil Commons. Source: <a href="https://topsoilcommons.github.io/topsoilcommons/foundations.html">topsoilcommons.github.io/topsoilcommons/foundations.html</a>, checked October 16, 2026.</p>
+</div>
+<div class="rec">
+<p class="recname">On the shelf: Cohort</p>
+<p>A room where people and agents learn and build together.</p>
+<p>Kept by Topsoil Commons. Source: <a href="https://topsoilcommons.github.io/cohort/">topsoilcommons.github.io/cohort/</a>, checked October 16, 2026.</p>
+</div>
+<h3>Held by others, open to anyone</h3>
+<div class="rec">
+<p class="recname">Open Collective</p>
+<p>Groups raise money and spend it in the open, with every amount shown to everyone.</p>
+<p>Kept by Open Collective. Source: <a href="https://opencollective.com/">opencollective.com/</a>, checked October 16, 2026.</p>
+</div>
+<div class="rec">
+<p class="recname">Idealist</p>
+<p>Listings of volunteer chances, jobs, and internships with groups that serve the public.</p>
+<p>Kept by Idealist. Source: <a href="https://www.idealist.org/">www.idealist.org/</a>, checked October 16, 2026.</p>
+</div>
+<h3>Missing or thin</h3>
+<div class="rec">
+<p class="recname">No interactions yet</p>
+<p>The interactions log, the Commons' own count of its doors used, stands at no interactions answered yet. The room is built; it is not yet filled.</p>
+<p>Ground: <a href="https://topsoilcommons.github.io/topsoilcommons/interactions.html">the record it stands in</a>, checked October 16, 2026.</p>
+</div>
+<div class="rec">
+<p class="recname">One enrolled human</p>
+<p>Participation counts one enrolled human today: the founder. Every wider number in that document is a rung on a ladder, not a count of people.</p>
+<p>Ground: <a href="https://topsoilcommons.github.io/topsoilcommons/participation.html">the record it stands in</a>, checked October 16, 2026.</p>
+</div>
+<div class="rec">
+<p class="recname">Thin in the studies</p>
+<p>Of the 4 fields of study filed under this need in Foundations, 1 rest on one study each. One study is a beginning, and the record counts it as one.</p>
+<p>Ground: <a href="https://topsoilcommons.github.io/topsoilcommons/foundations.html">the record it stands in</a>, checked October 16, 2026.</p>
+</div>
+<p>What this does not show: Cohort's numbers come from its live demo, as its own proof sentence says. Open Collective's reach is the platform's own telling, not counted here. One enrolled human is the whole of the Commons' counted belonging today.</p>
+<h2>Shared truth</h2>
+<p>Layer 4 of the Ascent. Unlocks the ability to discern.</p>
+<p>People who belong together still need facts they can all stand on.</p>
+<div class="kinds">
+<div class="kindrow"><span class="kindlabel">The Commons' own</span><span class="kindbar" style="width:100%"></span><span class="kindcount">4</span></div>
+<div class="kindrow"><span class="kindlabel">Held by others</span><span class="kindbar" style="width:75%"></span><span class="kindcount">3</span></div>
+<div class="kindrow"><span class="kindlabel">Missing or thin</span><span class="kindbar" style="width:50%"></span><span class="kindcount">2</span></div>
+</div>
+<p>Key: each bar counts the records of one kind in this section, counted from this section's own records on October 16, 2026. The longest bar is the largest count in the section, and the rest are drawn to the same scale.</p>
+<h3>What the Commons holds</h3>
+<div class="rec">
+<p class="recname">Graph</p>
+<p>Of every 100 facts Graph pulls from text, about 94 are right, measured on its labeled test set on October 15, 2026; 7 of 7 tests pass.</p>
+<p>Kept by Topsoil Commons. Source: <a href="https://topsoilcommons.github.io/graph/">topsoilcommons.github.io/graph/</a>, checked October 16, 2026.</p>
+</div>
+<div class="rec">
+<p class="recname">Foundations, the studies under this need</p>
+<p>Foundations holds 7 studies in 4 fields filed under this need, each one opened at its source and printed with its source beside it.</p>
+<p>Kept by Topsoil Commons. Source: <a href="https://topsoilcommons.github.io/topsoilcommons/foundations.html">topsoilcommons.github.io/topsoilcommons/foundations.html</a>, checked October 16, 2026.</p>
+</div>
+<div class="rec">
+<p class="recname">On the shelf: Graph</p>
+<p>Pulls named things and the links between them out of text, and shows its score and its misses.</p>
+<p>Kept by Topsoil Commons. Source: <a href="https://topsoilcommons.github.io/graph/">topsoilcommons.github.io/graph/</a>, checked October 16, 2026.</p>
+</div>
+<div class="rec">
+<p class="recname">On the shelf: The Index</p>
+<p>The record of the Commons in time order: every entry a claim with its source, its hand, and its check.</p>
+<p>Kept by Topsoil Commons. Source: <a href="https://topsoilcommons.github.io/index/">topsoilcommons.github.io/index/</a>, checked October 16, 2026.</p>
+</div>
+<h3>Held by others, open to anyone</h3>
+<div class="rec">
+<p class="recname">The Internet Archive</p>
+<p>A library of web pages, books, music, and moving pictures, kept so that what was published can still be read and watched.</p>
+<p>Kept by the Internet Archive. Source: <a href="https://archive.org/">archive.org/</a>, checked October 16, 2026.</p>
+</div>
+<div class="rec">
+<p class="recname">The United States Census Bureau</p>
+<p>The official counts of the United States: its people, its homes, and its economy.</p>
+<p>Kept by the United States Census Bureau. Source: <a href="https://www.census.gov/">www.census.gov/</a>, checked October 16, 2026.</p>
+</div>
+<div class="rec">
+<p class="recname">The Bureau of Labor Statistics</p>
+<p>The official United States figures on jobs, pay, and prices. Its page was read in full on the day this page was built; it turns away the scripted fetch this site uses to check links, and that stands here in the open.</p>
+<p>Kept by the United States Bureau of Labor Statistics. Source: <a href="https://www.bls.gov/">www.bls.gov/</a>, checked October 16, 2026.</p>
+</div>
+<h3>Missing or thin</h3>
+<div class="rec">
+<p class="recname">One month of entries</p>
+<p>The Index stands at 13 entries, all of them the Commons' own, all from October 2026. The shared timeline of the world that it is shaped for has not begun.</p>
+<p>Ground: <a href="https://topsoilcommons.github.io/topsoilcommons/progress.html">the record it stands in</a>, checked October 16, 2026.</p>
+</div>
+<div class="rec">
+<p class="recname">Thin in the studies</p>
+<p>Of the 4 fields of study filed under this need in Foundations, 1 rest on one study each. One study is a beginning, and the record counts it as one.</p>
+<p>Ground: <a href="https://topsoilcommons.github.io/topsoilcommons/foundations.html">the record it stands in</a>, checked October 16, 2026.</p>
+</div>
+<p>What this does not show: the Census Bureau and the Bureau of Labor Statistics count one country, the United States, by their own methods and on their own schedules. The Internet Archive holds what people chose to upload. Graph's score was measured on its own labeled test set, and on no wider ground.</p>
+<h2>Autonomy</h2>
+<p>Layer 5 of the Ascent. Unlocks the ability to build.</p>
+<p>Standing on shared facts, a person can build, unless the machines stay a mystery.</p>
+<div class="kinds">
+<div class="kindrow"><span class="kindlabel">The Commons' own</span><span class="kindbar" style="width:100%"></span><span class="kindcount">3</span></div>
+<div class="kindrow"><span class="kindlabel">Held by others</span><span class="kindbar" style="width:67%"></span><span class="kindcount">2</span></div>
+<div class="kindrow"><span class="kindlabel">Missing or thin</span><span class="kindbar" style="width:67%"></span><span class="kindcount">2</span></div>
+</div>
+<p>Key: each bar counts the records of one kind in this section, counted from this section's own records on October 16, 2026. The longest bar is the largest count in the section, and the rest are drawn to the same scale.</p>
+<h3>What the Commons holds</h3>
+<div class="rec">
+<p class="recname">Machine</p>
+<p>A transformer built from scratch passes 7 of 7 gradient checks at a tolerance of 1 in 100,000; its small language model has 358,052 parts, each one counted by the code.</p>
+<p>Kept by Topsoil Commons. Source: <a href="https://topsoilcommons.github.io/machine/">topsoilcommons.github.io/machine/</a>, checked October 16, 2026.</p>
+</div>
+<div class="rec">
+<p class="recname">Foundations, the studies under this need</p>
+<p>Foundations holds 13 studies in 9 fields filed under this need, each one opened at its source and printed with its source beside it.</p>
+<p>Kept by Topsoil Commons. Source: <a href="https://topsoilcommons.github.io/topsoilcommons/foundations.html">topsoilcommons.github.io/topsoilcommons/foundations.html</a>, checked October 16, 2026.</p>
+</div>
+<div class="rec">
+<p class="recname">On the shelf: Machine</p>
+<p>Machine learning built from scratch, with its math checked by tests and its runs recorded.</p>
+<p>Kept by Topsoil Commons. Source: <a href="https://topsoilcommons.github.io/machine/">topsoilcommons.github.io/machine/</a>, checked October 16, 2026.</p>
+</div>
+<h3>Held by others, open to anyone</h3>
+<div class="rec">
+<p class="recname">freeCodeCamp</p>
+<p>Free lessons in coding, with a public path of study that anyone can start and certificates at its steps.</p>
+<p>Kept by freeCodeCamp. Source: <a href="https://www.freecodecamp.org/">www.freecodecamp.org/</a>, checked October 16, 2026.</p>
+</div>
+<div class="rec">
+<p class="recname">GitHub</p>
+<p>The largest home of open source code, where work is kept and changed in the open. The Commons' own repositories stand here too.</p>
+<p>Kept by GitHub. Source: <a href="https://github.com/">github.com/</a>, checked October 16, 2026.</p>
+</div>
+<h3>Missing or thin</h3>
+<div class="rec">
+<p class="recname">One small model</p>
+<p>Machine is one small model built by hand, its parts counted by its own code. The large systems that sort daily life, hiring, credit, and feeds, are not opened by anything in this record.</p>
+<p>Ground: <a href="https://topsoilcommons.github.io/machine/">the record it stands in</a>, checked October 16, 2026.</p>
+</div>
+<div class="rec">
+<p class="recname">Thin in the studies</p>
+<p>Of the 9 fields of study filed under this need in Foundations, 5 rest on one study each. One study is a beginning, and the record counts it as one.</p>
+<p>Ground: <a href="https://topsoilcommons.github.io/topsoilcommons/foundations.html">the record it stands in</a>, checked October 16, 2026.</p>
+</div>
+<p>What this does not show: GitHub and freeCodeCamp describe themselves, and their scale is their own claim, not counted here. Machine's checks cover one small model built for learning. They say nothing about any system a person did not build for themselves.</p>
+<h2>Trust and meaning</h2>
+<p>Layer 6 of the Ascent. Unlocks the ability to commit.</p>
+<p>At the top stands the question of what all of this is for, and whether the tools can be trusted with it.</p>
+<div class="kinds">
+<div class="kindrow"><span class="kindlabel">The Commons' own</span><span class="kindbar" style="width:100%"></span><span class="kindcount">3</span></div>
+<div class="kindrow"><span class="kindlabel">Held by others</span><span class="kindbar" style="width:67%"></span><span class="kindcount">2</span></div>
+<div class="kindrow"><span class="kindlabel">Missing or thin</span><span class="kindbar" style="width:67%"></span><span class="kindcount">2</span></div>
+</div>
+<p>Key: each bar counts the records of one kind in this section, counted from this section's own records on October 16, 2026. The longest bar is the largest count in the section, and the rest are drawn to the same scale.</p>
+<h3>What the Commons holds</h3>
+<div class="rec">
+<p class="recname">Lumen</p>
+<p>A guardrail tested on 41 questions from one tradition's text: it blocked 12 of 12 questions it must refuse, allowed 8 of 8 it must allow.</p>
+<p>Kept by Topsoil Commons. Source: <a href="https://topsoilcommons.github.io/lumen/">topsoilcommons.github.io/lumen/</a>, checked October 16, 2026.</p>
+</div>
+<div class="rec">
+<p class="recname">Foundations, the studies under this need</p>
+<p>Foundations holds 3 studies in 2 fields filed under this need, each one opened at its source and printed with its source beside it.</p>
+<p>Kept by Topsoil Commons. Source: <a href="https://topsoilcommons.github.io/topsoilcommons/foundations.html">topsoilcommons.github.io/topsoilcommons/foundations.html</a>, checked October 16, 2026.</p>
+</div>
+<div class="rec">
+<p class="recname">On the shelf: Lumen</p>
+<p>A guarded question and answer study over public domain texts, with each text kept on its own terms.</p>
+<p>Kept by Topsoil Commons. Source: <a href="https://topsoilcommons.github.io/lumen/">topsoilcommons.github.io/lumen/</a>, checked October 16, 2026.</p>
+</div>
+<h3>Held by others, open to anyone</h3>
+<div class="rec">
+<p class="recname">The Tao Te Ching at Project Gutenberg</p>
+<p>The Tao Te Ching in the public domain translation by James Legge, free for anyone to read whole.</p>
+<p>Kept by Project Gutenberg. Source: <a href="https://www.gutenberg.org/ebooks/216">www.gutenberg.org/ebooks/216</a>, checked October 16, 2026.</p>
+</div>
+<div class="rec">
+<p class="recname">Open Library</p>
+<p>A lending library of scanned books, one page aimed at for every book ever published.</p>
+<p>Kept by Open Library, a project of the Internet Archive. Source: <a href="https://openlibrary.org/">openlibrary.org/</a>, checked October 16, 2026.</p>
+</div>
+<h3>Missing or thin</h3>
+<div class="rec">
+<p class="recname">One study, and nothing else</p>
+<p>For this need, the Commons' own record holds one guarded study and nothing else: no counsel, no community of faith, and no rite stands in it.</p>
+<p>Ground: <a href="https://topsoilcommons.github.io/topsoilcommons/needs.html">the record it stands in</a>, checked October 16, 2026.</p>
+</div>
+<div class="rec">
+<p class="recname">Thin in the studies</p>
+<p>Of the 2 fields of study filed under this need in Foundations, 1 rest on one study each. One study is a beginning, and the record counts it as one.</p>
+<p>Ground: <a href="https://topsoilcommons.github.io/topsoilcommons/foundations.html">the record it stands in</a>, checked October 16, 2026.</p>
+</div>
+<p>What this does not show: the texts at Project Gutenberg are public domain editions, and some of their translations are more than a century old. Lumen's tests show what its guard refuses and allows on its own question sets. They do not say what any tradition teaches, and nothing here weighs one tradition against another.</p>
+<h2>Above the needs: curiosity and wants</h2>
+<p>When needs are met, what remains is wonder: where we came from, and what people have made.</p>
+<div class="kinds">
+<div class="kindrow"><span class="kindlabel">The Commons' own</span><span class="kindbar" style="width:100%"></span><span class="kindcount">2</span></div>
+<div class="kindrow"><span class="kindlabel">Held by others</span><span class="kindbar" style="width:50%"></span><span class="kindcount">1</span></div>
+</div>
+<p>Key: each bar counts the records of one kind in this section, counted from this section's own records on October 16, 2026. The longest bar is the largest count in the section, and the rest are drawn to the same scale.</p>
+<h3>What the Commons holds</h3>
+<div class="rec">
+<p class="recname">The long arc</p>
+<p>Ten beginnings of farming in ten places, told as ranges of years with the doubt printed beside them, and six turns from stored food to this Commons. Wonder with its ground showing.</p>
+<p>Kept by Topsoil Commons. Source: <a href="https://topsoilcommons.github.io/topsoilcommons/record.html">topsoilcommons.github.io/topsoilcommons/record.html</a>, checked October 16, 2026.</p>
+</div>
+<div class="rec">
+<p class="recname">Atlas, one claim in full</p>
+<p>One claim, shown with its full proof, the same on a phone, a watch, a voice, and a wall: the Sun is 99.86 percent of all the mass in the solar system, checked against its recorded sources on October 15, 2026.</p>
+<p>Kept by Topsoil Commons. Source: <a href="https://topsoilcommons.github.io/atlas/">topsoilcommons.github.io/atlas/</a>, checked October 16, 2026.</p>
+</div>
+<h3>Held by others, open to anyone</h3>
+<div class="rec">
+<p class="recname">The shelf of standing work</p>
+<p>The shelf holds 6 standing works by others, each one proven work that anyone can use, adopt, or change, with its license read at its source.</p>
+<p>Kept by Topsoil Commons. Source: <a href="https://topsoilcommons.github.io/topsoilcommons/shelf.html">topsoilcommons.github.io/topsoilcommons/shelf.html</a>, checked October 16, 2026.</p>
+</div>
+<p>What this does not show: the long arc's dates are ranges on purpose, and the record prints its own uncertainty beside them. Nothing in this section is needed by anyone to eat, to sleep, or to be safe tonight; it stands after the needs because that is where it belongs.</p>
+<section class="tech">
+<h2>For agents and builders</h2>
+<p>This page is generated by tools/build_records.py from records.json, site.json, foundations.json, and shelf.json, so the page and its data are one source. The Commons' own records are composed at build time from those files: the acts and their proof sentences from site.json, the study counts from foundations.json, and the shelf exhibits from shelf.json. Nothing on the surface is typed by hand where a file already carries it.</p>
+<p>Foundations fields are filed under the need each study serves first. The filing, with the counts it produced on October 16, 2026:</p>
+<ul class="plain">
+<li>Layer 0: 24 studies in 10 fields. Aging (4), Disability and inclusion (3), Energy access (2), Environment and climate adaptation (3), Food systems and agriculture (2), Health and the body (2), Housing and homelessness (3), Pain (1), Poverty and material security (2), Water and sanitation (2).</li>
+<li>Layer 1: 6 studies in 4 fields. Addiction and recovery (1), Grief and loss (1), Mind and mental health (2), Sleep (2).</li>
+<li>Layer 2: 10 studies in 5 fields. Early childhood (3), Language and communication (3), Learning and education (2), Libraries (1), Play (1).</li>
+<li>Layer 3: 8 studies in 4 fields. Belonging and social connection (2), Cooperation and collective action (2), Migration and refuge (3), Public space (1).</li>
+<li>Layer 4: 7 studies in 4 fields. Governance and democracy (2), Law and justice (2), Local news (1), Truth and shared knowledge (2).</li>
+<li>Layer 5: 13 studies in 9 fields. Artificial intelligence and human computer interaction (2), Craft and making (1), Debt (1), Digital access (2), Economics and incentives (2), Insurance (1), Repair (1), Savings (1), Work and livelihoods (2).</li>
+<li>Layer 6: 3 studies in 2 fields. Meaning, values, and human flourishing (2), Music (1).</li>
+</ul>
+<p>Every outside source on this page was opened on October 16, 2026, before its record was written. One source tried for this page did not answer on October 16, 2026 and was left out: the Internet Sacred Text Archive, at sacred-texts.com. No link was invented to fill its place. The Bureau of Labor Statistics page was read in full the same day; it turns away the scripted fetch used to check links, and its record says so on the surface.</p>
+</section>
+</main>
+<footer>
+  <p>One rule: raise the floor beneath everyone.</p>
+  <p>Advised by Groundskeeper.</p>
+  <p><a href="https://www.linkedin.com/company/topsoil-commons/">Topsoil Commons on LinkedIn</a></p>
+</footer>
+<p class="endline">That is everything. The page ends here.</p>
+</div>
+</body>
+</html>

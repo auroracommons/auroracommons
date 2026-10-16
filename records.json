@@ -1,0 +1,225 @@
+{
+ "checked": "October 16, 2026",
+ "curiosity": {
+  "limits": "What this does not show: the long arc's dates are ranges on purpose, and the record prints its own uncertainty beside them. Nothing in this section is needed by anyone to eat, to sleep, or to be safe tonight; it stands after the needs because that is where it belongs.",
+  "story": "When needs are met, what remains is wonder: where we came from, and what people have made."
+ },
+ "layers": [
+  {
+   "gaps": [
+    {
+     "line": "Ground's boards stand in 19 places, and every other place is not covered yet. The needs map says it in plain words: a board is a start, not coverage.",
+     "name": "Coverage",
+     "source": "https://topsoilcommons.github.io/topsoilcommons/needs.html"
+    },
+    {
+     "line": "In the six places added on October 16, 2026, no provider's own page stated menstrual supplies as an offer, and the Paterson board holds no domestic violence provision. Both facts stand in the progress log beside the listings.",
+     "name": "Supplies and safety in the newest places",
+     "source": "https://topsoilcommons.github.io/topsoilcommons/progress.html"
+    }
+   ],
+   "layer": 0,
+   "limits": "What this does not show: the counts in this section are the Commons' own checks in 19 places, not a count of hunger, of illness, or of help given. The program pages above serve one country, the United States. A Ground listing past its expiry date is stale, and nothing here hides that.",
+   "outside": [
+    {
+     "keeper": "the Food and Nutrition Service of the United States Department of Agriculture",
+     "line": "The federal food assistance program's own page: who can get help with food costs, and how to apply.",
+     "name": "Food assistance in the United States",
+     "source": "https://www.fns.usda.gov/snap/supplemental-nutrition-assistance-program"
+    },
+    {
+     "keeper": "Feeding America",
+     "line": "A finder for food banks: give it a place, and it names the food banks near that place.",
+     "name": "Find a food bank",
+     "source": "https://www.feedingamerica.org/find-your-local-foodbank"
+    },
+    {
+     "keeper": "the United States Department of Housing and Urban Development",
+     "line": "The federal housing department's page on help with rent, and on the housing counselors who guide people to it for free.",
+     "name": "Rental assistance",
+     "source": "https://www.hud.gov/topics/rental_assistance"
+    },
+    {
+     "keeper": "the Health Resources and Services Administration",
+     "line": "A finder for clinics in the federal health center program, searchable by address.",
+     "name": "Find a health center",
+     "source": "https://findahealthcenter.hrsa.gov/"
+    }
+   ],
+   "story": "A person can do nothing else until the body is fed, sheltered, well, and safe."
+  },
+  {
+   "gaps": [
+    {
+     "line": "Still is a first build, minimal on purpose, and the needs map says so in plain words. No treatment and no crisis service stands in the Commons' own record; Still itself points a person in crisis to the 988 line.",
+     "name": "A first build, and no service",
+     "source": "https://topsoilcommons.github.io/topsoilcommons/needs.html"
+    }
+   ],
+   "layer": 1,
+   "limits": "What this does not show: Still's proof shows a page that runs on a device and calls nothing. It does not show that any mind was steadied, and no outcome for any person is measured anywhere in this section. The 988 line and the SAMHSA helpline serve the United States.",
+   "outside": [
+    {
+     "keeper": "the 988 Suicide and Crisis Lifeline",
+     "line": "A person in crisis in the United States can call or text 988 at any hour and reach a trained counselor. The site carries chat as well.",
+     "name": "The 988 Suicide and Crisis Lifeline",
+     "source": "https://988lifeline.org/"
+    },
+    {
+     "keeper": "the Substance Abuse and Mental Health Services Administration",
+     "line": "The federal helpline's own page: referrals and information for mental health and substance use treatment, free and private, day and night.",
+     "name": "The SAMHSA National Helpline",
+     "source": "https://www.samhsa.gov/find-help/national-helpline"
+    }
+   ],
+   "story": "A fed person still cannot choose well with a mind in turmoil, so steadiness comes next."
+  },
+  {
+   "gaps": [
+    {
+     "line": "Atlas's public proof stands on one claim shown in full, with its ground, its hand, and its check. The rest of its teaching stands on the sources named lesson by lesson, not on one score for the whole atlas.",
+     "name": "One claim in full",
+     "source": "https://topsoilcommons.github.io/atlas/"
+    }
+   ],
+   "layer": 2,
+   "limits": "What this does not show: the size of a catalog is its keeper's own claim, and none of those claims was counted here. Each Foundations study is one study, opened and read at its source; one study is a finding to weigh, not a settled fact.",
+   "outside": [
+    {
+     "keeper": "Khan Academy, a nonprofit organization",
+     "line": "Free lessons in math, science, and more, for learners and for the people who teach them.",
+     "name": "Khan Academy",
+     "source": "https://www.khanacademy.org/"
+    },
+    {
+     "keeper": "OpenStax, at Rice University",
+     "line": "Free textbooks, written for school and college courses and reviewed before they are published.",
+     "name": "OpenStax",
+     "source": "https://openstax.org/"
+    },
+    {
+     "keeper": "Project Gutenberg",
+     "line": "Free ebooks, most of them works whose copyright has ended, gathered in one library since 1971.",
+     "name": "Project Gutenberg",
+     "source": "https://www.gutenberg.org/"
+    }
+   ],
+   "story": "With a steady mind, a person can learn, and learning is the first thing no one can take away."
+  },
+  {
+   "gaps": [
+    {
+     "line": "The interactions log, the Commons' own count of its doors used, stands at no interactions answered yet. The room is built; it is not yet filled.",
+     "name": "No interactions yet",
+     "source": "https://topsoilcommons.github.io/topsoilcommons/interactions.html"
+    },
+    {
+     "line": "Participation counts one enrolled human today: the founder. Every wider number in that document is a rung on a ladder, not a count of people.",
+     "name": "One enrolled human",
+     "source": "https://topsoilcommons.github.io/topsoilcommons/participation.html"
+    }
+   ],
+   "layer": 3,
+   "limits": "What this does not show: Cohort's numbers come from its live demo, as its own proof sentence says. Open Collective's reach is the platform's own telling, not counted here. One enrolled human is the whole of the Commons' counted belonging today.",
+   "outside": [
+    {
+     "keeper": "Open Collective",
+     "line": "Groups raise money and spend it in the open, with every amount shown to everyone.",
+     "name": "Open Collective",
+     "source": "https://opencollective.com/"
+    },
+    {
+     "keeper": "Idealist",
+     "line": "Listings of volunteer chances, jobs, and internships with groups that serve the public.",
+     "name": "Idealist",
+     "source": "https://www.idealist.org/"
+    }
+   ],
+   "story": "What a person learns grows when other people know their name and share the work."
+  },
+  {
+   "gaps": [
+    {
+     "line": "The Index stands at 13 entries, all of them the Commons' own, all from October 2026. The shared timeline of the world that it is shaped for has not begun.",
+     "name": "One month of entries",
+     "source": "https://topsoilcommons.github.io/topsoilcommons/progress.html"
+    }
+   ],
+   "layer": 4,
+   "limits": "What this does not show: the Census Bureau and the Bureau of Labor Statistics count one country, the United States, by their own methods and on their own schedules. The Internet Archive holds what people chose to upload. Graph's score was measured on its own labeled test set, and on no wider ground.",
+   "outside": [
+    {
+     "keeper": "the Internet Archive",
+     "line": "A library of web pages, books, music, and moving pictures, kept so that what was published can still be read and watched.",
+     "name": "The Internet Archive",
+     "source": "https://archive.org/"
+    },
+    {
+     "keeper": "the United States Census Bureau",
+     "line": "The official counts of the United States: its people, its homes, and its economy.",
+     "name": "The United States Census Bureau",
+     "source": "https://www.census.gov/"
+    },
+    {
+     "keeper": "the United States Bureau of Labor Statistics",
+     "line": "The official United States figures on jobs, pay, and prices. Its page was read in full on the day this page was built; it turns away the scripted fetch this site uses to check links, and that stands here in the open.",
+     "name": "The Bureau of Labor Statistics",
+     "source": "https://www.bls.gov/"
+    }
+   ],
+   "story": "People who belong together still need facts they can all stand on."
+  },
+  {
+   "gaps": [
+    {
+     "line": "Machine is one small model built by hand, its parts counted by its own code. The large systems that sort daily life, hiring, credit, and feeds, are not opened by anything in this record.",
+     "name": "One small model",
+     "source": "https://topsoilcommons.github.io/machine/"
+    }
+   ],
+   "layer": 5,
+   "limits": "What this does not show: GitHub and freeCodeCamp describe themselves, and their scale is their own claim, not counted here. Machine's checks cover one small model built for learning. They say nothing about any system a person did not build for themselves.",
+   "outside": [
+    {
+     "keeper": "freeCodeCamp",
+     "line": "Free lessons in coding, with a public path of study that anyone can start and certificates at its steps.",
+     "name": "freeCodeCamp",
+     "source": "https://www.freecodecamp.org/"
+    },
+    {
+     "keeper": "GitHub",
+     "line": "The largest home of open source code, where work is kept and changed in the open. The Commons' own repositories stand here too.",
+     "name": "GitHub",
+     "source": "https://github.com/"
+    }
+   ],
+   "story": "Standing on shared facts, a person can build, unless the machines stay a mystery."
+  },
+  {
+   "gaps": [
+    {
+     "line": "For this need, the Commons' own record holds one guarded study and nothing else: no counsel, no community of faith, and no rite stands in it.",
+     "name": "One study, and nothing else",
+     "source": "https://topsoilcommons.github.io/topsoilcommons/needs.html"
+    }
+   ],
+   "layer": 6,
+   "limits": "What this does not show: the texts at Project Gutenberg are public domain editions, and some of their translations are more than a century old. Lumen's tests show what its guard refuses and allows on its own question sets. They do not say what any tradition teaches, and nothing here weighs one tradition against another.",
+   "outside": [
+    {
+     "keeper": "Project Gutenberg",
+     "line": "The Tao Te Ching in the public domain translation by James Legge, free for anyone to read whole.",
+     "name": "The Tao Te Ching at Project Gutenberg",
+     "source": "https://www.gutenberg.org/ebooks/216"
+    },
+    {
+     "keeper": "Open Library, a project of the Internet Archive",
+     "line": "A lending library of scanned books, one page aimed at for every book ever published.",
+     "name": "Open Library",
+     "source": "https://openlibrary.org/"
+    }
+   ],
+   "story": "At the top stands the question of what all of this is for, and whether the tools can be trusted with it."
+  }
+ ]
+}

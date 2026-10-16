@@ -43,6 +43,8 @@ Advanced: the full record, the studies as a path, and the tools that check every
 https://topsoilcommons.github.io/topsoilcommons/advanced.html
 The shelf: proven work by others and by the Commons, each entry with its license checked at its source and three doors, use it, adopt it, and change it.
 https://topsoilcommons.github.io/topsoilcommons/shelf.html
+Public records: what stands in the open for each need, what the Commons holds, what others hold open for anyone, and what is missing, each record with its source and its limits.
+https://topsoilcommons.github.io/topsoilcommons/records.html
 
 Machine files
 site.json: the seven acts as data, each with its need, its proof sentence, and its links.
