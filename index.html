@@ -23,417 +23,395 @@
 <meta name="twitter:image" content="https://topsoilcommons.org/assets/aurora-logo.png">
 <script type="application/ld+json">
 {
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "Organization",
-      "name": "Topsoil Commons",
-      "url": "https://topsoilcommons.org/",
-      "description": "Topsoil Commons addresses the hierarchy of human needs through open source.",
-      "slogan": "Stand on the shoulders of giants",
-      "oneRule": "Raise the floor beneath everyone.",
-      "acts": [
-        {
-          "layer": 0,
-          "need": "the body: food, shelter, health, safety",
-          "act": "Ground",
-          "proof": "8 listings for free food, shelter, and health help near New Rochelle; every one checked against the provider's own page on October 15, 2026; 4 more were dropped for failing the check.",
-          "unlocks": "Unlocks the ability to act at all.",
-          "see": "https://topsoilcommons.github.io/ground/",
-          "check": "https://topsoilcommons.github.io/index/"
-        },
-        {
-          "layer": 1,
-          "need": "the mind at peace",
-          "act": "Still",
-          "proof": "A breathing pacer checked over 3 full rounds: its timing drifted by at most 1 millisecond. The page makes zero network calls; nothing leaves the device.",
-          "unlocks": "Unlocks the ability to choose.",
-          "see": "https://topsoilcommons.github.io/still/",
-          "check": "https://topsoilcommons.github.io/index/"
-        },
-        {
-          "layer": 2,
-          "need": "learning",
-          "act": "Atlas",
-          "proof": "One claim, shown with its full proof, the same on a phone, a watch, a voice, and a wall: the Sun is 99.86 percent of all the mass in the solar system, checked against its recorded sources on October 15, 2026.",
-          "unlocks": "Unlocks the ability to understand.",
-          "see": "https://topsoilcommons.github.io/atlas/",
-          "check": "https://topsoilcommons.github.io/index/"
-        },
-        {
-          "layer": 3,
-          "need": "belonging",
-          "act": "Cohort",
-          "proof": "In the live demo, 25 members, 48 messages, 27 shared resources, and 5 events; its test suite passes 7 of 7 checks from a clean start.",
-          "unlocks": "Unlocks the ability to contribute.",
-          "see": "https://topsoilcommons.github.io/cohort/",
-          "check": "https://topsoilcommons.github.io/index/"
-        },
-        {
-          "layer": 4,
-          "need": "shared truth",
-          "act": "Graph",
-          "proof": "Of every 100 facts Graph pulls from text, about 94 are right, measured on its labeled test set on October 15, 2026; 7 of 7 tests pass.",
-          "unlocks": "Unlocks the ability to discern.",
-          "see": "https://topsoilcommons.github.io/graph/",
-          "check": "https://topsoilcommons.github.io/index/"
-        },
-        {
-          "layer": 5,
-          "need": "autonomy",
-          "act": "Machine",
-          "proof": "A transformer built from scratch passes 7 of 7 gradient checks at a tolerance of 1 in 100,000; its small language model has 358,052 parts, each one counted by the code.",
-          "unlocks": "Unlocks the ability to build.",
-          "see": "https://topsoilcommons.github.io/machine/",
-          "check": "https://topsoilcommons.github.io/index/"
-        },
-        {
-          "layer": 6,
-          "need": "trust and meaning",
-          "act": "Lumen",
-          "proof": "A guardrail tested on 41 questions from one tradition's text: it blocked 12 of 12 questions it must refuse, allowed 8 of 8 it must allow.",
-          "unlocks": "Unlocks the ability to commit.",
-          "see": "https://topsoilcommons.github.io/lumen/",
-          "check": "https://topsoilcommons.github.io/index/"
-        }
-      ]
-    },
-    {
-      "@type": "WebSite",
-      "name": "Topsoil Commons",
-      "url": "https://topsoilcommons.org/"
-    }
-  ]
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Organization",
+   "name": "Topsoil Commons",
+   "url": "https://topsoilcommons.org/",
+   "description": "Topsoil Commons addresses the hierarchy of human needs through open source.",
+   "slogan": "Stand on the shoulders of giants",
+   "oneRule": "Raise the floor beneath everyone."
+  },
+  {
+   "@type": "WebSite",
+   "name": "Topsoil Commons",
+   "url": "https://topsoilcommons.org/"
+  }
+ ]
 }
 </script>
 <link rel="stylesheet" href="assets/commons.css">
 <style>
-  :root{
-    --ink:#211812;
-    --paper:#faf6ee;
-    --card:#fffdf8;
-    --line:#e0d5bf;
-    --accent:#7a4a12;
-    --floor:#211812;
-    --floor-ink:#f9e7bd;
-    --l0:#b57e46; --l1:#c0905a; --l2:#cca16e;
-    --l3:#d7b382; --l4:#e2c495; --l5:#eed6a9; --l6:#f9e7bd;
-    --rub:#9e2b25;
-  }
-  html{margin:0;padding:0}
-  a{color:var(--ink);text-decoration:underline}
-  .wrap{max-width:1060px;margin:0 auto;padding:0 20px}
-
-
-  /* THE FLOOR: the first screen. Name, mission, the drawn strata, the floor. */
-  .stage{min-height:100svh;display:flex;flex-direction:column}
-  .stage .who{padding:34px 20px 10px;max-width:1060px;margin:0 auto;width:100%}
-  h1{font-size:clamp(34px,7vw,58px);letter-spacing:-1.5px;margin:0 0 6px;font-weight:800;line-height:1.05}
-  .mission{font-size:clamp(16px,2.6vw,21px);margin:0;max-width:34em}
-  .firststep{font-size:16px;margin:12px 0 0;max-width:34em}
-  .entry{margin:26px 0 4px;max-width:38em}
-  .entry h2{margin:0 0 10px}
-  .entry .entry-line{font-size:16px;margin:0 0 6px;max-width:34em}
-  .frontdoors a,.door{display:block;border-top:1px solid var(--line);
-    padding:18px 0 18px 16px;margin:0;
-    font-size:17px;font-weight:600;color:var(--ink);text-decoration:none}
-  .frontdoors a:hover,.door:hover{text-decoration:underline}
-  .stageblock{max-width:1060px;margin:0 auto;width:100%;padding:10px 20px 0}
-  .today{font-size:15.5px;margin:16px 0 0;max-width:44em}
-  .drawing{flex:1;display:flex;flex-direction:column;justify-content:flex-end;
-    max-width:1060px;margin:0 auto;width:100%;padding:26px 20px 0}
-  .strata-drawing{display:flex;flex-direction:column-reverse}
-  .band{display:flex;align-items:center;gap:10px;padding:9px 12px;font-size:clamp(12.5px,2.2vw,15.5px);
-    border-top:1px solid rgba(33,24,18,.35);min-height:44px;color:var(--ink);text-decoration:none}
-  .band:first-child{border-top:none}
-  .band .bnum{font-weight:800;font-variant-numeric:tabular-nums;min-width:1em}
-  .band .bact{font-weight:700;margin-left:auto;text-align:right}
-  .band.b0{background:var(--l0)} .band.b1{background:var(--l1)}
-  .band.b2{background:var(--l2)} .band.b3{background:var(--l3)}
-  .band.b4{background:var(--l4)} .band.b5{background:var(--l5)}
-  .band.b6{background:var(--l6)}
-  .band:hover .bact,.band:focus-visible .bact{text-decoration:underline}
-  .band:focus-visible{outline:3px solid var(--ink);outline-offset:-3px}
-  /* The floor: a measured double rule, drawn like an instrument line,
-     with the human sentence of the one rule standing under it. */
-  .floorline{border-top:1px solid var(--ink);margin:4px 0 0;
-    padding:0 20px 30px;font-weight:700;color:var(--ink);
-    font-size:clamp(16px,2.8vw,21px)}
-  .floorline span{display:block;border-top:4px solid var(--ink);padding-top:14px;
-    max-width:1060px;margin:0 auto}
-
-  section{padding:72px 0 6px}
-  h2{font-size:clamp(22px,4vw,28px);letter-spacing:-.5px;margin:0 0 18px;font-weight:800}
-  h3{margin:0}
-
-  /* THE STRATA: one ruled row per layer, like a ledger. */
-  .row{display:grid;grid-template-columns:230px 1fr auto;gap:8px 26px;align-items:start;
-    border-top:1px solid var(--line);border-left:6px solid var(--line);
-    padding:22px 0 22px 16px;margin:0}
-  .row.r0{border-left-color:var(--l0)} .row.r1{border-left-color:var(--l1)}
-  .row.r2{border-left-color:var(--l2)} .row.r3{border-left-color:var(--l3)}
-  .row.r4{border-left-color:var(--l4)} .row.r5{border-left-color:var(--l5)}
-  .row.r6{border-left-color:var(--l6)}
-  .row .layer{font-size:13.5px;font-weight:700;margin:0}
-  .row .need{font-size:18px;font-weight:700;line-height:1.3;margin:2px 0 0}
-  .row h2.need{font-size:18px}
-  .row .act{font-size:15px;color:#4c4234;margin:1px 0 0}
-  .row .proof{margin:0;font-size:16px;max-width:38em}
-  .row .links{display:flex;flex-direction:column;gap:6px;align-items:flex-start}
-  .row .links a{display:inline-flex;align-items:center;font-weight:700;font-size:15px;min-width:44px;min-height:44px}
-  .row:target{outline:2px solid var(--ink);outline-offset:-2px}
-  /* Isotype marks: one mark per unit the check counted, solid for what
-     passed or stands, hollow for what fell or was let through. */
-  .marks{margin:12px 0 0;line-height:0}
-  .marks span{display:inline-block;width:9px;height:9px;background:var(--ink);margin:0 3px 3px 0}
-  .marks span.hollow{background:transparent;border:1.5px solid var(--ink)}
-  .marks.many span{width:7px;height:7px;margin:0 2px 2px 0}
-  /* Rubrication: one manuscript red, reserved for proof marks alone:
-     the numerals and check dates inside proof sentences, and the
-     Check it source links. Nothing else on the page carries it. */
-  .rub{color:var(--rub)}
-  .row .links a.check{color:var(--rub)}
-  .row .links .share{font:inherit;font-weight:700;font-size:15px;min-width:44px;min-height:44px;
-    background:none;border:0;padding:0;color:var(--ink);cursor:pointer;text-align:left}
-  .row .links .share:hover{text-decoration:underline}
-  .legend{font-size:13.5px;color:#4c4234;margin:12px 2px 18px}
-
-  /* THE DOORS: the .door rule is the one merged with .frontdoors a
-     in the floor section above; the two carried identical declarations. */
-
-  /* THE RECORD: ruled lines, kept like a ledger. */
-  .record{list-style:none;margin:0;padding:0}
-  .record li{border-top:1px solid var(--line);padding:11px 0 11px 16px}
-  .record a{font-weight:600;text-decoration:none;font-size:16px}
-  .record a:hover{text-decoration:underline}
-
-  footer{margin-top:58px;border-top:1px solid var(--line);padding:30px 0 46px;
-    font-size:15px;color:#4c4234}
-  footer p{margin:0 0 4px}
-  .ending{margin-top:0;margin-bottom:0;padding-top:18px;padding-bottom:30px}
-
-  @media (max-width:720px){
-    .row{grid-template-columns:1fr;gap:6px}
-    .row .links{flex-direction:row;flex-wrap:wrap}
-  }
-  @media (max-width:300px){
-    .wrap{padding:0 10px}
-    .stage .who{padding:22px 10px 6px}
-    .stageblock{padding:8px 10px 0}
-    .drawing{padding:12px 10px 0}
-    .band{gap:6px;padding:6px 8px;min-height:40px}
-    .band .bact{margin-left:0}
-    .row,.door{padding:14px 12px}
-    section{padding:38px 0 4px}
-  }
+:root{
+--ink:#211812;
+--paper:#faf6ee;
+--card:#fffdf8;
+--line:#e0d5bf;
+--accent:#7a4a12;
+--floor:#211812;
+--floor-ink:#f9e7bd;
+--l0:#b57e46; --l1:#c0905a; --l2:#cca16e;
+--l3:#d7b382; --l4:#e2c495; --l5:#eed6a9; --l6:#f9e7bd;
+--rub:#9e2b25;
+}
+html{margin:0;padding:0}
+a{color:var(--ink);text-decoration:underline}
+.wrap{max-width:1060px;margin:0 auto;padding:0 20px}
+.stage{min-height:100svh;display:flex;flex-direction:column}
+.stage .who{padding:34px 20px 10px;max-width:1060px;margin:0 auto;width:100%}
+h1{font-size:clamp(34px,7vw,58px);letter-spacing:-1.5px;margin:0 0 6px;font-weight:800;line-height:1.05}
+.mission{font-size:clamp(16px,2.6vw,21px);margin:0;max-width:34em}
+.firststep{font-size:16px;margin:12px 0 0;max-width:34em}
+.entry{margin:26px 0 4px;max-width:38em}
+.entry h2{margin:0 0 10px}
+.entry .entry-line{font-size:16px;margin:0 0 6px;max-width:34em}
+.door{display:block;border-top:1px solid var(--line);
+padding:18px 0 18px 16px;margin:0;
+font-size:17px;font-weight:600;color:var(--ink);text-decoration:none}
+.door:hover{text-decoration:underline}
+.frontdoors details{border-top:1px solid var(--line)}
+.frontdoors summary{display:block;cursor:pointer;list-style:none;
+padding:18px 0 18px 16px;margin:0;min-height:44px;
+font-size:17px;font-weight:600;color:var(--ink)}
+.frontdoors summary::-webkit-details-marker{display:none}
+.frontdoors summary:hover{text-decoration:underline}
+.frontdoors .fbody{padding:0 0 18px 16px;font-size:16px;max-width:38em}
+.frontdoors .fbody p{margin:0 0 8px}
+.frontdoors .fbody a{font-weight:600}
+.stageblock{max-width:1060px;margin:0 auto;width:100%;padding:10px 20px 0}
+.today{font-size:15.5px;margin:16px 0 0;max-width:44em}
+.drawing{flex:1;display:flex;flex-direction:column;justify-content:flex-end;
+max-width:1060px;margin:0 auto;width:100%;padding:26px 20px 0}
+.strata-drawing{display:flex;flex-direction:column-reverse}
+.band{display:flex;align-items:center;gap:10px;padding:9px 12px;font-size:clamp(12.5px,2.2vw,15.5px);
+border-top:1px solid rgba(33,24,18,.35);min-height:44px;color:var(--ink);text-decoration:none}
+.band:first-child{border-top:none}
+.band .bnum{font-weight:800;font-variant-numeric:tabular-nums;min-width:1em}
+.band .bact{font-weight:700;margin-left:auto;text-align:right}
+.band.b0{background:var(--l0)} .band.b1{background:var(--l1)}
+.band.b2{background:var(--l2)} .band.b3{background:var(--l3)}
+.band.b4{background:var(--l4)} .band.b5{background:var(--l5)}
+.band.b6{background:var(--l6)}
+.band:hover .bact,.band:focus-visible .bact{text-decoration:underline}
+.band:focus-visible{outline:3px solid var(--ink);outline-offset:-3px}
+.floorline{border-top:1px solid var(--ink);margin:4px 0 0;
+padding:0 20px 30px;font-weight:700;color:var(--ink);
+font-size:clamp(16px,2.8vw,21px)}
+.floorline span{display:block;border-top:4px solid var(--ink);padding-top:14px;
+max-width:1060px;margin:0 auto}
+section{padding:72px 0 6px}
+h2{font-size:clamp(22px,4vw,28px);letter-spacing:-.5px;margin:0 0 18px;font-weight:800}
+h3{margin:0}
+.row{display:grid;grid-template-columns:230px 1fr auto;gap:8px 26px;align-items:start;
+border-top:1px solid var(--line);border-left:6px solid var(--line);
+padding:22px 0 22px 16px;margin:0}
+.row.r0{border-left-color:var(--l0)} .row.r1{border-left-color:var(--l1)}
+.row.r2{border-left-color:var(--l2)} .row.r3{border-left-color:var(--l3)}
+.row.r4{border-left-color:var(--l4)} .row.r5{border-left-color:var(--l5)}
+.row.r6{border-left-color:var(--l6)}
+.row .layer{font-size:13.5px;font-weight:700;margin:0}
+.row .need{font-size:18px;font-weight:700;line-height:1.3;margin:2px 0 0}
+.row h2.need{font-size:18px}
+.row .act{font-size:15px;color:#4c4234;margin:1px 0 0}
+.row .proof{margin:0;font-size:16px;max-width:38em}
+.row .first{margin:0 0 10px;font-size:16px;max-width:38em}
+.row{scroll-margin-top:12px}
+@media (prefers-reduced-motion: no-preference){
+html{scroll-behavior:smooth}
+}
+.row .links{display:flex;flex-direction:column;gap:6px;align-items:flex-start}
+.row .links a{display:inline-flex;align-items:center;font-weight:700;font-size:15px;min-width:44px;min-height:44px}
+.row:target{outline:2px solid var(--ink);outline-offset:-2px}
+.marks{margin:12px 0 0;line-height:0}
+.marks i{display:inline-block;width:9px;height:9px;background:var(--ink);margin:0 3px 3px 0}
+.marks i.hollow{background:transparent;border:1.5px solid var(--ink)}
+.marks.many i{width:7px;height:7px;margin:0 2px 2px 0}
+.rub{color:var(--rub)}
+.row .links a.check{color:var(--rub)}
+.row .links .share{font:inherit;font-weight:700;font-size:15px;min-width:44px;min-height:44px;
+background:none;border:0;padding:0;color:var(--ink);cursor:pointer;text-align:left}
+.row .links .share:hover{text-decoration:underline}
+.legend{font-size:13.5px;color:#4c4234;margin:12px 2px 18px}
+.record{list-style:none;margin:0;padding:0}
+.record li{border-top:1px solid var(--line);padding:11px 0 11px 16px}
+.record a{font-weight:600;text-decoration:none;font-size:16px}
+.record a:hover{text-decoration:underline}
+footer{margin-top:58px;border-top:1px solid var(--line);padding:30px 0 46px;
+font-size:15px;color:#4c4234}
+footer p{margin:0 0 4px}
+.ending{margin-top:0;margin-bottom:0;padding-top:18px;padding-bottom:30px}
+@media (max-width:720px){
+.row{grid-template-columns:1fr;gap:6px}
+.row .links{flex-direction:row;flex-wrap:wrap}
+}
+@media (max-width:300px){
+.wrap{padding:0 10px}
+.stage .who{padding:22px 10px 6px}
+.stageblock{padding:8px 10px 0}
+.drawing{padding:12px 10px 0}
+.band{gap:6px;padding:6px 8px;min-height:40px}
+.band .bact{margin-left:0}
+.row,.door{padding:14px 12px}
+section{padding:38px 0 4px}
+}
 </style>
 </head>
 <body>
 <a class="skip" href="#main">Skip to the content</a>
 
 <header class="stage">
-  <nav class="commons-bar" aria-label="Topsoil Commons sites">
-    <span class="wordmark"><svg class="bar-mark" viewBox="0 0 24 24" width="17" height="17" aria-hidden="true" focusable="false" style="flex:none;align-self:center;margin-right:7px"><g fill="currentColor"><rect x="4" y="2.5" width="16" height="2"/><rect x="4" y="5.5" width="16" height="2"/><rect x="4" y="8.5" width="16" height="2"/><rect x="4" y="11.5" width="4.5" height="8"/><rect x="15.5" y="11.5" width="4.5" height="8"/><rect x="2" y="20.5" width="20" height="2.2"/></g></svg>Topsoil Commons</span>
-    <span class="current" aria-current="page">(you are here)</span>
-    <a href="https://topsoilcommons.org/foundations">Foundations</a>
-    <a href="https://topsoilcommons.github.io/ground/">Ground</a>
-    <a href="https://topsoilcommons.github.io/still/">Still</a>
-    <a href="https://topsoilcommons.github.io/atlas/">Atlas</a>
-    <a href="https://topsoilcommons.github.io/cohort/">Cohort</a>
-    <a href="https://topsoilcommons.github.io/graph/">Graph</a>
-    <a href="https://topsoilcommons.github.io/machine/">Machine</a>
-    <a href="https://topsoilcommons.github.io/lumen/">Lumen</a>
-  </nav>
-  <div class="who">
-    <h1>Topsoil Commons</h1>
-    <p class="mission">Topsoil Commons addresses the hierarchy of human needs through open source.</p>
-    <p class="firststep">Start with one: answer the question below, or read <a href="#layer-0">the first proof in the strata</a>.</p>
-    <div class="entry">
-      <h2>What brought you here?</h2>
-      <p class="entry-line">Pick the line that sounds like you. Each door opens a use in under a minute, then one small act, if you want it. No account. No fee.</p>
-      <nav class="frontdoors" aria-label="What brought you here">
-        <a href="come-in#door-1">I need help today</a>
-        <a href="come-in#door-2">I lost work, or money is tight</a>
-        <a href="come-in#door-3">Something is unfair, and I want it on the record</a>
-        <a href="come-in#door-4">I feel alone, and I want to belong</a>
-        <a href="come-in#door-5">My mind will not settle</a>
-        <a href="come-in#door-6">I want to learn something</a>
-        <a href="come-in#door-7">I have something to give</a>
-        <a href="come-in#door-8">I run something that helps people</a>
-      </nav>
-    </div>
-  </div>
-  <div class="stageblock">
+<nav class="commons-bar" aria-label="Topsoil Commons sites">
+<span class="wordmark"><svg class="bar-mark" viewBox="0 0 24 24" width="17" height="17" aria-hidden="true" focusable="false" style="flex:none;align-self:center;margin-right:7px"><g fill="currentColor"><rect x="4" y="2.5" width="16" height="2"/><rect x="4" y="5.5" width="16" height="2"/><rect x="4" y="8.5" width="16" height="2"/><rect x="4" y="11.5" width="4.5" height="8"/><rect x="15.5" y="11.5" width="4.5" height="8"/><rect x="2" y="20.5" width="20" height="2.2"/></g></svg>Topsoil Commons</span>
+<span class="current" aria-current="page">(you are here)</span>
+<a href="https://topsoilcommons.org/foundations">Foundations</a>
+<a href="https://topsoilcommons.github.io/ground/">Ground</a>
+<a href="https://topsoilcommons.github.io/still/">Still</a>
+<a href="https://topsoilcommons.github.io/atlas/">Atlas</a>
+<a href="https://topsoilcommons.github.io/cohort/">Cohort</a>
+<a href="https://topsoilcommons.github.io/graph/">Graph</a>
+<a href="https://topsoilcommons.github.io/machine/">Machine</a>
+<a href="https://topsoilcommons.github.io/lumen/">Lumen</a>
+</nav>
+<div class="who">
+<h1>Topsoil Commons</h1>
+<p class="mission">Topsoil Commons addresses the hierarchy of human needs through open source.</p>
+<p class="firststep">Start with one: answer the question below, or read <a href="#layer-0">the first proof in the strata</a>.</p>
+<div class="entry">
+<h2>What brought you here?</h2>
+<p class="entry-line">Pick the line that sounds like you. Each door opens a use in under a minute, then one small act, if you want it. No account. No fee.</p>
+<nav class="frontdoors" aria-label="What brought you here">
+<details id="home-door-1">
+<summary>I need help today</summary>
+<div class="fbody">
+<p>Use it now: <a href="https://topsoilcommons.github.io/ground/">find food, shelter, and help near you</a>, each listing with the date it was checked.</p>
+<p>One small act: <a href="https://github.com/topsoilcommons/ground/issues/new?title=Check%20a%20listing">check one listing</a>, about 3 minutes. Your check keeps it true for the next person tonight.</p>
+</div>
+</details>
+<details id="home-door-2">
+<summary>I lost work, or money is tight</summary>
+<div class="fbody">
+<p>Use it now: <a href="https://topsoilcommons.github.io/ground/">help near you</a>, <a href="https://topsoilcommons.github.io/atlas/">one free skill</a>, <a href="https://topsoilcommons.github.io/still/">two quiet minutes</a>. This door does not promise a job; it puts food, a skill, and a steadier hour within reach today.</p>
+<p>One small act: add what you found, a listing or a course that helped, through <a href="come-in#door-2">this door on Come in</a>, about 5 minutes.</p>
+</div>
+</details>
+<details id="home-door-3">
+<summary>Something is unfair, and I want it on the record</summary>
+<div class="fbody">
+<p>Use it now: <a href="foundations">run one verified finding</a>, its source named, its limits printed.</p>
+<p>One small act: <a href="https://topsoilcommons.github.io/index/">witness something to the Index</a>, about 5 minutes. It enters as a claim, not a truth, and a second person checks it.</p>
+</div>
+</details>
+<details id="home-door-4">
+<summary>I feel alone, and I want to belong</summary>
+<div class="fbody">
+<p>Use it now: <a href="https://topsoilcommons.github.io/index/">see what is happening near you</a> on one timeline everyone shares. Honest, in plain sight: today this Commons is one enrolled person and a public record.</p>
+<p>One small act: add the thing your street already has, through <a href="come-in#door-4">this door on Come in</a>, about 2 minutes.</p>
+</div>
+</details>
+<details id="home-door-5">
+<summary>My mind will not settle</summary>
+<div class="fbody">
+<p>Use it now: <a href="https://topsoilcommons.github.io/still/">open Still and breathe</a>. A slow pacer, a short check in, and crisis lines checked at their sources. It is a quiet tool, not medical care.</p>
+<p>One small act: none is asked on a hard day. On a better day, check that one crisis line still answers.</p>
+</div>
+</details>
+<details id="home-door-6">
+<summary>I want to learn something</summary>
+<div class="fbody">
+<p>Use it now: <a href="https://topsoilcommons.github.io/atlas/">pick one topic in Atlas</a> and read one claim with its full proof.</p>
+<p>One small act: <a href="https://github.com/topsoilcommons/atlas/issues/new?title=Check%20a%20claim">check one claim</a>, about 5 minutes: recompute its seal and log what you get.</p>
+</div>
+</details>
+<details id="home-door-7">
+<summary>I have something to give</summary>
+<div class="fbody">
+<p>Use it now: read the acts on <a href="come-in#door-7">Come in</a> and pick by what you hold: time, local knowledge, a skill, a language, a car, surplus food, a room.</p>
+<p>About money: it moves only through a fiscal host, never to a personal account. That door opens when a host is appointed; until then it stays shut, and this site says so.</p>
+</div>
+</details>
+<details id="home-door-8">
+<summary>I run something that helps people</summary>
+<div class="fbody">
+<p>Use it now: <a href="https://topsoilcommons.github.io/ground/">see how your work appears on the board</a>, with its check dates. A place here is given, never bought.</p>
+<p>One small act: keep your own listing true, about 10 minutes, through <a href="come-in#door-8">this door on Come in</a>.</p>
+</div>
+</details>
+</nav>
+</div>
+</div>
+<div class="stageblock">
 <article class="row r0" id="layer-0">
-    <div>
-      <p class="layer">Layer 0</p>
-      <h2 class="need">the body: food, shelter, health, safety</h2>
-      <p class="act">Ground</p>
-    </div>
-    <div><p class="proof"><span class="rub">8</span> listings for free food, shelter, and health help near New Rochelle; every one checked against the provider's own page on <span class="rub">October 15, 2026</span>; <span class="rub">4</span> more were dropped for failing the check.</p><p>Unlocks the ability to act at all.</p><p class="marks" role="img" aria-label="One mark for each listing checked on October 15, 2026: 8 solid marks for the listings that passed the check, 4 hollow marks for the ones that were dropped."><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span class="hollow"></span><span class="hollow"></span><span class="hollow"></span><span class="hollow"></span></p></div>
-    <div class="links">
-      <a class="see" href="https://topsoilcommons.github.io/ground/">See it</a>
-      <a href="https://topsoilcommons.github.io/index/" class="check">Check it</a>
-      <button type="button" class="share" data-share data-title="Topsoil Commons" data-text="Ground, the body: food, shelter, health, safety. One layer of Topsoil Commons." data-url="https://topsoilcommons.org/#layer-0">Share</button>
-    </div>
-  </article>
-    <!-- today:begin -->
-    <p class="today" id="today-line">Today, <span class="rub">October 16, 2026</span>: <span class="rub">155</span> listings for food, shelter, and health help stand checked in Ground, across <span class="rub">19</span> places, every one against its provider's own page; <span class="rub">71</span> findings stand in Foundations, each with its source named; and <span class="rub">61</span> entries stand in the public progress log. Each count can be checked where it is kept: the Ground and Foundations pages and the log linked in the record below.</p>
-    <!-- today:end -->
-  </div>
-  <nav class="drawing" aria-label="The seven layers and their proofs">
-    <div class="strata-drawing">
-      <a class="band b0" href="#layer-0"><span class="bnum">0</span><span>food and shelter</span><span class="bact">Ground</span></a>
-      <a class="band b1" href="#layer-1"><span class="bnum">1</span><span>a mind at peace</span><span class="bact">Still</span></a>
-      <a class="band b2" href="#layer-2"><span class="bnum">2</span><span>learning</span><span class="bact">Atlas</span></a>
-      <a class="band b3" href="#layer-3"><span class="bnum">3</span><span>belonging</span><span class="bact">Cohort</span></a>
-      <a class="band b4" href="#layer-4"><span class="bnum">4</span><span>shared truth</span><span class="bact">Graph</span></a>
-      <a class="band b5" href="#layer-5"><span class="bnum">5</span><span>autonomy</span><span class="bact">Machine</span></a>
-      <a class="band b6" href="#layer-6"><span class="bnum">6</span><span>trust and meaning</span><span class="bact">Lumen</span></a>
-    </div>
-    <p class="legend">Each layer is one need. Layers are drawn in order, not to scale of importance.</p>
-  </nav>
-  <p class="floorline"><span>The one rule: raise the floor beneath everyone.</span></p>
+<div>
+<p class="layer">Layer 0</p>
+<h2 class="need">the body: food, shelter, health, safety</h2>
+<p class="act">Ground</p>
+</div>
+<div><p class="first"><strong>I need help today.</strong> Open the Ground board for your place: food, shelter, health, and safety help near you, each listing with the date it was checked. Under a minute.</p><p class="proof"><span class="rub">8</span> listings for free food, shelter, and health help near New Rochelle; every one checked against the provider's own page on <span class="rub">October 15, 2026</span>; <span class="rub">4</span> more were dropped for failing the check.</p><p>Unlocks the ability to act at all.</p><p class="marks" role="img" aria-label="One mark for each listing checked on October 15, 2026: 8 solid marks for the listings that passed the check, 4 hollow marks for the ones that were dropped."><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i class="hollow"></i><i class="hollow"></i><i class="hollow"></i><i class="hollow"></i></p></div>
+<div class="links">
+<a class="see" href="https://topsoilcommons.github.io/ground/">See it</a>
+<a href="https://topsoilcommons.github.io/index/" class="check">Check it</a>
+<button type="button" class="share" data-share data-title="Topsoil Commons" data-text="Ground, the body: food, shelter, health, safety. One layer of Topsoil Commons." data-url="https://topsoilcommons.org/#layer-0">Share</button>
+</div>
+</article>
+<!-- today:begin -->
+<p class="today" id="today-line">Today, <span class="rub">October 16, 2026</span>: <span class="rub">155</span> listings for food, shelter, and health help stand checked in Ground, across <span class="rub">19</span> places, every one against its provider's own page; <span class="rub">71</span> findings stand in Foundations, each with its source named; and <span class="rub">61</span> entries stand in the public progress log. Each count can be checked where it is kept: the Ground and Foundations pages and the log linked in the record below.</p>
+<!-- today:end -->
+</div>
+<nav class="drawing" aria-label="The seven layers and their proofs">
+<div class="strata-drawing">
+<a class="band b0" href="#layer-0"><span class="bnum">0</span><span>food and shelter</span><span class="bact">Ground</span></a>
+<a class="band b1" href="#layer-1"><span class="bnum">1</span><span>a mind at peace</span><span class="bact">Still</span></a>
+<a class="band b2" href="#layer-2"><span class="bnum">2</span><span>learning</span><span class="bact">Atlas</span></a>
+<a class="band b3" href="#layer-3"><span class="bnum">3</span><span>belonging</span><span class="bact">Cohort</span></a>
+<a class="band b4" href="#layer-4"><span class="bnum">4</span><span>shared truth</span><span class="bact">Graph</span></a>
+<a class="band b5" href="#layer-5"><span class="bnum">5</span><span>autonomy</span><span class="bact">Machine</span></a>
+<a class="band b6" href="#layer-6"><span class="bnum">6</span><span>trust and meaning</span><span class="bact">Lumen</span></a>
+</div>
+<p class="legend">Each layer is one need. Layers are drawn in order, not to scale of importance.</p>
+</nav>
+<p class="floorline"><span>The one rule: raise the floor beneath everyone.</span></p>
 </header>
 
 <main class="wrap" id="main">
 
 <section aria-labelledby="strata-h">
-  <h2 id="strata-h">The strata</h2>
-  <p class="legend">Marks count one set named in the proof beside them. Dark marks show what passed, stood, or was blocked. Open marks show what was dropped, missed, or allowed.</p>
+<h2 id="strata-h">The strata</h2>
+<p class="legend">Marks count one set named in the proof beside them. Dark marks show what passed, stood, or was blocked. Open marks show what was dropped, missed, or allowed.</p>
 
-  <article class="row r1" id="layer-1">
-    <div>
-      <p class="layer">Layer 1</p>
-      <h3 class="need">the mind at peace</h3>
-      <p class="act">Still</p>
-    </div>
-    <div><p class="proof">A breathing pacer checked over <span class="rub">3</span> full rounds: its timing drifted by at most <span class="rub">1</span> millisecond. The page makes <span class="rub">zero</span> network calls; nothing leaves the device.</p><p>Unlocks the ability to choose.</p><p class="marks" role="img" aria-label="One mark for each of the 3 full rounds the breathing pacer was checked over."><span></span><span></span><span></span></p></div>
-    <div class="links">
-      <a class="see" href="https://topsoilcommons.github.io/still/">See it</a>
-      <a href="https://topsoilcommons.github.io/index/" class="check">Check it</a>
-      <button type="button" class="share" data-share data-title="Topsoil Commons" data-text="Still, the mind at peace. One layer of Topsoil Commons." data-url="https://topsoilcommons.org/#layer-1">Share</button>
-    </div>
-  </article>
+<article class="row r1" id="layer-1">
+<div>
+<p class="layer">Layer 1</p>
+<h3 class="need">the mind at peace</h3>
+<p class="act">Still</p>
+</div>
+<div><p class="first"><strong>My mind will not settle.</strong> Open Still and start the pacer: 4 counts in, 4 held, 6 out. It runs on the page itself; nothing leaves your device. Under a minute.</p><p class="proof">A breathing pacer checked over <span class="rub">3</span> full rounds: its timing drifted by at most <span class="rub">1</span> millisecond. The page makes <span class="rub">zero</span> network calls; nothing leaves the device.</p><p>Unlocks the ability to choose.</p><p class="marks" role="img" aria-label="One mark for each of the 3 full rounds the breathing pacer was checked over."><i></i><i></i><i></i></p></div>
+<div class="links">
+<a class="see" href="https://topsoilcommons.github.io/still/">See it</a>
+<a href="https://topsoilcommons.github.io/index/" class="check">Check it</a>
+<button type="button" class="share" data-share data-title="Topsoil Commons" data-text="Still, the mind at peace. One layer of Topsoil Commons." data-url="https://topsoilcommons.org/#layer-1">Share</button>
+</div>
+</article>
 
-  <article class="row r2" id="layer-2">
-    <div>
-      <p class="layer">Layer 2</p>
-      <h3 class="need">learning</h3>
-      <p class="act">Atlas</p>
-    </div>
-    <div><p class="proof">One claim, shown with its full proof, the same on a phone, a watch, a voice, and a wall: the Sun is <span class="rub">99.86</span> percent of all the mass in the solar system, checked against its recorded sources on <span class="rub">October 15, 2026</span>.</p><p>Unlocks the ability to understand.</p><p class="marks" role="img" aria-label="One mark for the one claim on the proof screen."><span></span></p></div>
-    <div class="links">
-      <a class="see" href="https://topsoilcommons.github.io/atlas/">See it</a>
-      <a href="https://topsoilcommons.github.io/index/" class="check">Check it</a>
-      <button type="button" class="share" data-share data-title="Topsoil Commons" data-text="Atlas, learning. One layer of Topsoil Commons." data-url="https://topsoilcommons.org/#layer-2">Share</button>
-    </div>
-  </article>
+<article class="row r2" id="layer-2">
+<div>
+<p class="layer">Layer 2</p>
+<h3 class="need">learning</h3>
+<p class="act">Atlas</p>
+</div>
+<div><p class="first"><strong>I want to learn something.</strong> Pick one topic in Atlas and read one claim with its full proof: where its facts came from, and how to check them again. Under a minute.</p><p class="proof">One claim, shown with its full proof, the same on a phone, a watch, a voice, and a wall: the Sun is <span class="rub">99.86</span> percent of all the mass in the solar system, checked against its recorded sources on <span class="rub">October 15, 2026</span>.</p><p>Unlocks the ability to understand.</p><p class="marks" role="img" aria-label="One mark for the one claim on the proof screen."><i></i></p></div>
+<div class="links">
+<a class="see" href="https://topsoilcommons.github.io/atlas/">See it</a>
+<a href="https://topsoilcommons.github.io/index/" class="check">Check it</a>
+<button type="button" class="share" data-share data-title="Topsoil Commons" data-text="Atlas, learning. One layer of Topsoil Commons." data-url="https://topsoilcommons.org/#layer-2">Share</button>
+</div>
+</article>
 
-  <article class="row r3" id="layer-3">
-    <div>
-      <p class="layer">Layer 3</p>
-      <h3 class="need">belonging</h3>
-      <p class="act">Cohort</p>
-    </div>
-    <div><p class="proof">In the live demo, <span class="rub">25</span> members, <span class="rub">48</span> messages, <span class="rub">27</span> shared resources, and <span class="rub">5</span> events; its test suite passes <span class="rub">7</span> of <span class="rub">7</span> checks from a clean start.</p><p>Unlocks the ability to contribute.</p><p class="marks" role="img" aria-label="One mark for each of the 7 checks in the test suite, all 7 passing from a clean start."><span></span><span></span><span></span><span></span><span></span><span></span><span></span></p></div>
-    <div class="links">
-      <a class="see" href="https://topsoilcommons.github.io/cohort/">See it</a>
-      <a href="https://topsoilcommons.github.io/index/" class="check">Check it</a>
-      <button type="button" class="share" data-share data-title="Topsoil Commons" data-text="Cohort, belonging. One layer of Topsoil Commons." data-url="https://topsoilcommons.org/#layer-3">Share</button>
-    </div>
-  </article>
+<article class="row r3" id="layer-3">
+<div>
+<p class="layer">Layer 3</p>
+<h3 class="need">belonging</h3>
+<p class="act">Cohort</p>
+</div>
+<div><p class="first"><strong>I feel alone, and I want to belong.</strong> Open the Cohort demo and look around a working circle: its members, its messages, its shared resources. It is a demo, and it is labeled a demo in the open. Under a minute.</p><p class="proof">In the live demo, <span class="rub">25</span> members, <span class="rub">48</span> messages, <span class="rub">27</span> shared resources, and <span class="rub">5</span> events; its test suite passes <span class="rub">7</span> of <span class="rub">7</span> checks from a clean start.</p><p>Unlocks the ability to contribute.</p><p class="marks" role="img" aria-label="One mark for each of the 7 checks in the test suite, all 7 passing from a clean start."><i></i><i></i><i></i><i></i><i></i><i></i><i></i></p></div>
+<div class="links">
+<a class="see" href="https://topsoilcommons.github.io/cohort/">See it</a>
+<a href="https://topsoilcommons.github.io/index/" class="check">Check it</a>
+<button type="button" class="share" data-share data-title="Topsoil Commons" data-text="Cohort, belonging. One layer of Topsoil Commons." data-url="https://topsoilcommons.org/#layer-3">Share</button>
+</div>
+</article>
 
-  <article class="row r4" id="layer-4">
-    <div>
-      <p class="layer">Layer 4</p>
-      <h3 class="need">shared truth</h3>
-      <p class="act">Graph</p>
-    </div>
-    <div><p class="proof">Of every <span class="rub">100</span> facts Graph pulls from text, about <span class="rub">94</span> are right, measured on its labeled test set on <span class="rub">October 15, 2026</span>; <span class="rub">7</span> of <span class="rub">7</span> tests pass.</p><p>Unlocks the ability to discern.</p><p class="marks many" role="img" aria-label="One mark for each fact in a hundred counted: the solid marks picture about 94 of every 100 facts pulled right, the hollow marks the rest."><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span class="hollow"></span><span class="hollow"></span><span class="hollow"></span><span class="hollow"></span><span class="hollow"></span><span class="hollow"></span></p></div>
-    <div class="links">
-      <a class="see" href="https://topsoilcommons.github.io/graph/">See it</a>
-      <a href="https://topsoilcommons.github.io/index/" class="check">Check it</a>
-      <button type="button" class="share" data-share data-title="Topsoil Commons" data-text="Graph, shared truth. One layer of Topsoil Commons." data-url="https://topsoilcommons.org/#layer-4">Share</button>
-    </div>
-  </article>
+<article class="row r4" id="layer-4">
+<div>
+<p class="layer">Layer 4</p>
+<h3 class="need">shared truth</h3>
+<p class="act">Graph</p>
+</div>
+<div><p class="first"><strong>I want to know what is true.</strong> Open Graph and read one scored run: the facts it pulled from a text, its score, and its misses, printed beside the score. Under a minute.</p><p class="proof">Of every <span class="rub">100</span> facts Graph pulls from text, about <span class="rub">94</span> are right, measured on its labeled test set on <span class="rub">October 15, 2026</span>; <span class="rub">7</span> of <span class="rub">7</span> tests pass.</p><p>Unlocks the ability to discern.</p><p class="marks many" role="img" aria-label="One mark for each fact in a hundred counted: the solid marks picture about 94 of every 100 facts pulled right, the hollow marks the rest."><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i class="hollow"></i><i class="hollow"></i><i class="hollow"></i><i class="hollow"></i><i class="hollow"></i><i class="hollow"></i></p></div>
+<div class="links">
+<a class="see" href="https://topsoilcommons.github.io/graph/">See it</a>
+<a href="https://topsoilcommons.github.io/index/" class="check">Check it</a>
+<button type="button" class="share" data-share data-title="Topsoil Commons" data-text="Graph, shared truth. One layer of Topsoil Commons." data-url="https://topsoilcommons.org/#layer-4">Share</button>
+</div>
+</article>
 
-  <article class="row r5" id="layer-5">
-    <div>
-      <p class="layer">Layer 5</p>
-      <h3 class="need">autonomy</h3>
-      <p class="act">Machine</p>
-    </div>
-    <div><p class="proof">A transformer built from scratch passes <span class="rub">7</span> of <span class="rub">7</span> gradient checks at a tolerance of <span class="rub">1</span> in <span class="rub">100,000</span>; its small language model has <span class="rub">358,052</span> parts, each one counted by the code.</p><p>Unlocks the ability to build.</p><p class="marks" role="img" aria-label="One mark for each of the 7 gradient checks, all 7 passing."><span></span><span></span><span></span><span></span><span></span><span></span><span></span></p></div>
-    <div class="links">
-      <a class="see" href="https://topsoilcommons.github.io/machine/">See it</a>
-      <a href="https://topsoilcommons.github.io/index/" class="check">Check it</a>
-      <button type="button" class="share" data-share data-title="Topsoil Commons" data-text="Machine, autonomy. One layer of Topsoil Commons." data-url="https://topsoilcommons.org/#layer-5">Share</button>
-    </div>
-  </article>
+<article class="row r5" id="layer-5">
+<div>
+<p class="layer">Layer 5</p>
+<h3 class="need">autonomy</h3>
+<p class="act">Machine</p>
+</div>
+<div><p class="first"><strong>I want to build it myself.</strong> Open Machine and read one recorded run: a transformer built from scratch, its checks passed, its training counted by the code. Under a minute.</p><p class="proof">A transformer built from scratch passes <span class="rub">7</span> of <span class="rub">7</span> gradient checks at a tolerance of <span class="rub">1</span> in <span class="rub">100,000</span>; its small language model has <span class="rub">358,052</span> parts, each one counted by the code.</p><p>Unlocks the ability to build.</p><p class="marks" role="img" aria-label="One mark for each of the 7 gradient checks, all 7 passing."><i></i><i></i><i></i><i></i><i></i><i></i><i></i></p></div>
+<div class="links">
+<a class="see" href="https://topsoilcommons.github.io/machine/">See it</a>
+<a href="https://topsoilcommons.github.io/index/" class="check">Check it</a>
+<button type="button" class="share" data-share data-title="Topsoil Commons" data-text="Machine, autonomy. One layer of Topsoil Commons." data-url="https://topsoilcommons.org/#layer-5">Share</button>
+</div>
+</article>
 
-  <article class="row r6" id="layer-6">
-    <div>
-      <p class="layer">Layer 6</p>
-      <h3 class="need">trust and meaning</h3>
-      <p class="act">Lumen</p>
-    </div>
-    <div><p class="proof">A guardrail tested on <span class="rub">41</span> questions from one tradition's text: it blocked <span class="rub">12</span> of <span class="rub">12</span> questions it must refuse, allowed <span class="rub">8</span> of <span class="rub">8</span> it must allow.</p><p>Unlocks the ability to commit.</p><p class="marks" role="img" aria-label="One mark for each question in the guardrail test: 12 solid marks for the questions it blocked, 8 hollow marks for the questions it allowed."><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span class="hollow"></span><span class="hollow"></span><span class="hollow"></span><span class="hollow"></span><span class="hollow"></span><span class="hollow"></span><span class="hollow"></span><span class="hollow"></span></p></div>
-    <div class="links">
-      <a class="see" href="https://topsoilcommons.github.io/lumen/">See it</a>
-      <a href="https://topsoilcommons.github.io/index/" class="check">Check it</a>
-      <button type="button" class="share" data-share data-title="Topsoil Commons" data-text="Lumen, trust and meaning. One layer of Topsoil Commons." data-url="https://topsoilcommons.org/#layer-6">Share</button>
-    </div>
-  </article>
+<article class="row r6" id="layer-6">
+<div>
+<p class="layer">Layer 6</p>
+<h3 class="need">trust and meaning</h3>
+<p class="act">Lumen</p>
+</div>
+<div><p class="first"><strong>I want something I can trust.</strong> Open Lumen and ask one question of a guarded text: see what it answers, what it refuses, and why, on the text's own terms. Under a minute.</p><p class="proof">A guardrail tested on <span class="rub">41</span> questions from one tradition's text: it blocked <span class="rub">12</span> of <span class="rub">12</span> questions it must refuse, allowed <span class="rub">8</span> of <span class="rub">8</span> it must allow.</p><p>Unlocks the ability to commit.</p><p class="marks" role="img" aria-label="One mark for each question in the guardrail test: 12 solid marks for the questions it blocked, 8 hollow marks for the questions it allowed."><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i class="hollow"></i><i class="hollow"></i><i class="hollow"></i><i class="hollow"></i><i class="hollow"></i><i class="hollow"></i><i class="hollow"></i><i class="hollow"></i></p></div>
+<div class="links">
+<a class="see" href="https://topsoilcommons.github.io/lumen/">See it</a>
+<a href="https://topsoilcommons.github.io/index/" class="check">Check it</a>
+<button type="button" class="share" data-share data-title="Topsoil Commons" data-text="Lumen, trust and meaning. One layer of Topsoil Commons." data-url="https://topsoilcommons.org/#layer-6">Share</button>
+</div>
+</article>
 </section>
 
 <section aria-labelledby="doors-h">
-  <h2 id="doors-h">The doors</h2>
-  <a class="door" href="story">The story: where this comes from, where it stands, where it is going.</a>
-  <a class="door" href="advanced">Advanced: the full record, the studies, the data, and the tools that check it.</a>
-  <a class="door" href="https://github.com/topsoilcommons/ground/issues/new?title=Check%20a%20listing">Verify one listing in Ground: your name and date keep it alive.</a>
-  <a class="door" href="https://github.com/topsoilcommons/atlas/issues/new?title=Check%20a%20claim">Check one claim in Atlas: recompute its seal and log the check.</a>
-  <a class="door" href="https://github.com/topsoilcommons/topsoilcommons/issues/new?template=report-an-error.md">Report one thing that is wrong: it is fixed or answered in the open.</a>
+<h2 id="doors-h">The doors</h2>
+<a class="door" href="story">The story: where this comes from, where it stands, where it is going.</a>
+<a class="door" href="advanced">Advanced: the full record, the studies, the data, and the tools that check it.</a>
+<a class="door" href="https://github.com/topsoilcommons/ground/issues/new?title=Check%20a%20listing">Verify one listing in Ground: your name and date keep it alive.</a>
+<a class="door" href="https://github.com/topsoilcommons/atlas/issues/new?title=Check%20a%20claim">Check one claim in Atlas: recompute its seal and log the check.</a>
+<a class="door" href="https://github.com/topsoilcommons/topsoilcommons/issues/new?template=report-an-error.md">Report one thing that is wrong: it is fixed or answered in the open.</a>
 </section>
 
 <section aria-labelledby="ways-in-h">
-  <h2 id="ways-in-h">Ways in</h2>
-  <nav aria-label="Ways in">
-    <ul class="record">
-      <li><a href="https://topsoilcommons.github.io/ground/">Ground</a> and <a href="https://topsoilcommons.github.io/still/">Still</a>, if you need help today. Food, shelter, and health help near you, each listing with its check date; and a quiet tool to steady your mind.</li>
-      <li><a href="come-in">Come in</a>, if you want to contribute. Every act states its minutes and what it changes, and lands in the public ledger under your name, a stage name, or no name, as you choose.</li>
-      <li><a href="records">Public records</a>, if you run an organization or a government. What stands in the open for every need, the governance documents, and the registry. A place is given, never bought.</li>
-      <li><a href="funds">Funds</a>, if you support or fund work like this. The intended host is Open Source Collective; an application was submitted on October 16, 2026 and is under review; no host is appointed and no funds have been received. Money moves only through the host, never to a personal account.</li>
-      <li><a href="https://topsoilcommons.github.io/index/">The Index</a>, if you check claims. Every entry a claim with its ground, its hand, and its check, in time order; recompute a seal yourself and file what you get.</li>
-    </ul>
-  </nav>
+<h2 id="ways-in-h">Ways in</h2>
+<nav aria-label="Ways in">
+<ul class="record">
+<li><a href="https://topsoilcommons.github.io/ground/">Ground</a> and <a href="https://topsoilcommons.github.io/still/">Still</a>, if you need help today. Food, shelter, and health help near you, each listing with its check date; and a quiet tool to steady your mind.</li>
+<li><a href="come-in">Come in</a>, if you want to contribute. Every act states its minutes and what it changes, and lands in the public ledger under your name, a stage name, or no name, as you choose.</li>
+<li><a href="records">Public records</a>, if you run an organization or a government. What stands in the open for every need, the governance documents, and the registry. A place is given, never bought.</li>
+<li><a href="funds">Funds</a>, if you support or fund work like this. The intended host is Open Source Collective; an application was submitted on October 16, 2026 and is under review; no host is appointed and no funds have been received. Money moves only through the host, never to a personal account.</li>
+<li><a href="https://topsoilcommons.github.io/index/">The Index</a>, if you check claims. Every entry a claim with its ground, its hand, and its check, in time order; recompute a seal yourself and file what you get.</li>
+</ul>
+</nav>
 </section>
 
 <section aria-labelledby="record-h">
-  <h2 id="record-h">The record</h2>
-  <nav aria-label="The public record">
-    <ul class="record">
-      <li><a href="foundations">Foundations</a> Findings you can run yourself, each in under a minute.</li>
-      <li><a href="life">In life: what the record means for living bodies</a></li>
-      <li><a href="https://topsoilcommons.github.io/index/">The Index: the Commons record in time order, each entry with its check</a></li>
-      <li><a href="record">The Record</a> The whole written record on one page: the charter, the needs, the rules, the log, and the money.</li>
-    </ul>
-  </nav>
+<h2 id="record-h">The record</h2>
+<nav aria-label="The public record">
+<ul class="record">
+<li><a href="foundations">Foundations</a> Findings you can run yourself, each in under a minute.</li>
+<li><a href="life">In life: what the record means for living bodies</a></li>
+<li><a href="https://topsoilcommons.github.io/index/">The Index: the Commons record in time order, each entry with its check</a></li>
+<li><a href="record">The Record</a> The whole written record on one page: the charter, the needs, the rules, the log, and the money.</li>
+</ul>
+</nav>
 </section>
 
 </main>
 
 <footer>
-  <div class="wrap">
-    <p>One rule: raise the floor beneath everyone.</p>
-    <p>Advised by Groundskeeper.</p>
-    <p><a href="https://www.linkedin.com/company/topsoil-commons/">Topsoil Commons on LinkedIn</a></p>
-    <p>For agents: <a href="llms.txt">llms.txt</a>, this site written plainly for agents.</p>
-  </div>
+<div class="wrap">
+<p>One rule: raise the floor beneath everyone.</p>
+<p>Advised by Groundskeeper.</p>
+<p><a href="https://www.linkedin.com/company/topsoil-commons/">Topsoil Commons on LinkedIn</a></p>
+<p>For agents: <a href="llms.txt">llms.txt</a>, this site written plainly for agents.</p>
+</div>
 </footer>
 
 <p class="wrap ending">That is everything. The page ends here.</p>
 
 <script src="assets/share.js"></script>
+<script src="assets/doors.js"></script>
 </body>
 </html>

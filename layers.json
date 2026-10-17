@@ -1,0 +1,85 @@
+{
+  "generated_from": "site.json by tools/build_layers.py; do not edit by hand",
+  "organization": "Topsoil Commons",
+  "rule": "Raise the floor beneath everyone.",
+  "about": "One object per layer of Topsoil Commons: the need, the act, the door line a person would say, the first step that takes under a minute, the proof sentence, and where to see it and check it.",
+  "layers": [
+    {
+      "layer": 0,
+      "need": "the body: food, shelter, health, safety",
+      "act": "Ground",
+      "door": "I need help today.",
+      "first_step": "Open the Ground board for your place: food, shelter, health, and safety help near you, each listing with the date it was checked. Under a minute.",
+      "proof": "8 listings for free food, shelter, and health help near New Rochelle; every one checked against the provider's own page on October 15, 2026; 4 more were dropped for failing the check.",
+      "unlocks": "Unlocks the ability to act at all.",
+      "see": "https://topsoilcommons.github.io/ground/",
+      "check": "https://topsoilcommons.github.io/index/"
+    },
+    {
+      "layer": 1,
+      "need": "the mind at peace",
+      "act": "Still",
+      "door": "My mind will not settle.",
+      "first_step": "Open Still and start the pacer: 4 counts in, 4 held, 6 out. It runs on the page itself; nothing leaves your device. Under a minute.",
+      "proof": "A breathing pacer checked over 3 full rounds: its timing drifted by at most 1 millisecond. The page makes zero network calls; nothing leaves the device.",
+      "unlocks": "Unlocks the ability to choose.",
+      "see": "https://topsoilcommons.github.io/still/",
+      "check": "https://topsoilcommons.github.io/index/"
+    },
+    {
+      "layer": 2,
+      "need": "learning",
+      "act": "Atlas",
+      "door": "I want to learn something.",
+      "first_step": "Pick one topic in Atlas and read one claim with its full proof: where its facts came from, and how to check them again. Under a minute.",
+      "proof": "One claim, shown with its full proof, the same on a phone, a watch, a voice, and a wall: the Sun is 99.86 percent of all the mass in the solar system, checked against its recorded sources on October 15, 2026.",
+      "unlocks": "Unlocks the ability to understand.",
+      "see": "https://topsoilcommons.github.io/atlas/",
+      "check": "https://topsoilcommons.github.io/index/"
+    },
+    {
+      "layer": 3,
+      "need": "belonging",
+      "act": "Cohort",
+      "door": "I feel alone, and I want to belong.",
+      "first_step": "Open the Cohort demo and look around a working circle: its members, its messages, its shared resources. It is a demo, and it is labeled a demo in the open. Under a minute.",
+      "proof": "In the live demo, 25 members, 48 messages, 27 shared resources, and 5 events; its test suite passes 7 of 7 checks from a clean start.",
+      "unlocks": "Unlocks the ability to contribute.",
+      "see": "https://topsoilcommons.github.io/cohort/",
+      "check": "https://topsoilcommons.github.io/index/"
+    },
+    {
+      "layer": 4,
+      "need": "shared truth",
+      "act": "Graph",
+      "door": "I want to know what is true.",
+      "first_step": "Open Graph and read one scored run: the facts it pulled from a text, its score, and its misses, printed beside the score. Under a minute.",
+      "proof": "Of every 100 facts Graph pulls from text, about 94 are right, measured on its labeled test set on October 15, 2026; 7 of 7 tests pass.",
+      "unlocks": "Unlocks the ability to discern.",
+      "see": "https://topsoilcommons.github.io/graph/",
+      "check": "https://topsoilcommons.github.io/index/"
+    },
+    {
+      "layer": 5,
+      "need": "autonomy",
+      "act": "Machine",
+      "door": "I want to build it myself.",
+      "first_step": "Open Machine and read one recorded run: a transformer built from scratch, its checks passed, its training counted by the code. Under a minute.",
+      "proof": "A transformer built from scratch passes 7 of 7 gradient checks at a tolerance of 1 in 100,000; its small language model has 358,052 parts, each one counted by the code.",
+      "unlocks": "Unlocks the ability to build.",
+      "see": "https://topsoilcommons.github.io/machine/",
+      "check": "https://topsoilcommons.github.io/index/"
+    },
+    {
+      "layer": 6,
+      "need": "trust and meaning",
+      "act": "Lumen",
+      "door": "I want something I can trust.",
+      "first_step": "Open Lumen and ask one question of a guarded text: see what it answers, what it refuses, and why, on the text's own terms. Under a minute.",
+      "proof": "A guardrail tested on 41 questions from one tradition's text: it blocked 12 of 12 questions it must refuse, allowed 8 of 8 it must allow.",
+      "unlocks": "Unlocks the ability to commit.",
+      "see": "https://topsoilcommons.github.io/lumen/",
+      "check": "https://topsoilcommons.github.io/index/"
+    }
+  ]
+}
