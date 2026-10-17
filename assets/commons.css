@@ -44,3 +44,19 @@ footer{border-top:1px solid var(--line)}
   header{display:block}
   .row,.demo,.liferow,tr{break-inside:avoid}
 }
+
+/* The one act panel: the repeat interaction, styled once for the home
+   page and Come in. A document block, not a card: rules and type only. */
+.oneact{border-top:2px solid var(--ink);border-bottom:1px solid var(--line);
+  padding:18px 0 8px;margin:24px 0 4px}
+.oneact h2{font-size:20px;margin:0 0 8px;letter-spacing:0}
+.oa-wit{font-size:16px;margin:0 0 12px;max-width:38em}
+.oa-act{font-size:16px;margin:0 0 10px;max-width:38em}
+.oa-note{font-size:14px;color:#4c4234;margin:0 0 10px;max-width:38em}
+.oa-row{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin:0 0 10px}
+.oa-go{font-weight:700;font-size:16px;display:inline-flex;align-items:center;min-height:44px}
+.oa-btn{font:inherit;font-weight:700;font-size:15.5px;min-height:44px;
+  background:none;border:1px solid var(--ink);padding:6px 14px;cursor:pointer;color:var(--ink)}
+.oa-btn:hover{text-decoration:underline}
+.oa-thanks{font-size:19px;font-weight:700;margin:0 0 8px;outline:none}
+.oa-name{font:inherit;font-size:16px;padding:8px;border:1px solid var(--ink);min-height:44px;max-width:16em}

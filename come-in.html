@@ -23,164 +23,175 @@
 <meta name="twitter:image" content="https://topsoilcommons.org/assets/aurora-logo.png">
 <link rel="stylesheet" href="assets/commons.css">
 <style>
-  :root{
-    --ink:#211812;
-    --paper:#faf6ee;
-    --card:#fffdf8;
-    --line:#e0d5bf;
-    --accent:#7a4a12;
-    --rub:#9e2b25;
-  }
-  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
-  main{max-width:760px;margin:0 auto;padding:20px 20px 56px}
-  h1{font-size:30px;line-height:1.25;margin:12px 0 6px;font-weight:600}
-  .place{font-size:17px;margin:0 0 4px}
-  .sub{margin:0 0 20px}
-  details{border-top:1px solid var(--line);padding:4px 0}
-  details:last-of-type{border-bottom:1px solid var(--line)}
-  details:target{outline:2px solid var(--ink);outline-offset:-2px}
-  summary{cursor:pointer;font-size:20px;font-weight:600;padding:12px 0;min-height:44px;list-style:none}
-  summary::-webkit-details-marker{display:none}
-  summary::after{content:"+";float:right;font-weight:400}
-  details[open] summary::after{content:"−"}
-  .body{padding:0 0 16px;font-size:17px}
-  .body p{margin:0 0 10px}
-  .use a,.act a{font-weight:600}
-  .tag{font-size:14px;font-weight:700;margin:12px 0 2px}
-  .next{color:#4c4234}
-  .honest{border-left:3px solid var(--ink);padding-left:12px}
-  h2{font-size:22px;margin:36px 0 8px;font-weight:600}
-  ol.acts{padding-left:22px;font-size:17px}
-  ol.acts li{margin-bottom:8px}
-  .mins{color:#4c4234}
-  footer{margin-top:58px;border-top:1px solid var(--line);padding:30px 0 46px;font-size:15px;color:#4c4234}
-  footer p{margin:0 0 4px}
+:root{
+--ink:#211812;
+--paper:#faf6ee;
+--card:#fffdf8;
+--line:#e0d5bf;
+--accent:#7a4a12;
+--rub:#9e2b25;
+}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+main{max-width:760px;margin:0 auto;padding:20px 20px 56px}
+h1{font-size:30px;line-height:1.25;margin:12px 0 6px;font-weight:600}
+.place{font-size:17px;margin:0 0 4px}
+.sub{margin:0 0 20px}
+details{border-top:1px solid var(--line);padding:4px 0}
+details:last-of-type{border-bottom:1px solid var(--line)}
+details:target{outline:2px solid var(--ink);outline-offset:-2px}
+summary{cursor:pointer;font-size:20px;font-weight:600;padding:12px 0;min-height:44px;list-style:none}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";float:right;font-weight:400}
+details[open] summary::after{content:"−"}
+.body{padding:0 0 16px;font-size:17px}
+.body p{margin:0 0 10px}
+.use a,.act a{font-weight:600}
+.tag{font-size:14px;font-weight:700;margin:12px 0 2px}
+.next{color:#4c4234}
+.honest{border-left:3px solid var(--ink);padding-left:12px}
+h2{font-size:22px;margin:36px 0 8px;font-weight:600}
+ol.acts{padding-left:22px;font-size:17px}
+ol.acts li{margin-bottom:8px}
+.mins{color:#4c4234}
+footer{margin-top:58px;border-top:1px solid var(--line);padding:30px 0 46px;font-size:15px;color:#4c4234}
+footer p{margin:0 0 4px}
 </style>
 </head>
 <body>
 <a class="skip" href="#main">Skip to the content</a>
 <nav class="commons-bar" aria-label="Topsoil Commons sites">
-    <a class="wordmark" href="https://topsoilcommons.org/"><svg class="bar-mark" viewBox="0 0 24 24" width="17" height="17" aria-hidden="true" focusable="false" style="flex:none;align-self:center;margin-right:7px"><g fill="currentColor"><rect x="4" y="2.5" width="16" height="2"/><rect x="4" y="5.5" width="16" height="2"/><rect x="4" y="8.5" width="16" height="2"/><rect x="4" y="11.5" width="4.5" height="8"/><rect x="15.5" y="11.5" width="4.5" height="8"/><rect x="2" y="20.5" width="20" height="2.2"/></g></svg>Topsoil Commons</a>
-    <span class="current" aria-current="page">Come in (you are here)</span>
-    <a href="https://topsoilcommons.org/foundations">Foundations</a>
-    <a href="https://topsoilcommons.github.io/ground/">Ground</a>
-    <a href="https://topsoilcommons.github.io/still/">Still</a>
-    <a href="https://topsoilcommons.github.io/atlas/">Atlas</a>
-    <a href="https://topsoilcommons.github.io/cohort/">Cohort</a>
-    <a href="https://topsoilcommons.github.io/graph/">Graph</a>
-    <a href="https://topsoilcommons.github.io/machine/">Machine</a>
-    <a href="https://topsoilcommons.github.io/lumen/">Lumen</a>
-  </nav>
+<a class="wordmark" href="https://topsoilcommons.org/"><svg class="bar-mark" viewBox="0 0 24 24" width="17" height="17" aria-hidden="true" focusable="false" style="flex:none;align-self:center;margin-right:7px"><g fill="currentColor"><rect x="4" y="2.5" width="16" height="2"/><rect x="4" y="5.5" width="16" height="2"/><rect x="4" y="8.5" width="16" height="2"/><rect x="4" y="11.5" width="4.5" height="8"/><rect x="15.5" y="11.5" width="4.5" height="8"/><rect x="2" y="20.5" width="20" height="2.2"/></g></svg>Topsoil Commons</a>
+<span class="current" aria-current="page">Come in (you are here)</span>
+<a href="https://topsoilcommons.org/foundations">Foundations</a>
+<a href="https://topsoilcommons.github.io/ground/">Ground</a>
+<a href="https://topsoilcommons.github.io/still/">Still</a>
+<a href="https://topsoilcommons.github.io/atlas/">Atlas</a>
+<a href="https://topsoilcommons.github.io/cohort/">Cohort</a>
+<a href="https://topsoilcommons.github.io/graph/">Graph</a>
+<a href="https://topsoilcommons.github.io/machine/">Machine</a>
+<a href="https://topsoilcommons.github.io/lumen/">Lumen</a>
+</nav>
 <main id="main">
-  <h1>What brought you here?</h1>
-  <p class="place">Start near you. <a href="https://topsoilcommons.github.io/ground/">Ground lists help by place.</a></p>
-  <p class="sub">Pick the line that sounds like you. Each one gives you something real to use in under a minute, then one small thing you can do, if you want to. No account. No fee.</p>
+<h1>What brought you here?</h1>
+<p class="place">Start near you. <a href="https://topsoilcommons.github.io/ground/">Ground lists help by place.</a></p>
+<p class="sub">Pick the line that sounds like you. Each one gives you something real to use in under a minute, then one small thing you can do, if you want to. No account. No fee.</p>
 
-  <details id="door-1">
-    <summary>I need help today</summary>
-    <div class="body">
-      <p class="tag">Use it now</p>
-      <p class="use"><a href="https://topsoilcommons.github.io/ground/">Find food, shelter, and help near you.</a> Each listing shows the day it was checked and the day that check runs out. The board holds 155 listings across 19 places, counted on October 16, 2026, every one of them checked on the provider's own page.</p>
-      <p class="tag">One small thing you can do</p>
-      <p class="act">Check one listing. Open the provider's page, confirm the address and hours, and say so. About 3 minutes. Your check keeps that listing true for the next person who needs it tonight, and your name, a stage name, or no name goes on it, as you choose.</p>
-    </div>
-  </details>
+<details id="door-1">
+<summary>I need help today</summary>
+<div class="body">
+<p class="tag">Use it now</p>
+<p class="use"><a href="https://topsoilcommons.github.io/ground/">Find food, shelter, and help near you.</a> Each listing shows the day it was checked and the day that check runs out. The board holds 155 listings across 19 places, counted on October 16, 2026, every one of them checked on the provider's own page.</p>
+<p class="tag">One small thing you can do</p>
+<p class="act">Check one listing. Open the provider's page, confirm the address and hours, and say so. About 3 minutes. Your check keeps that listing true for the next person who needs it tonight, and your name, a stage name, or no name goes on it, as you choose.</p>
+</div>
+</details>
 
-  <details id="door-2">
-    <summary>I lost work, or money is tight</summary>
-    <div class="body">
-      <p class="tag">Use it now</p>
-      <p class="use">Three things, in the order a hard month needs them. <a href="https://topsoilcommons.github.io/ground/">Help near you.</a> <a href="https://topsoilcommons.github.io/atlas/">One free skill to learn.</a> <a href="https://topsoilcommons.github.io/still/">Two quiet minutes to steady your mind.</a> This page does not promise you a job. It puts food, a skill, and a steadier hour within reach today.</p>
-      <p class="tag">One small thing you can do</p>
-      <p class="act">Add what you found. A food resource with no listing yet. A free course that truly helped. About 5 minutes. What you learned the hard way is knowledge this record does not have.</p>
-    </div>
-  </details>
+<details id="door-2">
+<summary>I lost work, or money is tight</summary>
+<div class="body">
+<p class="tag">Use it now</p>
+<p class="use">Three things, in the order a hard month needs them. <a href="https://topsoilcommons.github.io/ground/">Help near you.</a> <a href="https://topsoilcommons.github.io/atlas/">One free skill to learn.</a> <a href="https://topsoilcommons.github.io/still/">Two quiet minutes to steady your mind.</a> This page does not promise you a job. It puts food, a skill, and a steadier hour within reach today.</p>
+<p class="tag">One small thing you can do</p>
+<p class="act">Add what you found. A food resource with no listing yet. A free course that truly helped. About 5 minutes. What you learned the hard way is knowledge this record does not have.</p>
+</div>
+</details>
 
-  <details id="door-3">
-    <summary>Something is unfair, and I want it on the record</summary>
-    <div class="body">
-      <p class="tag">Use it now</p>
-      <p class="use"><a href="foundations">Run one verified finding.</a> Each finding names its source and prints its limits. Fair questions can be answered with proof, not volume.</p>
-      <p class="tag">One small thing you can do</p>
-      <p class="act">Witness something. <a href="https://topsoilcommons.github.io/index/">File what you saw to the shared Index</a>: a photo, a sound, or plain words, with the time and place. It enters as a claim, not a truth, and a second person checks it. About 5 minutes. Or check one claim yourself and see your check recorded.</p>
-    </div>
-  </details>
+<details id="door-3">
+<summary>Something is unfair, and I want it on the record</summary>
+<div class="body">
+<p class="tag">Use it now</p>
+<p class="use"><a href="foundations">Run one verified finding.</a> Each finding names its source and prints its limits. Fair questions can be answered with proof, not volume.</p>
+<p class="tag">One small thing you can do</p>
+<p class="act">Witness something. <a href="https://topsoilcommons.github.io/index/">File what you saw to the shared Index</a>: a photo, a sound, or plain words, with the time and place. It enters as a claim, not a truth, and a second person checks it. About 5 minutes. Or check one claim yourself and see your check recorded.</p>
+</div>
+</details>
 
-  <details id="door-4">
-    <summary>I feel alone, and I want to belong</summary>
-    <div class="body">
-      <p class="tag">Use it now</p>
-      <p class="use"><a href="https://topsoilcommons.github.io/index/">See what is happening near you</a> on one timeline everyone shares, and the time of the next common hour, when new entries are checked together, in the open.</p>
-      <p class="honest">Honest, in plain sight: today this Commons is one enrolled person and a public record. Circles form place by place, built by the people who come through this door. This page will never show you a crowd that is not there.</p>
-      <p class="tag">One small thing you can do</p>
-      <p class="act">Add the thing your street already has. A market, a cleanup, a game. About 2 minutes. Your act makes your place visible to the next person who opens this page feeling the same way.</p>
-    </div>
-  </details>
+<details id="door-4">
+<summary>I feel alone, and I want to belong</summary>
+<div class="body">
+<p class="tag">Use it now</p>
+<p class="use"><a href="https://topsoilcommons.github.io/index/">See what is happening near you</a> on one timeline everyone shares, and the time of the next common hour, when new entries are checked together, in the open.</p>
+<p class="honest">Honest, in plain sight: today this Commons is one enrolled person and a public record. Circles form place by place, built by the people who come through this door. This page will never show you a crowd that is not there.</p>
+<p class="tag">One small thing you can do</p>
+<p class="act">Add the thing your street already has. A market, a cleanup, a game. About 2 minutes. Your act makes your place visible to the next person who opens this page feeling the same way.</p>
+</div>
+</details>
 
-  <details id="door-5">
-    <summary>My mind will not settle</summary>
-    <div class="body">
-      <p class="tag">Use it now</p>
-      <p class="use"><a href="https://topsoilcommons.github.io/still/">Open Still and breathe.</a> A slow pacer, a short check in, and crisis lines checked at their sources, shown first when things are bad. It is a quiet tool. It is not medical care, and it says so.</p>
-      <p class="tag">One small thing you can do</p>
-      <p class="act">Nothing is asked on a hard day. On a better day, one act waits: check that one crisis line for your country still answers, so the next person in the dark reaches a number that picks up.</p>
-    </div>
-  </details>
+<details id="door-5">
+<summary>My mind will not settle</summary>
+<div class="body">
+<p class="tag">Use it now</p>
+<p class="use"><a href="https://topsoilcommons.github.io/still/">Open Still and breathe.</a> A slow pacer, a short check in, and crisis lines checked at their sources, shown first when things are bad. It is a quiet tool. It is not medical care, and it says so.</p>
+<p class="tag">One small thing you can do</p>
+<p class="act">Nothing is asked on a hard day. On a better day, one act waits: check that one crisis line for your country still answers, so the next person in the dark reaches a number that picks up.</p>
+</div>
+</details>
 
-  <details id="door-6">
-    <summary>I want to learn something</summary>
-    <div class="body">
-      <p class="tag">Use it now</p>
-      <p class="use"><a href="https://topsoilcommons.github.io/atlas/">Pick one topic in Atlas.</a> Of the 402 topics Atlas holds, 378 are written, counted on October 16, 2026, and the proof on each one shows where its facts came from and how to check them again.</p>
-      <p class="tag">One small thing you can do</p>
-      <p class="act">Learn it like a critic. Follow the lesson, try to use it, and file what confused you. About 10 minutes. Corrections from learners count here, and they are credited like any other work.</p>
-    </div>
-  </details>
+<details id="door-6">
+<summary>I want to learn something</summary>
+<div class="body">
+<p class="tag">Use it now</p>
+<p class="use"><a href="https://topsoilcommons.github.io/atlas/">Pick one topic in Atlas.</a> Of the 402 topics Atlas holds, 378 are written, counted on October 16, 2026, and the proof on each one shows where its facts came from and how to check them again.</p>
+<p class="tag">One small thing you can do</p>
+<p class="act">Learn it like a critic. Follow the lesson, try to use it, and file what confused you. About 10 minutes. Corrections from learners count here, and they are credited like any other work.</p>
+</div>
+</details>
 
-  <details id="door-7">
-    <summary>I have something to give</summary>
-    <div class="body">
-      <p class="tag">Use it now</p>
-      <p class="use">Read the acts below and pick by what you hold: time, local knowledge, a skill, a language, a car, surplus food, a room. Each act states its minutes and what it changes, before you commit to anything.</p>
-      <p class="tag">About money</p>
-      <p class="act">Money is one act among many, never the headline. It moves only through a fiscal host, never to a personal account, and every dollar lands in a public ledger. That door opens when the host is appointed. Until then it stays shut, and this page says so rather than taking money it cannot yet hold in the open.</p>
-      <p class="act">What opens, the day a host is appointed: giving once or monthly on the host's own hosted page, reached from this site by one setting changed, not by anything new built. The host receives and holds the money, and the gift stands in the public ledger within seven days of the host's statement. The staged endpoint already answers at <a href="https://topsoilcommons.org/api/give">topsoilcommons.org/api/give</a>, saying in the open that the door is shut and why.</p>
-    </div>
-  </details>
+<details id="door-7">
+<summary>I have something to give</summary>
+<div class="body">
+<p class="tag">Use it now</p>
+<p class="use">Read the acts below and pick by what you hold: time, local knowledge, a skill, a language, a car, surplus food, a room. Each act states its minutes and what it changes, before you commit to anything.</p>
+<p class="tag">About money</p>
+<p class="act">Money is one act among many, never the headline. It moves only through a fiscal host, never to a personal account, and every dollar lands in a public ledger. That door opens when the host is appointed. Until then it stays shut, and this page says so rather than taking money it cannot yet hold in the open.</p>
+<p class="act">What opens, the day a host is appointed: giving once or monthly on the host's own hosted page, reached from this site by one setting changed, not by anything new built. The host receives and holds the money, and the gift stands in the public ledger within seven days of the host's statement. The staged endpoint already answers at <a href="https://topsoilcommons.org/api/give">topsoilcommons.org/api/give</a>, saying in the open that the door is shut and why.</p>
+</div>
+</details>
 
-  <details id="door-8">
-    <summary>I run something that helps people</summary>
-    <div class="body">
-      <p class="tag">Use it now</p>
-      <p class="use"><a href="https://topsoilcommons.github.io/ground/">See how your work appears on the board</a>, with its check dates. A place in this Commons is given, never bought.</p>
-      <p class="tag">One small thing you can do</p>
-      <p class="act">Keep your own listing true. Your hours and address, current, checked by you. About 10 minutes. It is the cheapest true fact this system has, and it is credited like anyone's check. When you are ready, run your own board on the same open standard and join it to the shared record.</p>
-    </div>
-  </details>
+<details id="door-8">
+<summary>I run something that helps people</summary>
+<div class="body">
+<p class="tag">Use it now</p>
+<p class="use"><a href="https://topsoilcommons.github.io/ground/">See how your work appears on the board</a>, with its check dates. A place in this Commons is given, never bought.</p>
+<p class="tag">One small thing you can do</p>
+<p class="act">Keep your own listing true. Your hours and address, current, checked by you. About 10 minutes. It is the cheapest true fact this system has, and it is credited like anyone's check. When you are ready, run your own board on the same open standard and join it to the shared record.</p>
+</div>
+</details>
 
-  <h2>Ways to contribute</h2>
-  <p>Every act states its time and what it changes. Each one lands in <a href="ledger">the public ledger</a>, under your name, a stage name, or no name, as you choose. No act buys a vote, a rank, or a place. <a href="participation">How participation is counted, in the open.</a></p>
-  <ol class="acts">
-    <li>Check a listing. <span class="mins">3 minutes.</span> Its check date moves to today, and it stays true 30 more days.</li>
-    <li>Add a missing listing. <span class="mins">5 minutes.</span> A new source of help enters the board, marked as proposed until a second person checks it.</li>
-    <li>Run one finding, then say where it lost you. <span class="mins">3 minutes.</span> Your note makes the next version clearer.</li>
-    <li>Check a claim. <span class="mins">5 minutes.</span> Recompute a proof and file what you get. A failed check is a contribution too. It becomes a correction, never a secret.</li>
-    <li>Witness a moment. <span class="mins">5 minutes.</span> File it to the Index with its time and place, under your hand.</li>
-    <li>Come to the common hour. <span class="mins">1 hour a week.</span> New entries checked together, in the open.</li>
-    <li>Report an error. <span class="mins">1 minute.</span> Anything wrong, anywhere in the record.</li>
-    <li>Translate one page. <span class="mins">Your pace.</span> Nothing ships until a fluent person checks it, and the checker is credited.</li>
-    <li>Keep a place. <span class="mins">A little, often.</span> Hold your town's board and timeline true. This is the rung the whole thing leans on.</li>
-  </ol>
-  <p class="next">The ladder, in one line: use it, check one thing, add one thing, witness with others, keep a place, govern together. Every rung is open to everyone from the first day.</p>
+<section class="oneact" id="one-act" aria-labelledby="oa-h">
+<h2 id="oa-h">One act, one person helped</h2>
+<p class="oa-wit" id="oa-wit">Lately, in the open: on October 17, 2026, a warming center in the Bronx was added to Ground from the City Comptroller's own page, so someone cold tonight finds a door that is really open.</p>
+<div id="oa-body">
+<p class="oa-act"><strong>Check one listing in Ground.</strong> About 3 minutes. Open the provider's own page, confirm the address and hours, and say so where it files.</p>
+<p class="oa-row"><a class="oa-go" href="https://github.com/topsoilcommons/ground/issues/new?title=Check%20a%20listing" target="_blank" rel="noopener">Start the act</a></p>
+<p class="oa-note">No account, no fee, and this site collects nothing about you.</p>
+</div>
+</section>
 
-  <p><a href="https://topsoilcommons.org/">Start at the home page.</a></p>
-  <footer>
-    <p>One rule: raise the floor beneath everyone.</p>
-    <p>Advised by Groundskeeper.</p>
-    <p><a href="https://www.linkedin.com/company/topsoil-commons/">Topsoil Commons on LinkedIn</a></p>
-    <p>For agents: <a href="llms.txt">llms.txt</a>, this site written plainly for agents.</p>
-  </footer>
+<h2>Ways to contribute</h2>
+<p>Every act states its time and what it changes. Each one lands in <a href="ledger">the public ledger</a>, under your name, a stage name, or no name, as you choose. No act buys a vote, a rank, or a place. <a href="participation">How participation is counted, in the open.</a></p>
+<ol class="acts">
+<li>Check a listing. <span class="mins">3 minutes.</span> Its check date moves to today, and it stays true 30 more days.</li>
+<li>Add a missing listing. <span class="mins">5 minutes.</span> A new source of help enters the board, marked as proposed until a second person checks it.</li>
+<li>Run one finding, then say where it lost you. <span class="mins">3 minutes.</span> Your note makes the next version clearer.</li>
+<li>Check a claim. <span class="mins">5 minutes.</span> Recompute a proof and file what you get. A failed check is a contribution too. It becomes a correction, never a secret.</li>
+<li>Witness a moment. <span class="mins">5 minutes.</span> File it to the Index with its time and place, under your hand.</li>
+<li>Come to the common hour. <span class="mins">1 hour a week.</span> New entries checked together, in the open.</li>
+<li>Report an error. <span class="mins">1 minute.</span> Anything wrong, anywhere in the record.</li>
+<li>Translate one page. <span class="mins">Your pace.</span> Nothing ships until a fluent person checks it, and the checker is credited.</li>
+<li>Keep a place. <span class="mins">A little, often.</span> Hold your town's board and timeline true. This is the rung the whole thing leans on.</li>
+</ol>
+<p class="next">The ladder, in one line: use it, check one thing, add one thing, witness with others, keep a place, govern together. Every rung is open to everyone from the first day.</p>
+
+<p><a href="https://topsoilcommons.org/">Start at the home page.</a></p>
+<footer>
+<p>One rule: raise the floor beneath everyone.</p>
+<p>Advised by Groundskeeper.</p>
+<p><a href="https://www.linkedin.com/company/topsoil-commons/">Topsoil Commons on LinkedIn</a></p>
+<p>For agents: <a href="llms.txt">llms.txt</a>, this site written plainly for agents.</p>
+</footer>
 </main>
 <script src="assets/doors.js"></script>
+<script src="assets/loop.js"></script>
 </body>
 </html>

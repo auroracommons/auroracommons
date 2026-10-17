@@ -53,6 +53,12 @@ site.json: the seven acts as data, each with its need, its proof sentence, and i
 https://topsoilcommons.org/site.json
 foundations.json: the studies in Foundations as data, each with its source.
 https://topsoilcommons.org/foundations.json
+layers.json: the seven acts as one file, each with the door line and the first step a person reads on the home page, generated from site.json and checked against the home page on every build.
+https://topsoilcommons.org/layers.json
+/api/today: today's dated counts, computed at the edge from this site's own published files on each request, with the sources named in the answer.
+https://topsoilcommons.org/api/today
+/api/give: the giving door, stated plainly. No fiscal host is appointed, so it answers that the door is shut, why it is shut, and what opens the day one is appointed.
+https://topsoilcommons.org/api/give
 llms.txt: this file.
 https://topsoilcommons.org/llms.txt
 sitemap.xml: every public page of this site.
