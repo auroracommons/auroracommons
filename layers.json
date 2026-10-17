@@ -13,7 +13,8 @@
       "proof": "8 listings for free food, shelter, and health help near New Rochelle; every one checked against the provider's own page on October 15, 2026; 4 more were dropped for failing the check.",
       "unlocks": "Unlocks the ability to act at all.",
       "see": "https://topsoilcommons.github.io/ground/",
-      "check": "https://topsoilcommons.github.io/index/"
+      "check": "https://topsoilcommons.github.io/index/",
+      "placement": "B"
     },
     {
       "layer": 1,
@@ -24,7 +25,8 @@
       "proof": "A breathing pacer checked over 3 full rounds: its timing drifted by at most 1 millisecond. The page makes zero network calls; nothing leaves the device.",
       "unlocks": "Unlocks the ability to choose.",
       "see": "https://topsoilcommons.github.io/still/",
-      "check": "https://topsoilcommons.github.io/index/"
+      "check": "https://topsoilcommons.github.io/index/",
+      "placement": "B"
     },
     {
       "layer": 2,
@@ -35,7 +37,8 @@
       "proof": "One claim, shown with its full proof, the same on a phone, a watch, a voice, and a wall: the Sun is 99.86 percent of all the mass in the solar system, checked against its recorded sources on October 15, 2026.",
       "unlocks": "Unlocks the ability to understand.",
       "see": "https://topsoilcommons.github.io/atlas/",
-      "check": "https://topsoilcommons.github.io/index/"
+      "check": "https://topsoilcommons.github.io/index/",
+      "placement": "B"
     },
     {
       "layer": 3,
@@ -46,7 +49,8 @@
       "proof": "In the live demo, 25 members, 48 messages, 27 shared resources, and 5 events; its test suite passes 7 of 7 checks from a clean start.",
       "unlocks": "Unlocks the ability to contribute.",
       "see": "https://topsoilcommons.github.io/cohort/",
-      "check": "https://topsoilcommons.github.io/index/"
+      "check": "https://topsoilcommons.github.io/index/",
+      "placement": "B"
     },
     {
       "layer": 4,
@@ -57,7 +61,8 @@
       "proof": "Of every 100 facts Graph pulls from text, about 94 are right, measured on its labeled test set on October 15, 2026; 7 of 7 tests pass.",
       "unlocks": "Unlocks the ability to discern.",
       "see": "https://topsoilcommons.github.io/graph/",
-      "check": "https://topsoilcommons.github.io/index/"
+      "check": "https://topsoilcommons.github.io/index/",
+      "placement": "B"
     },
     {
       "layer": 5,
@@ -68,7 +73,8 @@
       "proof": "A transformer built from scratch passes 7 of 7 gradient checks at a tolerance of 1 in 100,000; its small language model has 358,052 parts, each one counted by the code.",
       "unlocks": "Unlocks the ability to build.",
       "see": "https://topsoilcommons.github.io/machine/",
-      "check": "https://topsoilcommons.github.io/index/"
+      "check": "https://topsoilcommons.github.io/index/",
+      "placement": "B"
     },
     {
       "layer": 6,
@@ -79,7 +85,8 @@
       "proof": "A guardrail tested on 41 questions from one tradition's text: it blocked 12 of 12 questions it must refuse, allowed 8 of 8 it must allow.",
       "unlocks": "Unlocks the ability to commit.",
       "see": "https://topsoilcommons.github.io/lumen/",
-      "check": "https://topsoilcommons.github.io/index/"
+      "check": "https://topsoilcommons.github.io/index/",
+      "placement": "B"
     }
   ]
 }

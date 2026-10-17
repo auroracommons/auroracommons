@@ -12,6 +12,16 @@ words. If the page and the data disagree, the script fails loudly
 and writes nothing, the way tools/today_line.py refuses a stale
 source.
 
+Each act also carries a placement, the Direction 4 setting for what
+its band on the home page holds: A, the proof in full in the band;
+B, the first step, with the proof one tap away in a fold inside the
+band; C, just the marker. The setting stands in site.json, and this
+script checks the band's markup against it, so a band flipped by
+hand without its setting fails the build instead of drifting. All
+seven bands stand at B since the Direction 4 build of October 17,
+2026; Joshua flips a band by changing its setting here and its
+markup to match.
+
 Run: python3 tools/build_layers.py
 """
 
@@ -40,7 +50,8 @@ def main():
     if not isinstance(acts, list) or len(acts) != 7:
         fail("site.json: expected the seven acts")
 
-    home = visible_text((ROOT / "index.html").read_text(encoding="utf-8"))
+    home_html = (ROOT / "index.html").read_text(encoding="utf-8")
+    home = visible_text(home_html)
     layers = []
     for act in sorted(acts, key=lambda a: a["layer"]):
         for field in ("need", "act", "door", "first_step", "proof",
@@ -53,6 +64,39 @@ def main():
                 fail("index.html: layer %s %s not found in the home "
                      "page's visible text: %s"
                      % (act["layer"], field, act[field][:60]))
+        placement = act.get("placement")
+        if placement not in ("A", "B", "C"):
+            fail("site.json: layer %s placement must be A, B, or C"
+                 % act["layer"])
+        band = re.search(
+            r'<article class="stratum[^"]*" id="layer-%d"[^>]*>'
+            r'(.*?)</article>' % act["layer"], home_html, flags=re.S)
+        if not band:
+            fail("index.html: no band found for layer %s"
+                 % act["layer"])
+        tag = band.group(0)[:band.group(0).index(">") + 1]
+        body = band.group(1)
+        if 'data-placement="%s"' % placement not in tag:
+            fail("index.html: layer %s band is not marked placement "
+                 "%s as site.json sets it" % (act["layer"], placement))
+        fold_at = body.find('<details class="fold">')
+        proof_at = body.find('<p class="proof">')
+        if placement == "A":
+            if proof_at < 0 or 0 <= fold_at < proof_at:
+                fail("index.html: layer %s is set to A, the proof in "
+                     "full, but its proof stands inside a fold"
+                     % act["layer"])
+        elif placement == "B":
+            if '<p class="first">' not in body or fold_at < 0 \
+                    or proof_at < fold_at:
+                fail("index.html: layer %s is set to B, the first "
+                     "step, but its first step or its folded proof "
+                     "is missing" % act["layer"])
+        else:
+            if proof_at >= 0 or '<p class="first">' in body:
+                fail("index.html: layer %s is set to C, just the "
+                     "marker, but the band carries more"
+                     % act["layer"])
         layers.append({
             "layer": act["layer"],
             "need": act["need"],
@@ -63,6 +107,7 @@ def main():
             "unlocks": act["unlocks"],
             "see": act["see"],
             "check": act["check"],
+            "placement": placement,
         })
 
     out = {
