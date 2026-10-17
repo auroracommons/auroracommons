@@ -20,6 +20,12 @@ Every live address on the site moved from the old GitHub Pages address to the ne
 
 What is next: the LinkedIn company page's website field is pointed at the new address, the step already ordered with the redesign.
 
+## October 17, 2026, morning: a correction to the entry below
+
+The entry below says the morning's interaction check left five projects unverified. The check's full results finished arriving after that entry was written, and they change the record: there was one new outside interaction. Wedajo Getachew (geyachewedajo-ops), the volunteer who commented on Cohort's good first issue #2 on October 15, opened pull request #3 on Cohort overnight with the demo walkthrough that issue asked for and their own recorded session as evidence.
+
+It has now been answered and incorporated, and the correction stands beside the original entry rather than replacing it. Their session was verified by reading the pull request branch (13 transcript messages, the agent message landed). The walkthrough is landed on Cohort's main as docs/mcp-walkthrough.md (commit 3195021), credited to them as its first author, with one step added for the task history read the morning pass had just shipped. Their copy of the evidence file could not merge, because the morning pass re-recorded that same file an hour earlier; the pull request was answered in place with that reason stated plainly and closed as incorporated, and the contributor is credited in the Ledger. The other six projects showed no new outside issues or pull requests: their open issues are the projects' own good first issues, standing open for contributors.
+
 ## October 17, 2026, morning: the third evolution pass
 
 **What shipped, one measured unit in each of the seven projects, in story order.**
